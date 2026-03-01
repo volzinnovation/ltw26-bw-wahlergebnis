@@ -187,6 +187,21 @@ def parse_float_percent(value: Any) -> Optional[float]:
         return None
 
 
+def parse_float_value(value: Any) -> Optional[float]:
+    if value is None:
+        return None
+    text = str(value).strip().replace(",", ".")
+    if text == "":
+        return None
+    text = re.sub(r"[^0-9\.\-]", "", text)
+    if text in {"", "-", "."}:
+        return None
+    try:
+        return float(text)
+    except ValueError:
+        return None
+
+
 def csv_rows_from_text(content: str, delimiter: str = ";") -> List[Dict[str, str]]:
     reader = csv.DictReader(content.splitlines(), delimiter=delimiter)
     return [dict(row) for row in reader]
@@ -332,6 +347,290 @@ def create_poll(conn: sqlite3.Connection, polled_at_utc: str, polled_at_local: s
     if row is None:
         raise RuntimeError("Failed to create poll row")
     return int(row[0])
+
+
+def read_csv_rows_from_file(path: Path, delimiter: str = ",") -> List[Dict[str, str]]:
+    if not path.exists():
+        return []
+    try:
+        content = decode_bytes(path.read_bytes())
+    except Exception:  # pylint: disable=broad-except
+        return []
+    return csv_rows_from_text(content, delimiter=delimiter)
+
+
+def parse_iso_datetime(value: str) -> Optional[datetime]:
+    text = (value or "").strip()
+    if not text:
+        return None
+    if text.endswith("Z"):
+        text = f"{text[:-1]}+00:00"
+    try:
+        return datetime.fromisoformat(text)
+    except ValueError:
+        return None
+
+
+def seed_db_from_latest_exports(conn: sqlite3.Connection, config: Config) -> None:
+    metadata_path = LATEST_DIR / "run_metadata.json"
+    if not metadata_path.exists():
+        return
+
+    try:
+        metadata = json.loads(metadata_path.read_text(encoding="utf-8"))
+    except Exception:  # pylint: disable=broad-except
+        return
+
+    polled_at_utc = str(metadata.get("generated_at_utc") or "").strip()
+    parsed_polled_at = parse_iso_datetime(polled_at_utc)
+    if parsed_polled_at is None:
+        return
+
+    polled_at_local = parsed_polled_at.astimezone(ZoneInfo(config.timezone)).strftime("%Y-%m-%d %H:%M:%S %Z")
+    row = conn.execute("SELECT id FROM polls WHERE polled_at_utc = ?", (polled_at_utc,)).fetchone()
+    if row is None:
+        poll_id = create_poll(conn, polled_at_utc=polled_at_utc, polled_at_local=polled_at_local)
+    else:
+        poll_id = int(row[0])
+
+    municipalities_seed: List[Dict[str, str]] = []
+    for path in [META_DIR / "municipalities.csv", META_DIR / "ltw26-bw-gemeinden.csv"]:
+        for row in read_csv_rows_from_file(path, delimiter=","):
+            ags = canonical_ags(row.get("ags") or row.get("AGS"))
+            municipality_name = canonical_municipality_name(
+                row.get("municipality_name") or row.get("Gemeindename") or row.get("Gemeinde")
+            )
+            source = str(row.get("source") or "git-latest-seed")
+            if ags and municipality_name:
+                municipalities_seed.append(
+                    {
+                        "ags": ags,
+                        "municipality_name": municipality_name,
+                        "source": source,
+                    }
+                )
+    if municipalities_seed:
+        unique = {(row["ags"], row["municipality_name"], row["source"]) for row in municipalities_seed}
+        store_municipalities(
+            conn,
+            [{"ags": ags, "municipality_name": name, "source": source} for ags, name, source in sorted(unique)],
+        )
+
+    run_label = str(metadata.get("run_label") or "").strip()
+    statla_url = str(metadata.get("statla_url") or "")
+    statla_error = metadata.get("statla_error")
+    statla_raw_path = RAW_STATLA_DIR / f"{run_label}-statla.csv" if run_label else None
+    statla_hash = None
+    statla_bytes = 0
+    if statla_raw_path and statla_raw_path.exists():
+        raw = statla_raw_path.read_bytes()
+        statla_hash = sha256_bytes(raw)
+        statla_bytes = len(raw)
+    existing_statla_fetch = conn.execute(
+        """
+        SELECT 1
+        FROM source_fetches
+        WHERE poll_id = ?
+          AND source = 'statla'
+        LIMIT 1
+        """,
+        (poll_id,),
+    ).fetchone()
+    if existing_statla_fetch is None:
+        conn.execute(
+            """
+            INSERT INTO source_fetches (
+              poll_id, source, url, status_code, content_hash, byte_count, error_message, fetched_at_utc
+            )
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+            """,
+            (
+                poll_id,
+                "statla",
+                statla_url,
+                200 if statla_hash else None,
+                statla_hash,
+                statla_bytes,
+                statla_error,
+                polled_at_utc,
+            ),
+        )
+
+    kommone_rows = read_csv_rows_from_file(LATEST_DIR / "kommone_snapshots.csv", delimiter=",")
+    existing_kommone_rows = conn.execute(
+        "SELECT 1 FROM kommone_snapshots WHERE poll_id = ? LIMIT 1",
+        (poll_id,),
+    ).fetchone()
+    if kommone_rows and existing_kommone_rows is None:
+        conn.executemany(
+            """
+            INSERT INTO kommone_snapshots (
+              poll_id, ags, municipality_name, status, reported_precincts, total_precincts,
+              voters_total, valid_votes, invalid_votes, source_timestamp, payload_hash, error_message
+            )
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            """,
+            [
+                (
+                    poll_id,
+                    canonical_ags(row.get("ags")),
+                    canonical_municipality_name(row.get("municipality_name")),
+                    str(row.get("status") or "NO_DATA"),
+                    parse_int(row.get("reported_precincts")),
+                    parse_int(row.get("total_precincts")),
+                    parse_int(row.get("voters_total")),
+                    parse_int(row.get("valid_votes")),
+                    parse_int(row.get("invalid_votes")),
+                    row.get("source_timestamp"),
+                    row.get("payload_hash"),
+                    row.get("error_message"),
+                )
+                for row in kommone_rows
+                if canonical_ags(row.get("ags"))
+            ],
+        )
+
+    party_rows = read_csv_rows_from_file(LATEST_DIR / "kommone_party_results.csv", delimiter=",")
+    existing_kommone_party = conn.execute(
+        "SELECT 1 FROM kommone_party_results WHERE poll_id = ? LIMIT 1",
+        (poll_id,),
+    ).fetchone()
+    if party_rows and existing_kommone_party is None:
+        conn.executemany(
+            """
+            INSERT INTO kommone_party_results (poll_id, ags, vote_type, party, votes, percent)
+            VALUES (?, ?, ?, ?, ?, ?)
+            """,
+            [
+                (
+                    poll_id,
+                    canonical_ags(row.get("ags")),
+                    str(row.get("vote_type") or ""),
+                    str(row.get("party") or ""),
+                    parse_int(row.get("votes")),
+                    parse_float_value(row.get("percent")),
+                )
+                for row in party_rows
+                if canonical_ags(row.get("ags")) and str(row.get("party") or "")
+            ],
+        )
+
+    statla_rows = read_csv_rows_from_file(LATEST_DIR / "statla_snapshots.csv", delimiter=",")
+    existing_statla_rows = conn.execute(
+        "SELECT 1 FROM statla_snapshots WHERE poll_id = ? LIMIT 1",
+        (poll_id,),
+    ).fetchone()
+    if statla_rows and existing_statla_rows is None:
+        conn.executemany(
+            """
+            INSERT INTO statla_snapshots (
+              poll_id, row_key, ags, municipality_name, gebietsart, gebietsnummer, reported_precincts,
+              total_precincts, voters_total, valid_votes_erst, valid_votes_zweit, payload_hash
+            )
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            """,
+            [
+                (
+                    poll_id,
+                    str(row.get("row_key") or ""),
+                    canonical_ags(row.get("ags")),
+                    canonical_municipality_name(row.get("municipality_name")),
+                    str(row.get("gebietsart") or ""),
+                    str(row.get("gebietsnummer") or ""),
+                    parse_int(row.get("reported_precincts")),
+                    parse_int(row.get("total_precincts")),
+                    parse_int(row.get("voters_total")),
+                    parse_int(row.get("valid_votes_erst")),
+                    parse_int(row.get("valid_votes_zweit")),
+                    str(row.get("payload_hash") or ""),
+                )
+                for row in statla_rows
+                if str(row.get("row_key") or "")
+            ],
+        )
+
+    statla_party_rows = read_csv_rows_from_file(LATEST_DIR / "statla_party_results.csv", delimiter=",")
+    existing_statla_party = conn.execute(
+        "SELECT 1 FROM statla_party_results WHERE poll_id = ? LIMIT 1",
+        (poll_id,),
+    ).fetchone()
+    if statla_party_rows and existing_statla_party is None:
+        conn.executemany(
+            """
+            INSERT INTO statla_party_results (poll_id, row_key, vote_type, party_key, party_name, votes)
+            VALUES (?, ?, ?, ?, ?, ?)
+            """,
+            [
+                (
+                    poll_id,
+                    str(row.get("row_key") or ""),
+                    str(row.get("vote_type") or ""),
+                    str(row.get("party_key") or ""),
+                    str(row.get("party_name") or ""),
+                    parse_int(row.get("votes")),
+                )
+                for row in statla_party_rows
+                if str(row.get("row_key") or "") and str(row.get("party_key") or "")
+            ],
+        )
+
+    diff_rows = read_csv_rows_from_file(REPORT_DIR / "latest_source_diff.csv", delimiter=",")
+    existing_diff_rows = conn.execute(
+        "SELECT 1 FROM source_diffs WHERE poll_id = ? LIMIT 1",
+        (poll_id,),
+    ).fetchone()
+    if diff_rows and existing_diff_rows is None:
+        conn.executemany(
+            """
+            INSERT INTO source_diffs (
+              poll_id, ags, municipality_name, metric, kommone_value, statla_value, delta
+            )
+            VALUES (?, ?, ?, ?, ?, ?, ?)
+            """,
+            [
+                (
+                    poll_id,
+                    canonical_ags(row.get("ags")),
+                    canonical_municipality_name(row.get("municipality_name")),
+                    str(row.get("metric") or ""),
+                    parse_float_value(row.get("kommone_value")),
+                    parse_float_value(row.get("statla_value")),
+                    parse_float_value(row.get("delta")),
+                )
+                for row in diff_rows
+                if canonical_ags(row.get("ags")) and str(row.get("metric") or "")
+            ],
+        )
+
+    event_rows = read_csv_rows_from_file(REPORT_DIR / "latest_events.csv", delimiter=",")
+    existing_event_rows = conn.execute(
+        "SELECT 1 FROM events WHERE poll_id = ? LIMIT 1",
+        (poll_id,),
+    ).fetchone()
+    if event_rows and existing_event_rows is None:
+        conn.executemany(
+            """
+            INSERT INTO events (
+              poll_id, event_time_utc, source, ags, municipality_name, event_type, details_json
+            )
+            VALUES (?, ?, ?, ?, ?, ?, ?)
+            """,
+            [
+                (
+                    poll_id,
+                    str(row.get("event_time_utc") or polled_at_utc),
+                    str(row.get("source") or ""),
+                    canonical_ags(row.get("ags")),
+                    canonical_municipality_name(row.get("municipality_name")),
+                    str(row.get("event_type") or ""),
+                    str(row.get("details_json") or "{}"),
+                )
+                for row in event_rows
+                if str(row.get("source") or "") and str(row.get("event_type") or "")
+            ],
+        )
+
+    conn.commit()
 
 
 def canonical_ags(raw_ags: Any) -> str:
@@ -1317,6 +1616,55 @@ def party_dashboard_rows(
     return summary_rows, detail_rows_by_party
 
 
+def canonical_vote_type(label: str) -> str:
+    normalized = normalize_text(label)
+    if "zweit" in normalized:
+        return "Zweitstimmen"
+    if "erst" in normalized:
+        return "Erststimmen"
+    return label.strip() or "Unbekannt"
+
+
+def party_summary_by_vote_type(party_rows: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+    totals_by_type: Dict[str, Dict[str, int]] = {}
+    for row in party_rows:
+        votes = row.get("votes")
+        party = str(row.get("party") or "").strip()
+        if not party or not isinstance(votes, int):
+            continue
+        vote_type = canonical_vote_type(str(row.get("vote_type") or ""))
+        bucket = totals_by_type.setdefault(vote_type, {})
+        bucket[party] = bucket.get(party, 0) + votes
+
+    rows: List[Dict[str, Any]] = []
+    ordered_vote_types = ["Erststimmen", "Zweitstimmen"]
+    remaining_vote_types = sorted(vt for vt in totals_by_type if vt not in ordered_vote_types)
+    for vote_type in ordered_vote_types + remaining_vote_types:
+        party_totals = totals_by_type.get(vote_type, {})
+        if not party_totals:
+            rows.append(
+                {
+                    "vote_type": vote_type,
+                    "party": "",
+                    "votes": 0,
+                    "share_percent": 0.0,
+                }
+            )
+            continue
+        grand_total = sum(party_totals.values())
+        for party, votes in sorted(party_totals.items(), key=lambda item: item[1], reverse=True):
+            share = (votes / grand_total * 100.0) if grand_total else 0.0
+            rows.append(
+                {
+                    "vote_type": vote_type,
+                    "party": party,
+                    "votes": votes,
+                    "share_percent": share,
+                }
+            )
+    return rows
+
+
 def normalize_wahlkreis_nummer(value: Any) -> str:
     number = parse_int(value)
     if number is None:
@@ -1681,6 +2029,7 @@ def generate_readme(
     status_counts["no_data"] += len(missing_ags)
 
     party_summary, party_details = party_dashboard_rows(kommone_snapshots, party_rows)
+    vote_type_summary = party_summary_by_vote_type(party_rows)
 
     statla_diff_summary: Dict[str, Dict[str, float]] = {}
     for row in diff_rows:
@@ -1724,7 +2073,8 @@ def generate_readme(
     lines.append("## Operations")
     lines.append("")
     lines.append("- Local run: `python scripts/poll_ltw26.py`")
-    lines.append("- SQLite history DB: `data/ltw26/history.sqlite`")
+    lines.append("- SQLite history DB (local cache, not committed): `data/ltw26/history.sqlite`")
+    lines.append("- Rebuild SQLite from git deltas: `python scripts/rebuild_history_sqlite_from_git_deltas.py`")
     lines.append("- Minute automation: `.github/workflows/poll.yml`")
     lines.append("")
     lines.append("## Coverage")
@@ -1750,6 +2100,16 @@ def generate_readme(
     lines.append(f"- SHP source ZIP: `{config.wahlkreise_shp_zip_url}`")
     lines.append("")
     append_map_qa_section(lines)
+    lines.append("## Party Totals (First and Second Votes)")
+    lines.append("")
+    lines.append("| Vote Type | Party | Count | Share |")
+    lines.append("|---|---|---:|---:|")
+    for row in vote_type_summary:
+        party_label = row["party"] or "-"
+        lines.append(
+            f"| {row['vote_type']} | {party_label} | {int(row['votes'])} | {float(row['share_percent']):.2f}% |"
+        )
+    lines.append("")
     lines.append("## Party Dashboard (Municipality Drill-Down)")
     lines.append("")
     if not party_summary:
@@ -1860,9 +2220,18 @@ def write_prestart_readme(config: Config) -> None:
     )
     lines.append("")
     append_map_qa_section(lines)
+    lines.append("## Party Totals (First and Second Votes)")
+    lines.append("")
+    lines.append("| Vote Type | Party | Count | Share |")
+    lines.append("|---|---|---:|---:|")
+    lines.append("| Erststimmen | - | 0 | 0.00% |")
+    lines.append("| Zweitstimmen | - | 0 | 0.00% |")
+    lines.append("")
     lines.append("## Operations")
     lines.append("")
     lines.append("- Local run after start: `python scripts/poll_ltw26.py`")
+    lines.append("- SQLite history DB (local cache, not committed): `data/ltw26/history.sqlite`")
+    lines.append("- Rebuild SQLite from git deltas: `python scripts/rebuild_history_sqlite_from_git_deltas.py`")
     lines.append("- Minute automation: `.github/workflows/poll.yml`")
     lines.append("")
     README_PATH.write_text("\n".join(lines), encoding="utf-8")
@@ -1876,6 +2245,8 @@ def persist_files(
     diff_rows: List[Dict[str, Any]],
     events_rows: List[Dict[str, Any]],
 ) -> None:
+    vote_type_summary = party_summary_by_vote_type(kommone_party_rows)
+
     # Raw snapshots
     write_json(RAW_KOMMONE_DIR / f"{label_file}-kommone.json", {"snapshots": kommone_snapshots, "party_rows": kommone_party_rows})
     if statla.get("raw_csv"):
@@ -1903,6 +2274,11 @@ def persist_files(
         LATEST_DIR / "kommone_party_results.csv",
         ["ags", "municipality_name", "vote_type", "party", "votes", "percent"],
         kommone_party_rows,
+    )
+    write_csv(
+        LATEST_DIR / "party_vote_type_summary.csv",
+        ["vote_type", "party", "votes", "share_percent"],
+        vote_type_summary,
     )
     write_csv(
         LATEST_DIR / "statla_snapshots.csv",
@@ -1994,6 +2370,7 @@ def main() -> None:
     conn = sqlite3.connect(DB_PATH)
     try:
         init_db(conn)
+        seed_db_from_latest_exports(conn, config)
         poll_id = create_poll(conn, polled_at_utc=polled_at_utc, polled_at_local=label_human)
 
         municipalities = build_municipality_master(config, config.request_timeout_seconds)
