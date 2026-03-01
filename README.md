@@ -1,4 +1,4 @@
-# Landtagswahl Baden-Wuerttemberg 2026 - Tracking Template
+# Landtagswahl Baden-Württemberg 2026 - Tracking Template
 
 ## Tracking Window
 
