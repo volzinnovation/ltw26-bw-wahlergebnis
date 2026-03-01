@@ -1,107 +1,251 @@
-# Analyse der veröffentlichten Wahlergebnisse zur Bundestagswahl 2025 in Baden-Württemberg
-* *Work in Progress* von Raphael Volz, Direktkandidat der FREIEN WÄHLER im Wahlkreis Rastatt/Baden-Baden (WK 273), Kontakt: raphael@volz-fw.de 
-* Daten werden ab 23.2.2025 18:00 auf https://wahlen.bw-btw25.23degrees.eu/wk/000000000/overview veröffentlicht
-
-[![Fetch BW data every minute](https://github.com/volzinnovation/btw25-bw-landesergebnis/actions/workflows/poll.yml/badge.svg)](https://github.com/volzinnovation/btw25-bw-landesergebnis/actions/workflows/poll.yml)
-
-## Aktueller Datenstand
-* [gemeinden.csv](data/latest-btw25-bw-gemeinden.csv)
-* [kreise.csv](data/latest-btw25-bw-kreise.csv)
-
-## Neueste Wahlergebnisse
-
-
-2025-02-23-22-29-05
-
-
-Aidlingen Altdorf Böblingen-_Stadt Bondorf Deckenpfronn Ehningen Gärtringen Gäufelden Herrenberg-_Stadt Hildrizhausen Holzgerlingen-_Stadt Leonberg-_Stadt Magstadt Mötzingen Nufringen Renningen-_Stadt Rutesheim-_Stadt Schönaich Sindelfingen-_Stadt Weil_der_Stadt-_Stadt Weil_im_Schönbuch Jettingen Grafenau Bretzfeld Dörzbach Forchtenberg-_Stadt Ingelfingen-_Stadt Krautheim-_Stadt Künzelsau-_Stadt Kupferzell Mulfingen Neuenstein-_Stadt Niedernhall-_Stadt Öhringen-_Stadt Pfedelbach Schöntal Waldenburg-_Stadt Weißbach Zweiflingen Blaufelden Braunsbach Bühlertann Bühlerzell Crailsheim-_Stadt Fichtenberg Gaildorf-_Stadt Gerabronn-_Stadt Ilshofen-_Stadt Kirchberg_an_der_Jagst-_Stadt Langenburg-_Stadt Mainhardt Michelbach_an_der_Bilz Michelfeld Oberrot Obersontheim Rot_am_See Satteldorf Schrozberg-_Stadt Schwäbisch_Hall-_Stadt Sulzbach-Laufen Untermünkheim Vellberg-_Stadt Wallhausen Wolpertshausen Rosengarten Kreßberg Fichtenau Frankenhardt Stimpfach Briefwahl_für_mehrere_Gemeinden Briefwahl_für_mehrere_Gemeinden Böblingen Schwäbisch_Hall-Hohenlohe
-
-
-2025-02-23-22-46-30
-
-
-Adelberg Aichelberg Albershausen Bad_Ditzenbach Bad_Überkingen Birenbach Böhmenkirch Börtlingen Bad_Boll Deggingen Donzdorf-_Stadt Drackenstein Dürnau Ebersbach_an_der_Fils-_Stadt Eislingen/Fils-_Stadt Eschenbach Gammelshausen Geislingen_an_der_Steige-_Stadt Gingen_an_der_Fils Göppingen-_Stadt Gruibingen Hattenhofen Heiningen Hohenstadt Kuchen Mühlhausen_im_Täle Ottenbach Rechberghausen Salach Schlat Schlierbach Süßen-_Stadt Uhingen-_Stadt Wäschenbeuren Wangen Wiesensteig-_Stadt Zell_unter_Aichelberg Lauterstein-_Stadt Göppingen
-
-
-2025-02-23-23-05-49
-
-
-Allmersbach_im_Tal Althütte Auenwald Backnang-_Stadt Burgstetten Großerlach Kirchberg_an_der_Murr Murrhardt-_Stadt Oppenweiler Spiegelberg Sulzbach_an_der_Murr Weissach_im_Tal Aspach Abtsgmünd Bartholomä Böbingen_an_der_Rems Durlangen Eschach Göggingen Gschwend Heubach-_Stadt Heuchlingen Iggingen Leinzell Lorch-_Stadt Mögglingen Mutlangen Obergröningen Ruppertshofen Schechingen Schwäbisch_Gmünd-_Stadt Spraitbach Täferrot Waldstetten Backnang-Schwäbisch_Gmünd
-
-
-2025-02-23-23-18-21
-
-
-Alfdorf Fellbach-_Stadt Kaisersbach Korb Leutenbach Plüderhausen Rudersberg Schorndorf-_Stadt Schwaikheim Urbach Waiblingen-_Stadt Welzheim-_Stadt Winnenden-_Stadt Winterbach Berglen Remshalden Weinstadt-_Stadt Kernen_im_Remstal Waiblingen
-
-
-2025-02-23-23-29-48
-
-
-Weissach Asperg-_Stadt Ditzingen-_Stadt Eberdingen Gerlingen-_Stadt Hemmingen Kornwestheim-_Stadt Ludwigsburg-_Stadt Markgröningen-_Stadt Möglingen Oberriexingen-_Stadt Schwieberdingen Sersheim Vaihingen_an_der_Enz-_Stadt Korntal-Münchingen-_Stadt Remseck_am_Neckar-_Stadt Dischingen Gerstetten Giengen_an_der_Brenz-_Stadt Heidenheim_an_der_Brenz-_Stadt Herbrechtingen-_Stadt Hermaringen Königsbronn Nattheim Niederstotzingen-_Stadt Sontheim_an_der_Brenz Steinheim_am_Albuch Adelmannsfelden Bopfingen-_Stadt Ellenberg Ellwangen_(Jagst)-_Stadt Essingen Hüttlingen Jagstzell Kirchheim_am_Ries Lauchheim-_Stadt Neresheim-_Stadt Neuler Oberkochen-_Stadt Rosenberg Stödtlen Tannhausen Unterschneidheim Westhausen Wört Riesbürg Aalen-_Stadt Rainau Ludwigsburg Neckar-Zaber Aalen-Heidenheim
-
-
-2025-02-23-23-39-05
-
-
-Affalterbach Benningen_am_Neckar Besigheim-_Stadt Bönnigheim-_Stadt Erdmannhausen Erligheim Freudental Gemmrigheim Großbottwar-_Stadt Hessigheim Kirchheim_am_Neckar Löchgau Marbach_am_Neckar-_Stadt Mundelsheim Murr Oberstenfeld Pleidelsheim Steinheim_an_der_Murr-_Stadt Tamm-_Stadt Walheim Sachsenheim-_Stadt Ingersheim Freiberg_am_Neckar-_Stadt Bietigheim-Bissingen-_Stadt Heilbronn-_Stadt Abstatt Bad_Friedrichshall-_Stadt Bad_Rappenau-_Stadt Bad_Wimpfen-_Stadt Beilstein-_Stadt Brackenheim-_Stadt Cleebronn Eberstadt Ellhofen Eppingen-_Stadt Erlenbach Flein Gemmingen Güglingen-_Stadt Gundelsheim-_Stadt Ilsfeld Ittlingen Jagsthausen Kirchardt Lauffen_am_Neckar-_Stadt Lehrensteinsfeld Leingarten-_Stadt Löwenstein-_Stadt Massenbachhausen Möckmühl-_Stadt Neckarsulm-_Stadt Neckarwestheim Neudenau-_Stadt Neuenstadt_am_Kocher-_Stadt Nordheim Oedheim Offenau Pfaffenhofen Roigheim Schwaigern-_Stadt Siegelsbach Talheim Untereisesheim Untergruppenbach Weinsberg-_Stadt Widdern-_Stadt Wüstenrot Zaberfeld Obersulm Hardthausen_am_Kocher Langenbrettach Heilbronn
-
-
-2025-02-23-23-47-50
-
-
-Auggen Bad_Krozingen-_Stadt Badenweiler Ballrechten-Dottingen Buggingen Eschbach Hartheim_am_Rhein Heitersheim-_Stadt Müllheim-_Stadt Neuenburg_am_Rhein-_Stadt Staufen_im_Breisgau-_Stadt Sulzburg-_Stadt Münstertal/Schwarzwald Aitern Bad_Bellingen Binzen Böllen Efringen-Kirchen Eimeldingen Fischingen Fröhnd Hasel Hausen_im_Wiesental Inzlingen Kandern-_Stadt Lörrach-_Stadt Maulburg Rheinfelden_(Baden)-_Stadt Rümmingen Schallbach Schliengen Schönau_im_Schwarzwald-_Stadt Schönenberg Schopfheim-_Stadt Schwörstadt Steinen Todtnau-_Stadt Tunau Utzenfeld Weil_am_Rhein-_Stadt Wembach Wieden Wittlingen Zell_im_Wiesental-_Stadt Malsburg-Marzell Grenzach-Wyhlen Häg-Ehrsberg Kleines_Wiesental Briefwahl_für_mehrere_Gemeinden Bermatingen Daisendorf Eriskirch Frickingen Friedrichshafen-_Stadt Hagnau_am_Bodensee Heiligenberg Immenstaad_am_Bodensee Kressbronn_am_Bodensee Langenargen Markdorf-_Stadt Meckenbeuren Meersburg-_Stadt Neukirch Oberteuringen Owingen Salem Sipplingen Stetten Tettnang-_Stadt Überlingen-_Stadt Uhldingen-Mühlhofen Deggenhausertal Illmensee Pfullendorf-_Stadt Wald Herdwangen-Schönach Lörrach-Müllheim Bodensee
-
-
-2025-02-23-23-56-32
-
-
-Assamstadt Bad_Mergentheim-_Stadt Boxberg-_Stadt Creglingen-_Stadt Freudenberg-_Stadt Großrinderfeld Grünsfeld-_Stadt Igersheim Königheim Külsheim-_Stadt Niederstetten-_Stadt Tauberbischofsheim-_Stadt Weikersheim-_Stadt Werbach Wertheim-_Stadt Wittighausen Ahorn Lauda-Königshofen-_Stadt Heidelberg-_Stadt Adelsheim-_Stadt Aglasterhausen Billigheim Binau Buchen_(Odenwald)-_Stadt Fahrenbach Hardheim Haßmersheim Höpfingen Hüffenhardt Limbach Mosbach-_Stadt Mudau Neckargerach Neckarzimmern Neunkirchen Obrigheim Osterburken-_Stadt Rosenberg Seckach Walldürn-_Stadt Zwingenberg Ravenstein-_Stadt Schefflenz Schwarzach Elztal Waldbrunn Dossenheim Eppelheim-_Stadt Heddesheim Hemsbach-_Stadt Ilvesheim Ladenburg-_Stadt Laudenbach Schriesheim-_Stadt Weinheim-_Stadt Edingen-Neckarhausen Hirschberg_an_der_Bergstraße Heidelberg Odenwald-Tauber
-
-
-2025-02-24-00-07-20
-
-
-Stuttgart-_Landeshauptstadt Ulm-_Universitätsstadt Allmendingen Altheim Altheim_(Alb) Amstetten Asselfingen Ballendorf Beimerstetten Berghülen Bernstadt Blaubeuren-_Stadt Börslingen Breitingen Dietenheim-_Stadt Dornstadt Ehingen_(Donau)-_Stadt Emeringen Emerkingen Erbach-_Stadt Griesingen Grundsheim Hausen_am_Bussen Holzkirch Hüttisheim Illerrieden Laichingen-_Stadt Langenau-_Stadt Lauterach Lonsee Merklingen Munderkingen-_Stadt Neenstetten Nellingen Nerenstetten Oberdischingen Obermarchtal Oberstadion Öllingen Öpfingen Rammingen Rechtenstein Rottenacker Schelklingen-_Stadt Schnürpflingen Setzingen Untermarchtal Unterstadion Unterwachingen Weidenstetten Westerheim Westerstetten Illerkirchberg Staig Heroldstatt Balzheim Blaustein-_Stadt Briefwahl_für_mehrere_Gemeinden Achstetten Alleshausen Allmannsweiler Altheim Attenweiler Bad_Buchau-_Stadt Bad_Schussenried-_Stadt Berkheim Betzenweiler Biberach_an_der_Riß-_Stadt Burgrieden Dettingen_an_der_Iller Dürmentingen Dürnau Eberhardzell Erlenmoos Erolzheim Ertingen Hochdorf Ingoldingen Kanzach Kirchberg_an_der_Iller Kirchdorf_an_der_Iller Langenenslingen Laupheim-_Stadt Maselheim Mietingen Mittelbiberach Moosburg Ochsenhausen-_Stadt Oggelshausen Riedlingen-_Stadt Rot_an_der_Rot Schwendi Seekirch Steinhausen_an_der_Rottum Tannheim Tiefenbach Ummendorf Unlingen Uttenweiler Wain Warthausen Schemmerhofen Gutenzell-Hürbel Aichstetten Aitrach Bad_Wurzach-_Stadt Kißlegg Stuttgart_I Stuttgart_II Ulm Biberach
-
-
-2025-02-24-00-19-59
-
-
-Bammental Dielheim Eberbach-_Stadt Epfenbach Eschelbronn Gaiberg Heddesbach Heiligkreuzsteinach Leimen-_Stadt Malsch Mauer Meckesheim Mühlhausen Neckarbischofsheim-_Stadt Neckargemünd-_Stadt Neidenstein Nußloch Rauenberg-_Stadt Reichartshausen Sandhausen Schönau-_Stadt Schönbrunn Sinsheim-_Stadt Spechbach Waibstadt-_Stadt Walldorf-_Stadt Wiesenbach Wiesloch-_Stadt Wilhelmsfeld Zuzenhausen Angelbachtal St._Leon-Rot Lobbach Helmstadt-Bargen Pforzheim-_Stadt Birkenfeld Eisingen Engelsbrand Friolzheim Heimsheim-_Stadt Illingen Ispringen Kieselbronn Knittlingen-_Stadt Maulbronn-_Stadt Mönsheim Mühlacker-_Stadt Neuenbürg-_Stadt Neuhausen Niefern-Öschelbronn Ötisheim Sternenfels Tiefenbronn Wiernsheim Wimsheim Wurmberg Keltern Remchingen Straubenhardt Neulingen Kämpfelbach Ölbronn-Dürrn Königsbach-Stein Achern-_Stadt Appenweier Bad_Peterstal-Griesbach Berghaupten Biberach Durbach Gengenbach-_Stadt Hohberg Kappelrodeck Kehl-_Stadt Lautenbach Lauf Nordrach Oberharmersbach Oberkirch-_Stadt Offenburg-_Stadt Ohlsbach Oppenau-_Stadt Ortenberg Ottenhöfen_im_Schwarzwald Renchen-_Stadt Sasbach Sasbachwalden Schutterwald Seebach Willstätt Zell_am_Harmersbach-_Stadt Neuried Rheinau-_Stadt Aach-_Stadt Allensbach Büsingen_am_Hochrhein Eigeltingen Engen-_Stadt Gaienhofen Gailingen_am_Hochrhein Gottmadingen Hilzingen Konstanz-_Universitätsstadt Moos Mühlingen Öhningen Radolfzell_am_Bodensee-_Stadt Reichenau Singen_(Hohentwiel)-_Stadt Steißlingen Stockach-_Stadt Tengen-_Stadt Volkertshausen Hohenfels Mühlhausen-Ehingen Bodman-Ludwigshafen Orsingen-Nenzingen Rielasingen-Worblingen Rhein-Neckar Pforzheim Offenburg Konstanz Ravensburg
-
-
-2025-02-24-00-28-49
-
-
-Breitnau Buchenbach Eisenbach_(Hochschwarzwald) Feldberg_(Schwarzwald) Friedenweiler Glottertal Gundelfingen Heuweiler Hinterzarten Kirchzarten Lenzkirch Löffingen-_Stadt Oberried St._Märgen St._Peter Schluchsee Stegen Titisee-Neustadt-_Stadt Aichhalden Bösingen Dietingen Dornhan-_Stadt Dunningen Epfendorf Hardt Lauterbach Oberndorf_am_Neckar-_Stadt Rottweil-_Stadt Schenkenzell Schiltach-_Stadt Schramberg-_Stadt Sulz_am_Neckar-_Stadt Villingendorf Vöhringen Wellendingen Zimmern_ob_Rottweil Fluorn-Winzeln Eschbronn Deißlingen Aldingen Bärenthal Balgheim Böttingen Bubsheim Buchheim Deilingen Denkingen Dürbheim Durchhausen Egesheim Fridingen_an_der_Donau-_Stadt Frittlingen Geisingen-_Stadt Gosheim Gunningen Hausen_ob_Verena Immendingen Irndorf Königsheim Kolbingen Mahlstetten Mühlheim_an_der_Donau-_Stadt Neuhausen_ob_Eck Reichenbach_am_Heuberg Renquishausen Spaichingen-_Stadt Talheim Trossingen-_Stadt Tuttlingen-_Stadt Wehingen Wurmlingen Seitingen-Oberflacht Rietheim-Weilheim Emmingen-Liptingen Albbruck Bernau_im_Schwarzwald Bonndorf_im_Schwarzwald-_Stadt Dachsberg_(Südschwarzwald) Dettighofen Dogern Görwihl Grafenhausen Häusern Herrischried Höchenschwand Hohentengen_am_Hochrhein Ibach Jestetten Klettgau Lauchringen Laufenburg_(Baden)-_Stadt Lottstetten Murg Rickenbach Bad_Säckingen-_Stadt St._Blasien-_Stadt Stühlingen-_Stadt Todtmoos Wehr-_Stadt Weilheim Wutöschingen Eggingen Küssaberg Waldshut-Tiengen-_Stadt Wutach Ühlingen-Birkendorf Balingen-_Stadt Bitz Dautmergen Dormettingen Dotternhausen Geislingen-_Stadt Haigerloch-_Stadt Hausen_am_Tann Meßstetten-_Stadt Nusplingen Obernheim Ratshausen Rosenfeld-_Stadt Schömberg-_Stadt Straßberg Weilen_unter_den_Rinnen Winterlingen Zimmern_unter_der_Burg Albstadt-_Stadt Achberg Altshausen Amtzell Aulendorf-_Stadt Bad_Waldsee-_Stadt Baienfurt Baindt Berg Bergatreute Bodnegg Boms Ebenweiler Eichstegen Fleischwangen Grünkraut Guggenhausen Hoßkirch Isny_im_Allgäu-_Stadt Königseggwald Leutkirch_im_Allgäu-_Stadt Ravensburg-_Stadt Riedhausen Schlier Unterwaldhausen Vogt Waldburg Wangen_im_Allgäu-_Stadt Weingarten-_Stadt Wilhelmsdorf Wolfegg Wolpertswende Ebersbach-Musbach Argenbühl Horgenzell Fronreute Briefwahl_für_mehrere_Gemeinden Beuron Bingen Gammertingen-_Stadt Herbertingen Hettingen-_Stadt Hohentengen Inzigkofen Krauchenwies Leibertingen Mengen-_Stadt Meßkirch-_Stadt Neufra Ostrach Bad_Saulgau-_Stadt Scheer-_Stadt Schwenningen Sigmaringen-_Stadt Sigmaringendorf Stetten_am_kalten_Markt Veringenstadt-_Stadt Sauldorf Rottweil-Tuttlingen Waldshut Zollernalb-Sigmaringen
-
-
-2025-02-24-00-37-55
-
-
-Steinenbronn Waldenbuch-_Stadt Altbach Altdorf Altenriet Baltmannsweiler Bempflingen Beuren Bissingen_an_der_Teck Deizisau Denkendorf Dettingen_unter_Teck Erkenbrechtsweiler Esslingen_am_Neckar-_Stadt Frickenhausen Großbettlingen Hochdorf Holzmaden Kirchheim_unter_Teck-_Stadt Köngen Kohlberg Lichtenwald Neckartailfingen Neckartenzlingen Neidlingen Neuffen-_Stadt Neuhausen_auf_den_Fildern Notzingen Nürtingen-_Stadt Oberboihingen Ohmden Owen-_Stadt Plochingen-_Stadt Reichenbach_an_der_Fils Schlaitdorf Unterensingen Weilheim_an_der_Teck-_Stadt Wendlingen_am_Neckar-_Stadt Wernau_(Neckar)-_Stadt Wolfschlugen Aichwald Filderstadt-_Stadt Leinfelden-Echterdingen-_Stadt Lenningen Ostfildern-_Stadt Aichtal-_Stadt Bruchsal-_Stadt Forst Hambrücken Kronau Östringen-_Stadt Philippsburg-_Stadt Ubstadt-Weiher Bad_Schönborn Karlsdorf-Neuthard Waghäusel-_Stadt Oberhausen-Rheinhausen Altlußheim Brühl Hockenheim-_Stadt Ketsch Neulußheim Oftersheim Plankstadt Reilingen Schwetzingen-_Stadt Esslingen Nürtingen Bruchsal-Schwetzingen
-
-
-2025-02-24-00-46-34
-
-
-Baden-Baden-_Stadt Gemeinde_Au_am_Rhein Gemeinde_Bietigheim Gemeinde_Bischweier Stadt_Bühl Gemeinde_Bühlertal Gemeinde_Durmersheim Gemeinde_Elchesheim-Illingen Gemeinde_Forbach Stadt_Gaggenau Stadt_Gernsbach Gemeinde_Hügelsheim Gemeinde_Iffezheim Stadt_Kuppenheim Stadt_Lichtenau Gemeinde_Loffenau Gemeinde_Muggensturm Gemeinde_Ötigheim Gemeinde_Ottersweier Stadt_Rastatt Gemeinde_Sinzheim Gemeinde_Steinmauern Gemeinde_Weisenbach Gemeinde_Rheinmünster Freiburg_im_Breisgau Au Bötzingen Bollschweil Breisach_am_Rhein-_Stadt Ebringen Eichstetten_am_Kaiserstuhl Gottenheim Horben Ihringen Merdingen Merzhausen Pfaffenweiler Schallstadt Sölden Umkirch Wittnau Ehrenkirchen March Vogtsburg_im_Kaiserstuhl-_Stadt Bodelshausen Dettenhausen Dußlingen Gomaringen Hirrlingen Kirchentellinsfurt Kusterdingen Mössingen-_Stadt Nehren Ofterdingen Rottenburg_am_Neckar-_Stadt Tübingen-_Universitätsstadt Ammerbuch Neustetten Starzach Bisingen Burladingen-_Stadt Grosselfingen Hechingen-_Stadt Jungingen Rangendingen Rastatt Freiburg Tübingen
-
-
-2025-02-24-00-55-00
-
-
-Karlsruhe-_Stadt Bretten-_Stadt Ettlingen-_Stadt Gondelsheim Kürnbach Malsch Marxzell Oberderdingen-_Stadt Sulzfeld Walzbachtal Weingarten_(Baden) Zaisenhausen Karlsbad Kraichtal-_Stadt Graben-Neudorf Pfinztal Eggenstein-Leopoldshafen Linkenheim-Hochstetten Rheinstetten-_Stadt Stutensee-_Stadt Waldbronn Dettenheim Altensteig-_Stadt Althengstett Bad_Liebenzell-_Stadt Dobel Ebhausen Egenhausen Enzklösterle Gechingen Haiterbach-_Stadt Bad_Herrenalb-_Stadt Höfen_an_der_Enz Nagold-_Stadt Neubulach-_Stadt Neuweiler Oberreichenbach Ostelsheim Rohrdorf Schömberg Simmersfeld Simmozheim Unterreichenbach Bad_Wildbad-_Stadt Wildberg-_Stadt Bad_Teinach-Zavelstein-_Stadt Calw-_Stadt Alpirsbach-_Stadt Baiersbronn Dornstetten-_Stadt Empfingen Eutingen_im_Gäu Freudenstadt-_Stadt Glatten Grömbach Horb_am_Neckar-_Stadt Loßburg Pfalzgrafenweiler Schopfloch Wörnersberg Seewald Waldachtal Bad_Rippoldsau-Schapbach Bahlingen_am_Kaiserstuhl Biederbach Denzlingen Elzach-_Stadt Emmendingen-_Stadt Endingen_am_Kaiserstuhl-_Stadt Forchheim Gutach_im_Breisgau Herbolzheim-_Stadt Kenzingen-_Stadt Malterdingen Reute Riegel_am_Kaiserstuhl Sasbach_am_Kaiserstuhl Sexau Simonswald Teningen Vörstetten Weisweil Wyhl_am_Kaiserstuhl Rheinhausen Freiamt Winden_im_Elztal Waldkirch-_Stadt Ettenheim-_Stadt Fischerbach Friesenheim Gutach_(Schwarzwaldbahn) Haslach_im_Kinzigtal-_Stadt Hausach-_Stadt Hofstetten Hornberg-_Stadt Kippenheim Lahr/Schwarzwald-_Stadt Mahlberg-_Stadt Meißenheim Mühlenbach Oberwolfach Ringsheim Rust Schuttertal Seelbach Steinach Wolfach-_Stadt Schwanau Kappel-Grafenhausen Bad_Dürrheim-_Stadt Blumberg-_Stadt Bräunlingen-_Stadt Dauchingen Donaueschingen-_Stadt Furtwangen_im_Schwarzwald-_Stadt Gütenbach Hüfingen-_Stadt Königsfeld_im_Schwarzwald Mönchweiler Niedereschach St._Georgen_im_Schwarzwald-_Stadt Schönwald_im_Schwarzwald Schonach_im_Schwarzwald Triberg_im_Schwarzwald-_Stadt Tuningen Unterkirnach Vöhrenbach-_Stadt Villingen-Schwenningen-_Stadt Brigachtal Dettingen_an_der_Erms Eningen_unter_Achalm Gomadingen Grabenstetten Grafenberg Hayingen-_Stadt Hülben Mehrstetten Metzingen-_Stadt Münsingen-_Stadt Pfronstetten Pfullingen-_Stadt Pliezhausen Reutlingen-_Stadt Riederich Trochtelfingen-_Stadt Bad_Urach-_Stadt Wannweil Zwiefalten Walddorfhäslach Römerstein Engstingen Hohenstein Sonnenbühl Lichtenstein St._Johann Karlsruhe-Stadt Karlsruhe-Land Calw Emmendingen-Lahr Schwarzwald-Baar Reutlingen
-
-
-2025-02-24-01-42-40
-
-
-Mannheim-_Universitätsstadt Baden-Württemberg Mannheim Baden-Württemberg
-
-
-2025-03-13-12-59-36
-
-
-Stuttgart-_Landeshauptstadt Aidlingen Altdorf Böblingen-_Stadt Bondorf Deckenpfronn Ehningen Gärtringen Gäufelden Herrenberg-_Stadt Hildrizhausen Holzgerlingen-_Stadt Leonberg-_Stadt Magstadt Mötzingen Nufringen Renningen-_Stadt Rutesheim-_Stadt Schönaich Sindelfingen-_Stadt Steinenbronn Waldenbuch-_Stadt Weil_der_Stadt-_Stadt Weil_im_Schönbuch Weissach Jettingen Grafenau Altbach Altdorf Altenriet Baltmannsweiler Bempflingen Beuren Bissingen_an_der_Teck Deizisau Denkendorf Dettingen_unter_Teck Erkenbrechtsweiler Esslingen_am_Neckar-_Stadt Frickenhausen Großbettlingen Hochdorf Holzmaden Kirchheim_unter_Teck-_Stadt Köngen Kohlberg Lichtenwald Neckartailfingen Neckartenzlingen Neidlingen Neuffen-_Stadt Neuhausen_auf_den_Fildern Notzingen Nürtingen-_Stadt Oberboihingen Ohmden Owen-_Stadt Plochingen-_Stadt Reichenbach_an_der_Fils Schlaitdorf Unterensingen Weilheim_an_der_Teck-_Stadt Wendlingen_am_Neckar-_Stadt Wernau_(Neckar)-_Stadt Wolfschlugen Aichwald Filderstadt-_Stadt Leinfelden-Echterdingen-_Stadt Lenningen Ostfildern-_Stadt Aichtal-_Stadt Adelberg Aichelberg Albershausen Bad_Ditzenbach Bad_Überkingen Birenbach Böhmenkirch Börtlingen Bad_Boll Deggingen Donzdorf-_Stadt Drackenstein Dürnau Ebersbach_an_der_Fils-_Stadt Eislingen/Fils-_Stadt Eschenbach Gammelshausen Geislingen_an_der_Steige-_Stadt Gingen_an_der_Fils Göppingen-_Stadt Gruibingen Hattenhofen Heiningen Hohenstadt Kuchen Mühlhausen_im_Täle Ottenbach Rechberghausen Salach Schlat Schlierbach Süßen-_Stadt Uhingen-_Stadt Wäschenbeuren Wangen Wiesensteig-_Stadt Zell_unter_Aichelberg Lauterstein-_Stadt Affalterbach Asperg-_Stadt Benningen_am_Neckar Besigheim-_Stadt Bönnigheim-_Stadt Ditzingen-_Stadt Eberdingen Erdmannhausen Erligheim Freudental Gemmrigheim Gerlingen-_Stadt Großbottwar-_Stadt Hemmingen Hessigheim Kirchheim_am_Neckar Kornwestheim-_Stadt Löchgau Ludwigsburg-_Stadt Marbach_am_Neckar-_Stadt Markgröningen-_Stadt Möglingen Mundelsheim Murr Oberriexingen-_Stadt Oberstenfeld Pleidelsheim Schwieberdingen Sersheim Steinheim_an_der_Murr-_Stadt Tamm-_Stadt Vaihingen_an_der_Enz-_Stadt Walheim Sachsenheim-_Stadt Ingersheim Freiberg_am_Neckar-_Stadt Bietigheim-Bissingen-_Stadt Korntal-Münchingen-_Stadt Remseck_am_Neckar-_Stadt Alfdorf Allmersbach_im_Tal Althütte Auenwald Backnang-_Stadt Burgstetten Fellbach-_Stadt Großerlach Kaisersbach Kirchberg_an_der_Murr Korb Leutenbach Murrhardt-_Stadt Oppenweiler Plüderhausen Rudersberg Schorndorf-_Stadt Schwaikheim Spiegelberg Sulzbach_an_der_Murr Urbach Waiblingen-_Stadt Weissach_im_Tal Welzheim-_Stadt Winnenden-_Stadt Winterbach Aspach Berglen Remshalden Weinstadt-_Stadt Kernen_im_Remstal Heilbronn-_Stadt Abstatt Bad_Friedrichshall-_Stadt Bad_Rappenau-_Stadt Bad_Wimpfen-_Stadt Beilstein-_Stadt Brackenheim-_Stadt Cleebronn Eberstadt Ellhofen Eppingen-_Stadt Erlenbach Flein Gemmingen Güglingen-_Stadt Gundelsheim-_Stadt Ilsfeld Ittlingen Jagsthausen Kirchardt Lauffen_am_Neckar-_Stadt Lehrensteinsfeld Leingarten-_Stadt Löwenstein-_Stadt Massenbachhausen Möckmühl-_Stadt Neckarsulm-_Stadt Neckarwestheim Neudenau-_Stadt Neuenstadt_am_Kocher-_Stadt Nordheim Oedheim Offenau Pfaffenhofen Roigheim Schwaigern-_Stadt Siegelsbach Talheim Untereisesheim Untergruppenbach Weinsberg-_Stadt Widdern-_Stadt Wüstenrot Zaberfeld Obersulm Hardthausen_am_Kocher Langenbrettach Bretzfeld Dörzbach Forchtenberg-_Stadt Ingelfingen-_Stadt Krautheim-_Stadt Künzelsau-_Stadt Kupferzell Mulfingen Neuenstein-_Stadt Niedernhall-_Stadt Öhringen-_Stadt Pfedelbach Schöntal Waldenburg-_Stadt Weißbach Zweiflingen Blaufelden Braunsbach Bühlertann Bühlerzell Crailsheim-_Stadt Fichtenberg Gaildorf-_Stadt Gerabronn-_Stadt Ilshofen-_Stadt Kirchberg_an_der_Jagst-_Stadt Langenburg-_Stadt Mainhardt Michelbach_an_der_Bilz Michelfeld Oberrot Obersontheim Rot_am_See Satteldorf Schrozberg-_Stadt Schwäbisch_Hall-_Stadt Sulzbach-Laufen Untermünkheim Vellberg-_Stadt Wallhausen Wolpertshausen Rosengarten Kreßberg Fichtenau Frankenhardt Stimpfach Assamstadt Bad_Mergentheim-_Stadt Boxberg-_Stadt Creglingen-_Stadt Freudenberg-_Stadt Großrinderfeld Grünsfeld-_Stadt Igersheim Königheim Külsheim-_Stadt Niederstetten-_Stadt Tauberbischofsheim-_Stadt Weikersheim-_Stadt Werbach Wertheim-_Stadt Wittighausen Ahorn Lauda-Königshofen-_Stadt Dischingen Gerstetten Giengen_an_der_Brenz-_Stadt Heidenheim_an_der_Brenz-_Stadt Herbrechtingen-_Stadt Hermaringen Königsbronn Nattheim Niederstotzingen-_Stadt Sontheim_an_der_Brenz Steinheim_am_Albuch Abtsgmünd Adelmannsfelden Bartholomä Böbingen_an_der_Rems Bopfingen-_Stadt Durlangen Ellenberg Ellwangen_(Jagst)-_Stadt Eschach Essingen Göggingen Gschwend Heubach-_Stadt Heuchlingen Hüttlingen Iggingen Jagstzell Kirchheim_am_Ries Lauchheim-_Stadt Leinzell Lorch-_Stadt Mögglingen Mutlangen Neresheim-_Stadt Neuler Obergröningen Oberkochen-_Stadt Rosenberg Ruppertshofen Schechingen Schwäbisch_Gmünd-_Stadt Spraitbach Stödtlen Täferrot Tannhausen Unterschneidheim Waldstetten Westhausen Wört Riesbürg Aalen-_Stadt Rainau Baden-Baden-_Stadt Karlsruhe-_Stadt Bretten-_Stadt Bruchsal-_Stadt Ettlingen-_Stadt Forst Gondelsheim Hambrücken Kronau Kürnbach Malsch Marxzell Oberderdingen-_Stadt Östringen-_Stadt Philippsburg-_Stadt Sulzfeld Ubstadt-Weiher Walzbachtal Weingarten_(Baden) Zaisenhausen Karlsbad Kraichtal-_Stadt Graben-Neudorf Bad_Schönborn Pfinztal Eggenstein-Leopoldshafen Karlsdorf-Neuthard Linkenheim-Hochstetten Waghäusel-_Stadt Oberhausen-Rheinhausen Rheinstetten-_Stadt Stutensee-_Stadt Waldbronn Dettenheim Gemeinde_Au_am_Rhein Gemeinde_Bietigheim Gemeinde_Bischweier Stadt_Bühl Gemeinde_Bühlertal Gemeinde_Durmersheim Gemeinde_Elchesheim-Illingen Gemeinde_Forbach Stadt_Gaggenau Stadt_Gernsbach Gemeinde_Hügelsheim Gemeinde_Iffezheim Stadt_Kuppenheim Stadt_Lichtenau Gemeinde_Loffenau Gemeinde_Muggensturm Gemeinde_Ötigheim Gemeinde_Ottersweier Stadt_Rastatt Gemeinde_Sinzheim Gemeinde_Steinmauern Gemeinde_Weisenbach Gemeinde_Rheinmünster Heidelberg-_Stadt Mannheim-_Universitätsstadt Adelsheim-_Stadt Aglasterhausen Billigheim Binau Buchen_(Odenwald)-_Stadt Fahrenbach Hardheim Haßmersheim Höpfingen Hüffenhardt Limbach Mosbach-_Stadt Mudau Neckargerach Neckarzimmern Neunkirchen Obrigheim Osterburken-_Stadt Rosenberg Seckach Walldürn-_Stadt Zwingenberg Ravenstein-_Stadt Schefflenz Schwarzach Elztal Waldbrunn Altlußheim Bammental Brühl Dielheim Dossenheim Eberbach-_Stadt Epfenbach Eppelheim-_Stadt Eschelbronn Gaiberg Heddesbach Heddesheim Heiligkreuzsteinach Hemsbach-_Stadt Hockenheim-_Stadt Ilvesheim Ketsch Ladenburg-_Stadt Laudenbach Leimen-_Stadt Malsch Mauer Meckesheim Mühlhausen Neckarbischofsheim-_Stadt Neckargemünd-_Stadt Neidenstein Neulußheim Nußloch Oftersheim Plankstadt Rauenberg-_Stadt Reichartshausen Reilingen Sandhausen Schönau-_Stadt Schönbrunn Schriesheim-_Stadt Schwetzingen-_Stadt Sinsheim-_Stadt Spechbach Waibstadt-_Stadt Walldorf-_Stadt Weinheim-_Stadt Wiesenbach Wiesloch-_Stadt Wilhelmsfeld Zuzenhausen Angelbachtal St._Leon-Rot Lobbach Edingen-Neckarhausen Helmstadt-Bargen Hirschberg_an_der_Bergstraße Pforzheim-_Stadt Altensteig-_Stadt Althengstett Bad_Liebenzell-_Stadt Dobel Ebhausen Egenhausen Enzklösterle Gechingen Haiterbach-_Stadt Bad_Herrenalb-_Stadt Höfen_an_der_Enz Nagold-_Stadt Neubulach-_Stadt Neuweiler Oberreichenbach Ostelsheim Rohrdorf Schömberg Simmersfeld Simmozheim Unterreichenbach Bad_Wildbad-_Stadt Wildberg-_Stadt Bad_Teinach-Zavelstein-_Stadt Calw-_Stadt Birkenfeld Eisingen Engelsbrand Friolzheim Heimsheim-_Stadt Illingen Ispringen Kieselbronn Knittlingen-_Stadt Maulbronn-_Stadt Mönsheim Mühlacker-_Stadt Neuenbürg-_Stadt Neuhausen Niefern-Öschelbronn Ötisheim Sternenfels Tiefenbronn Wiernsheim Wimsheim Wurmberg Keltern Remchingen Straubenhardt Neulingen Kämpfelbach Ölbronn-Dürrn Königsbach-Stein Alpirsbach-_Stadt Baiersbronn Dornstetten-_Stadt Empfingen Eutingen_im_Gäu Freudenstadt-_Stadt Glatten Grömbach Horb_am_Neckar-_Stadt Loßburg Pfalzgrafenweiler Schopfloch Wörnersberg Seewald Waldachtal Bad_Rippoldsau-Schapbach Freiburg_im_Breisgau Au Auggen Bad_Krozingen-_Stadt Badenweiler Ballrechten-Dottingen Bötzingen Bollschweil Breisach_am_Rhein-_Stadt Breitnau Buchenbach Buggingen Ebringen Eichstetten_am_Kaiserstuhl Eisenbach_(Hochschwarzwald) Eschbach Feldberg_(Schwarzwald) Friedenweiler Glottertal Gottenheim Gundelfingen Hartheim_am_Rhein Heitersheim-_Stadt Heuweiler Hinterzarten Horben Ihringen Kirchzarten Lenzkirch Löffingen-_Stadt Merdingen Merzhausen Müllheim-_Stadt Neuenburg_am_Rhein-_Stadt Oberried Pfaffenweiler St._Märgen St._Peter Schallstadt Schluchsee Sölden Staufen_im_Breisgau-_Stadt Stegen Sulzburg-_Stadt Titisee-Neustadt-_Stadt Umkirch Wittnau Münstertal/Schwarzwald Ehrenkirchen March Vogtsburg_im_Kaiserstuhl-_Stadt Bahlingen_am_Kaiserstuhl Biederbach Denzlingen Elzach-_Stadt Emmendingen-_Stadt Endingen_am_Kaiserstuhl-_Stadt Forchheim Gutach_im_Breisgau Herbolzheim-_Stadt Kenzingen-_Stadt Malterdingen Reute Riegel_am_Kaiserstuhl Sasbach_am_Kaiserstuhl Sexau Simonswald Teningen Vörstetten Weisweil Wyhl_am_Kaiserstuhl Rheinhausen Freiamt Winden_im_Elztal Waldkirch-_Stadt Achern-_Stadt Appenweier Bad_Peterstal-Griesbach Berghaupten Biberach Durbach Ettenheim-_Stadt Fischerbach Friesenheim Gengenbach-_Stadt Gutach_(Schwarzwaldbahn) Haslach_im_Kinzigtal-_Stadt Hausach-_Stadt Hofstetten Hohberg Hornberg-_Stadt Kappelrodeck Kehl-_Stadt Kippenheim Lahr/Schwarzwald-_Stadt Lautenbach Lauf Mahlberg-_Stadt Meißenheim Mühlenbach Nordrach Oberharmersbach Oberkirch-_Stadt Oberwolfach Offenburg-_Stadt Ohlsbach Oppenau-_Stadt Ortenberg Ottenhöfen_im_Schwarzwald Renchen-_Stadt Ringsheim Rust Sasbach Sasbachwalden Schuttertal Schutterwald Seebach Seelbach Steinach Willstätt Wolfach-_Stadt Zell_am_Harmersbach-_Stadt Schwanau Neuried Kappel-Grafenhausen Rheinau-_Stadt Aichhalden Bösingen Dietingen Dornhan-_Stadt Dunningen Epfendorf Hardt Lauterbach Oberndorf_am_Neckar-_Stadt Rottweil-_Stadt Schenkenzell Schiltach-_Stadt Schramberg-_Stadt Sulz_am_Neckar-_Stadt Villingendorf Vöhringen Wellendingen Zimmern_ob_Rottweil Fluorn-Winzeln Eschbronn Deißlingen Bad_Dürrheim-_Stadt Blumberg-_Stadt Bräunlingen-_Stadt Dauchingen Donaueschingen-_Stadt Furtwangen_im_Schwarzwald-_Stadt Gütenbach Hüfingen-_Stadt Königsfeld_im_Schwarzwald Mönchweiler Niedereschach St._Georgen_im_Schwarzwald-_Stadt Schönwald_im_Schwarzwald Schonach_im_Schwarzwald Triberg_im_Schwarzwald-_Stadt Tuningen Unterkirnach Vöhrenbach-_Stadt Villingen-Schwenningen-_Stadt Brigachtal Aldingen Bärenthal Balgheim Böttingen Bubsheim Buchheim Deilingen Denkingen Dürbheim Durchhausen Egesheim Fridingen_an_der_Donau-_Stadt Frittlingen Geisingen-_Stadt Gosheim Gunningen Hausen_ob_Verena Immendingen Irndorf Königsheim Kolbingen Mahlstetten Mühlheim_an_der_Donau-_Stadt Neuhausen_ob_Eck Reichenbach_am_Heuberg Renquishausen Spaichingen-_Stadt Talheim Trossingen-_Stadt Tuttlingen-_Stadt Wehingen Wurmlingen Seitingen-Oberflacht Rietheim-Weilheim Emmingen-Liptingen Aach-_Stadt Allensbach Büsingen_am_Hochrhein Eigeltingen Engen-_Stadt Gaienhofen Gailingen_am_Hochrhein Gottmadingen Hilzingen Konstanz-_Universitätsstadt Moos Mühlingen Öhningen Radolfzell_am_Bodensee-_Stadt Reichenau Singen_(Hohentwiel)-_Stadt Steißlingen Stockach-_Stadt Tengen-_Stadt Volkertshausen Hohenfels Mühlhausen-Ehingen Bodman-Ludwigshafen Orsingen-Nenzingen Rielasingen-Worblingen Aitern Bad_Bellingen Binzen Böllen Efringen-Kirchen Eimeldingen Fischingen Fröhnd Hasel Hausen_im_Wiesental Inzlingen Kandern-_Stadt Lörrach-_Stadt Maulburg Rheinfelden_(Baden)-_Stadt Rümmingen Schallbach Schliengen Schönau_im_Schwarzwald-_Stadt Schönenberg Schopfheim-_Stadt Schwörstadt Steinen Todtnau-_Stadt Tunau Utzenfeld Weil_am_Rhein-_Stadt Wembach Wieden Wittlingen Zell_im_Wiesental-_Stadt Malsburg-Marzell Grenzach-Wyhlen Häg-Ehrsberg Kleines_Wiesental Briefwahl_für_mehrere_Gemeinden Albbruck Bernau_im_Schwarzwald Bonndorf_im_Schwarzwald-_Stadt Dachsberg_(Südschwarzwald) Dettighofen Dogern Görwihl Grafenhausen Häusern Herrischried Höchenschwand Hohentengen_am_Hochrhein Ibach Jestetten Klettgau Lauchringen Laufenburg_(Baden)-_Stadt Lottstetten Murg Rickenbach Bad_Säckingen-_Stadt St._Blasien-_Stadt Stühlingen-_Stadt Todtmoos Wehr-_Stadt Weilheim Wutöschingen Eggingen Küssaberg Waldshut-Tiengen-_Stadt Wutach Ühlingen-Birkendorf Dettingen_an_der_Erms Eningen_unter_Achalm Gomadingen Grabenstetten Grafenberg Hayingen-_Stadt Hülben Mehrstetten Metzingen-_Stadt Münsingen-_Stadt Pfronstetten Pfullingen-_Stadt Pliezhausen Reutlingen-_Stadt Riederich Trochtelfingen-_Stadt Bad_Urach-_Stadt Wannweil Zwiefalten Walddorfhäslach Römerstein Engstingen Hohenstein Sonnenbühl Lichtenstein St._Johann Bodelshausen Dettenhausen Dußlingen Gomaringen Hirrlingen Kirchentellinsfurt Kusterdingen Mössingen-_Stadt Nehren Ofterdingen Rottenburg_am_Neckar-_Stadt Tübingen-_Universitätsstadt Ammerbuch Neustetten Starzach Balingen-_Stadt Bisingen Bitz Burladingen-_Stadt Dautmergen Dormettingen Dotternhausen Geislingen-_Stadt Grosselfingen Haigerloch-_Stadt Hausen_am_Tann Hechingen-_Stadt Jungingen Meßstetten-_Stadt Nusplingen Obernheim Rangendingen Ratshausen Rosenfeld-_Stadt Schömberg-_Stadt Straßberg Weilen_unter_den_Rinnen Winterlingen Zimmern_unter_der_Burg Albstadt-_Stadt Ulm-_Universitätsstadt Allmendingen Altheim Altheim_(Alb) Amstetten Asselfingen Ballendorf Beimerstetten Berghülen Bernstadt Blaubeuren-_Stadt Börslingen Breitingen Dietenheim-_Stadt Dornstadt Ehingen_(Donau)-_Stadt Emeringen Emerkingen Erbach-_Stadt Griesingen Grundsheim Hausen_am_Bussen Holzkirch Hüttisheim Illerrieden Laichingen-_Stadt Langenau-_Stadt Lauterach Lonsee Merklingen Munderkingen-_Stadt Neenstetten Nellingen Nerenstetten Oberdischingen Obermarchtal Oberstadion Öllingen Öpfingen Rammingen Rechtenstein Rottenacker Schelklingen-_Stadt Schnürpflingen Setzingen Untermarchtal Unterstadion Unterwachingen Weidenstetten Westerheim Westerstetten Illerkirchberg Staig Heroldstatt Balzheim Blaustein-_Stadt Briefwahl_für_mehrere_Gemeinden Achstetten Alleshausen Allmannsweiler Altheim Attenweiler Bad_Buchau-_Stadt Bad_Schussenried-_Stadt Berkheim Betzenweiler Biberach_an_der_Riß-_Stadt Burgrieden Dettingen_an_der_Iller Dürmentingen Dürnau Eberhardzell Erlenmoos Erolzheim Ertingen Hochdorf Ingoldingen Kanzach Kirchberg_an_der_Iller Kirchdorf_an_der_Iller Langenenslingen Laupheim-_Stadt Maselheim Mietingen Mittelbiberach Moosburg Ochsenhausen-_Stadt Oggelshausen Riedlingen-_Stadt Rot_an_der_Rot Schwendi Seekirch Steinhausen_an_der_Rottum Tannheim Tiefenbach Ummendorf Unlingen Uttenweiler Wain Warthausen Schemmerhofen Gutenzell-Hürbel Bermatingen Daisendorf Eriskirch Frickingen Friedrichshafen-_Stadt Hagnau_am_Bodensee Heiligenberg Immenstaad_am_Bodensee Kressbronn_am_Bodensee Langenargen Markdorf-_Stadt Meckenbeuren Meersburg-_Stadt Neukirch Oberteuringen Owingen Salem Sipplingen Stetten Tettnang-_Stadt Überlingen-_Stadt Uhldingen-Mühlhofen Deggenhausertal Achberg Aichstetten Aitrach Altshausen Amtzell Aulendorf-_Stadt Bad_Waldsee-_Stadt Bad_Wurzach-_Stadt Baienfurt Baindt Berg Bergatreute Bodnegg Boms Ebenweiler Eichstegen Fleischwangen Grünkraut Guggenhausen Hoßkirch Isny_im_Allgäu-_Stadt Kißlegg Königseggwald Leutkirch_im_Allgäu-_Stadt Ravensburg-_Stadt Riedhausen Schlier Unterwaldhausen Vogt Waldburg Wangen_im_Allgäu-_Stadt Weingarten-_Stadt Wilhelmsdorf Wolfegg Wolpertswende Ebersbach-Musbach Argenbühl Horgenzell Fronreute Briefwahl_für_mehrere_Gemeinden Beuron Bingen Gammertingen-_Stadt Herbertingen Hettingen-_Stadt Hohentengen Illmensee Inzigkofen Krauchenwies Leibertingen Mengen-_Stadt Meßkirch-_Stadt Neufra Ostrach Pfullendorf-_Stadt Bad_Saulgau-_Stadt Scheer-_Stadt Schwenningen Sigmaringen-_Stadt Sigmaringendorf Stetten_am_kalten_Markt Veringenstadt-_Stadt Wald Sauldorf Herdwangen-Schönach Baden-Württemberg Stuttgart_I Stuttgart_II Böblingen Esslingen Nürtingen Göppingen Waiblingen Ludwigsburg Neckar-Zaber Heilbronn Schwäbisch_Hall-Hohenlohe Backnang-Schwäbisch_Gmünd Aalen-Heidenheim Karlsruhe-Stadt Karlsruhe-Land Rastatt Heidelberg Mannheim Odenwald-Tauber Rhein-Neckar Bruchsal-Schwetzingen Pforzheim Calw Freiburg Lörrach-Müllheim Emmendingen-Lahr Offenburg Rottweil-Tuttlingen Schwarzwald-Baar Konstanz Waldshut Reutlingen Tübingen Ulm Biberach Bodensee Ravensburg Zollernalb-Sigmaringen Baden-Württemberg
+# Landtagswahl Baden-Wuerttemberg 2026 - Tracking Template
+
+Last poll: **2026-03-01 11:13:51 CET**
+
+## Data Sources
+
+- `komm.one` municipality APIs (template: `https://wahlergebnisse.komm.one/lb/produktion/wahltermin-{wahltermin}/{ags}` + `/daten/api/...`)
+- Statistik BW single CSV (current mode: **UNAVAILABLE**) at `https://www.statistik-bw.de/fileadmin/user_upload/Presse/Pressemitteilungen/2026021_LTW26-Dummy-Datei.csv`
+
+## Operations
+
+- Local run: `python scripts/poll_ltw26.py`
+- SQLite history DB: `data/ltw26/history.sqlite`
+- Minute automation: `.github/workflows/poll.yml`
+
+## Coverage
+
+- Municipalities tracked: **1104**
+- `komm.one` complete: **0**
+- `komm.one` pending: **0**
+- `komm.one` no data: **1104**
+
+## Party Dashboard (Municipality Drill-Down)
+
+No party data available yet.
+
+## Pending Results
+
+Showing 200 of 1104 rows. Full export: `data/ltw26/latest/kommone_snapshots.csv`.
+
+<details><summary>Open pending municipalities</summary>
+
+| AGS | Municipality | `komm.one` reported/total | Status |
+|---|---|---:|---|
+| 08335001 | Aach-Stadt |  | no_data |
+| 08136088 | Aalen-Stadt |  | no_data |
+| 08125001 | Abstatt |  | no_data |
+| 08136002 | Abtsgmünd |  | no_data |
+| 08436001 | Achberg |  | no_data |
+| 08317001 | Achern-Stadt |  | no_data |
+| 08426001 | Achstetten |  | no_data |
+| 08117001 | Adelberg |  | no_data |
+| 08136003 | Adelmannsfelden |  | no_data |
+| 08225001 | Adelsheim-Stadt |  | no_data |
+| 08118001 | Affalterbach |  | no_data |
+| 08225002 | Aglasterhausen |  | no_data |
+| 08128138 | Ahorn |  | no_data |
+| 08117002 | Aichelberg |  | no_data |
+| 08325001 | Aichhalden |  | no_data |
+| 08436003 | Aichstetten |  | no_data |
+| 08116081 | Aichtal-Stadt |  | no_data |
+| 08116076 | Aichwald |  | no_data |
+| 08115001 | Aidlingen |  | no_data |
+| 08336004 | Aitern |  | no_data |
+| 08436004 | Aitrach |  | no_data |
+| 08337002 | Albbruck |  | no_data |
+| 08117003 | Albershausen |  | no_data |
+| 08417079 | Albstadt-Stadt |  | no_data |
+| 08327002 | Aldingen |  | no_data |
+| 08119001 | Alfdorf |  | no_data |
+| 08335002 | Allensbach |  | no_data |
+| 08426005 | Alleshausen |  | no_data |
+| 08426006 | Allmannsweiler |  | no_data |
+| 08425002 | Allmendingen |  | no_data |
+| 08119003 | Allmersbach im Tal |  | no_data |
+| 08237002 | Alpirsbach-Stadt |  | no_data |
+| 08116004 | Altbach |  | no_data |
+| 08115002 | Altdorf |  | no_data |
+| 08116005 | Altdorf |  | no_data |
+| 08116006 | Altenriet |  | no_data |
+| 08235006 | Altensteig-Stadt |  | no_data |
+| 08425004 | Altheim |  | no_data |
+| 08426008 | Altheim |  | no_data |
+| 08425005 | Altheim (Alb) |  | no_data |
+| 08235007 | Althengstett |  | no_data |
+| 08119004 | Althütte |  | no_data |
+| 08226003 | Altlußheim |  | no_data |
+| 08436005 | Altshausen |  | no_data |
+| 08416048 | Ammerbuch |  | no_data |
+| 08425008 | Amstetten |  | no_data |
+| 08436006 | Amtzell |  | no_data |
+| 08226102 | Angelbachtal |  | no_data |
+| 08317005 | Appenweier |  | no_data |
+| 08436094 | Argenbühl |  | no_data |
+| 08119087 | Aspach |  | no_data |
+| 08118003 | Asperg-Stadt |  | no_data |
+| 08128006 | Assamstadt |  | no_data |
+| 08425011 | Asselfingen |  | no_data |
+| 08426011 | Attenweiler |  | no_data |
+| 08315003 | Au |  | no_data |
+| 08119006 | Auenwald |  | no_data |
+| 08315004 | Auggen |  | no_data |
+| 08436008 | Aulendorf-Stadt |  | no_data |
+| 08119008 | Backnang-Stadt |  | no_data |
+| 08336006 | Bad Bellingen |  | no_data |
+| 08117012 | Bad Boll |  | no_data |
+| 08426013 | Bad Buchau-Stadt |  | no_data |
+| 08117006 | Bad Ditzenbach |  | no_data |
+| 08326003 | Bad Dürrheim-Stadt |  | no_data |
+| 08125005 | Bad Friedrichshall-Stadt |  | no_data |
+| 08235033 | Bad Herrenalb-Stadt |  | no_data |
+| 08315006 | Bad Krozingen-Stadt |  | no_data |
+| 08235008 | Bad Liebenzell-Stadt |  | no_data |
+| 08128007 | Bad Mergentheim-Stadt |  | no_data |
+| 08317008 | Bad Peterstal-Griesbach |  | no_data |
+| 08125006 | Bad Rappenau-Stadt |  | no_data |
+| 08237075 | Bad Rippoldsau-Schapbach |  | no_data |
+| 08437100 | Bad Saulgau-Stadt |  | no_data |
+| 08426014 | Bad Schussenried-Stadt |  | no_data |
+| 08215100 | Bad Schönborn |  | no_data |
+| 08337096 | Bad Säckingen-Stadt |  | no_data |
+| 08235084 | Bad Teinach-Zavelstein-Stadt |  | no_data |
+| 08415078 | Bad Urach-Stadt |  | no_data |
+| 08436009 | Bad Waldsee-Stadt |  | no_data |
+| 08235079 | Bad Wildbad-Stadt |  | no_data |
+| 08125007 | Bad Wimpfen-Stadt |  | no_data |
+| 08436010 | Bad Wurzach-Stadt |  | no_data |
+| 08117007 | Bad Überkingen |  | no_data |
+| 08211000 | Baden-Baden-Stadt |  | no_data |
+| 08315007 | Badenweiler |  | no_data |
+| 08316002 | Bahlingen am Kaiserstuhl |  | no_data |
+| 08436011 | Baienfurt |  | no_data |
+| 08237004 | Baiersbronn |  | no_data |
+| 08436012 | Baindt |  | no_data |
+| 08327005 | Balgheim |  | no_data |
+| 08417002 | Balingen-Stadt |  | no_data |
+| 08425013 | Ballendorf |  | no_data |
+| 08315008 | Ballrechten-Dottingen |  | no_data |
+| 08116007 | Baltmannsweiler |  | no_data |
+| 08425140 | Balzheim |  | no_data |
+| 08226006 | Bammental |  | no_data |
+| 08136007 | Bartholomä |  | no_data |
+| 08125008 | Beilstein-Stadt |  | no_data |
+| 08425014 | Beimerstetten |  | no_data |
+| 08116008 | Bempflingen |  | no_data |
+| 08118006 | Benningen am Neckar |  | no_data |
+| 08436013 | Berg |  | no_data |
+| 08436014 | Bergatreute |  | no_data |
+| 08317009 | Berghaupten |  | no_data |
+| 08425017 | Berghülen |  | no_data |
+| 08119089 | Berglen |  | no_data |
+| 08426019 | Berkheim |  | no_data |
+| 08435005 | Bermatingen |  | no_data |
+| 08337013 | Bernau im Schwarzwald |  | no_data |
+| 08425019 | Bernstadt |  | no_data |
+| 08118007 | Besigheim-Stadt |  | no_data |
+| 08426020 | Betzenweiler |  | no_data |
+| 08116011 | Beuren |  | no_data |
+| 08437005 | Beuron |  | no_data |
+| 08317011 | Biberach |  | no_data |
+| 08426021 | Biberach an der Riß-Stadt |  | no_data |
+| 08316003 | Biederbach |  | no_data |
+| 08118079 | Bietigheim-Bissingen-Stadt |  | no_data |
+| 08225009 | Billigheim |  | no_data |
+| 08225010 | Binau |  | no_data |
+| 08437008 | Bingen |  | no_data |
+| 08336008 | Binzen |  | no_data |
+| 08117009 | Birenbach |  | no_data |
+| 08236004 | Birkenfeld |  | no_data |
+| 08417008 | Bisingen |  | no_data |
+| 08116012 | Bissingen an der Teck |  | no_data |
+| 08417010 | Bitz |  | no_data |
+| 08425020 | Blaubeuren-Stadt |  | no_data |
+| 08127008 | Blaufelden |  | no_data |
+| 08425141 | Blaustein-Stadt |  | no_data |
+| 08326005 | Blumberg-Stadt |  | no_data |
+| 08416006 | Bodelshausen |  | no_data |
+| 08335098 | Bodman-Ludwigshafen |  | no_data |
+| 08436018 | Bodnegg |  | no_data |
+| 08315014 | Bollschweil |  | no_data |
+| 08436019 | Boms |  | no_data |
+| 08115004 | Bondorf |  | no_data |
+| 08337022 | Bonndorf im Schwarzwald-Stadt |  | no_data |
+| 08136010 | Bopfingen-Stadt |  | no_data |
+| 08128014 | Boxberg-Stadt |  | no_data |
+| 08125013 | Brackenheim-Stadt |  | no_data |
+| 08127009 | Braunsbach |  | no_data |
+| 08315015 | Breisach am Rhein-Stadt |  | no_data |
+| 08425024 | Breitingen |  | no_data |
+| 08315016 | Breitnau |  | no_data |
+| 08215007 | Bretten-Stadt |  | no_data |
+| 08126011 | Bretzfeld |  | no_data |
+| 08336991 | Briefwahl für mehrere Gemeinden |  | no_data |
+| 08425991 | Briefwahl für mehrere Gemeinden |  | no_data |
+| 08436991 | Briefwahl für mehrere Gemeinden |  | no_data |
+| 08326075 | Brigachtal |  | no_data |
+| 08215009 | Bruchsal-Stadt |  | no_data |
+| 08326006 | Bräunlingen-Stadt |  | no_data |
+| 08226009 | Brühl |  | no_data |
+| 08327007 | Bubsheim |  | no_data |
+| 08225014 | Buchen (Odenwald)-Stadt |  | no_data |
+| 08315020 | Buchenbach |  | no_data |
+| 08327008 | Buchheim |  | no_data |
+| 08315022 | Buggingen |  | no_data |
+| 08426028 | Burgrieden |  | no_data |
+| 08119018 | Burgstetten |  | no_data |
+| 08417013 | Burladingen-Stadt |  | no_data |
+| 08327004 | Bärenthal |  | no_data |
+| 08136009 | Böbingen an der Rems |  | no_data |
+| 08115003 | Böblingen-Stadt |  | no_data |
+| 08117010 | Böhmenkirch |  | no_data |
+| 08336010 | Böllen |  | no_data |
+| 08118010 | Bönnigheim-Stadt |  | no_data |
+| 08425022 | Börslingen |  | no_data |
+| 08117011 | Börtlingen |  | no_data |
+| 08325009 | Bösingen |  | no_data |
+| 08327006 | Böttingen |  | no_data |
+| 08315013 | Bötzingen |  | no_data |
+| 08127012 | Bühlertann |  | no_data |
+| 08127013 | Bühlerzell |  | no_data |
+| 08335015 | Büsingen am Hochrhein |  | no_data |
+| 08235085 | Calw-Stadt |  | no_data |
+| 08125017 | Cleebronn |  | no_data |
+| 08127014 | Crailsheim-Stadt |  | no_data |
+| 08128020 | Creglingen-Stadt |  | no_data |
+| 08337027 | Dachsberg (Südschwarzwald) |  | no_data |
+| 08435010 | Daisendorf |  | no_data |
+| 08326010 | Dauchingen |  | no_data |
+| 08417014 | Dautmergen |  | no_data |
+| 08115010 | Deckenpfronn |  | no_data |
+| 08435067 | Deggenhausertal |  | no_data |
+| 08117014 | Deggingen |  | no_data |
+| 08327009 | Deilingen |  | no_data |
+| 08116014 | Deizisau |  | no_data |
+| 08325072 | Deißlingen |  | no_data |
+| 08116015 | Denkendorf |  | no_data |
+| 08327010 | Denkingen |  | no_data |
+| 08316009 | Denzlingen |  | no_data |
+| 08416009 | Dettenhausen |  | no_data |
+| 08215111 | Dettenheim |  | no_data |
+| 08337030 | Dettighofen |  | no_data |
+| 08415014 | Dettingen an der Erms |  | no_data |
+| 08426031 | Dettingen an der Iller |  | no_data |
+| 08116016 | Dettingen unter Teck |  | no_data |
+
+</details>
+
+## Source Difference Summary
+
+| Metric | Rows with Delta | Sum(|delta|) |
+|---|---:|---:|
+| reported_precincts | 0 | 0.00 |
+| total_precincts | 0 | 0.00 |
+| voters_total | 0 | 0.00 |
+| valid_votes | 0 | 0.00 |
+
+## Notes
+
+- Polling is designed for minute-level snapshots and immutable timing of updates/removals.
+- `komm.one` is expected to publish first. Statistik BW may start later; fallback currently uses the provided dummy CSV.
+- If Statistik BW keeps coded party columns (e.g. `D1`, `F1`), cross-source party mapping requires an external codebook.

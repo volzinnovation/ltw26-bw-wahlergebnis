@@ -1,2 +1,6 @@
 
 .DS_Store
+__pycache__/
+*.pyc
+data/ltw26/history.sqlite-shm
+data/ltw26/history.sqlite-wal

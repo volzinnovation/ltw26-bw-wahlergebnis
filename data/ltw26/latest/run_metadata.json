@@ -1,0 +1,8 @@
+{
+  "generated_at_utc": "2026-03-01T10:13:51.304819+00:00",
+  "kommone_municipalities_polled": 1104,
+  "run_label": "2026-03-01-11-13-51",
+  "statla_error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+  "statla_mode": "UNAVAILABLE",
+  "statla_url": "https://www.statistik-bw.de/fileadmin/user_upload/Presse/Pressemitteilungen/2026021_LTW26-Dummy-Datei.csv"
+}

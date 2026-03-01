@@ -1,48 +1,40 @@
-name: Fetch BW data every minute
+name: LTW26 Poll Every Minute
 
 on:
   schedule:
     - cron: "* * * * *"
   workflow_dispatch:
 
+permissions:
+  contents: write
+
+concurrency:
+  group: ltw26-minute-poll
+  cancel-in-progress: false
+
 jobs:
-  fetch-and-save:
+  poll:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Fetch URL
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Run LTW26 poller
         run: |
-          export TZ="Europe/Berlin"
-          TIMESTAMP=$(date +"%Y-%m-%d-%H-%M-%S")
-          curl -s "https://wahlen.bw-btw25.23degrees.eu/assets/kreise.csv" -o "data/latest-btw25-bw-kreise.csv"
-          sed -i 's/,/-/g' "data/latest-btw25-bw-kreise.csv"
-          sed -i 's/;/,/g' "data/latest-btw25-bw-kreise.csv"
-          sed -i 's/ /_/g' "data/latest-btw25-bw-kreise.csv"
-          curl -s "https://wahlen.bw-btw25.23degrees.eu/assets/gemeinden.csv" -o "data/latest-btw25-bw-gemeinden.csv"
-          sed -i 's/,/-/g' "data/latest-btw25-bw-gemeinden.csv"    
-          sed -i 's/;/,/g' "data/latest-btw25-bw-gemeinden.csv"    
-          sed -i 's/ /_/g' "data/latest-btw25-bw-gemeinden.csv"    
-          CHANGES=$(python analysis/latest-changes.py)
-          cp "data/latest-btw25-bw-kreise.csv" "data/$TIMESTAMP-btw25-bw-kreise.csv"
-          cp "data/latest-btw25-bw-gemeinden.csv" "data/$TIMESTAMP-btw25-bw-gemeinden.csv"
-          echo $CHANGES
-          if [ -z "$CHANGES" ]; then
-              echo "No changes."
-          else
-              echo -e "\n" >> README.md
-              echo $TIMESTAMP >> README.md
-              echo -e "\n" >> README.md
-              echo $CHANGES >> README.md
-          fi
-      - name: Commit and Push
+          python scripts/poll_ltw26.py
+
+      - name: Commit and push updates
         run: |
           git config --global user.name "github-actions"
-          git config --global user.email "github-actions@github.com"   
-          git pull
-          git add data/
-          git add README.md
-          git commit -m "Fetched data at $(date +"%Y-%m-%d %H:%M:%S")" || echo "No changes to commit"
+          git config --global user.email "github-actions@github.com"
+          git pull --rebase
+          git add README.md data/ltw26 config/ltw26_config.json scripts/poll_ltw26.py
+          git commit -m "LTW26 poll $(date -u +"%Y-%m-%dT%H:%M:%SZ")" || echo "No changes to commit"
           git push

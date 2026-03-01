@@ -1,0 +1,12 @@
+{
+  "election_name": "Landtagswahl Baden-Wuerttemberg 2026",
+  "election_date": "2026-03-08",
+  "timezone": "Europe/Berlin",
+  "kommone_wahltermin": "20260308",
+  "kommone_base_url_template": "https://wahlergebnisse.komm.one/lb/produktion/wahltermin-{wahltermin}/{ags}",
+  "statla_live_csv_url": "https://www.statistik-bw.de/fileadmin/user_upload/Wahlen/Landesdaten/ltw26_daten.csv",
+  "statla_dummy_csv_url": "https://www.statistik-bw.de/fileadmin/user_upload/Presse/Pressemitteilungen/2026021_LTW26-Dummy-Datei.csv",
+  "legacy_city_source_csv": "data/latest-btw25-bw-gemeinden.csv",
+  "request_timeout_seconds": 4,
+  "max_workers": 48
+}
