@@ -58,6 +58,51 @@ STATLA_EXCLUDED_GEBIETSART = {
     "BRIEFWAHLBEZIRK",
 }
 
+STATLA_PARTY_CODEBOOK: Dict[str, List[Tuple[str, str]]] = {
+    "Erststimmen": [
+        ("D1", "GRÜNE"),
+        ("D2", "CDU"),
+        ("D3", "SPD"),
+        ("D4", "FDP"),
+        ("D5", "AfD"),
+        ("D6", "Die Linke"),
+        ("D7", "FREIE WÄHLER"),
+        ("D8", "Die PARTEI"),
+        ("D9", "dieBasis"),
+        ("D11", "ÖDP"),
+        ("D12", "Volt"),
+        ("D13", "Bündnis C"),
+        ("D16", "BSW"),
+        ("D17", "Die Gerechtigkeitspartei"),
+        ("D20", "Tierschutzpartei"),
+        ("D21", "Werteunion"),
+        ("D22", "Anderer Kreiswahlvorschlag"),
+    ],
+    "Zweitstimmen": [
+        ("F1", "GRÜNE"),
+        ("F2", "CDU"),
+        ("F3", "SPD"),
+        ("F4", "FDP"),
+        ("F5", "AfD"),
+        ("F6", "Die Linke"),
+        ("F7", "FREIE WÄHLER"),
+        ("F8", "Die PARTEI"),
+        ("F9", "dieBasis"),
+        ("F10", "KlimalisteBW"),
+        ("F11", "ÖDP"),
+        ("F12", "Volt"),
+        ("F13", "Bündnis C"),
+        ("F14", "PDH"),
+        ("F15", "Verjüngungsforschung"),
+        ("F16", "BSW"),
+        ("F17", "Die Gerechtigkeitspartei"),
+        ("F18", "PDR"),
+        ("F19", "PdF"),
+        ("F20", "Tierschutzpartei"),
+        ("F21", "Werteunion"),
+    ],
+}
+
 
 @dataclass(frozen=True)
 class Config:
@@ -154,6 +199,62 @@ def normalize_text(value: str) -> str:
     normalized = unicodedata.normalize("NFKD", value)
     normalized = normalized.encode("ascii", "ignore").decode("ascii")
     return re.sub(r"\s+", " ", normalized.strip().lower())
+
+
+def statla_party_name_from_code(vote_type: str, code: str) -> str:
+    key = str(code).strip()
+    for party_code, party_name in STATLA_PARTY_CODEBOOK.get(vote_type, []):
+        if key == party_code:
+            return party_name
+    return key
+
+
+def canonical_party_name(label: str, vote_type: Optional[str] = None) -> str:
+    raw = str(label or "").strip()
+    if not raw:
+        return ""
+
+    if vote_type:
+        raw = statla_party_name_from_code(vote_type, raw)
+
+    normalized = normalize_text(raw)
+    normalized_simple = re.sub(r"[^a-z0-9]+", " ", normalized).strip()
+    aliases = {
+        "gruene": "GRÜNE",
+        "grune": "GRÜNE",
+        "bundnis 90 die grunen": "GRÜNE",
+        "bundnis 90 die gruenen": "GRÜNE",
+        "b 90 die grunen": "GRÜNE",
+        "cdu": "CDU",
+        "spd": "SPD",
+        "fdp": "FDP",
+        "afd": "AfD",
+        "die linke": "Die Linke",
+        "freie wahler": "FREIE WÄHLER",
+        "die partei": "Die PARTEI",
+        "diebasis": "dieBasis",
+        "die basis": "dieBasis",
+        "oedp": "ÖDP",
+        "odp": "ÖDP",
+        "volt": "Volt",
+        "bundnis c": "Bündnis C",
+        "bundnis c christen fur deutschland": "Bündnis C",
+        "bsw": "BSW",
+        "die gerechtigkeitspartei": "Die Gerechtigkeitspartei",
+        "big": "Die Gerechtigkeitspartei",
+        "tierschutzpartei": "Tierschutzpartei",
+        "werteunion": "Werteunion",
+        "klimalistebw": "KlimalisteBW",
+        "klimaliste bw": "KlimalisteBW",
+        "pdh": "PDH",
+        "partei der humanisten": "PDH",
+        "verjungungsforschung": "Verjüngungsforschung",
+        "pdr": "PDR",
+        "pdf": "PdF",
+        "partei des fortschritts": "PdF",
+        "anderer kreiswahlvorschlag": "Anderer Kreiswahlvorschlag",
+    }
+    return aliases.get(normalized, aliases.get(normalized_simple, raw))
 
 
 def parse_int(value: Any) -> Optional[int]:
@@ -901,7 +1002,7 @@ def fetch_one_kommone_ags(
         rows = (((payload.get("Komponente") or {}).get("tabelle") or {}).get("zeilen") or [])
         for row in rows:
             party_label = str(((row or {}).get("label") or {}).get("labelKurz") or "").strip()
-            party = normalize_party_label(party_label)
+            party = canonical_party_name(normalize_party_label(party_label), vote_type=canonical_vote_type(vote_type))
             all_party_rows.append(
                 {
                     "ags": ags,
@@ -978,41 +1079,45 @@ def extract_statla_parties(row: Dict[str, str]) -> List[Dict[str, Any]]:
             continue
 
         if re.fullmatch(r"D\d+", key):
+            vote_type = "Erststimmen"
             parties.append(
                 {
-                    "vote_type": "Erststimmen",
+                    "vote_type": vote_type,
                     "party_key": key,
-                    "party_name": key,
+                    "party_name": canonical_party_name(statla_party_name_from_code(vote_type, key), vote_type),
                     "votes": value,
                 }
             )
             continue
         if re.fullmatch(r"F\d+", key):
+            vote_type = "Zweitstimmen"
             parties.append(
                 {
-                    "vote_type": "Zweitstimmen",
+                    "vote_type": vote_type,
                     "party_key": key,
-                    "party_name": key,
+                    "party_name": canonical_party_name(statla_party_name_from_code(vote_type, key), vote_type),
                     "votes": value,
                 }
             )
             continue
 
         if key.endswith("Erststimmen") and "gueltige" not in normalize_text(key) and "ungueltige" not in normalize_text(key):
+            vote_type = "Erststimmen"
             parties.append(
                 {
-                    "vote_type": "Erststimmen",
+                    "vote_type": vote_type,
                     "party_key": key,
-                    "party_name": key.replace(" Erststimmen", "").strip(),
+                    "party_name": canonical_party_name(key.replace(" Erststimmen", "").strip(), vote_type),
                     "votes": value,
                 }
             )
         if key.endswith("Zweitstimmen") and "gueltige" not in normalize_text(key) and "ungueltige" not in normalize_text(key):
+            vote_type = "Zweitstimmen"
             parties.append(
                 {
-                    "vote_type": "Zweitstimmen",
+                    "vote_type": vote_type,
                     "party_key": key,
-                    "party_name": key.replace(" Zweitstimmen", "").strip(),
+                    "party_name": canonical_party_name(key.replace(" Zweitstimmen", "").strip(), vote_type),
                     "votes": value,
                 }
             )
@@ -1630,33 +1735,55 @@ def source_party_totals(
     totals_by_type: Dict[str, Dict[str, int]] = {}
     for row in party_rows:
         votes = row.get("votes")
-        party = str(row.get(party_field) or "").strip()
+        vote_type = canonical_vote_type(str(row.get("vote_type") or ""))
+        party = canonical_party_name(str(row.get(party_field) or ""), vote_type=vote_type)
         if not party or not isinstance(votes, int):
             continue
-        vote_type = canonical_vote_type(str(row.get("vote_type") or ""))
         bucket = totals_by_type.setdefault(vote_type, {})
         bucket[party] = bucket.get(party, 0) + votes
     return totals_by_type
 
 
 def fixed_party_order_by_vote_type() -> Dict[str, List[str]]:
-    first: List[str] = []
-    second: List[str] = []
+    first_codes: List[str] = []
+    second_codes: List[str] = []
     dummy_path = META_DIR / "2026021_LTW26-Dummy-Datei.csv"
     if dummy_path.exists():
         try:
             header_line = decode_bytes(dummy_path.read_bytes()).splitlines()[0]
             header = next(csv.reader([header_line], delimiter=";"))
-            first = sorted(
+            first_codes = sorted(
                 [name for name in header if re.fullmatch(r"D\d+", name)],
                 key=lambda name: int(name[1:]),
             )
-            second = sorted(
+            second_codes = sorted(
                 [name for name in header if re.fullmatch(r"F\d+", name)],
                 key=lambda name: int(name[1:]),
             )
         except Exception:  # pylint: disable=broad-except
             pass
+
+    if not first_codes:
+        first_codes = [code for code, _name in STATLA_PARTY_CODEBOOK["Erststimmen"]]
+    if not second_codes:
+        second_codes = [code for code, _name in STATLA_PARTY_CODEBOOK["Zweitstimmen"]]
+
+    first: List[str] = []
+    first_seen: set[str] = set()
+    for code in first_codes:
+        name = canonical_party_name(statla_party_name_from_code("Erststimmen", code), "Erststimmen")
+        if name and name not in first_seen:
+            first_seen.add(name)
+            first.append(name)
+
+    second: List[str] = []
+    second_seen: set[str] = set()
+    for code in second_codes:
+        name = canonical_party_name(statla_party_name_from_code("Zweitstimmen", code), "Zweitstimmen")
+        if name and name not in second_seen:
+            second_seen.add(name)
+            second.append(name)
+
     return {
         "Erststimmen": first,
         "Zweitstimmen": second,
@@ -2256,7 +2383,7 @@ def generate_readme(
     lines.append("- Polling is designed for minute-level snapshots and immutable timing of updates/removals.")
     lines.append(f"- No official results are expected before **{format_local_dt(tracking_start)}**.")
     lines.append("- `komm.one` is expected to publish first. Statistik BW may start later; fallback currently uses the provided dummy CSV.")
-    lines.append("- If Statistik BW keeps coded party columns (e.g. `D1`, `F1`), cross-source party mapping requires an external codebook.")
+    lines.append("- Statistik BW coded party columns (`D*`, `F*`) are resolved using the official Hinweise party codebook.")
     lines.append("")
 
     README_PATH.write_text("\n".join(lines), encoding="utf-8")
