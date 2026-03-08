@@ -2079,10 +2079,10 @@ poll_id,ags,municipality_name,metric,kommone_value,statla_value,delta
 2,08236039,Mönsheim,total_precincts,,3,
 2,08236039,Mönsheim,voters_total,1585,1585,0.0
 2,08236039,Mönsheim,valid_votes,1580,1580,0.0
-2,08236040,"Mühlacker, Stadt",reported_precincts,,20,
+2,08236040,"Mühlacker, Stadt",reported_precincts,,21,
 2,08236040,"Mühlacker, Stadt",total_precincts,,21,
-2,08236040,"Mühlacker, Stadt",voters_total,10235,10235,0.0
-2,08236040,"Mühlacker, Stadt",valid_votes,10188,10188,0.0
+2,08236040,"Mühlacker, Stadt",voters_total,10818,10818,0.0
+2,08236040,"Mühlacker, Stadt",valid_votes,10765,10765,0.0
 2,08236043,"Neuenbürg, Stadt",reported_precincts,,8,
 2,08236043,"Neuenbürg, Stadt",total_precincts,,8,
 2,08236043,"Neuenbürg, Stadt",voters_total,3710,3710,0.0

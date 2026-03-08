@@ -265,8 +265,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08236038,"Maulbronn, Stadt",Zweitstimmen,AfD,733,22.39535594256034
 08236039,Mönsheim,Erststimmen,AfD,307,19.47969543147208
 08236039,Mönsheim,Zweitstimmen,AfD,315,19.936708860759495
-08236040,"Mühlacker, Stadt",Erststimmen,AfD,2150,21.17183653372723
-08236040,"Mühlacker, Stadt",Zweitstimmen,AfD,2169,21.289752650176677
+08236040,"Mühlacker, Stadt",Erststimmen,AfD,2312,21.549072606953118
+08236040,"Mühlacker, Stadt",Zweitstimmen,AfD,2334,21.68137482582443
 08236043,"Neuenbürg, Stadt",Erststimmen,AfD,970,26.38020125101985
 08236043,"Neuenbürg, Stadt",Zweitstimmen,AfD,944,25.582655826558266
 08236044,Neuhausen,Erststimmen,AfD,734,24.05768600458866
@@ -1226,7 +1226,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08236039,Mönsheim,Erststimmen,BSW,0,0.0
 08236039,Mönsheim,Zweitstimmen,BSW,11,0.6962025316455696
 08236040,"Mühlacker, Stadt",Erststimmen,BSW,0,0.0
-08236040,"Mühlacker, Stadt",Zweitstimmen,BSW,127,1.2465645857872008
+08236040,"Mühlacker, Stadt",Zweitstimmen,BSW,135,1.2540640966093821
 08236043,"Neuenbürg, Stadt",Erststimmen,BSW,0,0.0
 08236043,"Neuenbürg, Stadt",Zweitstimmen,BSW,47,1.2737127371273713
 08236044,Neuhausen,Erststimmen,BSW,0,0.0
@@ -2348,7 +2348,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08236039,Mönsheim,Erststimmen,Bündnis C,0,0.0
 08236039,Mönsheim,Zweitstimmen,Bündnis C,6,0.37974683544303794
 08236040,"Mühlacker, Stadt",Erststimmen,Bündnis C,0,0.0
-08236040,"Mühlacker, Stadt",Zweitstimmen,Bündnis C,18,0.17667844522968199
+08236040,"Mühlacker, Stadt",Zweitstimmen,Bündnis C,19,0.17649790989317232
 08236043,"Neuenbürg, Stadt",Erststimmen,Bündnis C,0,0.0
 08236043,"Neuenbürg, Stadt",Zweitstimmen,Bündnis C,16,0.43360433604336046
 08236044,Neuhausen,Erststimmen,Bündnis C,0,0.0
@@ -3307,8 +3307,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08236038,"Maulbronn, Stadt",Zweitstimmen,CDU,856,26.153376107546595
 08236039,Mönsheim,Erststimmen,CDU,585,37.119289340101524
 08236039,Mönsheim,Zweitstimmen,CDU,516,32.65822784810127
-08236040,"Mühlacker, Stadt",Erststimmen,CDU,3046,29.99507631708518
-08236040,"Mühlacker, Stadt",Zweitstimmen,CDU,2811,27.59128386336867
+08236040,"Mühlacker, Stadt",Erststimmen,CDU,3184,29.676577500233016
+08236040,"Mühlacker, Stadt",Zweitstimmen,CDU,2934,27.254993032977243
 08236043,"Neuenbürg, Stadt",Erststimmen,CDU,995,27.060103345118304
 08236043,"Neuenbürg, Stadt",Zweitstimmen,CDU,989,26.802168021680217
 08236044,Neuhausen,Erststimmen,CDU,1031,33.79219927892495
@@ -4268,7 +4268,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08236039,Mönsheim,Erststimmen,Die Gerechtigkeitspartei,0,0.0
 08236039,Mönsheim,Zweitstimmen,Die Gerechtigkeitspartei,2,0.12658227848101267
 08236040,"Mühlacker, Stadt",Erststimmen,Die Gerechtigkeitspartei,0,0.0
-08236040,"Mühlacker, Stadt",Zweitstimmen,Die Gerechtigkeitspartei,41,0.4024342363564979
+08236040,"Mühlacker, Stadt",Zweitstimmen,Die Gerechtigkeitspartei,49,0.45517882025081285
 08236043,"Neuenbürg, Stadt",Erststimmen,Die Gerechtigkeitspartei,0,0.0
 08236043,"Neuenbürg, Stadt",Zweitstimmen,Die Gerechtigkeitspartei,5,0.13550135501355012
 08236044,Neuhausen,Erststimmen,Die Gerechtigkeitspartei,0,0.0
@@ -5227,8 +5227,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08236038,"Maulbronn, Stadt",Zweitstimmen,Die Linke,106,3.238619003971891
 08236039,Mönsheim,Erststimmen,Die Linke,23,1.4593908629441625
 08236039,Mönsheim,Zweitstimmen,Die Linke,25,1.5822784810126582
-08236040,"Mühlacker, Stadt",Erststimmen,Die Linke,380,3.741999015263417
-08236040,"Mühlacker, Stadt",Zweitstimmen,Die Linke,334,3.2783667059285433
+08236040,"Mühlacker, Stadt",Erststimmen,Die Linke,415,3.8680212508155467
+08236040,"Mühlacker, Stadt",Zweitstimmen,Die Linke,368,3.41848583372039
 08236043,"Neuenbürg, Stadt",Erststimmen,Die Linke,164,4.460157737285831
 08236043,"Neuenbürg, Stadt",Zweitstimmen,Die Linke,113,3.062330623306233
 08236044,Neuhausen,Erststimmen,Die Linke,91,2.9826286463454603
@@ -6188,7 +6188,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08236039,Mönsheim,Erststimmen,Die PARTEI,0,0.0
 08236039,Mönsheim,Zweitstimmen,Die PARTEI,7,0.44303797468354433
 08236040,"Mühlacker, Stadt",Erststimmen,Die PARTEI,0,0.0
-08236040,"Mühlacker, Stadt",Zweitstimmen,Die PARTEI,35,0.3435414212799372
+08236040,"Mühlacker, Stadt",Zweitstimmen,Die PARTEI,36,0.3344170924291686
 08236043,"Neuenbürg, Stadt",Erststimmen,Die PARTEI,0,0.0
 08236043,"Neuenbürg, Stadt",Zweitstimmen,Die PARTEI,22,0.5962059620596206
 08236044,Neuhausen,Erststimmen,Die PARTEI,0,0.0
@@ -7147,8 +7147,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08236038,"Maulbronn, Stadt",Zweitstimmen,FDP,221,6.752215093186679
 08236039,Mönsheim,Erststimmen,FDP,158,10.025380710659897
 08236039,Mönsheim,Zweitstimmen,FDP,102,6.455696202531645
-08236040,"Mühlacker, Stadt",Erststimmen,FDP,1355,13.343180699162973
-08236040,"Mühlacker, Stadt",Zweitstimmen,FDP,786,7.714958775029446
+08236040,"Mühlacker, Stadt",Erststimmen,FDP,1432,13.347003448597262
+08236040,"Mühlacker, Stadt",Zweitstimmen,FDP,826,7.673014398513701
 08236043,"Neuenbürg, Stadt",Erststimmen,FDP,462,12.564590698939353
 08236043,"Neuenbürg, Stadt",Zweitstimmen,FDP,231,6.260162601626017
 08236044,Neuhausen,Erststimmen,FDP,376,12.323828253031794
@@ -8108,7 +8108,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08236039,Mönsheim,Erststimmen,FREIE WÄHLER,0,0.0
 08236039,Mönsheim,Zweitstimmen,FREIE WÄHLER,31,1.9620253164556962
 08236040,"Mühlacker, Stadt",Erststimmen,FREIE WÄHLER,0,0.0
-08236040,"Mühlacker, Stadt",Zweitstimmen,FREIE WÄHLER,164,1.6097369454259915
+08236040,"Mühlacker, Stadt",Zweitstimmen,FREIE WÄHLER,174,1.616349280074315
 08236043,"Neuenbürg, Stadt",Erststimmen,FREIE WÄHLER,0,0.0
 08236043,"Neuenbürg, Stadt",Zweitstimmen,FREIE WÄHLER,66,1.788617886178862
 08236044,Neuhausen,Erststimmen,FREIE WÄHLER,0,0.0
@@ -9067,8 +9067,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08236038,"Maulbronn, Stadt",Zweitstimmen,GRÜNE,973,29.728078215704244
 08236039,Mönsheim,Erststimmen,GRÜNE,378,23.98477157360406
 08236039,Mönsheim,Zweitstimmen,GRÜNE,444,28.10126582278481
-08236040,"Mühlacker, Stadt",Erststimmen,GRÜNE,2263,22.28458887247661
-08236040,"Mühlacker, Stadt",Zweitstimmen,GRÜNE,2924,28.700431880643894
+08236040,"Mühlacker, Stadt",Erststimmen,GRÜNE,2373,22.117625128157332
+08236040,"Mühlacker, Stadt",Zweitstimmen,GRÜNE,3071,28.5276358569438
 08236043,"Neuenbürg, Stadt",Erststimmen,GRÜNE,750,20.397062822953494
 08236043,"Neuenbürg, Stadt",Zweitstimmen,GRÜNE,901,24.417344173441734
 08236044,Neuhausen,Erststimmen,GRÜNE,602,19.7312356604392
@@ -10028,7 +10028,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08236039,Mönsheim,Erststimmen,KlimalisteBW,0,0.0
 08236039,Mönsheim,Zweitstimmen,KlimalisteBW,1,0.06329113924050633
 08236040,"Mühlacker, Stadt",Erststimmen,KlimalisteBW,0,0.0
-08236040,"Mühlacker, Stadt",Zweitstimmen,KlimalisteBW,3,0.029446407538280327
+08236040,"Mühlacker, Stadt",Zweitstimmen,KlimalisteBW,3,0.027868091035764053
 08236043,"Neuenbürg, Stadt",Erststimmen,KlimalisteBW,0,0.0
 08236043,"Neuenbürg, Stadt",Zweitstimmen,KlimalisteBW,5,0.13550135501355012
 08236044,Neuhausen,Erststimmen,KlimalisteBW,0,0.0
@@ -10988,7 +10988,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08236039,Mönsheim,Erststimmen,PDH,0,0.0
 08236039,Mönsheim,Zweitstimmen,PDH,0,0.0
 08236040,"Mühlacker, Stadt",Erststimmen,PDH,0,0.0
-08236040,"Mühlacker, Stadt",Zweitstimmen,PDH,3,0.029446407538280327
+08236040,"Mühlacker, Stadt",Zweitstimmen,PDH,3,0.027868091035764053
 08236043,"Neuenbürg, Stadt",Erststimmen,PDH,0,0.0
 08236043,"Neuenbürg, Stadt",Zweitstimmen,PDH,2,0.05420054200542006
 08236044,Neuhausen,Erststimmen,PDH,0,0.0
@@ -11948,7 +11948,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08236039,Mönsheim,Erststimmen,PDR,0,0.0
 08236039,Mönsheim,Zweitstimmen,PDR,4,0.25316455696202533
 08236040,"Mühlacker, Stadt",Erststimmen,PDR,0,0.0
-08236040,"Mühlacker, Stadt",Zweitstimmen,PDR,14,0.13741656851197487
+08236040,"Mühlacker, Stadt",Zweitstimmen,PDR,14,0.13005109150023222
 08236043,"Neuenbürg, Stadt",Erststimmen,PDR,0,0.0
 08236043,"Neuenbürg, Stadt",Zweitstimmen,PDR,9,0.24390243902439024
 08236044,Neuhausen,Erststimmen,PDR,0,0.0
@@ -12984,7 +12984,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08236039,Mönsheim,Erststimmen,PdF,0,0.0
 08236039,Mönsheim,Zweitstimmen,PdF,2,0.12658227848101267
 08236040,"Mühlacker, Stadt",Erststimmen,PdF,0,0.0
-08236040,"Mühlacker, Stadt",Zweitstimmen,PdF,4,0.03926187671770711
+08236040,"Mühlacker, Stadt",Zweitstimmen,PdF,4,0.03715745471435206
 08236043,"Neuenbürg, Stadt",Erststimmen,PdF,0,0.0
 08236043,"Neuenbürg, Stadt",Zweitstimmen,PdF,5,0.13550135501355012
 08236044,Neuhausen,Erststimmen,PdF,0,0.0
@@ -13943,8 +13943,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08236038,"Maulbronn, Stadt",Zweitstimmen,SPD,198,6.049495875343721
 08236039,Mönsheim,Erststimmen,SPD,108,6.852791878172589
 08236039,Mönsheim,Zweitstimmen,SPD,78,4.936708860759493
-08236040,"Mühlacker, Stadt",Erststimmen,SPD,795,7.828655834564254
-08236040,"Mühlacker, Stadt",Zweitstimmen,SPD,534,5.241460541813899
+08236040,"Mühlacker, Stadt",Erststimmen,SPD,836,7.791965700438065
+08236040,"Mühlacker, Stadt",Zweitstimmen,SPD,562,5.220622387366465
 08236043,"Neuenbürg, Stadt",Erststimmen,SPD,234,6.36388360076149
 08236043,"Neuenbürg, Stadt",Zweitstimmen,SPD,187,5.067750677506775
 08236044,Neuhausen,Erststimmen,SPD,158,5.178629957391019
@@ -14904,7 +14904,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08236039,Mönsheim,Erststimmen,Tierschutzpartei,0,0.0
 08236039,Mönsheim,Zweitstimmen,Tierschutzpartei,15,0.949367088607595
 08236040,"Mühlacker, Stadt",Erststimmen,Tierschutzpartei,0,0.0
-08236040,"Mühlacker, Stadt",Zweitstimmen,Tierschutzpartei,87,0.8539458186101295
+08236040,"Mühlacker, Stadt",Zweitstimmen,Tierschutzpartei,90,0.8360427310729215
 08236043,"Neuenbürg, Stadt",Erststimmen,Tierschutzpartei,0,0.0
 08236043,"Neuenbürg, Stadt",Zweitstimmen,Tierschutzpartei,73,1.9783197831978319
 08236044,Neuhausen,Erststimmen,Tierschutzpartei,0,0.0
@@ -15864,7 +15864,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08236039,Mönsheim,Erststimmen,Verjüngungsforschung,0,0.0
 08236039,Mönsheim,Zweitstimmen,Verjüngungsforschung,0,0.0
 08236040,"Mühlacker, Stadt",Erststimmen,Verjüngungsforschung,0,0.0
-08236040,"Mühlacker, Stadt",Zweitstimmen,Verjüngungsforschung,6,0.058892815076560655
+08236040,"Mühlacker, Stadt",Zweitstimmen,Verjüngungsforschung,6,0.055736182071528105
 08236043,"Neuenbürg, Stadt",Erststimmen,Verjüngungsforschung,0,0.0
 08236043,"Neuenbürg, Stadt",Zweitstimmen,Verjüngungsforschung,6,0.16260162601626016
 08236044,Neuhausen,Erststimmen,Verjüngungsforschung,0,0.0
@@ -16823,8 +16823,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08236038,"Maulbronn, Stadt",Zweitstimmen,Volt,21,0.6416131989000917
 08236039,Mönsheim,Erststimmen,Volt,17,1.0786802030456852
 08236039,Mönsheim,Zweitstimmen,Volt,11,0.6962025316455696
-08236040,"Mühlacker, Stadt",Erststimmen,Volt,166,1.634662727720335
-08236040,"Mühlacker, Stadt",Zweitstimmen,Volt,82,0.8048684727129958
+08236040,"Mühlacker, Stadt",Erststimmen,Volt,177,1.6497343648056668
+08236040,"Mühlacker, Stadt",Zweitstimmen,Volt,88,0.8174640037157455
 08236043,"Neuenbürg, Stadt",Erststimmen,Volt,102,2.7740005439216753
 08236043,"Neuenbürg, Stadt",Zweitstimmen,Volt,51,1.3821138211382114
 08236044,Neuhausen,Erststimmen,Volt,59,1.933792199278925
@@ -17784,7 +17784,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08236039,Mönsheim,Erststimmen,Werteunion,0,0.0
 08236039,Mönsheim,Zweitstimmen,Werteunion,6,0.37974683544303794
 08236040,"Mühlacker, Stadt",Erststimmen,Werteunion,0,0.0
-08236040,"Mühlacker, Stadt",Zweitstimmen,Werteunion,22,0.21594032194738907
+08236040,"Mühlacker, Stadt",Zweitstimmen,Werteunion,24,0.22294472828611242
 08236043,"Neuenbürg, Stadt",Erststimmen,Werteunion,0,0.0
 08236043,"Neuenbürg, Stadt",Zweitstimmen,Werteunion,7,0.1897018970189702
 08236044,Neuhausen,Erststimmen,Werteunion,0,0.0
@@ -18744,7 +18744,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08236039,Mönsheim,Erststimmen,dieBasis,0,0.0
 08236039,Mönsheim,Zweitstimmen,dieBasis,3,0.18987341772151897
 08236040,"Mühlacker, Stadt",Erststimmen,dieBasis,0,0.0
-08236040,"Mühlacker, Stadt",Zweitstimmen,dieBasis,16,0.15704750687082844
+08236040,"Mühlacker, Stadt",Zweitstimmen,dieBasis,17,0.1579191825359963
 08236043,"Neuenbürg, Stadt",Erststimmen,dieBasis,0,0.0
 08236043,"Neuenbürg, Stadt",Zweitstimmen,dieBasis,7,0.1897018970189702
 08236044,Neuhausen,Erststimmen,dieBasis,0,0.0
@@ -19704,7 +19704,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08236039,Mönsheim,Erststimmen,ÖDP,0,0.0
 08236039,Mönsheim,Zweitstimmen,ÖDP,1,0.06329113924050633
 08236040,"Mühlacker, Stadt",Erststimmen,ÖDP,0,0.0
-08236040,"Mühlacker, Stadt",Zweitstimmen,ÖDP,8,0.07852375343541422
+08236040,"Mühlacker, Stadt",Zweitstimmen,ÖDP,8,0.07431490942870413
 08236043,"Neuenbürg, Stadt",Erststimmen,ÖDP,0,0.0
 08236043,"Neuenbürg, Stadt",Zweitstimmen,ÖDP,4,0.10840108401084012
 08236044,Neuhausen,Erststimmen,ÖDP,0,0.0
