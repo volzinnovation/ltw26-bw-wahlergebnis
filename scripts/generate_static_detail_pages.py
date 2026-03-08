@@ -241,23 +241,47 @@ def maybe_refresh_structure_cache(
     return cache
 
 
-def current_raw_statla_csv_path() -> Path:
+def current_raw_statla_csv_path() -> Optional[Path]:
     metadata = json.loads((core.LATEST_DIR / "run_metadata.json").read_text(encoding="utf-8"))
     run_label = str(metadata.get("run_label") or "").strip()
     candidate = core.RAW_STATLA_DIR / f"{run_label}-statla.csv"
     if candidate.exists():
         return candidate
-    return core.LOCAL_DUMMY_STATLA_PATH
+    return None
+
+
+def load_latest_statla_snapshots() -> List[Dict[str, Any]]:
+    rows = read_csv_rows(core.LATEST_DIR / "statla_snapshots.csv")
+    normalized: List[Dict[str, Any]] = []
+    for row in rows:
+        normalized.append(
+            {
+                "row_key": str(row.get("row_key") or ""),
+                "ags": str(row.get("ags") or ""),
+                "municipality_name": str(row.get("municipality_name") or ""),
+                "gebietsart": str(row.get("gebietsart") or ""),
+                "gebietsnummer": str(row.get("gebietsnummer") or ""),
+                "reported_precincts": core.parse_int(row.get("reported_precincts")),
+                "total_precincts": core.parse_int(row.get("total_precincts")),
+                "voters_total": core.parse_int(row.get("voters_total")),
+                "valid_votes_erst": core.parse_int(row.get("valid_votes_erst")),
+                "valid_votes_zweit": core.parse_int(row.get("valid_votes_zweit")),
+                "payload_hash": str(row.get("payload_hash") or ""),
+                "is_municipality_summary": str(row.get("is_municipality_summary") or ""),
+            }
+        )
+    return normalized
 
 
 def load_statla_dataset() -> Tuple[List[Dict[str, Any]], Dict[str, Dict[str, str]]]:
-    raw_path = current_raw_statla_csv_path()
-    raw_text = core.decode_bytes(raw_path.read_bytes())
-    snapshots, _party_rows = core.parse_statla_csv_rows(raw_text)
-    raw_rows = list(csv.DictReader(raw_text.splitlines(), delimiter=";"))
+    snapshots = load_latest_statla_snapshots()
     raw_by_row_key: Dict[str, Dict[str, str]] = {}
-    for snapshot, raw_row in zip(snapshots, raw_rows):
-        raw_by_row_key[snapshot["row_key"]] = raw_row
+    raw_path = current_raw_statla_csv_path()
+    if raw_path is not None:
+        raw_text = core.decode_bytes(raw_path.read_bytes())
+        raw_rows = list(csv.DictReader(raw_text.splitlines(), delimiter=";"))
+        for snapshot, raw_row in zip(snapshots, raw_rows):
+            raw_by_row_key[snapshot["row_key"]] = raw_row
     return snapshots, raw_by_row_key
 
 
@@ -422,6 +446,26 @@ def wahlkreis_number_from_raw_row(raw_row: Dict[str, str]) -> str:
     return str(raw_row.get("Wahlkreisnummer") or "").strip()
 
 
+def fallback_raw_row(snapshot: Dict[str, Any]) -> Dict[str, str]:
+    gebietsart = str(snapshot.get("gebietsart") or "").strip()
+    gebietsnummer = str(snapshot.get("gebietsnummer") or "").strip()
+    municipality_name = str(snapshot.get("municipality_name") or "").strip()
+    wahlkreisnummer = ""
+    if gebietsart.upper() == "WAHLKREIS":
+        wahlkreisnummer = core.normalize_wahlkreis_nummer(gebietsnummer)
+    return {
+        "Wahlkreisnummer": wahlkreisnummer,
+        "Gemeindename": municipality_name,
+        "Gebietsname": municipality_name or gebietsnummer or str(snapshot.get("row_key") or ""),
+        "Gebietsnummer": gebietsnummer,
+        "Bezirksnummer": gebietsnummer,
+    }
+
+
+def raw_row_for_snapshot(raw_by_row_key: Dict[str, Dict[str, str]], snapshot: Dict[str, Any]) -> Dict[str, str]:
+    return raw_by_row_key.get(str(snapshot.get("row_key") or ""), fallback_raw_row(snapshot))
+
+
 def municipality_name_for_snapshot(snapshot: Dict[str, Any], raw_row: Dict[str, str]) -> str:
     return str(snapshot.get("municipality_name") or raw_row.get("Gemeindename") or snapshot.get("ags") or "").strip()
 
@@ -451,7 +495,7 @@ def build_city_entities(
 
         if municipality_rows and len(split_wahlkreise) <= 1:
             snapshot = municipality_rows[0]
-            raw_row = raw_by_row_key[snapshot["row_key"]]
+            raw_row = raw_row_for_snapshot(raw_by_row_key, snapshot)
             wk = next(iter(split_wahlkreise), wahlkreis_number_from_raw_row(raw_row))
             name = municipality_name_for_snapshot(snapshot, raw_row)
             entities.append(
@@ -470,8 +514,8 @@ def build_city_entities(
         for snapshot in ags_rows:
             if str(snapshot.get("gebietsart") or "").upper() != "WAHLKREIS":
                 continue
-            raw_row = raw_by_row_key[snapshot["row_key"]]
-            wk = wahlkreis_number_from_raw_row(raw_row)
+            raw_row = raw_row_for_snapshot(raw_by_row_key, snapshot)
+            wk = wahlkreis_number_from_raw_row(raw_row) or str(snapshot.get("gebietsnummer") or "")
             name = municipality_name_for_snapshot(snapshot, raw_row)
             entities.append(
                 {
@@ -1208,7 +1252,7 @@ def enrich_booths_for_municipality(
     enriched: List[Dict[str, Any]] = []
     brief_index = 0
     for snapshot in sorted(booth_rows, key=lambda item: item["row_key"]):
-        raw_row = raw_by_row_key[snapshot["row_key"]]
+        raw_row = raw_row_for_snapshot(raw_by_row_key, snapshot)
         display_name = str(raw_row.get("Gebietsname") or raw_row.get("Gebietsnummer") or snapshot["row_key"]).strip()
         booth_code = str(raw_row.get("Bezirksnummer") or "").strip()
         structure_detail_url = ""
@@ -1472,12 +1516,15 @@ def main() -> int:
         candidate_booths = booth_rows_by_ags.get(ags, [])
         if entity["is_split_city"]:
             candidate_booths = [
-                row for row in candidate_booths if wahlkreis_number_from_raw_row(raw_by_row_key[row["row_key"]]) == wk
+                row
+                for row in candidate_booths
+                if not wahlkreis_number_from_raw_row(raw_row_for_snapshot(raw_by_row_key, row))
+                or wahlkreis_number_from_raw_row(raw_row_for_snapshot(raw_by_row_key, row)) == wk
             ]
         booth_rows = enrich_booths_for_municipality(ags, candidate_booths, raw_by_row_key, structure)
         booth_local_links: Dict[str, str] = {}
         for booth in booth_rows:
-            raw_row = raw_by_row_key[booth["row_key"]]
+            raw_row = raw_row_for_snapshot(raw_by_row_key, booth)
             booth_filename = booth_slug(ags, booth, raw_row, wk if entity["is_split_city"] else None) + ".html"
             booth_pages[booth["row_key"]] = f"../booth/{booth_filename}"
             booth_local_links[booth["row_key"]] = booth_pages[booth["row_key"]]
@@ -1508,7 +1555,7 @@ def main() -> int:
         write_page(output_root / "municipality" / filename, f"{name} - {config.election_key}", body)
 
         for booth in booth_rows:
-            raw_row = raw_by_row_key[booth["row_key"]]
+            raw_row = raw_row_for_snapshot(raw_by_row_key, booth)
             booth_filename = booth_slug(ags, booth, raw_row, wk if entity["is_split_city"] else None) + ".html"
             detail_link = ""
             if booth.get("structure_detail_url"):
