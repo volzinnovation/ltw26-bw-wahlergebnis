@@ -36,10 +36,10 @@ Run a single live poll after the election opens:
 python3 scripts/poll_election.py --election-key 2026-bw
 ```
 
-Run the local minute loop from 17:00:
+Run the local minute loop from 18:00:
 
 ```bash
-python3 scripts/run_local_poll_loop.py --election-key 2026-bw --start-at 17:00
+python3 scripts/run_local_poll_loop.py --election-key 2026-bw --start-at 18:00
 ```
 
 Validate the dummy dataset integration:
