@@ -34,7 +34,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from dataclasses import dataclass
 from datetime import datetime, timezone
 from pathlib import Path
-from typing import Any, Dict, Iterable, List, Optional, Tuple
+from typing import Any, Callable, Dict, Iterable, List, Optional, Tuple
 from urllib import error, request
 from urllib.parse import urlsplit
 
@@ -2770,9 +2770,12 @@ def canonical_vote_type(label: str) -> str:
 def source_party_totals(
     party_rows: List[Dict[str, Any]],
     party_field: str,
+    row_filter: Optional[Callable[[Dict[str, Any]], bool]] = None,
 ) -> Dict[str, Dict[str, int]]:
     totals_by_type: Dict[str, Dict[str, int]] = {}
     for row in party_rows:
+        if row_filter is not None and not row_filter(row):
+            continue
         votes = row.get("votes")
         vote_type = canonical_vote_type(str(row.get("vote_type") or ""))
         party = canonical_party_name(str(row.get(party_field) or ""), vote_type=vote_type)
@@ -2834,7 +2837,11 @@ def party_summary_by_vote_type_sources(
     statla_party_rows: List[Dict[str, Any]],
 ) -> List[Dict[str, Any]]:
     kommone_totals = source_party_totals(kommone_party_rows, party_field="party")
-    statla_totals = source_party_totals(statla_party_rows, party_field="party_name")
+    statla_totals = source_party_totals(
+        statla_party_rows,
+        party_field="party_name",
+        row_filter=lambda row: str(row.get("row_key") or "").endswith(":LAND"),
+    )
     fixed_parties = fixed_party_order_by_vote_type()
 
     rows: List[Dict[str, Any]] = []
