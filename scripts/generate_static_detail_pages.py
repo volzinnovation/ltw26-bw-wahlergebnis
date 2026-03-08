@@ -95,6 +95,25 @@ def read_csv_rows(path: Path) -> List[Dict[str, str]]:
         return list(csv.DictReader(handle))
 
 
+def parse_float(value: Any) -> Optional[float]:
+    text = str(value or "").strip()
+    if not text:
+        return None
+    try:
+        return float(text.replace(",", "."))
+    except ValueError:
+        return None
+
+
+def status_label(status: str) -> str:
+    return {
+        "complete": "vollstaendig",
+        "pending": "ausstehend",
+        "no_data": "keine Daten",
+        "prestart": "vor Start",
+    }.get(status, status)
+
+
 def slugify(text: str) -> str:
     normalized = unicodedata.normalize("NFKD", text).encode("ascii", "ignore").decode("ascii").lower()
     normalized = re.sub(r"[^a-z0-9]+", "-", normalized).strip("-")
@@ -232,6 +251,62 @@ def load_statla_dataset() -> Tuple[List[Dict[str, Any]], Dict[str, Dict[str, str
 
 def load_latest_party_rows() -> List[Dict[str, str]]:
     return read_csv_rows(core.LATEST_DIR / "statla_party_results.csv")
+
+
+def load_latest_kommone_snapshots() -> List[Dict[str, Any]]:
+    rows = read_csv_rows(core.LATEST_DIR / "kommone_snapshots.csv")
+    normalized: List[Dict[str, Any]] = []
+    for row in rows:
+        normalized.append(
+            {
+                "ags": str(row.get("ags") or ""),
+                "municipality_name": str(row.get("municipality_name") or ""),
+                "status": str(row.get("status") or ""),
+                "reported_precincts": core.parse_int(row.get("reported_precincts")),
+                "total_precincts": core.parse_int(row.get("total_precincts")),
+                "voters_total": core.parse_int(row.get("voters_total")),
+                "valid_votes": core.parse_int(row.get("valid_votes")),
+                "invalid_votes": core.parse_int(row.get("invalid_votes")),
+                "source_timestamp": row.get("source_timestamp"),
+                "payload_hash": row.get("payload_hash"),
+                "error_message": row.get("error_message"),
+            }
+        )
+    return normalized
+
+
+def load_latest_kommone_party_rows() -> List[Dict[str, Any]]:
+    rows = read_csv_rows(core.LATEST_DIR / "kommone_party_results.csv")
+    normalized: List[Dict[str, Any]] = []
+    for row in rows:
+        normalized.append(
+            {
+                "ags": str(row.get("ags") or ""),
+                "municipality_name": str(row.get("municipality_name") or ""),
+                "vote_type": str(row.get("vote_type") or ""),
+                "party": str(row.get("party") or ""),
+                "votes": core.parse_int(row.get("votes")),
+                "percent": parse_float(row.get("percent")),
+            }
+        )
+    return normalized
+
+
+def load_latest_source_diffs() -> List[Dict[str, Any]]:
+    rows = read_csv_rows(core.REPORT_DIR / "latest_source_diff.csv")
+    normalized: List[Dict[str, Any]] = []
+    for row in rows:
+        normalized.append(
+            {
+                "ags": str(row.get("ags") or ""),
+                "municipality_name": str(row.get("municipality_name") or ""),
+                "metric": str(row.get("metric") or ""),
+                "kommone_value": parse_float(row.get("kommone_value")),
+                "statla_value": parse_float(row.get("statla_value")),
+                "delta": parse_float(row.get("delta")),
+            }
+        )
+    return normalized
 
 
 def build_party_votes_by_row_key(party_rows: List[Dict[str, str]]) -> Dict[str, Dict[str, Dict[str, int]]]:
@@ -479,6 +554,14 @@ def render_page(title: str, body: str, root_path: str = "../") -> str:
     .stat-value {{ font-size: 24px; margin-top: 6px; }}
     ul.linklist {{ list-style: none; padding: 0; margin: 0; display:grid; gap:8px; }}
     .small {{ font-size: 12px; color: var(--muted); }}
+    details {{ border-top: 1px solid #e8e1d5; padding-top: 12px; }}
+    details + details {{ margin-top: 10px; }}
+    summary {{ cursor: pointer; font-weight: 600; }}
+    .dashboard-map svg {{ width: 100%; height: auto; display: block; }}
+    .dashboard-map a:hover path {{ stroke-width: 1.6; filter: brightness(0.97); }}
+    .dashboard-map path {{ transition: stroke-width 120ms ease, filter 120ms ease; }}
+    .inline-list {{ margin: 0; padding-left: 18px; }}
+    .compact td, .compact th {{ padding: 8px 7px; }}
     @media (max-width: 900px) {{
       main {{ padding: 20px 14px 48px; }}
       .hero {{ padding: 18px; }}
@@ -528,12 +611,12 @@ def render_vote_table(
         cells.append(f"<td>{format_votes_cell(total, total or 1)}</td>")
         body_rows.append("<tr>" + "".join(cells) + "</tr>")
 
-    total_cells = ["<td><strong>Total</strong></td>"]
+    total_cells = ["<td><strong>Gesamt</strong></td>"]
     for party in parties:
         total_cells.append(f"<td><strong>{format_votes_cell(totals_by_party[party], grand_total or 1)}</strong></td>")
     total_cells.append(f"<td><strong>{format_votes_cell(grand_total, grand_total or 1)}</strong></td>")
 
-    header = "<tr><th>Area</th>" + "".join(party_header_cell(party) for party in parties) + "<th>Valid votes</th></tr>"
+    header = "<tr><th>Gebiet</th>" + "".join(party_header_cell(party) for party in parties) + "<th>Gueltige Stimmen</th></tr>"
     return (
         f"<table><thead>{header}</thead><tbody>{''.join(body_rows)}</tbody>"
         f"<tfoot><tr>{''.join(total_cells)}</tr></tfoot></table>"
@@ -550,7 +633,7 @@ def render_booth_list(
         if booth.get("structure_location_url"):
             location_link = (
                 f"<a href='{html.escape(booth['structure_location_url'])}' target='_blank' rel='noopener'>"
-                f"{html.escape(booth.get('structure_location_name') or '2021 location')}</a>"
+                f"{html.escape(booth.get('structure_location_name') or 'Wahllokal 2021')}</a>"
             )
         rows.append(
             "<tr>"
@@ -562,8 +645,247 @@ def render_booth_list(
             "</tr>"
         )
     return (
-        "<table><thead><tr><th>Booth</th><th>Type</th><th>Precincts</th><th>Valid zweit votes</th><th>2021 location</th></tr></thead>"
+        "<table><thead><tr><th>Wahlbezirk</th><th>Typ</th><th>Bezirke</th><th>Gueltige Zweitstimmen</th><th>Wahllokal 2021</th></tr></thead>"
         f"<tbody>{''.join(rows)}</tbody></table>"
+    )
+
+
+def render_vote_type_summary_table(vote_type: str, rows: List[Dict[str, Any]]) -> str:
+    body_rows: List[str] = []
+    for row in rows:
+        label = "<strong>Gesamt</strong>" if str(row.get("row_type") or "") == "TOTAL" else html.escape(str(row.get("party") or ""))
+        body_rows.append(
+            "<tr>"
+            f"<td>{label}</td>"
+            f"<td>{int(row.get('kommone_votes') or 0):,}</td>"
+            f"<td>{float(row.get('kommone_share_percent') or 0.0):.2f}%</td>"
+            f"<td>{int(row.get('statla_votes') or 0):,}</td>"
+            f"<td>{float(row.get('statla_share_percent') or 0.0):.2f}%</td>"
+            f"<td>{int(row.get('delta_votes') or 0):+d}</td>"
+            f"<td>{float(row.get('delta_share_percent') or 0.0):+.2f}%</td>"
+            "</tr>"
+        )
+    return (
+        f"<div class='panel'><h2>{html.escape(vote_type)}</h2>"
+        "<table class='compact'><thead><tr>"
+        "<th>Partei</th><th>`komm.one` Stimmen</th><th>`komm.one` Anteil</th>"
+        "<th>`statla` Stimmen</th><th>`statla` Anteil</th><th>Differenz Stimmen</th><th>Differenz Anteil</th>"
+        f"</tr></thead><tbody>{''.join(body_rows)}</tbody></table></div>"
+    )
+
+
+def render_party_dashboard(
+    party_summary: List[Dict[str, Any]],
+    party_details: Dict[str, List[Dict[str, Any]]],
+    municipality_link_by_ags: Dict[str, str],
+) -> str:
+    if not party_summary:
+        return "<div class='panel'><h2>Parteien</h2><p class='muted'>Noch keine Parteidaten verfuegbar.</p></div>"
+
+    summary_rows = "".join(
+        "<tr>"
+        f"<td>{html.escape(str(row['party']))}</td>"
+        f"<td>{int(row['votes']):,}</td>"
+        f"<td>{float(row['share_percent']):.2f}%</td>"
+        "</tr>"
+        for row in party_summary
+    )
+
+    details_blocks: List[str] = []
+    for row in party_summary:
+        party = str(row["party"])
+        detail_rows = party_details.get(party, [])
+        table_rows: List[str] = []
+        for item in detail_rows[:100]:
+            municipality = html.escape(str(item["municipality_name"]))
+            if item["ags"] in municipality_link_by_ags:
+                municipality = f"<a href='{html.escape(municipality_link_by_ags[item['ags']])}'>{municipality}</a>"
+            votes = "" if item.get("votes") is None else f"{int(item['votes']):,}"
+            percent = "" if item.get("percent") is None else f"{float(item['percent']):.2f}%"
+            table_rows.append(
+                "<tr>"
+                f"<td>{item['ags']}</td>"
+                f"<td>{municipality}</td>"
+                f"<td>{votes}</td>"
+                f"<td>{percent}</td>"
+                f"<td>{html.escape(status_label(str(item['status'])))}</td>"
+                "</tr>"
+            )
+        details_blocks.append(
+            f"<details><summary>{html.escape(party)}</summary>"
+            "<table class='compact'><thead><tr><th>AGS</th><th>Gemeinde</th><th>Stimmen</th><th>Anteil</th><th>Status</th></tr></thead>"
+            f"<tbody>{''.join(table_rows)}</tbody></table></details>"
+        )
+
+    return (
+        "<div class='panel'><h2>Parteien</h2>"
+        "<table class='compact'><thead><tr><th>Partei</th><th>Stimmen</th><th>Anteil</th></tr></thead>"
+        f"<tbody>{summary_rows}</tbody></table>{''.join(details_blocks)}</div>"
+    )
+
+
+def render_pending_results(
+    pending_rows: List[Dict[str, Any]],
+    municipality_link_by_ags: Dict[str, str],
+) -> str:
+    if not pending_rows:
+        return "<div class='panel'><h2>Ausstehende Ergebnisse</h2><p class='muted'>Keine ausstehenden Gemeinden.</p></div>"
+
+    table_rows: List[str] = []
+    for row in pending_rows[:200]:
+        municipality_name = html.escape(str(row["municipality_name"]))
+        if row["ags"] in municipality_link_by_ags:
+            municipality_name = f"<a href='{html.escape(municipality_link_by_ags[row['ags']])}'>{municipality_name}</a>"
+        reported = row.get("reported_precincts")
+        total = row.get("total_precincts")
+        rep_total = "" if reported is None or total is None else f"{reported}/{total}"
+        table_rows.append(
+            "<tr>"
+            f"<td>{row['ags']}</td>"
+            f"<td>{municipality_name}</td>"
+            f"<td>{rep_total}</td>"
+            f"<td>{html.escape(status_label(core.municipality_status(row)))}</td>"
+            "</tr>"
+        )
+    return (
+        f"<div class='panel'><h2>Ausstehende Ergebnisse</h2><p class='small'>Zeige {min(len(pending_rows), 200)} von {len(pending_rows)} Zeilen.</p>"
+        "<table class='compact'><thead><tr><th>AGS</th><th>Gemeinde</th><th>`komm.one` gemeldet/gesamt</th><th>Status</th></tr></thead>"
+        f"<tbody>{''.join(table_rows)}</tbody></table></div>"
+    )
+
+
+def render_source_diff_summary(diff_rows: List[Dict[str, Any]]) -> str:
+    metrics = ["reported_precincts", "total_precincts", "voters_total", "valid_votes"]
+    summary: Dict[str, Dict[str, float]] = {}
+    for row in diff_rows:
+        metric = str(row.get("metric") or "")
+        bucket = summary.setdefault(metric, {"count_with_delta": 0, "abs_delta_sum": 0.0})
+        if isinstance(row.get("delta"), (int, float)):
+            bucket["count_with_delta"] += 1
+            bucket["abs_delta_sum"] += abs(float(row["delta"]))
+    rows_html = "".join(
+        "<tr>"
+        f"<td>{html.escape(metric)}</td>"
+        f"<td>{int(summary.get(metric, {}).get('count_with_delta', 0))}</td>"
+        f"<td>{float(summary.get(metric, {}).get('abs_delta_sum', 0.0)):.2f}</td>"
+        "</tr>"
+        for metric in metrics
+    )
+    return (
+        "<div class='panel'><h2>Quellenvergleich</h2>"
+        "<table class='compact'><thead><tr><th>Metrik</th><th>Zeilen mit Differenz</th><th>Summe(|delta|)</th></tr></thead>"
+        f"<tbody>{rows_html}</tbody></table></div>"
+    )
+
+
+def render_wahlkreis_overview_table(
+    status_rows: List[Dict[str, Any]],
+    link_by_wk: Dict[str, str],
+) -> str:
+    rows_html: List[str] = []
+    for row in status_rows:
+        wk = str(row["wahlkreisnummer"])
+        label = f"{wk.zfill(2)} - {row['wahlkreisname']}"
+        href = link_by_wk.get(wk)
+        linked_label = f"<a href='{html.escape(href)}'>{html.escape(label)}</a>" if href else html.escape(label)
+        reported = row.get("reported_precincts")
+        total = row.get("total_precincts")
+        rep_total = "" if reported is None or total is None else f"{reported}/{total}"
+        rows_html.append(
+            "<tr>"
+            f"<td>{linked_label}</td>"
+            f"<td>{html.escape(status_label(str(row['status'])))}</td>"
+            f"<td>{rep_total}</td>"
+            f"<td>{int(row.get('municipalities_complete') or 0)}</td>"
+            f"<td>{int(row.get('municipalities_pending') or 0)}</td>"
+            f"<td>{int(row.get('municipalities_no_data') or 0)}</td>"
+            "</tr>"
+        )
+    return (
+        "<div class='panel'><h2>Wahlkreisstatus</h2>"
+        "<table class='compact'><thead><tr><th>Wahlkreis</th><th>Status</th><th>Gemeldete Bezirke</th><th>Vollstaendig</th><th>Ausstehend</th><th>Keine Daten</th></tr></thead>"
+        f"<tbody>{''.join(rows_html)}</tbody></table></div>"
+    )
+
+
+def render_clickable_wahlkreis_map(
+    features: List[Dict[str, Any]],
+    status_rows: List[Dict[str, Any]],
+    link_by_wk: Dict[str, str],
+) -> str:
+    if not features:
+        return "<p class='muted'>Keine Wahlkreis-Geometrie verfuegbar.</p>"
+
+    status_by_wk = {row["wahlkreisnummer"]: row for row in status_rows}
+    colors = {
+        "prestart": "#d1d5db",
+        "no_data": "#e5e7eb",
+        "pending": "#f59e0b",
+        "complete": "#16a34a",
+    }
+
+    all_points: List[Tuple[float, float]] = []
+    for feature in features:
+        for ring in core.iter_exterior_rings(feature.get("geometry") or {}):
+            for point in ring:
+                if len(point) >= 2:
+                    all_points.append((float(point[0]), float(point[1])))
+    if not all_points:
+        return "<p class='muted'>Keine Wahlkreis-Geometrie verfuegbar.</p>"
+
+    min_lon = min(p[0] for p in all_points)
+    max_lon = max(p[0] for p in all_points)
+    min_lat = min(p[1] for p in all_points)
+    max_lat = max(p[1] for p in all_points)
+    width = 1000.0
+    height = 1300.0
+    pad = 40.0
+    scale_x = (width - 2 * pad) / max(max_lon - min_lon, 1e-9)
+    scale_y = (height - 2 * pad) / max(max_lat - min_lat, 1e-9)
+    scale = min(scale_x, scale_y)
+
+    path_nodes: List[str] = []
+    for feature in features:
+        props = feature.get("properties") or {}
+        wk = core.normalize_wahlkreis_nummer(props.get("Nummer"))
+        if not wk:
+            continue
+        row = status_by_wk.get(wk, {})
+        status = str(row.get("status") or "no_data")
+        name = str(props.get("WK Name") or row.get("wahlkreisname") or f"Wahlkreis {wk}").strip()
+        fill = colors.get(status, colors["no_data"])
+        d_parts: List[str] = []
+        for ring in core.iter_exterior_rings(feature.get("geometry") or {}):
+            if len(ring) < 3:
+                continue
+            projected = [
+                core.project_point(
+                    float(pt[0]),
+                    float(pt[1]),
+                    min_lon=min_lon,
+                    min_lat=min_lat,
+                    scale=scale,
+                    pad=pad,
+                    height=height,
+                )
+                for pt in ring
+            ]
+            d_parts.append("M " + " L ".join(f"{x:.2f} {y:.2f}" for x, y in projected) + " Z")
+        if not d_parts:
+            continue
+        title = html.escape(f"{wk.zfill(2)} {name} ({status_label(status)})")
+        path_markup = f"<path d=\"{' '.join(d_parts)}\" fill=\"{fill}\" stroke=\"#111827\" stroke-width=\"0.8\"><title>{title}</title></path>"
+        href = link_by_wk.get(wk)
+        if href:
+            path_nodes.append(f"<a href='{html.escape(href)}'>{path_markup}</a>")
+        else:
+            path_nodes.append(path_markup)
+
+    return (
+        f"<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 {int(width)} {int(height)}'>"
+        "<rect width='100%' height='100%' fill='#ffffff'/>"
+        f"{''.join(path_nodes)}"
+        "</svg>"
     )
 
 
@@ -638,16 +960,95 @@ def render_index_page(
     config: core.Config,
     output_root: Path,
     wahlkreis_pages: List[Tuple[str, str, str]],
+    wahlkreis_status_rows: List[Dict[str, Any]],
+    wahlkreis_link_by_wk: Dict[str, str],
+    municipality_link_by_ags: Dict[str, str],
+    latest_kommone_snapshots: List[Dict[str, Any]],
+    latest_kommone_party_rows: List[Dict[str, Any]],
+    statla_party_rows: List[Dict[str, Any]],
+    diff_rows: List[Dict[str, Any]],
 ) -> None:
-    links = "".join(
-        f"<li><a href='wahlkreis/{html.escape(filename)}'>{html.escape(wk.zfill(2))} - {html.escape(name)}</a></li>"
-        for wk, name, filename in wahlkreis_pages
-    )
+    run_metadata = json.loads((core.LATEST_DIR / "run_metadata.json").read_text(encoding="utf-8"))
+    polled_at = core.parse_iso_datetime(str(run_metadata.get("generated_at_utc") or ""))
+    if polled_at is not None:
+        polled_at_local = polled_at.astimezone(core.ZoneInfo(config.timezone)).strftime("%Y-%m-%d %H:%M:%S %Z")
+    else:
+        polled_at_local = "-"
+
+    tracking_start = core.format_local_dt(core.tracking_start_local_dt(config))
+    statla_mode = str(run_metadata.get("statla_mode") or "-")
+    statla_url = str(run_metadata.get("statla_url") or config.statla_live_csv_url)
+    if statla_mode == "DUMMY" and Path(statla_url).is_absolute():
+        statla_url = config.statla_dummy_csv_url
+
+    status_counts = {"complete": 0, "pending": 0, "no_data": 0}
+    for snapshot in latest_kommone_snapshots:
+        status_counts[core.municipality_status(snapshot)] = status_counts.get(core.municipality_status(snapshot), 0) + 1
+
+    wahlkreis_counts = {"prestart": 0, "no_data": 0, "pending": 0, "complete": 0}
+    for row in wahlkreis_status_rows:
+        wahlkreis_counts[str(row["status"])] = wahlkreis_counts.get(str(row["status"]), 0) + 1
+
+    vote_type_summary = core.party_summary_by_vote_type_sources(latest_kommone_party_rows, statla_party_rows)
+    summary_by_vote_type: Dict[str, List[Dict[str, Any]]] = defaultdict(list)
+    for row in vote_type_summary:
+        summary_by_vote_type[str(row["vote_type"] or "Unbekannt")].append(row)
+
+    party_summary, party_details = core.party_dashboard_rows(latest_kommone_snapshots, latest_kommone_party_rows)
+    pending_rows = [
+        row for row in sorted(latest_kommone_snapshots, key=lambda item: (item["municipality_name"], item["ags"]))
+        if core.municipality_status(row) != "complete"
+    ]
+    features = core.load_wahlkreis_features()
+    operations = [
+        f"`python scripts/poll_election.py --election-key {config.election_key}`",
+        f"`python scripts/run_local_poll_loop.py --election-key {config.election_key} --start-at 18:00`",
+        f"`python scripts/run_local_mock_poll.py --election-key {config.election_key} --iterations 1 --limit-ags 10`",
+        f"`python scripts/validate_dummy_statla_result.py --election-key {config.election_key}`",
+        f"`python scripts/generate_static_detail_pages.py --election-key {config.election_key}`",
+    ]
     body = (
-        "<div class='hero'><div class='topbar'><a href='../index.html'>All elections</a></div>"
+        "<div class='hero'><div class='topbar'><a href='../index.html'>Alle Wahlen</a></div>"
         f"<h1>{html.escape(config.election_name)} ({html.escape(config.election_key)})</h1>"
-        "<p class='muted'>Static file-based drill-down from Wahlkreis to municipality to booth.</p></div>"
-        f"<div class='panel'><h2>Wahlkreise</h2><ul class='linklist'>{links}</ul></div>"
+        "<p class='muted'>Statische Uebersicht mit Drill-down von Wahlkreis zu Gemeinde und Wahlbezirk.</p>"
+        f"<div class='stats'>"
+        f"<div class='stat'><div class='stat-label'>Letzter Poll</div><div class='stat-value'>{html.escape(polled_at_local)}</div></div>"
+        f"<div class='stat'><div class='stat-label'>Trackingstart</div><div class='stat-value'>{html.escape(tracking_start)}</div></div>"
+        f"<div class='stat'><div class='stat-label'>Gemeinden</div><div class='stat-value'>{len(latest_kommone_snapshots):,}</div></div>"
+        f"<div class='stat'><div class='stat-label'>Wahlkreise vollstaendig</div><div class='stat-value'>{wahlkreis_counts['complete']}</div></div>"
+        "</div></div>"
+        "<div class='grid'>"
+        "<div class='panel'><h2>Datenquellen</h2>"
+        "<ul class='inline-list'>"
+        "<li>`komm.one`-Gemeindeseiten in der aktuellen HTML-Struktur</li>"
+        f"<li>Statistik BW CSV (Modus: <strong>{html.escape(statla_mode)}</strong>): <a href='{html.escape(statla_url)}'>{html.escape(statla_url)}</a></li>"
+        "</ul></div>"
+        "<div class='panel'><h2>Betrieb</h2><ul class='inline-list'>"
+        + "".join(f"<li>{item}</li>" for item in operations)
+        + "</ul></div>"
+        "<div class='panel'><h2>Abdeckung</h2><ul class='inline-list'>"
+        f"<li>`komm.one` vollstaendig: <strong>{status_counts['complete']}</strong></li>"
+        f"<li>`komm.one` ausstehend: <strong>{status_counts['pending']}</strong></li>"
+        f"<li>`komm.one` keine Daten: <strong>{status_counts['no_data']}</strong></li>"
+        f"<li>Wahlkreise vollstaendig: <strong>{wahlkreis_counts['complete']}</strong></li>"
+        f"<li>Wahlkreise ausstehend: <strong>{wahlkreis_counts['pending']}</strong></li>"
+        f"<li>Wahlkreise ohne Daten: <strong>{wahlkreis_counts['no_data']}</strong></li>"
+        "</ul></div>"
+        "<div class='panel dashboard-map'><h2>Klickbare Wahlkreiskarte</h2>"
+        "<p class='small'>Jeder Wahlkreis fuehrt direkt zur Detailseite.</p>"
+        f"{render_clickable_wahlkreis_map(features, wahlkreis_status_rows, wahlkreis_link_by_wk)}</div>"
+        f"{render_wahlkreis_overview_table(wahlkreis_status_rows, wahlkreis_link_by_wk)}"
+        + "".join(
+            render_vote_type_summary_table(vote_type, rows)
+            for vote_type, rows in sorted(
+                summary_by_vote_type.items(),
+                key=lambda item: {"Erststimmen": 0, "Zweitstimmen": 1}.get(item[0], 99),
+            )
+        )
+        + render_party_dashboard(party_summary, party_details, municipality_link_by_ags)
+        + render_pending_results(pending_rows, municipality_link_by_ags)
+        + render_source_diff_summary(diff_rows)
+        + "</div>"
     )
     write_page(output_root / "index.html", f"{config.election_name} ({config.election_key})", body)
 
@@ -676,9 +1077,9 @@ def render_site_root_index(site_root: Path, current_config: core.Config) -> None
     body = (
         "<div class='hero'>"
         "<h1>wahl-monitor.de</h1>"
-        "<p class='muted'>Static election dashboards grouped by election key.</p>"
+        "<p class='muted'>Statische Wahldashboards gruppiert nach Wahlkennung.</p>"
         "</div>"
-        f"<div class='panel'><h2>Available elections</h2><ul class='linklist'>{links}</ul></div>"
+        f"<div class='panel'><h2>Verfuegbare Wahlen</h2><ul class='linklist'>{links}</ul></div>"
     )
     write_page(site_root / "index.html", "wahl-monitor.de", body)
 
@@ -692,8 +1093,8 @@ def main() -> int:
     prepare_output_dirs(output_root)
 
     snapshots, raw_by_row_key = load_statla_dataset()
-    party_rows = load_latest_party_rows()
-    party_votes = build_party_votes_by_row_key(party_rows)
+    statla_party_rows = load_latest_party_rows()
+    party_votes = build_party_votes_by_row_key(statla_party_rows)
     party_order = core.fixed_party_order_by_vote_type()
     mapping = core.load_wahlkreis_mapping()
     site_root = output_root.parent
@@ -709,6 +1110,10 @@ def main() -> int:
         selected_ags = ags_in_scope[: args.limit_ags]
     else:
         selected_ags = ags_in_scope
+
+    latest_kommone_snapshots = [row for row in load_latest_kommone_snapshots() if row["ags"] in selected_ags]
+    latest_kommone_party_rows = [row for row in load_latest_kommone_party_rows() if row["ags"] in selected_ags]
+    latest_source_diffs = [row for row in load_latest_source_diffs() if row["ags"] in selected_ags]
 
     city_entities = build_city_entities(snapshots, raw_by_row_key, mapping, selected_ags)
 
@@ -727,14 +1132,20 @@ def main() -> int:
     )
 
     municipality_pages: Dict[str, str] = {}
+    municipality_index_links: Dict[str, str] = {}
     booth_pages: Dict[str, str] = {}
     wahlkreis_pages: List[Tuple[str, str, str]] = []
+    wahlkreis_link_by_wk: Dict[str, str] = {}
     entity_to_wahlkreis_filename: Dict[str, str] = {}
 
     for entity in city_entities:
-        municipality_pages[entity["entity_key"]] = (
-            f"../municipality/{municipality_detail_slug(entity['ags'], entity['municipality_name'], entity['wahlkreisnummer'] if entity['is_split_city'] else None)}.html"
+        slug = municipality_detail_slug(
+            entity["ags"],
+            entity["municipality_name"],
+            entity["wahlkreisnummer"] if entity["is_split_city"] else None,
         )
+        municipality_pages[entity["entity_key"]] = f"../municipality/{slug}.html"
+        municipality_index_links.setdefault(entity["ags"], f"municipality/{slug}.html")
 
     wahlkreis_groups = build_wahlkreis_groups_from_entities(city_entities)
 
@@ -742,6 +1153,7 @@ def main() -> int:
         wk_name = mapping.get(wk, {}).get("wahlkreis_name", f"Wahlkreis {wk}")
         filename = f"{wahlkreis_slug(wk, wk_name)}.html"
         wahlkreis_pages.append((wk, wk_name, filename))
+        wahlkreis_link_by_wk[wk] = f"wahlkreis/{filename}"
         for entity in municipalities:
             entity_to_wahlkreis_filename[entity["entity_key"]] = filename
 
@@ -751,9 +1163,9 @@ def main() -> int:
         first_table = render_vote_table(rows_for_table, party_votes, "Erststimmen", party_order["Erststimmen"], link_lookup)
         second_table = render_vote_table(rows_for_table, party_votes, "Zweitstimmen", party_order["Zweitstimmen"], link_lookup)
         body = (
-            f"<div class='hero'><div class='topbar'><a href='../index.html'>Site index</a><span>/</span>"
-            f"<a href='../../index.html'>All elections</a></div><h1>{html.escape(wk.zfill(2))} - {html.escape(wk_name)}</h1>"
-            "<p class='muted'>Municipalities as rows, parties as columns. Each cell shows absolute votes and row share.</p></div>"
+            f"<div class='hero'><div class='topbar'><a href='../index.html'>Startseite dieser Wahl</a><span>/</span>"
+            f"<a href='../../index.html'>Alle Wahlen</a></div><h1>{html.escape(wk.zfill(2))} - {html.escape(wk_name)}</h1>"
+            "<p class='muted'>Gemeinden als Zeilen, Parteien als Spalten. Jede Zelle zeigt absolute Stimmen und den Zeilenanteil.</p></div>"
             f"<div class='panel'><h2>Erststimmen</h2>{first_table}</div>"
             f"<div class='panel'><h2>Zweitstimmen</h2>{second_table}</div>"
         )
@@ -788,19 +1200,19 @@ def main() -> int:
         if wk:
             wk_stat = f"<div class='stat'><div class='stat-label'>Wahlkreis</div><div class='stat-value'>{html.escape(wk.zfill(2))}</div></div>"
         body = (
-            f"<div class='hero'><div class='topbar'><a href='../index.html'>Site index</a><span>/</span>"
+            f"<div class='hero'><div class='topbar'><a href='../index.html'>Startseite dieser Wahl</a><span>/</span>"
             f"<a href='../wahlkreis/{html.escape(wahlkreis_link)}'>Wahlkreis</a><span>/</span>"
-            "<a href='../../index.html'>All elections</a></div>"
-            f"<h1>{html.escape(name)}</h1><p class='muted'>Municipality detail with booth drill-down and 2021 komm.one structure links.</p>"
+            "<a href='../../index.html'>Alle Wahlen</a></div>"
+            f"<h1>{html.escape(name)}</h1><p class='muted'>Gemeindedetail mit Drill-down zu Wahlbezirken und Verweisen auf die Struktur von 2021.</p>"
             "<div class='stats'>"
             f"<div class='stat'><div class='stat-label'>AGS</div><div class='stat-value'>{html.escape(ags)}</div></div>"
             f"{wk_stat}"
-            f"<div class='stat'><div class='stat-label'>Valid erst votes</div><div class='stat-value'>{vote_total_for_snapshot(municipality_row, 'Erststimmen'):,}</div></div>"
-            f"<div class='stat'><div class='stat-label'>Valid zweit votes</div><div class='stat-value'>{vote_total_for_snapshot(municipality_row, 'Zweitstimmen'):,}</div></div>"
+            f"<div class='stat'><div class='stat-label'>Gueltige Erststimmen</div><div class='stat-value'>{vote_total_for_snapshot(municipality_row, 'Erststimmen'):,}</div></div>"
+            f"<div class='stat'><div class='stat-label'>Gueltige Zweitstimmen</div><div class='stat-value'>{vote_total_for_snapshot(municipality_row, 'Zweitstimmen'):,}</div></div>"
             "</div></div>"
-            f"<div class='panel'><h2>Booths</h2>{render_booth_list(booth_rows, booth_local_links)}</div>"
-            f"<div class='panel'><h2>Booth table: Erststimmen</h2>{first_table}</div>"
-            f"<div class='panel'><h2>Booth table: Zweitstimmen</h2>{second_table}</div>"
+            f"<div class='panel'><h2>Wahlbezirke</h2>{render_booth_list(booth_rows, booth_local_links)}</div>"
+            f"<div class='panel'><h2>Wahlbezirkstabelle: Erststimmen</h2>{first_table}</div>"
+            f"<div class='panel'><h2>Wahlbezirkstabelle: Zweitstimmen</h2>{second_table}</div>"
         )
         write_page(output_root / "municipality" / filename, f"{name} - {config.election_key}", body)
 
@@ -811,13 +1223,13 @@ def main() -> int:
             if booth.get("structure_detail_url"):
                 detail_link = (
                     f"<p><a href='{html.escape(booth['structure_detail_url'])}' target='_blank' rel='noopener'>"
-                    "Open 2021 komm.one booth detail</a></p>"
+                    "Detailseite 2021 bei komm.one oeffnen</a></p>"
                 )
             location_link = ""
             if booth.get("structure_location_url"):
                 location_link = (
                     f"<p><a href='{html.escape(booth['structure_location_url'])}' target='_blank' rel='noopener'>"
-                    f"Open 2021 polling-place location: {html.escape(booth.get('structure_location_name') or 'location')}</a></p>"
+                    f"Wahllokal 2021 oeffnen: {html.escape(booth.get('structure_location_name') or 'Wahllokal')}</a></p>"
                 )
             first_votes = party_votes.get(booth["row_key"], {}).get("Erststimmen", {})
             second_votes = party_votes.get(booth["row_key"], {}).get("Zweitstimmen", {})
@@ -832,12 +1244,12 @@ def main() -> int:
                     "</tr>"
                     for party in ordered
                 )
-                return f"<table><thead><tr><th>Party</th><th>Votes</th><th>Share</th></tr></thead><tbody>{rows}</tbody></table>"
+                return f"<table><thead><tr><th>Partei</th><th>Stimmen</th><th>Anteil</th></tr></thead><tbody>{rows}</tbody></table>"
 
             body = (
                 f"<div class='hero'><div class='topbar'><a href='../municipality/{html.escape(filename)}'>{html.escape(name)}</a>"
-                "<span>/</span><a href='../index.html'>Site index</a><span>/</span>"
-                "<a href='../../index.html'>All elections</a></div>"
+                "<span>/</span><a href='../index.html'>Startseite dieser Wahl</a><span>/</span>"
+                "<a href='../../index.html'>Alle Wahlen</a></div>"
                 f"<h1>{html.escape(booth['display_name'])}</h1>"
                 f"<p class='muted'>{html.escape(booth['gebietsart'])} in {html.escape(name)}</p>"
                 f"{detail_link}{location_link}</div>"
@@ -846,7 +1258,26 @@ def main() -> int:
             )
             write_page(output_root / "booth" / booth_filename, f"{booth['display_name']} - {config.election_key}", body)
 
-    render_index_page(config, output_root, wahlkreis_pages)
+    wahlkreis_status_rows = core.compute_wahlkreis_status_rows(
+        features=core.load_wahlkreis_features(),
+        mapping=mapping,
+        kommone_snapshots=latest_kommone_snapshots,
+        statla_snapshots=snapshots,
+        prestart=False,
+    )
+
+    render_index_page(
+        config,
+        output_root,
+        wahlkreis_pages,
+        wahlkreis_status_rows,
+        wahlkreis_link_by_wk,
+        municipality_index_links,
+        latest_kommone_snapshots,
+        latest_kommone_party_rows,
+        statla_party_rows,
+        latest_source_diffs,
+    )
     render_site_root_index(site_root, config)
     print(f"Generated static site at {output_root}")
     print(f"Wahlkreis pages: {len(wahlkreis_pages)}")
