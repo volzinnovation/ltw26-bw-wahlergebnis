@@ -107,11 +107,23 @@ def parse_float(value: Any) -> Optional[float]:
 
 def status_label(status: str) -> str:
     return {
-        "complete": "vollstaendig",
+        "complete": "vollständig",
         "pending": "ausstehend",
         "no_data": "keine Daten",
         "prestart": "vor Start",
     }.get(status, status)
+
+
+def display_text(value: Any) -> str:
+    text = str(value or "").strip()
+    if not text:
+        return ""
+    if any(marker in text for marker in ("Ã", "Â")):
+        try:
+            text = text.encode("latin-1").decode("utf-8")
+        except (UnicodeEncodeError, UnicodeDecodeError):
+            pass
+    return text
 
 
 def slugify(text: str) -> str:
@@ -852,7 +864,7 @@ def render_vote_table(
         total_cells.append(f"<td><strong>{format_votes_cell(totals_by_party[party], grand_total or 1)}</strong></td>")
     total_cells.append(f"<td><strong>{format_votes_cell(grand_total, grand_total or 1)}</strong></td>")
 
-    header = "<tr><th>Gebiet</th>" + "".join(party_header_cell(party) for party in parties) + "<th>Gueltige Stimmen</th></tr>"
+    header = "<tr><th>Gebiet</th>" + "".join(party_header_cell(party) for party in parties) + "<th>Gültige Stimmen</th></tr>"
     return (
         f"<table><thead>{header}</thead><tbody>{''.join(body_rows)}</tbody>"
         f"<tfoot><tr>{''.join(total_cells)}</tr></tfoot></table>"
@@ -881,7 +893,7 @@ def render_booth_list(
             "</tr>"
         )
     return (
-        "<table><thead><tr><th>Wahlbezirk</th><th>Typ</th><th>Bezirke</th><th>Gueltige Zweitstimmen</th><th>Wahllokal 2021</th></tr></thead>"
+        "<table><thead><tr><th>Wahlbezirk</th><th>Typ</th><th>Bezirke</th><th>Gültige Zweitstimmen</th><th>Wahllokal 2021</th></tr></thead>"
         f"<tbody>{''.join(rows)}</tbody></table>"
     )
 
@@ -916,7 +928,7 @@ def render_party_dashboard(
     municipality_link_by_ags: Dict[str, str],
 ) -> str:
     if not party_summary:
-        return "<div class='panel'><h2>Parteien</h2><p class='muted'>Noch keine Parteidaten verfuegbar.</p></div>"
+        return "<div class='panel'><h2>Parteien</h2><p class='muted'>Noch keine Parteidaten verfügbar.</p></div>"
 
     summary_rows = "".join(
         "<tr>"
@@ -1039,7 +1051,7 @@ def render_wahlkreis_overview_table(
         )
     return (
         "<div class='panel'><h2>Wahlkreisstatus</h2>"
-        "<table class='compact'><thead><tr><th>Wahlkreis</th><th>Status</th><th>Gemeldete Bezirke</th><th>Vollstaendig</th><th>Ausstehend</th><th>Keine Daten</th></tr></thead>"
+        "<table class='compact'><thead><tr><th>Wahlkreis</th><th>Status</th><th>Gemeldete Bezirke</th><th>Vollständig</th><th>Ausstehend</th><th>Keine Daten</th></tr></thead>"
         f"<tbody>{''.join(rows_html)}</tbody></table></div>"
     )
 
@@ -1050,7 +1062,7 @@ def render_clickable_wahlkreis_map(
     link_by_wk: Dict[str, str],
 ) -> str:
     if not features:
-        return "<p class='muted'>Keine Wahlkreis-Geometrie verfuegbar.</p>"
+        return "<p class='muted'>Keine Wahlkreis-Geometrie verfügbar.</p>"
 
     status_by_wk = {row["wahlkreisnummer"]: row for row in status_rows}
     colors = {
@@ -1067,7 +1079,7 @@ def render_clickable_wahlkreis_map(
                 if len(point) >= 2:
                     all_points.append((float(point[0]), float(point[1])))
     if not all_points:
-        return "<p class='muted'>Keine Wahlkreis-Geometrie verfuegbar.</p>"
+        return "<p class='muted'>Keine Wahlkreis-Geometrie verfügbar.</p>"
 
     min_lon = min(p[0] for p in all_points)
     max_lon = max(p[0] for p in all_points)
@@ -1088,7 +1100,7 @@ def render_clickable_wahlkreis_map(
             continue
         row = status_by_wk.get(wk, {})
         status = str(row.get("status") or "no_data")
-        name = str(props.get("WK Name") or row.get("wahlkreisname") or f"Wahlkreis {wk}").strip()
+        name = display_text(props.get("WK Name") or row.get("wahlkreisname") or f"Wahlkreis {wk}")
         fill = colors.get(status, colors["no_data"])
         d_parts: List[str] = []
         for ring in core.iter_exterior_rings(feature.get("geometry") or {}):
@@ -1246,16 +1258,16 @@ def render_index_page(
     body = (
         "<div class='hero'><div class='topbar'><a href='../index.html'>Alle Wahlen</a></div>"
         f"<h1>{html.escape(config.election_name)} ({html.escape(config.election_key)})</h1>"
-        "<p class='muted'>Statische Uebersicht mit Drill-down von Wahlkreis zu Gemeinde und Wahlbezirk.</p>"
+        "<p class='muted'>Statische Übersicht mit Drill-down von Wahlkreis zu Gemeinde und Wahlbezirk.</p>"
         f"<div class='stats'>"
         f"<div class='stat'><div class='stat-label'>Letzter Poll</div><div class='stat-value'>{html.escape(polled_at_local)}</div></div>"
         f"<div class='stat'><div class='stat-label'>Trackingstart</div><div class='stat-value'>{html.escape(tracking_start)}</div></div>"
         f"<div class='stat'><div class='stat-label'>Gemeinden</div><div class='stat-value'>{len(latest_kommone_snapshots):,}</div></div>"
-        f"<div class='stat'><div class='stat-label'>Wahlkreise vollstaendig</div><div class='stat-value'>{wahlkreis_counts['complete']}</div></div>"
+        f"<div class='stat'><div class='stat-label'>Wahlkreise vollständig</div><div class='stat-value'>{wahlkreis_counts['complete']}</div></div>"
         "</div></div>"
         "<div class='grid'>"
         "<div class='panel dashboard-map'><h2>Klickbare Wahlkreiskarte</h2>"
-        "<p class='small'>Jeder Wahlkreis fuehrt direkt zur Detailseite.</p>"
+        "<p class='small'>Jeder Wahlkreis führt direkt zur Detailseite.</p>"
         f"{render_clickable_wahlkreis_map(features, wahlkreis_status_rows, wahlkreis_link_by_wk)}</div>"
         f"{render_wahlkreis_overview_table(wahlkreis_status_rows, wahlkreis_link_by_wk)}"
         + "".join(
@@ -1277,10 +1289,10 @@ def render_index_page(
         + "".join(f"<li>{item}</li>" for item in operations)
         + "</ul></div>"
         + "<div class='panel'><h2>Abdeckung</h2><ul class='inline-list'>"
-        + f"<li>`komm.one` vollstaendig: <strong>{status_counts['complete']}</strong></li>"
+        + f"<li>`komm.one` vollständig: <strong>{status_counts['complete']}</strong></li>"
         + f"<li>`komm.one` ausstehend: <strong>{status_counts['pending']}</strong></li>"
         + f"<li>`komm.one` keine Daten: <strong>{status_counts['no_data']}</strong></li>"
-        + f"<li>Wahlkreise vollstaendig: <strong>{wahlkreis_counts['complete']}</strong></li>"
+        + f"<li>Wahlkreise vollständig: <strong>{wahlkreis_counts['complete']}</strong></li>"
         + f"<li>Wahlkreise ausstehend: <strong>{wahlkreis_counts['pending']}</strong></li>"
         + f"<li>Wahlkreise ohne Daten: <strong>{wahlkreis_counts['no_data']}</strong></li>"
         + "</ul></div>"
@@ -1315,7 +1327,7 @@ def render_site_root_index(site_root: Path, current_config: core.Config) -> None
         "<h1>wahl-monitor.de</h1>"
         "<p class='muted'>Statische Wahldashboards gruppiert nach Wahlkennung.</p>"
         "</div>"
-        f"<div class='panel'><h2>Verfuegbare Wahlen</h2><ul class='linklist'>{links}</ul></div>"
+        f"<div class='panel'><h2>Verfügbare Wahlen</h2><ul class='linklist'>{links}</ul></div>"
     )
     write_page(site_root / "index.html", "wahl-monitor.de", body)
 
@@ -1443,8 +1455,8 @@ def main() -> int:
             "<div class='stats'>"
             f"<div class='stat'><div class='stat-label'>AGS</div><div class='stat-value'>{html.escape(ags)}</div></div>"
             f"{wk_stat}"
-            f"<div class='stat'><div class='stat-label'>Gueltige Erststimmen</div><div class='stat-value'>{vote_total_for_snapshot(municipality_row, 'Erststimmen'):,}</div></div>"
-            f"<div class='stat'><div class='stat-label'>Gueltige Zweitstimmen</div><div class='stat-value'>{vote_total_for_snapshot(municipality_row, 'Zweitstimmen'):,}</div></div>"
+            f"<div class='stat'><div class='stat-label'>Gültige Erststimmen</div><div class='stat-value'>{vote_total_for_snapshot(municipality_row, 'Erststimmen'):,}</div></div>"
+            f"<div class='stat'><div class='stat-label'>Gültige Zweitstimmen</div><div class='stat-value'>{vote_total_for_snapshot(municipality_row, 'Zweitstimmen'):,}</div></div>"
             "</div></div>"
             f"<div class='panel'><h2>Wahlbezirke</h2>{render_booth_list(booth_rows, booth_local_links)}</div>"
             f"<div class='panel'><h2>Wahlbezirkstabelle: Erststimmen</h2>{first_table}</div>"
@@ -1459,13 +1471,13 @@ def main() -> int:
             if booth.get("structure_detail_url"):
                 detail_link = (
                     f"<p><a href='{html.escape(booth['structure_detail_url'])}' target='_blank' rel='noopener'>"
-                    "Detailseite 2021 bei komm.one oeffnen</a></p>"
+                    "Detailseite 2021 bei komm.one öffnen</a></p>"
                 )
             location_link = ""
             if booth.get("structure_location_url"):
                 location_link = (
                     f"<p><a href='{html.escape(booth['structure_location_url'])}' target='_blank' rel='noopener'>"
-                    f"Wahllokal 2021 oeffnen: {html.escape(booth.get('structure_location_name') or 'Wahllokal')}</a></p>"
+                    f"Wahllokal 2021 öffnen: {html.escape(display_text(booth.get('structure_location_name') or 'Wahllokal'))}</a></p>"
                 )
             first_votes = party_votes.get(booth["row_key"], {}).get("Erststimmen", {})
             second_votes = party_votes.get(booth["row_key"], {}).get("Zweitstimmen", {})
