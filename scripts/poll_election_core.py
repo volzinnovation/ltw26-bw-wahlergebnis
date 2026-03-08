@@ -23,8 +23,10 @@ import html
 import json
 import os
 import re
+import shutil
 import sqlite3
 import subprocess
+import sys
 import tempfile
 import unicodedata
 from collections import deque
@@ -168,6 +170,23 @@ class HttpResult:
     status_code: Optional[int]
     content: bytes
     error_message: Optional[str]
+
+
+CLI_VERBOSE = False
+CLI_PROGRESS = False
+
+
+def set_cli_feedback(*, verbose: bool, progress: bool) -> None:
+    global CLI_VERBOSE
+    global CLI_PROGRESS
+    CLI_VERBOSE = verbose
+    CLI_PROGRESS = progress
+
+
+def cli_note(message: str) -> None:
+    if not CLI_VERBOSE:
+        return
+    print(f"[poll] {message}", file=sys.stderr, flush=True)
 
 
 def config_path_for_election(election_key: str) -> Path:
@@ -440,6 +459,13 @@ def csv_rows_from_text(content: str, delimiter: str = ";") -> List[Dict[str, str
     return [dict(row) for row in reader]
 
 
+def terminal_supports_progress() -> bool:
+    try:
+        return sys.stderr.isatty()
+    except Exception:
+        return False
+
+
 def http_get(url: str, timeout_seconds: int) -> HttpResult:
     req = request.Request(url, headers={"User-Agent": "wahl-monitor-poller/1.0"})
     try:
@@ -468,6 +494,136 @@ def http_get(url: str, timeout_seconds: int) -> HttpResult:
             content=b"",
             error_message=str(exc),
         )
+
+
+def cli_download_with_curl(
+    url: str,
+    timeout_seconds: int,
+    *,
+    show_progress: bool,
+) -> Optional[HttpResult]:
+    if shutil.which("curl") is None:
+        return None
+
+    with tempfile.NamedTemporaryFile(delete=False) as handle:
+        temp_path = handle.name
+    try:
+        command = [
+            "curl",
+            "-L",
+            "--show-error",
+            "--max-time",
+            str(timeout_seconds),
+            "-o",
+            temp_path,
+            "-w",
+            "%{http_code}",
+        ]
+        if show_progress:
+            command.append("--progress-bar")
+        else:
+            command.append("--silent")
+        command.append(url)
+        completed = subprocess.run(
+            command,
+            check=False,
+            text=True,
+            stdout=subprocess.PIPE,
+            stderr=None if show_progress else subprocess.PIPE,
+        )
+        body = Path(temp_path).read_bytes()
+        status_code = parse_int((completed.stdout or "").strip())
+        if completed.returncode == 0 or status_code is not None:
+            return HttpResult(
+                url=url,
+                status_code=status_code,
+                content=body,
+                error_message=None if completed.returncode == 0 else ((completed.stderr or "").strip() or None),
+            )
+        return None
+    except FileNotFoundError:
+        return None
+    finally:
+        try:
+            Path(temp_path).unlink()
+        except FileNotFoundError:
+            pass
+
+
+def cli_download_with_wget(
+    url: str,
+    timeout_seconds: int,
+    *,
+    show_progress: bool,
+) -> Optional[HttpResult]:
+    if shutil.which("wget") is None:
+        return None
+
+    with tempfile.NamedTemporaryFile(delete=False) as handle:
+        temp_path = handle.name
+    try:
+        command = [
+            "wget",
+            "--output-document",
+            temp_path,
+            "--timeout",
+            str(timeout_seconds),
+            "--tries=1",
+        ]
+        if show_progress:
+            command.append("--progress=bar:force:noscroll")
+        else:
+            command.append("--no-verbose")
+        command.append(url)
+        completed = subprocess.run(
+            command,
+            check=False,
+            text=True,
+            stdout=subprocess.PIPE,
+            stderr=None if show_progress else subprocess.PIPE,
+        )
+        body = Path(temp_path).read_bytes()
+        if completed.returncode == 0:
+            return HttpResult(
+                url=url,
+                status_code=200,
+                content=body,
+                error_message=None,
+            )
+        stderr_text = (completed.stderr or "").strip() if completed.stderr is not None else None
+        return HttpResult(
+            url=url,
+            status_code=None,
+            content=body,
+            error_message=stderr_text or f"wget exited with {completed.returncode}",
+        )
+    except FileNotFoundError:
+        return None
+    finally:
+        try:
+            Path(temp_path).unlink()
+        except FileNotFoundError:
+            pass
+
+
+def download_with_cli_tool(
+    url: str,
+    timeout_seconds: int,
+    *,
+    show_progress: bool,
+) -> Optional[HttpResult]:
+    for downloader in (cli_download_with_curl, cli_download_with_wget):
+        result = downloader(url, timeout_seconds, show_progress=show_progress)
+        if result is not None:
+            return result
+    return None
+
+
+def statla_http_get(url: str, timeout_seconds: int, *, show_progress: bool) -> HttpResult:
+    cli_result = download_with_cli_tool(url, timeout_seconds, show_progress=show_progress)
+    if cli_result is not None:
+        return cli_result
+    return http_get(url, timeout_seconds)
 
 
 def http_get_with_curl(url: str, timeout_seconds: int) -> Optional[HttpResult]:
@@ -1775,6 +1931,7 @@ def fetch_statla_presentation_fallback(
 
     base_url = statla_presentation_base_url(config)
     land_url = base_url + "ergebnispraesentation_land_bw.html"
+    cli_note(f"Fetching StatLA result presentation fallback from {land_url}")
     land_result = fetch_statla_presentation_snapshot(
         "land",
         land_url,
@@ -1816,6 +1973,10 @@ def fetch_statla_presentation_fallback(
             wahlkreis_updates[wk] = data
             municipality_urls.update(data["linked_municipality_urls"])
             total_html_bytes += data["html_bytes"]
+    cli_note(
+        "Fetched StatLA result presentation Wahlkreise: "
+        f"{len(wahlkreis_updates)}; municipality links discovered={len(municipality_urls)}"
+    )
 
     if len(wahlkreis_updates) < 70:
         return None
@@ -1854,6 +2015,7 @@ def fetch_statla_presentation_fallback(
                 return None
             municipality_updates[ags] = data
             total_html_bytes += data["html_bytes"]
+    cli_note(f"Fetched StatLA municipality presentation pages: {len(municipality_updates)}")
 
     if len(municipality_updates) < 1000:
         return None
@@ -1935,14 +2097,29 @@ def fetch_statla_presentation_fallback(
 
 
 def fetch_statla(config: Config, timeout_seconds: int, force_dummy: bool = False) -> Dict[str, Any]:
-    live_result = http_get(config.statla_live_csv_url, timeout_seconds)
+    cli_note(f"Fetching StatLA live CSV from {config.statla_live_csv_url}")
+    live_result = statla_http_get(
+        config.statla_live_csv_url,
+        timeout_seconds,
+        show_progress=CLI_PROGRESS,
+    )
+    cli_note(
+        "StatLA live fetch finished: "
+        f"status={live_result.status_code} bytes={len(live_result.content)}"
+        + (f" error={live_result.error_message}" if live_result.error_message else "")
+    )
     selected_result = live_result
     selected_mode = "LIVE"
     selected_url = config.statla_live_csv_url
     fallback_used = False
 
     if force_dummy or live_result.status_code != 200 or not live_result.content:
-        selected_result = http_get(config.statla_dummy_csv_url, timeout_seconds)
+        cli_note(f"Falling back to StatLA dummy CSV from {config.statla_dummy_csv_url}")
+        selected_result = statla_http_get(
+            config.statla_dummy_csv_url,
+            timeout_seconds,
+            show_progress=False,
+        )
         selected_mode = "DUMMY"
         selected_url = config.statla_dummy_csv_url
         fallback_used = True
@@ -1984,6 +2161,7 @@ def fetch_statla(config: Config, timeout_seconds: int, force_dummy: bool = False
 
     if selected_result.status_code != 200 or not selected_result.content:
         if not force_dummy:
+            cli_note("StatLA CSV unavailable, trying official result presentation HTML fallback")
             presentation_fallback = fetch_statla_presentation_fallback(
                 config,
                 timeout_seconds,
@@ -1991,6 +2169,11 @@ def fetch_statla(config: Config, timeout_seconds: int, force_dummy: bool = False
                 base_error=selected_result.error_message or "No CSV available",
             )
             if presentation_fallback is not None:
+                cli_note(
+                    "Recovered StatLA from result presentation: "
+                    f"rows={len(presentation_fallback['snapshots'])} "
+                    f"party_rows={len(presentation_fallback['party_rows'])}"
+                )
                 presentation_fallback["fetches"] = fetches + presentation_fallback["fetches"]
                 return presentation_fallback
         return {
@@ -2007,9 +2190,17 @@ def fetch_statla(config: Config, timeout_seconds: int, force_dummy: bool = False
 
     csv_text = decode_bytes(selected_result.content)
     snapshots, party_rows = parse_statla_csv_rows(csv_text)
+    current_shape = statla_snapshot_shape_stats(snapshots)
+    cli_note(
+        "Parsed StatLA CSV: "
+        f"rows={current_shape['row_count']} "
+        f"wahlkreise={current_shape['wahlkreis_count']} "
+        f"ags={current_shape['ags_count']}"
+    )
     previous_latest = load_latest_statla_exports()
     regression_error = should_reject_statla_snapshot_regression(snapshots, previous_latest.get("snapshots", []))
     if regression_error:
+        cli_note(regression_error)
         presentation_fallback = fetch_statla_presentation_fallback(
             config,
             timeout_seconds,
@@ -2017,6 +2208,11 @@ def fetch_statla(config: Config, timeout_seconds: int, force_dummy: bool = False
             base_error=regression_error,
         )
         if presentation_fallback is not None:
+            cli_note(
+                "Recovered StatLA from result presentation: "
+                f"rows={len(presentation_fallback['snapshots'])} "
+                f"party_rows={len(presentation_fallback['party_rows'])}"
+            )
             presentation_fallback["fetches"] = fetches + presentation_fallback["fetches"]
             return presentation_fallback
         return {
@@ -3398,24 +3594,47 @@ def parse_args() -> argparse.Namespace:
         action="store_true",
         help="Skip all komm.one network polling and use empty municipality snapshots.",
     )
+    parser.add_argument(
+        "--quiet",
+        action="store_true",
+        help="Reduce CLI status output.",
+    )
+    parser.add_argument(
+        "--no-progress",
+        action="store_true",
+        help="Disable terminal progress bars for StatLA downloads.",
+    )
     return parser.parse_args()
 
 
 def main() -> None:
     args = parse_args()
+    set_cli_feedback(
+        verbose=not args.quiet,
+        progress=(not args.no_progress) and terminal_supports_progress(),
+    )
     set_active_election(
         election_key=args.election_key,
         config_path=Path(args.config_path) if args.config_path else None,
     )
     ensure_directories()
     config = load_config()
+    cli_note(
+        f"Starting poll for {config.election_key} "
+        f"({config.election_name}) with timezone {config.timezone}"
+    )
     now_local = now_utc().astimezone(ZoneInfo(config.timezone))
     if now_local < tracking_start_local_dt(config) and not args.force_run:
+        cli_note(
+            "Tracking has not started yet: "
+            f"now={format_local_dt(now_local)} start={format_local_dt(tracking_start_local_dt(config))}"
+        )
         generate_wahlkreis_map(kommone_snapshots=[], statla_snapshots=[], prestart=True)
         return
 
     label_file, label_human = time_labels(config.timezone)
     polled_at_utc = now_utc().isoformat()
+    cli_note(f"Run label {label_file}; local poll time {label_human}")
 
     conn = sqlite3.connect(DB_PATH)
     try:
@@ -3423,11 +3642,14 @@ def main() -> None:
         seed_db_from_latest_exports(conn, config)
         poll_id = create_poll(conn, polled_at_utc=polled_at_utc, polled_at_local=label_human)
 
+        cli_note("Building municipality master")
         municipalities = build_municipality_master(config, config.request_timeout_seconds)
+        cli_note(f"Municipality master contains {len(municipalities)} entries")
         store_municipalities(conn, municipalities)
 
         if args.skip_kommone:
             selected_municipalities = municipalities[: args.limit_ags] if args.limit_ags is not None else municipalities
+            cli_note(f"Skipping komm.one polling; creating placeholder rows for {len(selected_municipalities)} municipalities")
             kommone = {
                 "snapshots": [
                     {
@@ -3449,6 +3671,7 @@ def main() -> None:
                 "fetches": [],
             }
         else:
+            cli_note("Fetching komm.one municipality pages")
             kommone = fetch_kommone_all(
                 config=config,
                 municipalities=municipalities,
@@ -3456,7 +3679,16 @@ def main() -> None:
                 max_workers=config.max_workers,
                 limit_ags=args.limit_ags,
             )
+            cli_note(
+                "komm.one fetch finished: "
+                f"snapshots={len(kommone['snapshots'])} party_rows={len(kommone['party_rows'])}"
+            )
         statla = fetch_statla(config, config.request_timeout_seconds, force_dummy=args.use_dummy_statla)
+        cli_note(
+            "StatLA result ready: "
+            f"mode={statla.get('mode')} snapshots={len(statla.get('snapshots', []))} "
+            f"party_rows={len(statla.get('party_rows', []))}"
+        )
 
         all_fetches = list(kommone["fetches"]) + list(statla["fetches"])
         store_source_fetches(conn, poll_id, all_fetches)
@@ -3480,6 +3712,18 @@ def main() -> None:
             diff_rows=diffs,
             events_rows=events,
         )
+        land_snapshot = next(
+            (row for row in statla.get("snapshots", []) if str(row.get("row_key") or "") == "000000:BW:-:-:LAND"),
+            None,
+        )
+        if land_snapshot is not None:
+            cli_note(
+                "Finished poll: "
+                f"land_precincts={land_snapshot.get('reported_precincts')}/{land_snapshot.get('total_precincts')} "
+                f"valid_zweit={land_snapshot.get('valid_votes_zweit')}"
+            )
+        else:
+            cli_note("Finished poll")
     finally:
         conn.close()
 
