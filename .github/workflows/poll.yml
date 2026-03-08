@@ -15,7 +15,7 @@ concurrency:
 jobs:
   poll:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 25
 
     steps:
       - name: Checkout repository
@@ -26,9 +26,27 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Run election poller
+      - name: Run election poller with retry
         run: |
-          python scripts/poll_election.py --election-key 2026-bw
+          attempt=1
+          max_attempts=3
+          sleep_seconds=30
+
+          while [ "$attempt" -le "$max_attempts" ]; do
+            echo "Starting poll attempt $attempt/$max_attempts"
+            if python scripts/poll_election.py --election-key 2026-bw; then
+              exit 0
+            fi
+
+            if [ "$attempt" -eq "$max_attempts" ]; then
+              echo "Poll failed after $max_attempts attempts"
+              exit 1
+            fi
+
+            echo "Poll attempt $attempt failed, waiting ${sleep_seconds}s before retry"
+            sleep "$sleep_seconds"
+            attempt=$((attempt + 1))
+          done
 
       - name: Commit and push updates
         run: |

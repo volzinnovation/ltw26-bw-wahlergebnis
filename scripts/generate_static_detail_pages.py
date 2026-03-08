@@ -7,6 +7,7 @@ import argparse
 import csv
 import html
 import json
+import math
 import re
 import subprocess
 import unicodedata
@@ -93,6 +94,10 @@ def parse_args() -> argparse.Namespace:
 def read_csv_rows(path: Path) -> List[Dict[str, str]]:
     with path.open("r", encoding="utf-8", newline="") as handle:
         return list(csv.DictReader(handle))
+
+
+def read_csv_rows_from_text(text: str) -> List[Dict[str, str]]:
+    return list(csv.DictReader(text.splitlines()))
 
 
 def parse_float(value: Any) -> Optional[float]:
@@ -299,6 +304,250 @@ def load_latest_party_rows() -> List[Dict[str, Any]]:
             }
         )
     return normalized
+
+
+def load_git_vote_share_history(config: core.Config) -> List[Dict[str, Any]]:
+    snapshots_rel = core.repo_relative_path(core.LATEST_DIR / "statla_snapshots.csv")
+    metadata_rel = core.repo_relative_path(core.LATEST_DIR / "run_metadata.json")
+    party_rel = core.repo_relative_path(core.LATEST_DIR / "statla_party_results.csv")
+    try:
+        result = subprocess.run(
+            ["git", "log", "--reverse", "--format=%H\t%cI", "--", snapshots_rel],
+            cwd=core.ROOT,
+            check=True,
+            capture_output=True,
+            text=True,
+        )
+    except subprocess.CalledProcessError:
+        return []
+
+    history_by_timestamp: Dict[str, Dict[str, Any]] = {}
+    timezone = core.ZoneInfo(config.timezone)
+    for line in result.stdout.splitlines():
+        parts = line.strip().split("\t", 1)
+        if not parts or not parts[0]:
+            continue
+        commit = parts[0]
+        commit_timestamp = parts[1] if len(parts) > 1 else ""
+
+        metadata_result = subprocess.run(
+            ["git", "show", f"{commit}:{metadata_rel}"],
+            cwd=core.ROOT,
+            capture_output=True,
+            text=True,
+        )
+        snapshot_result = subprocess.run(
+            ["git", "show", f"{commit}:{snapshots_rel}"],
+            cwd=core.ROOT,
+            capture_output=True,
+            text=True,
+        )
+        party_result = subprocess.run(
+            ["git", "show", f"{commit}:{party_rel}"],
+            cwd=core.ROOT,
+            capture_output=True,
+            text=True,
+        )
+        if metadata_result.returncode != 0 or snapshot_result.returncode != 0 or party_result.returncode != 0:
+            continue
+
+        try:
+            metadata = json.loads(metadata_result.stdout)
+        except json.JSONDecodeError:
+            metadata = {}
+
+        generated_at_utc = str(metadata.get("generated_at_utc") or "").strip() or commit_timestamp
+        snapshots = read_csv_rows_from_text(snapshot_result.stdout)
+        party_rows = read_csv_rows_from_text(party_result.stdout)
+
+        land_snapshot = next((row for row in snapshots if str(row.get("row_key") or "") == "000000:BW:-:-:LAND"), None)
+        if land_snapshot is None:
+            continue
+        valid_votes = core.parse_int(land_snapshot.get("valid_votes_zweit")) or 0
+        if valid_votes <= 0:
+            continue
+
+        party_votes: Dict[str, int] = {}
+        for row in party_rows:
+            if str(row.get("row_key") or "") != "000000:BW:-:-:LAND":
+                continue
+            if core.canonical_vote_type(row.get("vote_type")) != "Zweitstimmen":
+                continue
+            party_name = core.canonical_party_name(row.get("party_name"), "Zweitstimmen")
+            party_votes[party_name] = core.parse_int(row.get("votes")) or 0
+
+        parsed_timestamp = core.parse_iso_datetime(generated_at_utc)
+        if parsed_timestamp is None:
+            continue
+        local_dt = parsed_timestamp.astimezone(timezone)
+
+        history_by_timestamp[generated_at_utc] = {
+            "timestamp_utc": generated_at_utc,
+            "timestamp_local": local_dt,
+            "label": local_dt.strftime("%H:%M"),
+            "reported_precincts": core.parse_int(land_snapshot.get("reported_precincts")) or 0,
+            "total_precincts": core.parse_int(land_snapshot.get("total_precincts")) or 0,
+            "valid_votes": valid_votes,
+            "shares": {
+                "AfD": ((party_votes.get("AfD") or 0) / valid_votes) * 100.0,
+                "CDU": ((party_votes.get("CDU") or 0) / valid_votes) * 100.0,
+                "GRÜNE": ((party_votes.get("GRÜNE") or 0) / valid_votes) * 100.0,
+            },
+        }
+
+    return sorted(history_by_timestamp.values(), key=lambda item: item["timestamp_local"])
+
+
+def render_vote_share_history_panel(config: core.Config) -> str:
+    history = load_git_vote_share_history(config)
+    if len(history) < 2:
+        return (
+            "<div class='panel'><h2>Verlauf der Stimmanteile am Wahlabend</h2>"
+            "<p class='muted'>Nicht genug Git-Historie mit landesweiten Zweitstimmen vorhanden.</p></div>"
+        )
+
+    width = 880.0
+    height = 360.0
+    margin_left = 58.0
+    margin_right = 88.0
+    margin_top = 24.0
+    margin_bottom = 52.0
+    plot_width = width - margin_left - margin_right
+    plot_height = height - margin_top - margin_bottom
+
+    timestamps = [item["timestamp_local"].timestamp() for item in history]
+    min_x = min(timestamps)
+    max_x = max(timestamps)
+    parties = ["AfD", "CDU", "GRÜNE"]
+    all_values = [history_item["shares"][party] for history_item in history for party in parties]
+    min_share = min(all_values)
+    max_share = max(all_values)
+    padded_min = math.floor((min_share - 1.0) / 2.0) * 2.0
+    padded_max = math.ceil((max_share + 1.0) / 2.0) * 2.0
+    if padded_max - padded_min < 8.0:
+        midpoint = (padded_max + padded_min) / 2.0
+        padded_min = math.floor((midpoint - 4.0) / 2.0) * 2.0
+        padded_max = math.ceil((midpoint + 4.0) / 2.0) * 2.0
+
+    def x_pos(ts_value: float) -> float:
+        if max_x <= min_x:
+            return margin_left + (plot_width / 2.0)
+        return margin_left + ((ts_value - min_x) / (max_x - min_x)) * plot_width
+
+    def y_pos(value: float) -> float:
+        return margin_top + ((padded_max - value) / max(padded_max - padded_min, 1e-9)) * plot_height
+
+    grid_lines: List[str] = []
+    tick_count = 5
+    for index in range(tick_count + 1):
+        share_value = padded_min + ((padded_max - padded_min) / tick_count) * index
+        y = y_pos(share_value)
+        grid_lines.append(
+            f"<line x1='{margin_left:.2f}' y1='{y:.2f}' x2='{width - margin_right:.2f}' y2='{y:.2f}' "
+            "stroke='#d8e1ec' stroke-width='1'/>"
+        )
+        grid_lines.append(
+            f"<text x='{margin_left - 10:.2f}' y='{y + 4:.2f}' text-anchor='end' class='history-axis-label'>"
+            f"{share_value:.0f}%</text>"
+        )
+
+    x_ticks: List[str] = []
+    for item, ts_value in zip(history, timestamps):
+        x = x_pos(ts_value)
+        x_ticks.append(
+            f"<line x1='{x:.2f}' y1='{margin_top + plot_height:.2f}' x2='{x:.2f}' y2='{margin_top + plot_height + 6:.2f}' "
+            "stroke='#7c8a9a' stroke-width='1'/>"
+        )
+        x_ticks.append(
+            f"<text x='{x:.2f}' y='{height - 16:.2f}' text-anchor='middle' class='history-axis-label'>"
+            f"{html.escape(str(item['label']))}</text>"
+        )
+
+    series_nodes: List[str] = []
+    legend_nodes: List[str] = []
+    end_labels: List[Dict[str, Any]] = []
+    for series_index, party in enumerate(parties):
+        color = WAHL_PARTY_COLORS[party]
+        points = [
+            (x_pos(ts_value), y_pos(float(history_item["shares"][party])))
+            for history_item, ts_value in zip(history, timestamps)
+        ]
+        polyline_points = " ".join(f"{x:.2f},{y:.2f}" for x, y in points)
+        series_nodes.append(
+            f"<polyline fill='none' stroke='{color}' stroke-width='3.5' stroke-linecap='round' "
+            f"stroke-linejoin='round' points='{polyline_points}'/>"
+        )
+        for x, y in points:
+            series_nodes.append(
+                f"<circle cx='{x:.2f}' cy='{y:.2f}' r='4.5' fill='{color}' stroke='#ffffff' stroke-width='1.5'/>"
+            )
+        end_x, end_y = points[-1]
+        latest_value = float(history[-1]["shares"][party])
+        end_labels.append(
+            {
+                "party": party,
+                "color": color,
+                "x": end_x + 10.0,
+                "y": end_y + 4.0,
+                "value": latest_value,
+            }
+        )
+        legend_x = margin_left + (series_index * 118.0)
+        legend_nodes.append(
+            f"<g transform='translate({legend_x:.2f}, {margin_top - 4:.2f})'>"
+            f"<line x1='0' y1='0' x2='20' y2='0' stroke='{color}' stroke-width='3.5' stroke-linecap='round'/>"
+            f"<text x='28' y='4' class='history-legend-label'>{html.escape(party)}</text>"
+            "</g>"
+        )
+
+    end_labels.sort(key=lambda item: float(item["y"]))
+    min_gap = 16.0
+    lower_bound = margin_top + 12.0
+    upper_bound = margin_top + plot_height - 4.0
+    for index in range(1, len(end_labels)):
+        previous_y = float(end_labels[index - 1]["y"])
+        current_y = float(end_labels[index]["y"])
+        if current_y - previous_y < min_gap:
+            end_labels[index]["y"] = previous_y + min_gap
+    if end_labels and float(end_labels[-1]["y"]) > upper_bound:
+        shift = float(end_labels[-1]["y"]) - upper_bound
+        for item in end_labels:
+            item["y"] = float(item["y"]) - shift
+    if end_labels and float(end_labels[0]["y"]) < lower_bound:
+        shift = lower_bound - float(end_labels[0]["y"])
+        for item in end_labels:
+            item["y"] = float(item["y"]) + shift
+    for item in end_labels:
+        series_nodes.append(
+            f"<text x='{float(item['x']):.2f}' y='{float(item['y']):.2f}' class='history-end-label' fill='{item['color']}'>"
+            f"{html.escape(str(item['party']))} {float(item['value']):.1f}%</text>"
+        )
+
+    latest = history[-1]
+    reporting = "?"
+    if latest["total_precincts"]:
+        reporting = f"{latest['reported_precincts']:,}/{latest['total_precincts']:,}".replace(",", ".")
+    subtitle = (
+        "Git-Historie der landesweiten StatLA-Zweitstimmen. "
+        f"Letzter Stand {latest['timestamp_local'].strftime('%H:%M %Z')}, gemeldete Bezirke {reporting}."
+    )
+
+    chart = (
+        f"<svg class='history-chart' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 {int(width)} {int(height)}' "
+        f"role='img' aria-label='Verlauf der Zweitstimmenanteile von AfD, CDU und GRÜNE am Wahlabend'>"
+        f"<rect x='0' y='0' width='{width:.2f}' height='{height:.2f}' rx='14' fill='#fbfdff'/>"
+        f"{''.join(grid_lines)}"
+        f"<line x1='{margin_left:.2f}' y1='{margin_top + plot_height:.2f}' x2='{width - margin_right:.2f}' y2='{margin_top + plot_height:.2f}' stroke='#7c8a9a' stroke-width='1.2'/>"
+        f"{''.join(x_ticks)}"
+        f"{''.join(legend_nodes)}"
+        f"{''.join(series_nodes)}"
+        "</svg>"
+    )
+    return (
+        "<div class='panel'><h2>Verlauf der Stimmanteile am Wahlabend</h2>"
+        f"<p class='small'>{html.escape(subtitle)}</p>"
+        f"{chart}</div>"
+    )
 
 
 def load_latest_kommone_snapshots() -> List[Dict[str, Any]]:
@@ -824,6 +1073,25 @@ def render_page(title: str, body: str, root_path: str = "../") -> str:
     .dashboard-map svg {{ width: 100%; height: auto; display: block; border-radius: 8px; }}
     .dashboard-map a:hover path {{ stroke-width: 1.6; filter: brightness(0.97); }}
     .dashboard-map path {{ transition: stroke-width 120ms ease, filter 120ms ease; }}
+    .history-chart {{ width: 100%; height: auto; display: block; margin-top: 14px; }}
+    .history-axis-label {{
+      fill: var(--muted);
+      font-size: 11px;
+      font-variant-numeric: tabular-nums;
+    }}
+    .history-end-label {{
+      font-size: 12px;
+      font-weight: 700;
+      paint-order: stroke;
+      stroke: #fbfdff;
+      stroke-width: 4px;
+      stroke-linejoin: round;
+    }}
+    .history-legend-label {{
+      fill: var(--ink);
+      font-size: 12px;
+      font-weight: 600;
+    }}
     .inline-list {{ margin: 0; padding-left: 18px; }}
     .inline-list li {{ margin-bottom: 4px; }}
     .compact td, .compact th {{ padding: 8px 7px; }}
@@ -1390,6 +1658,7 @@ def render_index_page(
         "<div class='panel dashboard-map'><h2>Klickbare Wahlkreiskarte</h2>"
         "<p class='small'>Jeder Wahlkreis führt direkt zur Detailseite.</p>"
         f"{render_clickable_wahlkreis_map(features, wahlkreis_status_rows, wahlkreis_link_by_wk)}</div>"
+        f"{render_vote_share_history_panel(config)}"
         f"{render_wahlkreis_overview_table(wahlkreis_status_rows, wahlkreis_link_by_wk)}"
         + "".join(
             render_vote_type_summary_table(vote_type, rows)
