@@ -93,8 +93,8 @@ poll_id,ags,municipality_name,metric,kommone_value,statla_value,delta
 2,08115050,"Weil der Stadt, Stadt",valid_votes,9953,0,9953.0
 2,08115051,Weil im Schönbuch,reported_precincts,,0,
 2,08115051,Weil im Schönbuch,total_precincts,,7,
-2,08115051,Weil im Schönbuch,voters_total,4227,0,4227.0
-2,08115051,Weil im Schönbuch,valid_votes,4194,0,4194.0
+2,08115051,Weil im Schönbuch,voters_total,5223,0,5223.0
+2,08115051,Weil im Schönbuch,valid_votes,5182,0,5182.0
 2,08115052,Weissach,reported_precincts,,0,
 2,08115052,Weissach,total_precincts,,6,
 2,08115052,Weissach,voters_total,4349,0,4349.0
@@ -153,8 +153,8 @@ poll_id,ags,municipality_name,metric,kommone_value,statla_value,delta
 2,08116018,Erkenbrechtsweiler,valid_votes,1257,0,1257.0
 2,08116019,"Esslingen am Neckar, Stadt",reported_precincts,,0,
 2,08116019,"Esslingen am Neckar, Stadt",total_precincts,,77,
-2,08116019,"Esslingen am Neckar, Stadt",voters_total,38773,0,38773.0
-2,08116019,"Esslingen am Neckar, Stadt",valid_votes,38450,0,38450.0
+2,08116019,"Esslingen am Neckar, Stadt",voters_total,39316,0,39316.0
+2,08116019,"Esslingen am Neckar, Stadt",valid_votes,38990,0,38990.0
 2,08116020,Frickenhausen,reported_precincts,,0,
 2,08116020,Frickenhausen,total_precincts,,12,
 2,08116020,Frickenhausen,voters_total,4509,0,4509.0
@@ -449,8 +449,8 @@ poll_id,ags,municipality_name,metric,kommone_value,statla_value,delta
 2,08118006,Benningen am Neckar,valid_votes,3427,0,3427.0
 2,08118007,"Besigheim, Stadt",reported_precincts,,0,
 2,08118007,"Besigheim, Stadt",total_precincts,,10,
-2,08118007,"Besigheim, Stadt",voters_total,5864,0,5864.0
-2,08118007,"Besigheim, Stadt",valid_votes,5826,0,5826.0
+2,08118007,"Besigheim, Stadt",voters_total,6727,0,6727.0
+2,08118007,"Besigheim, Stadt",valid_votes,6683,0,6683.0
 2,08118010,"Bönnigheim, Stadt",reported_precincts,,0,
 2,08118010,"Bönnigheim, Stadt",total_precincts,,8,
 2,08118010,"Bönnigheim, Stadt",voters_total,4057,0,4057.0
@@ -509,8 +509,8 @@ poll_id,ags,municipality_name,metric,kommone_value,statla_value,delta
 2,08118047,Löchgau,valid_votes,3150,0,3150.0
 2,08118048,"Ludwigsburg, Stadt",reported_precincts,,0,
 2,08118048,"Ludwigsburg, Stadt",total_precincts,,83,
-2,08118048,"Ludwigsburg, Stadt",voters_total,40366,0,40366.0
-2,08118048,"Ludwigsburg, Stadt",valid_votes,40085,0,40085.0
+2,08118048,"Ludwigsburg, Stadt",voters_total,40874,0,40874.0
+2,08118048,"Ludwigsburg, Stadt",valid_votes,40589,0,40589.0
 2,08118049,"Marbach am Neckar, Stadt",reported_precincts,,0,
 2,08118049,"Marbach am Neckar, Stadt",total_precincts,,17,
 2,08118049,"Marbach am Neckar, Stadt",voters_total,7971,0,7971.0
@@ -557,8 +557,8 @@ poll_id,ags,municipality_name,metric,kommone_value,statla_value,delta
 2,08118070,"Steinheim an der Murr, Stadt",valid_votes,6318,0,6318.0
 2,08118071,"Tamm, Stadt",reported_precincts,,0,
 2,08118071,"Tamm, Stadt",total_precincts,,14,
-2,08118071,"Tamm, Stadt",voters_total,6027,0,6027.0
-2,08118071,"Tamm, Stadt",valid_votes,5984,0,5984.0
+2,08118071,"Tamm, Stadt",voters_total,6761,0,6761.0
+2,08118071,"Tamm, Stadt",valid_votes,6710,0,6710.0
 2,08118073,"Vaihingen an der Enz, Stadt",reported_precincts,,0,
 2,08118073,"Vaihingen an der Enz, Stadt",total_precincts,,32,
 2,08118073,"Vaihingen an der Enz, Stadt",voters_total,15203,0,15203.0
@@ -658,7 +658,7 @@ poll_id,ags,municipality_name,metric,kommone_value,statla_value,delta
 2,08119067,"Schorndorf, Stadt",reported_precincts,,0,
 2,08119067,"Schorndorf, Stadt",total_precincts,,41,
 2,08119067,"Schorndorf, Stadt",voters_total,20390,0,20390.0
-2,08119067,"Schorndorf, Stadt",valid_votes,20248,0,20248.0
+2,08119067,"Schorndorf, Stadt",valid_votes,20249,0,20249.0
 2,08119068,Schwaikheim,reported_precincts,,0,
 2,08119068,Schwaikheim,total_precincts,,6,
 2,08119068,Schwaikheim,voters_total,4900,0,4900.0
@@ -757,8 +757,8 @@ poll_id,ags,municipality_name,metric,kommone_value,statla_value,delta
 2,08125024,Ellhofen,valid_votes,1965,0,1965.0
 2,08125026,"Eppingen, Stadt",reported_precincts,,0,
 2,08125026,"Eppingen, Stadt",total_precincts,,13,
-2,08125026,"Eppingen, Stadt",voters_total,7140,0,7140.0
-2,08125026,"Eppingen, Stadt",valid_votes,7070,0,7070.0
+2,08125026,"Eppingen, Stadt",voters_total,10915,0,10915.0
+2,08125026,"Eppingen, Stadt",valid_votes,10818,0,10818.0
 2,08125027,Erlenbach,reported_precincts,,0,
 2,08125027,Erlenbach,total_precincts,,4,
 2,08125027,Erlenbach,voters_total,2787,0,2787.0
@@ -1389,8 +1389,8 @@ poll_id,ags,municipality_name,metric,kommone_value,statla_value,delta
 2,08215009,"Bruchsal, Stadt",valid_votes,19939,0,19939.0
 2,08215017,"Ettlingen, Stadt",reported_precincts,,0,
 2,08215017,"Ettlingen, Stadt",total_precincts,,51,
-2,08215017,"Ettlingen, Stadt",voters_total,20233,0,20233.0
-2,08215017,"Ettlingen, Stadt",valid_votes,20043,0,20043.0
+2,08215017,"Ettlingen, Stadt",voters_total,20826,0,20826.0
+2,08215017,"Ettlingen, Stadt",valid_votes,20625,0,20625.0
 2,08215021,Forst,reported_precincts,,0,
 2,08215021,Forst,total_precincts,,8,
 2,08215021,Forst,voters_total,4149,0,4149.0
@@ -1445,8 +1445,8 @@ poll_id,ags,municipality_name,metric,kommone_value,statla_value,delta
 2,08215089,Walzbachtal,valid_votes,5347,0,5347.0
 2,08215090,Weingarten (Baden),reported_precincts,,0,
 2,08215090,Weingarten (Baden),total_precincts,,15,
-2,08215090,Weingarten (Baden),voters_total,5469,0,5469.0
-2,08215090,Weingarten (Baden),valid_votes,5381,0,5381.0
+2,08215090,Weingarten (Baden),voters_total,5872,0,5872.0
+2,08215090,Weingarten (Baden),valid_votes,5777,0,5777.0
 2,08215094,Zaisenhausen,reported_precincts,,0,
 2,08215094,Zaisenhausen,total_precincts,,2,
 2,08215094,Zaisenhausen,voters_total,985,0,985.0
@@ -1885,8 +1885,8 @@ poll_id,ags,municipality_name,metric,kommone_value,statla_value,delta
 2,08226091,"Waibstadt, Stadt",valid_votes,2744,0,2744.0
 2,08226095,"Walldorf, Stadt",reported_precincts,,0,
 2,08226095,"Walldorf, Stadt",total_precincts,,14,
-2,08226095,"Walldorf, Stadt",voters_total,6961,0,6961.0
-2,08226095,"Walldorf, Stadt",valid_votes,6891,0,6891.0
+2,08226095,"Walldorf, Stadt",voters_total,7649,0,7649.0
+2,08226095,"Walldorf, Stadt",valid_votes,7570,0,7570.0
 2,08226096,"Weinheim, Stadt",reported_precincts,,0,
 2,08226096,"Weinheim, Stadt",total_precincts,,65,
 2,08226096,"Weinheim, Stadt",voters_total,21416,0,21416.0
@@ -2513,8 +2513,8 @@ poll_id,ags,municipality_name,metric,kommone_value,statla_value,delta
 2,08316056,"Waldkirch, Stadt",valid_votes,11286,0,11286.0
 2,08317001,"Achern, Stadt",reported_precincts,,0,
 2,08317001,"Achern, Stadt",total_precincts,,22,
-2,08317001,"Achern, Stadt",voters_total,12685,0,12685.0
-2,08317001,"Achern, Stadt",valid_votes,12565,0,12565.0
+2,08317001,"Achern, Stadt",voters_total,13424,0,13424.0
+2,08317001,"Achern, Stadt",valid_votes,13297,0,13297.0
 2,08317005,Appenweier,reported_precincts,,0,
 2,08317005,Appenweier,total_precincts,,8,
 2,08317005,Appenweier,voters_total,5338,0,5338.0
@@ -2629,8 +2629,8 @@ poll_id,ags,municipality_name,metric,kommone_value,statla_value,delta
 2,08317093,Oberwolfach,valid_votes,1589,0,1589.0
 2,08317096,"Offenburg, Stadt",reported_precincts,,0,
 2,08317096,"Offenburg, Stadt",total_precincts,,60,
-2,08317096,"Offenburg, Stadt",voters_total,25250,0,25250.0
-2,08317096,"Offenburg, Stadt",valid_votes,24867,0,24867.0
+2,08317096,"Offenburg, Stadt",voters_total,26106,0,26106.0
+2,08317096,"Offenburg, Stadt",valid_votes,25709,0,25709.0
 2,08317097,Ohlsbach,reported_precincts,,0,
 2,08317097,Ohlsbach,total_precincts,,3,
 2,08317097,Ohlsbach,voters_total,1994,0,1994.0
@@ -2689,8 +2689,8 @@ poll_id,ags,municipality_name,metric,kommone_value,statla_value,delta
 2,08317129,Steinach,valid_votes,2399,0,2399.0
 2,08317141,Willstätt,reported_precincts,,0,
 2,08317141,Willstätt,total_precincts,,10,
-2,08317141,Willstätt,voters_total,4223,0,4223.0
-2,08317141,Willstätt,valid_votes,4190,0,4190.0
+2,08317141,Willstätt,voters_total,4736,0,4736.0
+2,08317141,Willstätt,valid_votes,4694,0,4694.0
 2,08317145,"Wolfach, Stadt",reported_precincts,,0,
 2,08317145,"Wolfach, Stadt",total_precincts,,8,
 2,08317145,"Wolfach, Stadt",voters_total,2704,0,2704.0
@@ -2833,8 +2833,8 @@ poll_id,ags,municipality_name,metric,kommone_value,statla_value,delta
 2,08326027,"Hüfingen, Stadt",valid_votes,3951,0,3951.0
 2,08326031,Königsfeld im Schwarzwald,reported_precincts,,0,
 2,08326031,Königsfeld im Schwarzwald,total_precincts,,10,
-2,08326031,Königsfeld im Schwarzwald,voters_total,3033,0,3033.0
-2,08326031,Königsfeld im Schwarzwald,valid_votes,3013,0,3013.0
+2,08326031,Königsfeld im Schwarzwald,voters_total,3551,0,3551.0
+2,08326031,Königsfeld im Schwarzwald,valid_votes,3530,0,3530.0
 2,08326037,Mönchweiler,reported_precincts,,0,
 2,08326037,Mönchweiler,total_precincts,,4,
 2,08326037,Mönchweiler,voters_total,1671,0,1671.0
@@ -3345,8 +3345,8 @@ poll_id,ags,municipality_name,metric,kommone_value,statla_value,delta
 2,08337090,Rickenbach,valid_votes,2120,0,2120.0
 2,08337096,"Bad Säckingen, Stadt",reported_precincts,,0,
 2,08337096,"Bad Säckingen, Stadt",total_precincts,,15,
-2,08337096,"Bad Säckingen, Stadt",voters_total,6842,0,6842.0
-2,08337096,"Bad Säckingen, Stadt",valid_votes,6784,0,6784.0
+2,08337096,"Bad Säckingen, Stadt",voters_total,7236,0,7236.0
+2,08337096,"Bad Säckingen, Stadt",valid_votes,7169,0,7169.0
 2,08337097,"St. Blasien, Stadt",reported_precincts,,0,
 2,08337097,"St. Blasien, Stadt",total_precincts,,6,
 2,08337097,"St. Blasien, Stadt",voters_total,1379,0,1379.0

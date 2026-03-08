@@ -437,8 +437,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08326020,Gütenbach,Zweitstimmen,AfD,147,26.2
 08326027,"Hüfingen, Stadt",Erststimmen,AfD,872,22.2
 08326027,"Hüfingen, Stadt",Zweitstimmen,AfD,909,23.0
-08326031,Königsfeld im Schwarzwald,Erststimmen,AfD,582,19.4
-08326031,Königsfeld im Schwarzwald,Zweitstimmen,AfD,555,18.4
+08326031,Königsfeld im Schwarzwald,Erststimmen,AfD,653,18.6
+08326031,Königsfeld im Schwarzwald,Zweitstimmen,AfD,617,17.5
 08326037,Mönchweiler,Erststimmen,AfD,451,27.3
 08326037,Mönchweiler,Zweitstimmen,AfD,412,24.8
 08326041,Niedereschach,Erststimmen,AfD,788,23.7
@@ -621,8 +621,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08337076,Murg,Zweitstimmen,AfD,760,23.8
 08337090,Rickenbach,Erststimmen,AfD,572,27.0
 08337090,Rickenbach,Zweitstimmen,AfD,554,26.1
-08337096,"Bad Säckingen, Stadt",Erststimmen,AfD,1383,20.4
-08337096,"Bad Säckingen, Stadt",Zweitstimmen,AfD,1336,19.7
+08337096,"Bad Säckingen, Stadt",Erststimmen,AfD,1500,21.0
+08337096,"Bad Säckingen, Stadt",Zweitstimmen,AfD,1447,20.2
 08337106,"Stühlingen, Stadt",Erststimmen,AfD,551,19.4
 08337106,"Stühlingen, Stadt",Zweitstimmen,AfD,551,19.3
 08337116,"Wehr, Stadt",Erststimmen,AfD,1352,24.9
@@ -1398,7 +1398,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08326027,"Hüfingen, Stadt",Erststimmen,BSW,,
 08326027,"Hüfingen, Stadt",Zweitstimmen,BSW,78,2.0
 08326031,Königsfeld im Schwarzwald,Erststimmen,BSW,,
-08326031,Königsfeld im Schwarzwald,Zweitstimmen,BSW,40,1.3
+08326031,Königsfeld im Schwarzwald,Zweitstimmen,BSW,46,1.3
 08326037,Mönchweiler,Erststimmen,BSW,,
 08326037,Mönchweiler,Zweitstimmen,BSW,27,1.6
 08326041,Niedereschach,Erststimmen,BSW,,
@@ -1582,7 +1582,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08337090,Rickenbach,Erststimmen,BSW,,
 08337090,Rickenbach,Zweitstimmen,BSW,29,1.4
 08337096,"Bad Säckingen, Stadt",Erststimmen,BSW,,
-08337096,"Bad Säckingen, Stadt",Zweitstimmen,BSW,74,1.1
+08337096,"Bad Säckingen, Stadt",Zweitstimmen,BSW,80,1.1
 08337106,"Stühlingen, Stadt",Erststimmen,BSW,,
 08337106,"Stühlingen, Stadt",Zweitstimmen,BSW,38,1.3
 08337116,"Wehr, Stadt",Erststimmen,BSW,,
@@ -2520,7 +2520,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08326027,"Hüfingen, Stadt",Erststimmen,Bündnis C,,
 08326027,"Hüfingen, Stadt",Zweitstimmen,Bündnis C,9,0.2
 08326031,Königsfeld im Schwarzwald,Erststimmen,Bündnis C,,
-08326031,Königsfeld im Schwarzwald,Zweitstimmen,Bündnis C,10,0.3
+08326031,Königsfeld im Schwarzwald,Zweitstimmen,Bündnis C,14,0.4
 08326037,Mönchweiler,Erststimmen,Bündnis C,,
 08326037,Mönchweiler,Zweitstimmen,Bündnis C,13,0.8
 08326041,Niedereschach,Erststimmen,Bündnis C,,
@@ -2704,7 +2704,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08337090,Rickenbach,Erststimmen,Bündnis C,,
 08337090,Rickenbach,Zweitstimmen,Bündnis C,5,0.2
 08337096,"Bad Säckingen, Stadt",Erststimmen,Bündnis C,,
-08337096,"Bad Säckingen, Stadt",Zweitstimmen,Bündnis C,8,0.1
+08337096,"Bad Säckingen, Stadt",Zweitstimmen,Bündnis C,11,0.2
 08337106,"Stühlingen, Stadt",Erststimmen,Bündnis C,,
 08337106,"Stühlingen, Stadt",Zweitstimmen,Bündnis C,5,0.2
 08337116,"Wehr, Stadt",Erststimmen,Bündnis C,,
@@ -3479,8 +3479,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08326020,Gütenbach,Zweitstimmen,CDU,213,37.9
 08326027,"Hüfingen, Stadt",Erststimmen,CDU,1419,36.1
 08326027,"Hüfingen, Stadt",Zweitstimmen,CDU,1284,32.5
-08326031,Königsfeld im Schwarzwald,Erststimmen,CDU,1042,34.7
-08326031,Königsfeld im Schwarzwald,Zweitstimmen,CDU,947,31.4
+08326031,Königsfeld im Schwarzwald,Erststimmen,CDU,1214,34.5
+08326031,Königsfeld im Schwarzwald,Zweitstimmen,CDU,1115,31.6
 08326037,Mönchweiler,Erststimmen,CDU,514,31.2
 08326037,Mönchweiler,Zweitstimmen,CDU,513,30.9
 08326041,Niedereschach,Erststimmen,CDU,1173,35.3
@@ -3663,8 +3663,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08337076,Murg,Zweitstimmen,CDU,915,28.7
 08337090,Rickenbach,Erststimmen,CDU,727,34.3
 08337090,Rickenbach,Zweitstimmen,CDU,620,29.2
-08337096,"Bad Säckingen, Stadt",Erststimmen,CDU,2109,31.1
-08337096,"Bad Säckingen, Stadt",Zweitstimmen,CDU,1842,27.2
+08337096,"Bad Säckingen, Stadt",Erststimmen,CDU,2203,30.8
+08337096,"Bad Säckingen, Stadt",Zweitstimmen,CDU,1931,26.9
 08337106,"Stühlingen, Stadt",Erststimmen,CDU,1221,43.0
 08337106,"Stühlingen, Stadt",Zweitstimmen,CDU,1150,40.3
 08337116,"Wehr, Stadt",Erststimmen,CDU,1596,29.4
@@ -4440,7 +4440,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08326027,"Hüfingen, Stadt",Erststimmen,Die Gerechtigkeitspartei,,
 08326027,"Hüfingen, Stadt",Zweitstimmen,Die Gerechtigkeitspartei,6,0.2
 08326031,Königsfeld im Schwarzwald,Erststimmen,Die Gerechtigkeitspartei,,
-08326031,Königsfeld im Schwarzwald,Zweitstimmen,Die Gerechtigkeitspartei,2,0.1
+08326031,Königsfeld im Schwarzwald,Zweitstimmen,Die Gerechtigkeitspartei,3,0.1
 08326037,Mönchweiler,Erststimmen,Die Gerechtigkeitspartei,,
 08326037,Mönchweiler,Zweitstimmen,Die Gerechtigkeitspartei,5,0.3
 08326041,Niedereschach,Erststimmen,Die Gerechtigkeitspartei,,
@@ -4624,7 +4624,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08337090,Rickenbach,Erststimmen,Die Gerechtigkeitspartei,,
 08337090,Rickenbach,Zweitstimmen,Die Gerechtigkeitspartei,2,0.1
 08337096,"Bad Säckingen, Stadt",Erststimmen,Die Gerechtigkeitspartei,,
-08337096,"Bad Säckingen, Stadt",Zweitstimmen,Die Gerechtigkeitspartei,6,0.1
+08337096,"Bad Säckingen, Stadt",Zweitstimmen,Die Gerechtigkeitspartei,8,0.1
 08337106,"Stühlingen, Stadt",Erststimmen,Die Gerechtigkeitspartei,,
 08337106,"Stühlingen, Stadt",Zweitstimmen,Die Gerechtigkeitspartei,1,0.0
 08337116,"Wehr, Stadt",Erststimmen,Die Gerechtigkeitspartei,,
@@ -5399,8 +5399,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08326020,Gütenbach,Zweitstimmen,Die Linke,10,1.8
 08326027,"Hüfingen, Stadt",Erststimmen,Die Linke,135,3.4
 08326027,"Hüfingen, Stadt",Zweitstimmen,Die Linke,117,3.0
-08326031,Königsfeld im Schwarzwald,Erststimmen,Die Linke,97,3.2
-08326031,Königsfeld im Schwarzwald,Zweitstimmen,Die Linke,93,3.1
+08326031,Königsfeld im Schwarzwald,Erststimmen,Die Linke,114,3.2
+08326031,Königsfeld im Schwarzwald,Zweitstimmen,Die Linke,108,3.1
 08326037,Mönchweiler,Erststimmen,Die Linke,53,3.2
 08326037,Mönchweiler,Zweitstimmen,Die Linke,32,1.9
 08326041,Niedereschach,Erststimmen,Die Linke,78,2.3
@@ -5583,8 +5583,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08337076,Murg,Zweitstimmen,Die Linke,117,3.7
 08337090,Rickenbach,Erststimmen,Die Linke,80,3.8
 08337090,Rickenbach,Zweitstimmen,Die Linke,67,3.2
-08337096,"Bad Säckingen, Stadt",Erststimmen,Die Linke,280,4.1
-08337096,"Bad Säckingen, Stadt",Zweitstimmen,Die Linke,265,3.9
+08337096,"Bad Säckingen, Stadt",Erststimmen,Die Linke,308,4.3
+08337096,"Bad Säckingen, Stadt",Zweitstimmen,Die Linke,285,4.0
 08337106,"Stühlingen, Stadt",Erststimmen,Die Linke,69,2.4
 08337106,"Stühlingen, Stadt",Zweitstimmen,Die Linke,61,2.1
 08337116,"Wehr, Stadt",Erststimmen,Die Linke,257,4.7
@@ -6360,7 +6360,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08326027,"Hüfingen, Stadt",Erststimmen,Die PARTEI,,
 08326027,"Hüfingen, Stadt",Zweitstimmen,Die PARTEI,13,0.3
 08326031,Königsfeld im Schwarzwald,Erststimmen,Die PARTEI,,
-08326031,Königsfeld im Schwarzwald,Zweitstimmen,Die PARTEI,9,0.3
+08326031,Königsfeld im Schwarzwald,Zweitstimmen,Die PARTEI,11,0.3
 08326037,Mönchweiler,Erststimmen,Die PARTEI,,
 08326037,Mönchweiler,Zweitstimmen,Die PARTEI,6,0.4
 08326041,Niedereschach,Erststimmen,Die PARTEI,,
@@ -6544,7 +6544,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08337090,Rickenbach,Erststimmen,Die PARTEI,,
 08337090,Rickenbach,Zweitstimmen,Die PARTEI,9,0.4
 08337096,"Bad Säckingen, Stadt",Erststimmen,Die PARTEI,,
-08337096,"Bad Säckingen, Stadt",Zweitstimmen,Die PARTEI,22,0.3
+08337096,"Bad Säckingen, Stadt",Zweitstimmen,Die PARTEI,24,0.3
 08337106,"Stühlingen, Stadt",Erststimmen,Die PARTEI,,
 08337106,"Stühlingen, Stadt",Zweitstimmen,Die PARTEI,10,0.4
 08337116,"Wehr, Stadt",Erststimmen,Die PARTEI,,
@@ -7319,8 +7319,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08326020,Gütenbach,Zweitstimmen,FDP,16,2.8
 08326027,"Hüfingen, Stadt",Erststimmen,FDP,527,13.4
 08326027,"Hüfingen, Stadt",Zweitstimmen,FDP,251,6.4
-08326031,Königsfeld im Schwarzwald,Erststimmen,FDP,151,5.0
-08326031,Königsfeld im Schwarzwald,Zweitstimmen,FDP,128,4.2
+08326031,Königsfeld im Schwarzwald,Erststimmen,FDP,172,4.9
+08326031,Königsfeld im Schwarzwald,Zweitstimmen,FDP,148,4.2
 08326037,Mönchweiler,Erststimmen,FDP,87,5.3
 08326037,Mönchweiler,Zweitstimmen,FDP,73,4.4
 08326041,Niedereschach,Erststimmen,FDP,275,8.3
@@ -7503,8 +7503,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08337076,Murg,Zweitstimmen,FDP,88,2.8
 08337090,Rickenbach,Erststimmen,FDP,98,4.6
 08337090,Rickenbach,Zweitstimmen,FDP,83,3.9
-08337096,"Bad Säckingen, Stadt",Erststimmen,FDP,275,4.1
-08337096,"Bad Säckingen, Stadt",Zweitstimmen,FDP,275,4.1
+08337096,"Bad Säckingen, Stadt",Erststimmen,FDP,284,4.0
+08337096,"Bad Säckingen, Stadt",Zweitstimmen,FDP,290,4.0
 08337106,"Stühlingen, Stadt",Erststimmen,FDP,107,3.8
 08337106,"Stühlingen, Stadt",Zweitstimmen,FDP,138,4.8
 08337116,"Wehr, Stadt",Erststimmen,FDP,196,3.6
@@ -8280,7 +8280,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08326027,"Hüfingen, Stadt",Erststimmen,FREIE WÄHLER,,
 08326027,"Hüfingen, Stadt",Zweitstimmen,FREIE WÄHLER,68,1.7
 08326031,Königsfeld im Schwarzwald,Erststimmen,FREIE WÄHLER,,
-08326031,Königsfeld im Schwarzwald,Zweitstimmen,FREIE WÄHLER,57,1.9
+08326031,Königsfeld im Schwarzwald,Zweitstimmen,FREIE WÄHLER,69,2.0
 08326037,Mönchweiler,Erststimmen,FREIE WÄHLER,,
 08326037,Mönchweiler,Zweitstimmen,FREIE WÄHLER,26,1.6
 08326041,Niedereschach,Erststimmen,FREIE WÄHLER,,
@@ -8463,8 +8463,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08337076,Murg,Zweitstimmen,FREIE WÄHLER,116,3.6
 08337090,Rickenbach,Erststimmen,FREIE WÄHLER,135,6.4
 08337090,Rickenbach,Zweitstimmen,FREIE WÄHLER,85,4.0
-08337096,"Bad Säckingen, Stadt",Erststimmen,FREIE WÄHLER,275,4.1
-08337096,"Bad Säckingen, Stadt",Zweitstimmen,FREIE WÄHLER,164,2.4
+08337096,"Bad Säckingen, Stadt",Erststimmen,FREIE WÄHLER,297,4.1
+08337096,"Bad Säckingen, Stadt",Zweitstimmen,FREIE WÄHLER,172,2.4
 08337106,"Stühlingen, Stadt",Erststimmen,FREIE WÄHLER,234,8.2
 08337106,"Stühlingen, Stadt",Zweitstimmen,FREIE WÄHLER,81,2.8
 08337116,"Wehr, Stadt",Erststimmen,FREIE WÄHLER,255,4.7
@@ -9239,8 +9239,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08326020,Gütenbach,Zweitstimmen,GRÜNE,127,22.6
 08326027,"Hüfingen, Stadt",Erststimmen,GRÜNE,686,17.5
 08326027,"Hüfingen, Stadt",Zweitstimmen,GRÜNE,912,23.1
-08326031,Königsfeld im Schwarzwald,Erststimmen,GRÜNE,872,29.1
-08326031,Königsfeld im Schwarzwald,Zweitstimmen,GRÜNE,907,30.1
+08326031,Königsfeld im Schwarzwald,Erststimmen,GRÜNE,1045,29.7
+08326031,Königsfeld im Schwarzwald,Zweitstimmen,GRÜNE,1087,30.8
 08326037,Mönchweiler,Erststimmen,GRÜNE,417,25.3
 08326037,Mönchweiler,Zweitstimmen,GRÜNE,413,24.9
 08326041,Niedereschach,Erststimmen,GRÜNE,795,23.9
@@ -9423,8 +9423,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08337076,Murg,Zweitstimmen,GRÜNE,859,26.9
 08337090,Rickenbach,Erststimmen,GRÜNE,410,19.4
 08337090,Rickenbach,Zweitstimmen,GRÜNE,513,24.2
-08337096,"Bad Säckingen, Stadt",Erststimmen,GRÜNE,1939,28.6
-08337096,"Bad Säckingen, Stadt",Zweitstimmen,GRÜNE,2190,32.3
+08337096,"Bad Säckingen, Stadt",Erststimmen,GRÜNE,2020,28.2
+08337096,"Bad Säckingen, Stadt",Zweitstimmen,GRÜNE,2281,31.8
 08337106,"Stühlingen, Stadt",Erststimmen,GRÜNE,537,18.9
 08337106,"Stühlingen, Stadt",Zweitstimmen,GRÜNE,614,21.5
 08337116,"Wehr, Stadt",Erststimmen,GRÜNE,1383,25.5
@@ -12120,7 +12120,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08326027,"Hüfingen, Stadt",Erststimmen,PDR,,
 08326027,"Hüfingen, Stadt",Zweitstimmen,PDR,9,0.2
 08326031,Königsfeld im Schwarzwald,Erststimmen,PDR,,
-08326031,Königsfeld im Schwarzwald,Zweitstimmen,PDR,7,0.2
+08326031,Königsfeld im Schwarzwald,Zweitstimmen,PDR,9,0.3
 08326037,Mönchweiler,Erststimmen,PDR,,
 08326037,Mönchweiler,Zweitstimmen,PDR,3,0.2
 08326041,Niedereschach,Erststimmen,PDR,,
@@ -14115,8 +14115,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08326020,Gütenbach,Zweitstimmen,SPD,23,4.1
 08326027,"Hüfingen, Stadt",Erststimmen,SPD,191,4.9
 08326027,"Hüfingen, Stadt",Zweitstimmen,SPD,178,4.5
-08326031,Königsfeld im Schwarzwald,Erststimmen,SPD,256,8.5
-08326031,Königsfeld im Schwarzwald,Zweitstimmen,SPD,160,5.3
+08326031,Königsfeld im Schwarzwald,Erststimmen,SPD,316,9.0
+08326031,Königsfeld im Schwarzwald,Zweitstimmen,SPD,187,5.3
 08326037,Mönchweiler,Erststimmen,SPD,128,7.8
 08326037,Mönchweiler,Zweitstimmen,SPD,77,4.6
 08326041,Niedereschach,Erststimmen,SPD,211,6.4
@@ -14299,8 +14299,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08337076,Murg,Zweitstimmen,SPD,187,5.9
 08337090,Rickenbach,Erststimmen,SPD,96,4.5
 08337090,Rickenbach,Zweitstimmen,SPD,86,4.1
-08337096,"Bad Säckingen, Stadt",Erststimmen,SPD,512,7.6
-08337096,"Bad Säckingen, Stadt",Zweitstimmen,SPD,414,6.1
+08337096,"Bad Säckingen, Stadt",Erststimmen,SPD,547,7.6
+08337096,"Bad Säckingen, Stadt",Zweitstimmen,SPD,434,6.1
 08337106,"Stühlingen, Stadt",Erststimmen,SPD,123,4.3
 08337106,"Stühlingen, Stadt",Zweitstimmen,SPD,113,4.0
 08337116,"Wehr, Stadt",Erststimmen,SPD,385,7.1
@@ -15076,7 +15076,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08326027,"Hüfingen, Stadt",Erststimmen,Tierschutzpartei,,
 08326027,"Hüfingen, Stadt",Zweitstimmen,Tierschutzpartei,35,0.9
 08326031,Königsfeld im Schwarzwald,Erststimmen,Tierschutzpartei,,
-08326031,Königsfeld im Schwarzwald,Zweitstimmen,Tierschutzpartei,26,0.9
+08326031,Königsfeld im Schwarzwald,Zweitstimmen,Tierschutzpartei,35,1.0
 08326037,Mönchweiler,Erststimmen,Tierschutzpartei,,
 08326037,Mönchweiler,Zweitstimmen,Tierschutzpartei,17,1.0
 08326041,Niedereschach,Erststimmen,Tierschutzpartei,,
@@ -15260,7 +15260,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08337090,Rickenbach,Erststimmen,Tierschutzpartei,,
 08337090,Rickenbach,Zweitstimmen,Tierschutzpartei,23,1.1
 08337096,"Bad Säckingen, Stadt",Erststimmen,Tierschutzpartei,,
-08337096,"Bad Säckingen, Stadt",Zweitstimmen,Tierschutzpartei,51,0.8
+08337096,"Bad Säckingen, Stadt",Zweitstimmen,Tierschutzpartei,56,0.8
 08337106,"Stühlingen, Stadt",Erststimmen,Tierschutzpartei,,
 08337106,"Stühlingen, Stadt",Zweitstimmen,Tierschutzpartei,39,1.4
 08337116,"Wehr, Stadt",Erststimmen,Tierschutzpartei,,
@@ -16036,7 +16036,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08326027,"Hüfingen, Stadt",Erststimmen,Verjüngungsforschung,,
 08326027,"Hüfingen, Stadt",Zweitstimmen,Verjüngungsforschung,3,0.1
 08326031,Königsfeld im Schwarzwald,Erststimmen,Verjüngungsforschung,,
-08326031,Königsfeld im Schwarzwald,Zweitstimmen,Verjüngungsforschung,2,0.1
+08326031,Königsfeld im Schwarzwald,Zweitstimmen,Verjüngungsforschung,3,0.1
 08326037,Mönchweiler,Erststimmen,Verjüngungsforschung,,
 08326037,Mönchweiler,Zweitstimmen,Verjüngungsforschung,2,0.1
 08326041,Niedereschach,Erststimmen,Verjüngungsforschung,,
@@ -16996,7 +16996,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08326027,"Hüfingen, Stadt",Erststimmen,Volt,99,2.5
 08326027,"Hüfingen, Stadt",Zweitstimmen,Volt,44,1.1
 08326031,Königsfeld im Schwarzwald,Erststimmen,Volt,,
-08326031,Königsfeld im Schwarzwald,Zweitstimmen,Volt,34,1.1
+08326031,Königsfeld im Schwarzwald,Zweitstimmen,Volt,39,1.1
 08326037,Mönchweiler,Erststimmen,Volt,,
 08326037,Mönchweiler,Zweitstimmen,Volt,18,1.1
 08326041,Niedereschach,Erststimmen,Volt,,
@@ -17180,7 +17180,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08337090,Rickenbach,Erststimmen,Volt,,
 08337090,Rickenbach,Zweitstimmen,Volt,14,0.7
 08337096,"Bad Säckingen, Stadt",Erststimmen,Volt,,
-08337096,"Bad Säckingen, Stadt",Zweitstimmen,Volt,86,1.3
+08337096,"Bad Säckingen, Stadt",Zweitstimmen,Volt,96,1.3
 08337106,"Stühlingen, Stadt",Erststimmen,Volt,,
 08337106,"Stühlingen, Stadt",Zweitstimmen,Volt,13,0.5
 08337116,"Wehr, Stadt",Erststimmen,Volt,,
@@ -17956,7 +17956,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08326027,"Hüfingen, Stadt",Erststimmen,Werteunion,,
 08326027,"Hüfingen, Stadt",Zweitstimmen,Werteunion,6,0.2
 08326031,Königsfeld im Schwarzwald,Erststimmen,Werteunion,,
-08326031,Königsfeld im Schwarzwald,Zweitstimmen,Werteunion,8,0.3
+08326031,Königsfeld im Schwarzwald,Zweitstimmen,Werteunion,9,0.3
 08326037,Mönchweiler,Erststimmen,Werteunion,,
 08326037,Mönchweiler,Zweitstimmen,Werteunion,13,0.8
 08326041,Niedereschach,Erststimmen,Werteunion,,
@@ -18916,7 +18916,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08326027,"Hüfingen, Stadt",Erststimmen,dieBasis,,
 08326027,"Hüfingen, Stadt",Zweitstimmen,dieBasis,14,0.4
 08326031,Königsfeld im Schwarzwald,Erststimmen,dieBasis,,
-08326031,Königsfeld im Schwarzwald,Zweitstimmen,dieBasis,21,0.7
+08326031,Königsfeld im Schwarzwald,Zweitstimmen,dieBasis,23,0.7
 08326037,Mönchweiler,Erststimmen,dieBasis,,
 08326037,Mönchweiler,Zweitstimmen,dieBasis,5,0.3
 08326041,Niedereschach,Erststimmen,dieBasis,,
@@ -19100,7 +19100,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08337090,Rickenbach,Erststimmen,dieBasis,,
 08337090,Rickenbach,Zweitstimmen,dieBasis,11,0.5
 08337096,"Bad Säckingen, Stadt",Erststimmen,dieBasis,,
-08337096,"Bad Säckingen, Stadt",Zweitstimmen,dieBasis,15,0.2
+08337096,"Bad Säckingen, Stadt",Zweitstimmen,dieBasis,17,0.2
 08337106,"Stühlingen, Stadt",Erststimmen,dieBasis,,
 08337106,"Stühlingen, Stadt",Zweitstimmen,dieBasis,12,0.4
 08337116,"Wehr, Stadt",Erststimmen,dieBasis,,
@@ -20060,7 +20060,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08337090,Rickenbach,Erststimmen,ÖDP,,
 08337090,Rickenbach,Zweitstimmen,ÖDP,7,0.3
 08337096,"Bad Säckingen, Stadt",Erststimmen,ÖDP,,
-08337096,"Bad Säckingen, Stadt",Zweitstimmen,ÖDP,10,0.1
+08337096,"Bad Säckingen, Stadt",Zweitstimmen,ÖDP,11,0.2
 08337106,"Stühlingen, Stadt",Erststimmen,ÖDP,,
 08337106,"Stühlingen, Stadt",Zweitstimmen,ÖDP,9,0.3
 08337116,"Wehr, Stadt",Erststimmen,ÖDP,,
