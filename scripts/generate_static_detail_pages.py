@@ -261,8 +261,20 @@ def load_statla_dataset() -> Tuple[List[Dict[str, Any]], Dict[str, Dict[str, str
     return snapshots, raw_by_row_key
 
 
-def load_latest_party_rows() -> List[Dict[str, str]]:
-    return read_csv_rows(core.LATEST_DIR / "statla_party_results.csv")
+def load_latest_party_rows() -> List[Dict[str, Any]]:
+    rows = read_csv_rows(core.LATEST_DIR / "statla_party_results.csv")
+    normalized: List[Dict[str, Any]] = []
+    for row in rows:
+        normalized.append(
+            {
+                "row_key": str(row.get("row_key") or ""),
+                "vote_type": str(row.get("vote_type") or ""),
+                "party_key": str(row.get("party_key") or ""),
+                "party_name": str(row.get("party_name") or ""),
+                "votes": core.parse_int(row.get("votes")),
+            }
+        )
+    return normalized
 
 
 def load_latest_kommone_snapshots() -> List[Dict[str, Any]]:
