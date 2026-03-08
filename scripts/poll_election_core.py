@@ -37,6 +37,16 @@ from urllib import error, request
 from urllib.parse import urlsplit
 
 try:
+    import requests
+except ImportError:  # pragma: no cover
+    requests = None
+else:  # pragma: no cover
+    try:
+        requests.packages.urllib3.disable_warnings()  # type: ignore[attr-defined]
+    except Exception:
+        pass
+
+try:
     from zoneinfo import ZoneInfo
 except ImportError as exc:  # pragma: no cover
     raise RuntimeError("Python 3.9+ is required") from exc
@@ -125,6 +135,9 @@ KOMMONE_ROW_RE = re.compile(r"<tr[^>]*>(.*?)</tr>", re.IGNORECASE | re.DOTALL)
 KOMMONE_CELL_RE = re.compile(r"<t[hd][^>]*>(.*?)</t[hd]>", re.IGNORECASE | re.DOTALL)
 KOMMONE_TAG_RE = re.compile(r"<[^>]+>")
 KOMMONE_GEMEINDE_LINK_RE = re.compile(r"ergebnisse_gemeinde_(\d{8})\.html$", re.IGNORECASE)
+STATLA_TABLE_RE = re.compile(r"<table[^>]*>(.*?)</table>", re.IGNORECASE | re.DOTALL)
+STATLA_WAHLKREIS_PAGE_RE = re.compile(r"ergebnispraesentation_wahlkreis_(\d+)\.html$", re.IGNORECASE)
+STATLA_GEMEINDE_PAGE_RE = re.compile(r"ergebnispraesentation_gemeinde_(\d{8})\.html$", re.IGNORECASE)
 
 
 @dataclass(frozen=True)
@@ -1515,6 +1528,412 @@ def should_reject_statla_snapshot_regression(
     return "Rejected truncated StatLA CSV: " + ", ".join(reasons)
 
 
+def statla_presentation_base_url(config: Config) -> str:
+    live_url = config.statla_live_csv_url
+    marker = "/ltw26-ergebnisse.csv"
+    if live_url.endswith(marker):
+        return live_url[: -len(marker)] + "/"
+    parts = urlsplit(live_url)
+    base_path = parts.path.rsplit("/", 1)[0] + "/"
+    scheme = parts.scheme or "https"
+    return f"{scheme}://{parts.netloc}{base_path}"
+
+
+def clean_html_text(fragment: str) -> str:
+    text = html.unescape(KOMMONE_TAG_RE.sub(" ", fragment or ""))
+    return re.sub(r"\s+", " ", text.replace("\xa0", " ")).strip()
+
+
+def parse_html_tables(html_text: str) -> List[List[List[str]]]:
+    tables: List[List[List[str]]] = []
+    for table_match in STATLA_TABLE_RE.finditer(html_text):
+        rows: List[List[str]] = []
+        for row_match in KOMMONE_ROW_RE.finditer(table_match.group(1)):
+            cells = [clean_html_text(cell) for cell in KOMMONE_CELL_RE.findall(row_match.group(1))]
+            if cells:
+                rows.append(cells)
+        if rows:
+            tables.append(rows)
+    return tables
+
+
+def find_status_tables(tables: List[List[List[str]]]) -> List[List[List[str]]]:
+    return [
+        table
+        for table in tables
+        if table
+        and len(table[0]) >= 3
+        and table[0][0] == "Gebiet"
+        and table[0][1] == "Auszählungsstand"
+        and table[0][2] == "Zeitpunkt letzter Eingang"
+    ]
+
+
+def find_results_table(tables: List[List[List[str]]]) -> Optional[List[List[str]]]:
+    for table in tables:
+        if table and table[0] and table[0][0] == "Merkmal":
+            return table
+    return None
+
+
+def parse_status_value(text: str) -> Tuple[Optional[int], Optional[int]]:
+    match = re.search(r"([\d\.]+)\s+von\s+([\d\.]+)", str(text or ""))
+    if not match:
+        return None, None
+    return parse_int(match.group(1)), parse_int(match.group(2))
+
+
+def parse_statla_presentation_results_table(table: List[List[str]]) -> Tuple[Dict[str, Optional[int]], List[Dict[str, Any]]]:
+    if not table:
+        return {}, []
+
+    header = table[0]
+    has_candidate_column = any("Direktkandidat" in cell for cell in header)
+    erst_index = 2 if has_candidate_column else 1
+    zweit_index = 5 if has_candidate_column else 4
+    summary: Dict[str, Optional[int]] = {
+        "voters_total": None,
+        "valid_votes_erst": None,
+        "valid_votes_zweit": None,
+    }
+    party_rows: List[Dict[str, Any]] = []
+    party_keys_by_vote_type = {
+        vote_type: {
+            canonical_party_name(name, vote_type): code
+            for code, name in STATLA_PARTY_CODEBOOK.get(vote_type, [])
+        }
+        for vote_type in ("Erststimmen", "Zweitstimmen")
+    }
+    meta_labels = {"Wahlberechtigte", "Wählende", "Ungültige Stimmen", "Gültige Stimmen"}
+
+    for row in table[1:]:
+        if not row:
+            continue
+        label = row[0]
+        if label == "Wählende":
+            summary["voters_total"] = parse_int(row[erst_index] if len(row) > erst_index else None)
+            continue
+        if label == "Gültige Stimmen":
+            summary["valid_votes_erst"] = parse_int(row[erst_index] if len(row) > erst_index else None)
+            summary["valid_votes_zweit"] = parse_int(row[zweit_index] if len(row) > zweit_index else None)
+            continue
+        if label in meta_labels:
+            continue
+        if label in {"Merkmal", "Anzahl Anteil Gewinn & Verlust in %-Punkten Anzahl Anteil Gewinn & Verlust in %-Punkten"}:
+            continue
+
+        party_name = canonical_party_name(label)
+        erst_votes = parse_int(row[erst_index] if len(row) > erst_index else None)
+        zweit_votes = parse_int(row[zweit_index] if len(row) > zweit_index else None)
+        if erst_votes is not None:
+            party_rows.append(
+                {
+                    "vote_type": "Erststimmen",
+                    "party_key": party_keys_by_vote_type["Erststimmen"].get(party_name, party_name),
+                    "party_name": canonical_party_name(party_name, "Erststimmen"),
+                    "votes": erst_votes,
+                }
+            )
+        if zweit_votes is not None:
+            party_rows.append(
+                {
+                    "vote_type": "Zweitstimmen",
+                    "party_key": party_keys_by_vote_type["Zweitstimmen"].get(party_name, party_name),
+                    "party_name": canonical_party_name(party_name, "Zweitstimmen"),
+                    "votes": zweit_votes,
+                }
+            )
+
+    return summary, party_rows
+
+
+def html_fetch_result(url: str, timeout_seconds: int) -> HttpResult:
+    if requests is not None:
+        last_error: Optional[str] = None
+        for _ in range(3):
+            try:
+                response = requests.get(
+                    url,
+                    timeout=max(timeout_seconds, 30),
+                    headers={"User-Agent": "wahl-monitor-poller/1.0"},
+                    verify=False,
+                )
+                if response.status_code == 200 and response.content:
+                    return HttpResult(
+                        url=url,
+                        status_code=int(response.status_code),
+                        content=bytes(response.content),
+                        error_message=None,
+                    )
+                last_error = f"HTTP {response.status_code}"
+            except requests.RequestException as exc:  # type: ignore[attr-defined]
+                last_error = str(exc)
+        return HttpResult(url=url, status_code=None, content=b"", error_message=last_error or "HTML fetch failed")
+
+    last_result: Optional[HttpResult] = None
+    for _ in range(3):
+        result = http_get(url, max(timeout_seconds, 30))
+        if result.status_code == 200 and result.content:
+            return result
+        last_result = result
+    return last_result or HttpResult(url=url, status_code=None, content=b"", error_message="HTML fetch failed")
+
+
+def fetch_statla_presentation_snapshot(
+    label: str,
+    url: str,
+    timeout_seconds: int,
+    *,
+    ags: Optional[str],
+    municipality_name: Optional[str],
+    gebietsart: str,
+    gebietsnummer: str,
+    is_municipality_summary: bool,
+) -> Optional[Dict[str, Any]]:
+    result = html_fetch_result(url, timeout_seconds)
+    if result.status_code != 200 or not result.content:
+        return None
+    html_text = decode_bytes(result.content)
+    tables = parse_html_tables(html_text)
+    status_tables = find_status_tables(tables)
+    results_table = find_results_table(tables)
+    if not status_tables or results_table is None:
+        return None
+
+    status_rows = [row for table in status_tables for row in table[1:]]
+    if not status_rows:
+        return None
+    reported_precincts, total_precincts = parse_status_value(status_rows[0][1] if len(status_rows[0]) > 1 else "")
+    metrics, party_rows = parse_statla_presentation_results_table(results_table)
+    payload_hash = sha256_bytes(
+        json.dumps(
+            {
+                "label": label,
+                "url": url,
+                "reported_precincts": reported_precincts,
+                "total_precincts": total_precincts,
+                "metrics": metrics,
+                "parties": party_rows,
+            },
+            sort_keys=True,
+            ensure_ascii=False,
+        ).encode("utf-8")
+    )
+    return {
+        "url": url,
+        "html_bytes": len(result.content),
+        "snapshot": {
+            "ags": canonical_ags(ags),
+            "municipality_name": canonical_municipality_name(municipality_name),
+            "gebietsart": gebietsart,
+            "gebietsnummer": gebietsnummer,
+            "reported_precincts": reported_precincts,
+            "total_precincts": total_precincts,
+            "voters_total": metrics.get("voters_total"),
+            "valid_votes_erst": metrics.get("valid_votes_erst"),
+            "valid_votes_zweit": metrics.get("valid_votes_zweit"),
+            "payload_hash": payload_hash,
+            "is_municipality_summary": is_municipality_summary,
+        },
+        "party_rows": party_rows,
+        "linked_municipality_urls": sorted(set(re.findall(r"ergebnispraesentation_gemeinde_\d{8}\.html", html_text))),
+    }
+
+
+def fetch_statla_presentation_fallback(
+    config: Config,
+    timeout_seconds: int,
+    previous_latest: Dict[str, Any],
+    *,
+    base_error: Optional[str],
+) -> Optional[Dict[str, Any]]:
+    previous_snapshots = previous_latest.get("snapshots", [])
+    previous_party_rows = previous_latest.get("party_rows", [])
+    if not previous_snapshots or not previous_party_rows:
+        return None
+
+    land_previous = next((row for row in previous_snapshots if str(row.get("row_key") or "") == "000000:BW:-:-:LAND"), None)
+    if land_previous is None:
+        return None
+
+    previous_wahlkreis: Dict[str, Dict[str, Any]] = {}
+    previous_municipalities: Dict[str, Dict[str, Any]] = {}
+    for row in previous_snapshots:
+        gebietsart = str(row.get("gebietsart") or "").strip().upper()
+        if gebietsart == "WAHLKREIS":
+            wk = normalize_wahlkreis_nummer(row.get("gebietsnummer") or row.get("row_key"))
+            if wk:
+                previous_wahlkreis[wk] = row
+            continue
+        if str(row.get("is_municipality_summary") or "").lower() == "true":
+            ags = canonical_ags(row.get("ags"))
+            if ags:
+                previous_municipalities[ags] = row
+
+    if len(previous_wahlkreis) < 70 or len(previous_municipalities) < 1000:
+        return None
+
+    base_url = statla_presentation_base_url(config)
+    land_url = base_url + "ergebnispraesentation_land_bw.html"
+    land_result = fetch_statla_presentation_snapshot(
+        "land",
+        land_url,
+        timeout_seconds,
+        ags=land_previous.get("ags"),
+        municipality_name=land_previous.get("municipality_name"),
+        gebietsart="LAND",
+        gebietsnummer="BW",
+        is_municipality_summary=False,
+    )
+    if land_result is None:
+        return None
+
+    worker_count = max(4, min(config.max_workers, 12))
+    wahlkreis_updates: Dict[str, Dict[str, Any]] = {}
+    municipality_urls: set[str] = set()
+    total_html_bytes = land_result["html_bytes"]
+
+    with ThreadPoolExecutor(max_workers=worker_count) as executor:
+        future_to_wk = {
+            executor.submit(
+                fetch_statla_presentation_snapshot,
+                f"wahlkreis-{wk}",
+                base_url + f"ergebnispraesentation_wahlkreis_{int(wk)}.html",
+                timeout_seconds,
+                ags=previous_wahlkreis[wk].get("ags"),
+                municipality_name=previous_wahlkreis[wk].get("municipality_name"),
+                gebietsart="WAHLKREIS",
+                gebietsnummer=wk,
+                is_municipality_summary=False,
+            ): wk
+            for wk in sorted(previous_wahlkreis.keys(), key=lambda value: int(value))
+        }
+        for future in as_completed(future_to_wk):
+            wk = future_to_wk[future]
+            data = future.result()
+            if data is None:
+                return None
+            wahlkreis_updates[wk] = data
+            municipality_urls.update(data["linked_municipality_urls"])
+            total_html_bytes += data["html_bytes"]
+
+    if len(wahlkreis_updates) < 70:
+        return None
+
+    municipality_targets: Dict[str, str] = {}
+    for relative_url in municipality_urls:
+        match = STATLA_GEMEINDE_PAGE_RE.search(relative_url)
+        if not match:
+            continue
+        ags = canonical_ags(match.group(1))
+        municipality_targets[ags] = relative_url
+    if len(municipality_targets) < 1000:
+        return None
+
+    municipality_updates: Dict[str, Dict[str, Any]] = {}
+    with ThreadPoolExecutor(max_workers=worker_count) as executor:
+        future_to_ags = {
+            executor.submit(
+                fetch_statla_presentation_snapshot,
+                f"gemeinde-{ags}",
+                base_url + relative_url,
+                timeout_seconds,
+                ags=ags,
+                municipality_name=previous_municipalities[ags].get("municipality_name"),
+                gebietsart=previous_municipalities[ags].get("gebietsart") or "",
+                gebietsnummer=previous_municipalities[ags].get("gebietsnummer") or "",
+                is_municipality_summary=True,
+            ): ags
+            for ags, relative_url in municipality_targets.items()
+            if ags in previous_municipalities
+        }
+        for future in as_completed(future_to_ags):
+            ags = future_to_ags[future]
+            data = future.result()
+            if data is None:
+                return None
+            municipality_updates[ags] = data
+            total_html_bytes += data["html_bytes"]
+
+    if len(municipality_updates) < 1000:
+        return None
+
+    updated_snapshots_by_row_key: Dict[str, Dict[str, Any]] = {}
+    replacement_party_rows: List[Dict[str, Any]] = []
+
+    land_snapshot = dict(land_previous)
+    land_snapshot.update(land_result["snapshot"])
+    land_snapshot["row_key"] = land_previous["row_key"]
+    updated_snapshots_by_row_key[land_snapshot["row_key"]] = land_snapshot
+    replacement_party_rows.extend({"row_key": land_snapshot["row_key"], **row} for row in land_result["party_rows"])
+
+    for wk, data in wahlkreis_updates.items():
+        previous = previous_wahlkreis.get(wk)
+        if previous is None:
+            continue
+        snapshot = dict(previous)
+        snapshot.update(data["snapshot"])
+        snapshot["row_key"] = previous["row_key"]
+        updated_snapshots_by_row_key[snapshot["row_key"]] = snapshot
+        replacement_party_rows.extend({"row_key": snapshot["row_key"], **row} for row in data["party_rows"])
+
+    for ags, data in municipality_updates.items():
+        previous = previous_municipalities.get(ags)
+        if previous is None:
+            continue
+        snapshot = dict(previous)
+        snapshot.update(data["snapshot"])
+        snapshot["row_key"] = previous["row_key"]
+        updated_snapshots_by_row_key[snapshot["row_key"]] = snapshot
+        replacement_party_rows.extend({"row_key": snapshot["row_key"], **row} for row in data["party_rows"])
+
+    updated_snapshots = [
+        updated_snapshots_by_row_key.get(str(row.get("row_key") or ""), row)
+        for row in previous_snapshots
+    ]
+    replaced_row_keys = set(updated_snapshots_by_row_key.keys())
+    updated_party_rows = [
+        row for row in previous_party_rows if str(row.get("row_key") or "") not in replaced_row_keys
+    ] + replacement_party_rows
+    updated_party_rows.sort(key=lambda row: (str(row.get("row_key") or ""), str(row.get("vote_type") or ""), str(row.get("party_name") or "")))
+
+    combined_hash = sha256_bytes(
+        json.dumps(
+            {
+                "land": land_snapshot.get("payload_hash"),
+                "wahlkreise": sorted(
+                    (wk, data["snapshot"].get("payload_hash"))
+                    for wk, data in wahlkreis_updates.items()
+                ),
+                "municipality_count": len(municipality_updates),
+            },
+            sort_keys=True,
+            ensure_ascii=False,
+        ).encode("utf-8")
+    )
+
+    return {
+        "mode": "LIVE_HTML_FALLBACK",
+        "url": land_url,
+        "status_code": 200,
+        "content_hash": combined_hash,
+        "raw_csv": "",
+        "snapshots": updated_snapshots,
+        "party_rows": updated_party_rows,
+        "fetches": [
+            {
+                "source": "statla",
+                "url": land_url,
+                "status_code": 200,
+                "content_hash": combined_hash,
+                "byte_count": total_html_bytes,
+                "error_message": base_error,
+            }
+        ],
+        "error_message": base_error,
+    }
+
+
 def fetch_statla(config: Config, timeout_seconds: int, force_dummy: bool = False) -> Dict[str, Any]:
     live_result = http_get(config.statla_live_csv_url, timeout_seconds)
     selected_result = live_result
@@ -1564,6 +1983,16 @@ def fetch_statla(config: Config, timeout_seconds: int, force_dummy: bool = False
             selected_url = str(local_dummy)
 
     if selected_result.status_code != 200 or not selected_result.content:
+        if not force_dummy:
+            presentation_fallback = fetch_statla_presentation_fallback(
+                config,
+                timeout_seconds,
+                load_latest_statla_exports(),
+                base_error=selected_result.error_message or "No CSV available",
+            )
+            if presentation_fallback is not None:
+                presentation_fallback["fetches"] = fetches + presentation_fallback["fetches"]
+                return presentation_fallback
         return {
             "mode": "UNAVAILABLE",
             "url": selected_url,
@@ -1581,6 +2010,15 @@ def fetch_statla(config: Config, timeout_seconds: int, force_dummy: bool = False
     previous_latest = load_latest_statla_exports()
     regression_error = should_reject_statla_snapshot_regression(snapshots, previous_latest.get("snapshots", []))
     if regression_error:
+        presentation_fallback = fetch_statla_presentation_fallback(
+            config,
+            timeout_seconds,
+            previous_latest,
+            base_error=regression_error,
+        )
+        if presentation_fallback is not None:
+            presentation_fallback["fetches"] = fetches + presentation_fallback["fetches"]
+            return presentation_fallback
         return {
             "mode": f"{selected_mode}_FALLBACK",
             "url": selected_url,
