@@ -34,7 +34,7 @@ jobs:
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
-          git pull --rebase
           git add data/2026-bw config/2026-bw.json scripts/poll_election.py scripts/poll_election_core.py scripts/poll_ltw26.py
-          git commit -m "2026-bw poll $(date -u +"%Y-%m-%dT%H:%M:%SZ")" || echo "No changes to commit"
+          git commit -m "2026-bw poll $(date -u +"%Y-%m-%dT%H:%M:%SZ")" || exit 0
+          git pull --rebase
           git push
