@@ -1,3 +1,2 @@
 event_time_utc,source,ags,municipality_name,event_type,details_json
-2026-03-08T21:48:36.785569+00:00,kommone,08236040,"Mühlacker, Stadt",RESULT_UPDATED,"{""current_hash"": ""6f339f0ac6dfb1bcad622515ffc8eb9879791991c86d4eaab33a320159bdd0fd"", ""previous_hash"": ""8af0456282147d02d38139f34e3e2260da9748b286ed8d66689f9d9d1ce6922b""}"
-2026-03-08T21:48:36.785402+00:00,kommone,08236011,Eisingen,RESULT_UPDATED,"{""current_hash"": ""b649eaa55733f95e0a541d0747617bc6bf82196de9a1bd698ff9e6a8268c6107"", ""previous_hash"": ""10df86e902021463dfb0c5b7f46565f6a789a95438bc176ed8cfe587da321650""}"
+2026-03-08T21:57:52.945380+00:00,kommone,08236040,"Mühlacker, Stadt",RESULT_UPDATED,"{""current_hash"": ""f73f69e447cbba5de6e02ee92ee40d4b94a87f5342410f6374bd42ddc4bd1f9b"", ""previous_hash"": ""6f339f0ac6dfb1bcad622515ffc8eb9879791991c86d4eaab33a320159bdd0fd""}"
