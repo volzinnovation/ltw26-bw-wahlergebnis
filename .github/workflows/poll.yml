@@ -2,7 +2,7 @@ name: Election Poll
 
 on:
   schedule:
-    - cron: "1 1 1 1 1"
+    - cron: "*/5 * * * *"
   workflow_dispatch:
 
 permissions:
