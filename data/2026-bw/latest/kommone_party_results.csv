@@ -395,8 +395,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08325024,Hardt,Zweitstimmen,AfD,358,21.5
 08325036,Lauterbach,Erststimmen,AfD,274,18.4
 08325036,Lauterbach,Zweitstimmen,AfD,285,19.1
-08325045,"Oberndorf am Neckar, Stadt",Erststimmen,AfD,1681,29.7
-08325045,"Oberndorf am Neckar, Stadt",Zweitstimmen,AfD,1701,30.1
+08325045,"Oberndorf am Neckar, Stadt",Erststimmen,AfD,1806,28.2
+08325045,"Oberndorf am Neckar, Stadt",Zweitstimmen,AfD,1834,28.6
 08325049,"Rottweil, Stadt",Erststimmen,AfD,2582,21.5
 08325049,"Rottweil, Stadt",Zweitstimmen,AfD,2656,22.0
 08325050,Schenkenzell,Erststimmen,AfD,138,13.4
@@ -457,8 +457,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08326065,Unterkirnach,Zweitstimmen,AfD,287,22.9
 08326068,"Vöhrenbach, Stadt",Erststimmen,AfD,367,21.8
 08326068,"Vöhrenbach, Stadt",Zweitstimmen,AfD,360,21.4
-08326074,"Villingen-Schwenningen, Stadt",Erststimmen,AfD,9189,26.7
-08326074,"Villingen-Schwenningen, Stadt",Zweitstimmen,AfD,8767,25.4
+08326074,"Villingen-Schwenningen, Stadt",Erststimmen,AfD,9383,26.9
+08326074,"Villingen-Schwenningen, Stadt",Zweitstimmen,AfD,8947,25.5
 08326075,Brigachtal,Erststimmen,AfD,756,26.1
 08326075,Brigachtal,Zweitstimmen,AfD,702,24.0
 08327002,Aldingen,Erststimmen,AfD,1067,33.1
@@ -741,8 +741,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08425055,Hausen am Bussen,Zweitstimmen,AfD,29,20.4
 08425062,Holzkirch,Erststimmen,AfD,20,15.0
 08425062,Holzkirch,Zweitstimmen,AfD,18,13.8
-08425071,"Laichingen, Stadt",Erststimmen,AfD,1157,20.8
-08425071,"Laichingen, Stadt",Zweitstimmen,AfD,1192,21.4
+08425071,"Laichingen, Stadt",Erststimmen,AfD,1259,21.3
+08425071,"Laichingen, Stadt",Zweitstimmen,AfD,1294,21.9
 08425072,"Langenau, Stadt",Erststimmen,AfD,1444,17.9
 08425072,"Langenau, Stadt",Zweitstimmen,AfD,1487,18.4
 08425073,Lauterach,Erststimmen,AfD,49,18.3
@@ -785,8 +785,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08425124,Unterstadion,Zweitstimmen,AfD,126,28.3
 08425125,Unterwachingen,Erststimmen,AfD,32,25.2
 08425125,Unterwachingen,Zweitstimmen,AfD,39,30.5
-08425130,Weidenstetten,Erststimmen,AfD,42,17.5
-08425130,Weidenstetten,Zweitstimmen,AfD,51,21.3
+08425130,Weidenstetten,Erststimmen,AfD,158,18.7
+08425130,Weidenstetten,Zweitstimmen,AfD,173,20.5
 08425134,Westerheim,Erststimmen,AfD,294,15.8
 08425134,Westerheim,Zweitstimmen,AfD,313,16.7
 08425135,Westerstetten,Erststimmen,AfD,203,15.3
@@ -1355,8 +1355,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08325024,Hardt,Zweitstimmen,BSW,18,1.1
 08325036,Lauterbach,Erststimmen,BSW,29,2.0
 08325036,Lauterbach,Zweitstimmen,BSW,28,1.9
-08325045,"Oberndorf am Neckar, Stadt",Erststimmen,BSW,96,1.7
-08325045,"Oberndorf am Neckar, Stadt",Zweitstimmen,BSW,90,1.6
+08325045,"Oberndorf am Neckar, Stadt",Erststimmen,BSW,108,1.7
+08325045,"Oberndorf am Neckar, Stadt",Zweitstimmen,BSW,101,1.6
 08325049,"Rottweil, Stadt",Erststimmen,BSW,207,1.7
 08325049,"Rottweil, Stadt",Zweitstimmen,BSW,203,1.7
 08325050,Schenkenzell,Erststimmen,BSW,10,1.0
@@ -1418,7 +1418,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08326068,"Vöhrenbach, Stadt",Erststimmen,BSW,,
 08326068,"Vöhrenbach, Stadt",Zweitstimmen,BSW,16,0.9
 08326074,"Villingen-Schwenningen, Stadt",Erststimmen,BSW,,
-08326074,"Villingen-Schwenningen, Stadt",Zweitstimmen,BSW,524,1.5
+08326074,"Villingen-Schwenningen, Stadt",Zweitstimmen,BSW,531,1.5
 08326075,Brigachtal,Erststimmen,BSW,,
 08326075,Brigachtal,Zweitstimmen,BSW,50,1.7
 08327002,Aldingen,Erststimmen,BSW,,
@@ -1702,7 +1702,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08425062,Holzkirch,Erststimmen,BSW,0,0.0
 08425062,Holzkirch,Zweitstimmen,BSW,0,0.0
 08425071,"Laichingen, Stadt",Erststimmen,BSW,47,0.8
-08425071,"Laichingen, Stadt",Zweitstimmen,BSW,59,1.1
+08425071,"Laichingen, Stadt",Zweitstimmen,BSW,61,1.0
 08425072,"Langenau, Stadt",Erststimmen,BSW,118,1.5
 08425072,"Langenau, Stadt",Zweitstimmen,BSW,142,1.8
 08425073,Lauterach,Erststimmen,BSW,2,0.7
@@ -1745,8 +1745,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08425124,Unterstadion,Zweitstimmen,BSW,7,1.6
 08425125,Unterwachingen,Erststimmen,BSW,0,0.0
 08425125,Unterwachingen,Zweitstimmen,BSW,0,0.0
-08425130,Weidenstetten,Erststimmen,BSW,6,2.5
-08425130,Weidenstetten,Zweitstimmen,BSW,6,2.5
+08425130,Weidenstetten,Erststimmen,BSW,9,1.1
+08425130,Weidenstetten,Zweitstimmen,BSW,14,1.7
 08425134,Westerheim,Erststimmen,BSW,19,1.0
 08425134,Westerheim,Zweitstimmen,BSW,19,1.0
 08425135,Westerstetten,Erststimmen,BSW,13,1.0
@@ -2073,7 +2073,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08425124,Unterstadion,Zweitstimmen,BÜNDNIS DEUTSCHLAND,,
 08425125,Unterwachingen,Erststimmen,BÜNDNIS DEUTSCHLAND,0,0.0
 08425125,Unterwachingen,Zweitstimmen,BÜNDNIS DEUTSCHLAND,,
-08425130,Weidenstetten,Erststimmen,BÜNDNIS DEUTSCHLAND,1,0.4
+08425130,Weidenstetten,Erststimmen,BÜNDNIS DEUTSCHLAND,2,0.2
 08425130,Weidenstetten,Zweitstimmen,BÜNDNIS DEUTSCHLAND,,
 08425134,Westerheim,Erststimmen,BÜNDNIS DEUTSCHLAND,7,0.4
 08425134,Westerheim,Zweitstimmen,BÜNDNIS DEUTSCHLAND,,
@@ -2477,8 +2477,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08325024,Hardt,Zweitstimmen,Bündnis C,3,0.2
 08325036,Lauterbach,Erststimmen,Bündnis C,4,0.3
 08325036,Lauterbach,Zweitstimmen,Bündnis C,3,0.2
-08325045,"Oberndorf am Neckar, Stadt",Erststimmen,Bündnis C,25,0.4
-08325045,"Oberndorf am Neckar, Stadt",Zweitstimmen,Bündnis C,13,0.2
+08325045,"Oberndorf am Neckar, Stadt",Erststimmen,Bündnis C,33,0.5
+08325045,"Oberndorf am Neckar, Stadt",Zweitstimmen,Bündnis C,18,0.3
 08325049,"Rottweil, Stadt",Erststimmen,Bündnis C,31,0.3
 08325049,"Rottweil, Stadt",Zweitstimmen,Bündnis C,10,0.1
 08325050,Schenkenzell,Erststimmen,Bündnis C,9,0.9
@@ -2540,7 +2540,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08326068,"Vöhrenbach, Stadt",Erststimmen,Bündnis C,,
 08326068,"Vöhrenbach, Stadt",Zweitstimmen,Bündnis C,6,0.4
 08326074,"Villingen-Schwenningen, Stadt",Erststimmen,Bündnis C,,
-08326074,"Villingen-Schwenningen, Stadt",Zweitstimmen,Bündnis C,117,0.3
+08326074,"Villingen-Schwenningen, Stadt",Zweitstimmen,Bündnis C,124,0.4
 08326075,Brigachtal,Erststimmen,Bündnis C,,
 08326075,Brigachtal,Zweitstimmen,Bündnis C,21,0.7
 08327002,Aldingen,Erststimmen,Bündnis C,,
@@ -2824,7 +2824,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08425062,Holzkirch,Erststimmen,Bündnis C,,
 08425062,Holzkirch,Zweitstimmen,Bündnis C,0,0.0
 08425071,"Laichingen, Stadt",Erststimmen,Bündnis C,,
-08425071,"Laichingen, Stadt",Zweitstimmen,Bündnis C,18,0.3
+08425071,"Laichingen, Stadt",Zweitstimmen,Bündnis C,20,0.3
 08425072,"Langenau, Stadt",Erststimmen,Bündnis C,,
 08425072,"Langenau, Stadt",Zweitstimmen,Bündnis C,20,0.2
 08425073,Lauterach,Erststimmen,Bündnis C,,
@@ -2868,7 +2868,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08425125,Unterwachingen,Erststimmen,Bündnis C,,
 08425125,Unterwachingen,Zweitstimmen,Bündnis C,1,0.8
 08425130,Weidenstetten,Erststimmen,Bündnis C,,
-08425130,Weidenstetten,Zweitstimmen,Bündnis C,1,0.4
+08425130,Weidenstetten,Zweitstimmen,Bündnis C,3,0.4
 08425134,Westerheim,Erststimmen,Bündnis C,,
 08425134,Westerheim,Zweitstimmen,Bündnis C,6,0.3
 08425135,Westerstetten,Erststimmen,Bündnis C,,
@@ -3295,7 +3295,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08236019,Friolzheim,Zweitstimmen,CDU,696,33.1
 08236025,"Heimsheim, Stadt",Erststimmen,CDU,981,36.9
 08236025,"Heimsheim, Stadt",Zweitstimmen,CDU,845,31.8
-08236028,Illingen,Erststimmen,CDU,1272,31.9
+08236028,Illingen,Erststimmen,CDU,1271,31.8
 08236028,Illingen,Zweitstimmen,CDU,1181,29.5
 08236030,Ispringen,Erststimmen,CDU,840,30.0
 08236030,Ispringen,Zweitstimmen,CDU,749,26.7
@@ -3437,8 +3437,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08325024,Hardt,Zweitstimmen,CDU,667,40.0
 08325036,Lauterbach,Erststimmen,CDU,652,43.9
 08325036,Lauterbach,Zweitstimmen,CDU,607,40.7
-08325045,"Oberndorf am Neckar, Stadt",Erststimmen,CDU,1919,33.9
-08325045,"Oberndorf am Neckar, Stadt",Zweitstimmen,CDU,1729,30.6
+08325045,"Oberndorf am Neckar, Stadt",Erststimmen,CDU,2176,34.0
+08325045,"Oberndorf am Neckar, Stadt",Zweitstimmen,CDU,1969,30.7
 08325049,"Rottweil, Stadt",Erststimmen,CDU,4209,35.0
 08325049,"Rottweil, Stadt",Zweitstimmen,CDU,3635,30.2
 08325050,Schenkenzell,Erststimmen,CDU,494,47.8
@@ -3499,8 +3499,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08326065,Unterkirnach,Zweitstimmen,CDU,395,31.5
 08326068,"Vöhrenbach, Stadt",Erststimmen,CDU,551,32.8
 08326068,"Vöhrenbach, Stadt",Zweitstimmen,CDU,620,36.8
-08326074,"Villingen-Schwenningen, Stadt",Erststimmen,CDU,9841,28.6
-08326074,"Villingen-Schwenningen, Stadt",Zweitstimmen,CDU,9436,27.3
+08326074,"Villingen-Schwenningen, Stadt",Erststimmen,CDU,9995,28.6
+08326074,"Villingen-Schwenningen, Stadt",Zweitstimmen,CDU,9568,27.3
 08326075,Brigachtal,Erststimmen,CDU,1091,37.6
 08326075,Brigachtal,Zweitstimmen,CDU,1021,34.8
 08327002,Aldingen,Erststimmen,CDU,1178,36.5
@@ -3783,8 +3783,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08425055,Hausen am Bussen,Zweitstimmen,CDU,76,53.5
 08425062,Holzkirch,Erststimmen,CDU,84,63.2
 08425062,Holzkirch,Zweitstimmen,CDU,78,60.0
-08425071,"Laichingen, Stadt",Erststimmen,CDU,2587,46.5
-08425071,"Laichingen, Stadt",Zweitstimmen,CDU,2215,39.8
+08425071,"Laichingen, Stadt",Erststimmen,CDU,2742,46.4
+08425071,"Laichingen, Stadt",Zweitstimmen,CDU,2353,39.8
 08425072,"Langenau, Stadt",Erststimmen,CDU,3058,37.9
 08425072,"Langenau, Stadt",Zweitstimmen,CDU,2619,32.4
 08425073,Lauterach,Erststimmen,CDU,152,56.7
@@ -3827,8 +3827,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08425124,Unterstadion,Zweitstimmen,CDU,248,55.7
 08425125,Unterwachingen,Erststimmen,CDU,79,62.2
 08425125,Unterwachingen,Zweitstimmen,CDU,69,53.9
-08425130,Weidenstetten,Erststimmen,CDU,97,40.4
-08425130,Weidenstetten,Zweitstimmen,CDU,80,33.5
+08425130,Weidenstetten,Erststimmen,CDU,359,42.5
+08425130,Weidenstetten,Zweitstimmen,CDU,306,36.3
 08425134,Westerheim,Erststimmen,CDU,1008,54.1
 08425134,Westerheim,Zweitstimmen,CDU,886,47.3
 08425135,Westerstetten,Erststimmen,CDU,637,48.0
@@ -4744,7 +4744,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08425062,Holzkirch,Erststimmen,Die Gerechtigkeitspartei,,
 08425062,Holzkirch,Zweitstimmen,Die Gerechtigkeitspartei,0,0.0
 08425071,"Laichingen, Stadt",Erststimmen,Die Gerechtigkeitspartei,,
-08425071,"Laichingen, Stadt",Zweitstimmen,Die Gerechtigkeitspartei,8,0.1
+08425071,"Laichingen, Stadt",Zweitstimmen,Die Gerechtigkeitspartei,9,0.2
 08425072,"Langenau, Stadt",Erststimmen,Die Gerechtigkeitspartei,,
 08425072,"Langenau, Stadt",Zweitstimmen,Die Gerechtigkeitspartei,9,0.1
 08425073,Lauterach,Erststimmen,Die Gerechtigkeitspartei,,
@@ -4788,7 +4788,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08425125,Unterwachingen,Erststimmen,Die Gerechtigkeitspartei,,
 08425125,Unterwachingen,Zweitstimmen,Die Gerechtigkeitspartei,0,0.0
 08425130,Weidenstetten,Erststimmen,Die Gerechtigkeitspartei,,
-08425130,Weidenstetten,Zweitstimmen,Die Gerechtigkeitspartei,0,0.0
+08425130,Weidenstetten,Zweitstimmen,Die Gerechtigkeitspartei,2,0.2
 08425134,Westerheim,Erststimmen,Die Gerechtigkeitspartei,,
 08425134,Westerheim,Zweitstimmen,Die Gerechtigkeitspartei,2,0.1
 08425135,Westerstetten,Erststimmen,Die Gerechtigkeitspartei,,
@@ -5357,8 +5357,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08325024,Hardt,Zweitstimmen,Die Linke,33,2.0
 08325036,Lauterbach,Erststimmen,Die Linke,50,3.4
 08325036,Lauterbach,Zweitstimmen,Die Linke,29,1.9
-08325045,"Oberndorf am Neckar, Stadt",Erststimmen,Die Linke,183,3.2
-08325045,"Oberndorf am Neckar, Stadt",Zweitstimmen,Die Linke,158,2.8
+08325045,"Oberndorf am Neckar, Stadt",Erststimmen,Die Linke,210,3.3
+08325045,"Oberndorf am Neckar, Stadt",Zweitstimmen,Die Linke,182,2.8
 08325049,"Rottweil, Stadt",Erststimmen,Die Linke,431,3.6
 08325049,"Rottweil, Stadt",Zweitstimmen,Die Linke,393,3.3
 08325050,Schenkenzell,Erststimmen,Die Linke,21,2.0
@@ -5419,8 +5419,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08326065,Unterkirnach,Zweitstimmen,Die Linke,41,3.3
 08326068,"Vöhrenbach, Stadt",Erststimmen,Die Linke,52,3.1
 08326068,"Vöhrenbach, Stadt",Zweitstimmen,Die Linke,55,3.3
-08326074,"Villingen-Schwenningen, Stadt",Erststimmen,Die Linke,1346,3.9
-08326074,"Villingen-Schwenningen, Stadt",Zweitstimmen,Die Linke,1298,3.8
+08326074,"Villingen-Schwenningen, Stadt",Erststimmen,Die Linke,1351,3.9
+08326074,"Villingen-Schwenningen, Stadt",Zweitstimmen,Die Linke,1304,3.7
 08326075,Brigachtal,Erststimmen,Die Linke,57,2.0
 08326075,Brigachtal,Zweitstimmen,Die Linke,34,1.2
 08327002,Aldingen,Erststimmen,Die Linke,130,4.0
@@ -5703,8 +5703,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08425055,Hausen am Bussen,Zweitstimmen,Die Linke,3,2.1
 08425062,Holzkirch,Erststimmen,Die Linke,1,0.8
 08425062,Holzkirch,Zweitstimmen,Die Linke,0,0.0
-08425071,"Laichingen, Stadt",Erststimmen,Die Linke,167,3.0
-08425071,"Laichingen, Stadt",Zweitstimmen,Die Linke,133,2.4
+08425071,"Laichingen, Stadt",Erststimmen,Die Linke,173,2.9
+08425071,"Laichingen, Stadt",Zweitstimmen,Die Linke,138,2.3
 08425072,"Langenau, Stadt",Erststimmen,Die Linke,308,3.8
 08425072,"Langenau, Stadt",Zweitstimmen,Die Linke,243,3.0
 08425073,Lauterach,Erststimmen,Die Linke,9,3.4
@@ -5747,8 +5747,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08425124,Unterstadion,Zweitstimmen,Die Linke,2,0.4
 08425125,Unterwachingen,Erststimmen,Die Linke,1,0.8
 08425125,Unterwachingen,Zweitstimmen,Die Linke,1,0.8
-08425130,Weidenstetten,Erststimmen,Die Linke,4,1.7
-08425130,Weidenstetten,Zweitstimmen,Die Linke,3,1.3
+08425130,Weidenstetten,Erststimmen,Die Linke,22,2.6
+08425130,Weidenstetten,Zweitstimmen,Die Linke,17,2.0
 08425134,Westerheim,Erststimmen,Die Linke,41,2.2
 08425134,Westerheim,Zweitstimmen,Die Linke,26,1.4
 08425135,Westerstetten,Erststimmen,Die Linke,34,2.6
@@ -6318,7 +6318,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08325036,Lauterbach,Erststimmen,Die PARTEI,,
 08325036,Lauterbach,Zweitstimmen,Die PARTEI,1,0.1
 08325045,"Oberndorf am Neckar, Stadt",Erststimmen,Die PARTEI,,
-08325045,"Oberndorf am Neckar, Stadt",Zweitstimmen,Die PARTEI,18,0.3
+08325045,"Oberndorf am Neckar, Stadt",Zweitstimmen,Die PARTEI,23,0.4
 08325049,"Rottweil, Stadt",Erststimmen,Die PARTEI,,
 08325049,"Rottweil, Stadt",Zweitstimmen,Die PARTEI,38,0.3
 08325050,Schenkenzell,Erststimmen,Die PARTEI,,
@@ -6380,7 +6380,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08326068,"Vöhrenbach, Stadt",Erststimmen,Die PARTEI,,
 08326068,"Vöhrenbach, Stadt",Zweitstimmen,Die PARTEI,2,0.1
 08326074,"Villingen-Schwenningen, Stadt",Erststimmen,Die PARTEI,,
-08326074,"Villingen-Schwenningen, Stadt",Zweitstimmen,Die PARTEI,134,0.4
+08326074,"Villingen-Schwenningen, Stadt",Zweitstimmen,Die PARTEI,136,0.4
 08326075,Brigachtal,Erststimmen,Die PARTEI,,
 08326075,Brigachtal,Zweitstimmen,Die PARTEI,10,0.3
 08327002,Aldingen,Erststimmen,Die PARTEI,,
@@ -6664,7 +6664,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08425062,Holzkirch,Erststimmen,Die PARTEI,,
 08425062,Holzkirch,Zweitstimmen,Die PARTEI,0,0.0
 08425071,"Laichingen, Stadt",Erststimmen,Die PARTEI,,
-08425071,"Laichingen, Stadt",Zweitstimmen,Die PARTEI,17,0.3
+08425071,"Laichingen, Stadt",Zweitstimmen,Die PARTEI,18,0.3
 08425072,"Langenau, Stadt",Erststimmen,Die PARTEI,,
 08425072,"Langenau, Stadt",Zweitstimmen,Die PARTEI,29,0.4
 08425073,Lauterach,Erststimmen,Die PARTEI,,
@@ -6708,7 +6708,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08425125,Unterwachingen,Erststimmen,Die PARTEI,,
 08425125,Unterwachingen,Zweitstimmen,Die PARTEI,0,0.0
 08425130,Weidenstetten,Erststimmen,Die PARTEI,,
-08425130,Weidenstetten,Zweitstimmen,Die PARTEI,3,1.3
+08425130,Weidenstetten,Zweitstimmen,Die PARTEI,4,0.5
 08425134,Westerheim,Erststimmen,Die PARTEI,,
 08425134,Westerheim,Zweitstimmen,Die PARTEI,8,0.4
 08425135,Westerstetten,Erststimmen,Die PARTEI,,
@@ -7277,8 +7277,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08325024,Hardt,Zweitstimmen,FDP,84,5.0
 08325036,Lauterbach,Erststimmen,FDP,142,9.6
 08325036,Lauterbach,Zweitstimmen,FDP,80,5.4
-08325045,"Oberndorf am Neckar, Stadt",Erststimmen,FDP,566,10.0
-08325045,"Oberndorf am Neckar, Stadt",Zweitstimmen,FDP,318,5.6
+08325045,"Oberndorf am Neckar, Stadt",Erststimmen,FDP,662,10.3
+08325045,"Oberndorf am Neckar, Stadt",Zweitstimmen,FDP,366,5.7
 08325049,"Rottweil, Stadt",Erststimmen,FDP,1120,9.3
 08325049,"Rottweil, Stadt",Zweitstimmen,FDP,638,5.3
 08325050,Schenkenzell,Erststimmen,FDP,58,5.6
@@ -7339,8 +7339,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08326065,Unterkirnach,Zweitstimmen,FDP,57,4.5
 08326068,"Vöhrenbach, Stadt",Erststimmen,FDP,87,5.2
 08326068,"Vöhrenbach, Stadt",Zweitstimmen,FDP,70,4.2
-08326074,"Villingen-Schwenningen, Stadt",Erststimmen,FDP,1754,5.1
-08326074,"Villingen-Schwenningen, Stadt",Zweitstimmen,FDP,1436,4.2
+08326074,"Villingen-Schwenningen, Stadt",Erststimmen,FDP,1772,5.1
+08326074,"Villingen-Schwenningen, Stadt",Zweitstimmen,FDP,1453,4.1
 08326075,Brigachtal,Erststimmen,FDP,119,4.1
 08326075,Brigachtal,Zweitstimmen,FDP,108,3.7
 08327002,Aldingen,Erststimmen,FDP,185,5.7
@@ -7623,8 +7623,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08425055,Hausen am Bussen,Zweitstimmen,FDP,5,3.5
 08425062,Holzkirch,Erststimmen,FDP,1,0.8
 08425062,Holzkirch,Zweitstimmen,FDP,2,1.5
-08425071,"Laichingen, Stadt",Erststimmen,FDP,189,3.4
-08425071,"Laichingen, Stadt",Zweitstimmen,FDP,269,4.8
+08425071,"Laichingen, Stadt",Erststimmen,FDP,199,3.4
+08425071,"Laichingen, Stadt",Zweitstimmen,FDP,279,4.7
 08425072,"Langenau, Stadt",Erststimmen,FDP,252,3.1
 08425072,"Langenau, Stadt",Zweitstimmen,FDP,283,3.5
 08425073,Lauterach,Erststimmen,FDP,4,1.5
@@ -7667,8 +7667,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08425124,Unterstadion,Zweitstimmen,FDP,14,3.1
 08425125,Unterwachingen,Erststimmen,FDP,3,2.4
 08425125,Unterwachingen,Zweitstimmen,FDP,3,2.3
-08425130,Weidenstetten,Erststimmen,FDP,6,2.5
-08425130,Weidenstetten,Zweitstimmen,FDP,6,2.5
+08425130,Weidenstetten,Erststimmen,FDP,24,2.8
+08425130,Weidenstetten,Zweitstimmen,FDP,24,2.8
 08425134,Westerheim,Erststimmen,FDP,67,3.6
 08425134,Westerheim,Zweitstimmen,FDP,87,4.6
 08425135,Westerstetten,Erststimmen,FDP,39,2.9
@@ -8238,7 +8238,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08325036,Lauterbach,Erststimmen,FREIE WÄHLER,,
 08325036,Lauterbach,Zweitstimmen,FREIE WÄHLER,25,1.7
 08325045,"Oberndorf am Neckar, Stadt",Erststimmen,FREIE WÄHLER,,
-08325045,"Oberndorf am Neckar, Stadt",Zweitstimmen,FREIE WÄHLER,122,2.2
+08325045,"Oberndorf am Neckar, Stadt",Zweitstimmen,FREIE WÄHLER,140,2.2
 08325049,"Rottweil, Stadt",Erststimmen,FREIE WÄHLER,,
 08325049,"Rottweil, Stadt",Zweitstimmen,FREIE WÄHLER,143,1.2
 08325050,Schenkenzell,Erststimmen,FREIE WÄHLER,,
@@ -8300,7 +8300,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08326068,"Vöhrenbach, Stadt",Erststimmen,FREIE WÄHLER,,
 08326068,"Vöhrenbach, Stadt",Zweitstimmen,FREIE WÄHLER,45,2.7
 08326074,"Villingen-Schwenningen, Stadt",Erststimmen,FREIE WÄHLER,,
-08326074,"Villingen-Schwenningen, Stadt",Zweitstimmen,FREIE WÄHLER,671,1.9
+08326074,"Villingen-Schwenningen, Stadt",Zweitstimmen,FREIE WÄHLER,684,1.9
 08326075,Brigachtal,Erststimmen,FREIE WÄHLER,,
 08326075,Brigachtal,Zweitstimmen,FREIE WÄHLER,64,2.2
 08327002,Aldingen,Erststimmen,FREIE WÄHLER,,
@@ -8583,8 +8583,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08425055,Hausen am Bussen,Zweitstimmen,FREIE WÄHLER,3,2.1
 08425062,Holzkirch,Erststimmen,FREIE WÄHLER,4,3.0
 08425062,Holzkirch,Zweitstimmen,FREIE WÄHLER,1,0.8
-08425071,"Laichingen, Stadt",Erststimmen,FREIE WÄHLER,132,2.4
-08425071,"Laichingen, Stadt",Zweitstimmen,FREIE WÄHLER,84,1.5
+08425071,"Laichingen, Stadt",Erststimmen,FREIE WÄHLER,140,2.4
+08425071,"Laichingen, Stadt",Zweitstimmen,FREIE WÄHLER,90,1.5
 08425072,"Langenau, Stadt",Erststimmen,FREIE WÄHLER,313,3.9
 08425072,"Langenau, Stadt",Zweitstimmen,FREIE WÄHLER,225,2.8
 08425073,Lauterach,Erststimmen,FREIE WÄHLER,1,0.4
@@ -8627,8 +8627,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08425124,Unterstadion,Zweitstimmen,FREIE WÄHLER,4,0.9
 08425125,Unterwachingen,Erststimmen,FREIE WÄHLER,3,2.4
 08425125,Unterwachingen,Zweitstimmen,FREIE WÄHLER,4,3.1
-08425130,Weidenstetten,Erststimmen,FREIE WÄHLER,9,3.8
-08425130,Weidenstetten,Zweitstimmen,FREIE WÄHLER,6,2.5
+08425130,Weidenstetten,Erststimmen,FREIE WÄHLER,25,3.0
+08425130,Weidenstetten,Zweitstimmen,FREIE WÄHLER,20,2.4
 08425134,Westerheim,Erststimmen,FREIE WÄHLER,60,3.2
 08425134,Westerheim,Zweitstimmen,FREIE WÄHLER,42,2.2
 08425135,Westerstetten,Erststimmen,FREIE WÄHLER,36,2.7
@@ -9197,8 +9197,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08325024,Hardt,Zweitstimmen,GRÜNE,349,20.9
 08325036,Lauterbach,Erststimmen,GRÜNE,217,14.6
 08325036,Lauterbach,Zweitstimmen,GRÜNE,319,21.4
-08325045,"Oberndorf am Neckar, Stadt",Erststimmen,GRÜNE,752,13.3
-08325045,"Oberndorf am Neckar, Stadt",Zweitstimmen,GRÜNE,1097,19.4
+08325045,"Oberndorf am Neckar, Stadt",Erststimmen,GRÜNE,879,13.7
+08325045,"Oberndorf am Neckar, Stadt",Zweitstimmen,GRÜNE,1281,20.0
 08325049,"Rottweil, Stadt",Erststimmen,GRÜNE,2447,20.3
 08325049,"Rottweil, Stadt",Zweitstimmen,GRÜNE,3522,29.2
 08325050,Schenkenzell,Erststimmen,GRÜNE,220,21.3
@@ -9259,8 +9259,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08326065,Unterkirnach,Zweitstimmen,GRÜNE,343,27.3
 08326068,"Vöhrenbach, Stadt",Erststimmen,GRÜNE,514,30.6
 08326068,"Vöhrenbach, Stadt",Zweitstimmen,GRÜNE,371,22.0
-08326074,"Villingen-Schwenningen, Stadt",Erststimmen,GRÜNE,8307,24.1
-08326074,"Villingen-Schwenningen, Stadt",Zweitstimmen,GRÜNE,9234,26.7
+08326074,"Villingen-Schwenningen, Stadt",Erststimmen,GRÜNE,8400,24.0
+08326074,"Villingen-Schwenningen, Stadt",Zweitstimmen,GRÜNE,9339,26.6
 08326075,Brigachtal,Erststimmen,GRÜNE,667,23.0
 08326075,Brigachtal,Zweitstimmen,GRÜNE,708,24.2
 08327002,Aldingen,Erststimmen,GRÜNE,481,14.9
@@ -9543,8 +9543,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08425055,Hausen am Bussen,Zweitstimmen,GRÜNE,24,16.9
 08425062,Holzkirch,Erststimmen,GRÜNE,17,12.8
 08425062,Holzkirch,Zweitstimmen,GRÜNE,26,20.0
-08425071,"Laichingen, Stadt",Erststimmen,GRÜNE,997,17.9
-08425071,"Laichingen, Stadt",Zweitstimmen,GRÜNE,1218,21.9
+08425071,"Laichingen, Stadt",Erststimmen,GRÜNE,1043,17.7
+08425071,"Laichingen, Stadt",Zweitstimmen,GRÜNE,1278,21.6
 08425072,"Langenau, Stadt",Erststimmen,GRÜNE,1923,23.8
 08425072,"Langenau, Stadt",Zweitstimmen,GRÜNE,2370,29.3
 08425073,Lauterach,Erststimmen,GRÜNE,48,17.9
@@ -9587,8 +9587,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08425124,Unterstadion,Zweitstimmen,GRÜNE,35,7.9
 08425125,Unterwachingen,Erststimmen,GRÜNE,9,7.1
 08425125,Unterwachingen,Zweitstimmen,GRÜNE,9,7.0
-08425130,Weidenstetten,Erststimmen,GRÜNE,49,20.4
-08425130,Weidenstetten,Zweitstimmen,GRÜNE,57,23.8
+08425130,Weidenstetten,Erststimmen,GRÜNE,173,20.5
+08425130,Weidenstetten,Zweitstimmen,GRÜNE,225,26.7
 08425134,Westerheim,Erststimmen,GRÜNE,290,15.6
 08425134,Westerheim,Zweitstimmen,GRÜNE,358,19.1
 08425135,Westerstetten,Erststimmen,GRÜNE,260,19.6
@@ -11118,7 +11118,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08325036,Lauterbach,Erststimmen,PDH,,
 08325036,Lauterbach,Zweitstimmen,PDH,1,0.1
 08325045,"Oberndorf am Neckar, Stadt",Erststimmen,PDH,,
-08325045,"Oberndorf am Neckar, Stadt",Zweitstimmen,PDH,3,0.1
+08325045,"Oberndorf am Neckar, Stadt",Zweitstimmen,PDH,3,0.0
 08325049,"Rottweil, Stadt",Erststimmen,PDH,,
 08325049,"Rottweil, Stadt",Zweitstimmen,PDH,5,0.0
 08325050,Schenkenzell,Erststimmen,PDH,,
@@ -12078,7 +12078,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08325036,Lauterbach,Erststimmen,PDR,,
 08325036,Lauterbach,Zweitstimmen,PDR,2,0.1
 08325045,"Oberndorf am Neckar, Stadt",Erststimmen,PDR,,
-08325045,"Oberndorf am Neckar, Stadt",Zweitstimmen,PDR,7,0.1
+08325045,"Oberndorf am Neckar, Stadt",Zweitstimmen,PDR,10,0.2
 08325049,"Rottweil, Stadt",Erststimmen,PDR,,
 08325049,"Rottweil, Stadt",Zweitstimmen,PDR,12,0.1
 08325050,Schenkenzell,Erststimmen,PDR,,
@@ -12424,7 +12424,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08425062,Holzkirch,Erststimmen,PDR,,
 08425062,Holzkirch,Zweitstimmen,PDR,0,0.0
 08425071,"Laichingen, Stadt",Erststimmen,PDR,,
-08425071,"Laichingen, Stadt",Zweitstimmen,PDR,9,0.2
+08425071,"Laichingen, Stadt",Zweitstimmen,PDR,10,0.2
 08425072,"Langenau, Stadt",Erststimmen,PDR,,
 08425072,"Langenau, Stadt",Zweitstimmen,PDR,10,0.1
 08425073,Lauterach,Erststimmen,PDR,,
@@ -12468,7 +12468,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08425125,Unterwachingen,Erststimmen,PDR,,
 08425125,Unterwachingen,Zweitstimmen,PDR,0,0.0
 08425130,Weidenstetten,Erststimmen,PDR,,
-08425130,Weidenstetten,Zweitstimmen,PDR,1,0.4
+08425130,Weidenstetten,Zweitstimmen,PDR,1,0.1
 08425134,Westerheim,Erststimmen,PDR,,
 08425134,Westerheim,Zweitstimmen,PDR,5,0.3
 08425135,Westerstetten,Erststimmen,PDR,,
@@ -13114,7 +13114,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08325036,Lauterbach,Erststimmen,PdF,,
 08325036,Lauterbach,Zweitstimmen,PdF,1,0.1
 08325045,"Oberndorf am Neckar, Stadt",Erststimmen,PdF,,
-08325045,"Oberndorf am Neckar, Stadt",Zweitstimmen,PdF,5,0.1
+08325045,"Oberndorf am Neckar, Stadt",Zweitstimmen,PdF,6,0.1
 08325049,"Rottweil, Stadt",Erststimmen,PdF,,
 08325049,"Rottweil, Stadt",Zweitstimmen,PdF,11,0.1
 08325050,Schenkenzell,Erststimmen,PdF,,
@@ -14073,8 +14073,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08325024,Hardt,Zweitstimmen,SPD,61,3.7
 08325036,Lauterbach,Erststimmen,SPD,83,5.6
 08325036,Lauterbach,Zweitstimmen,SPD,62,4.2
-08325045,"Oberndorf am Neckar, Stadt",Erststimmen,SPD,271,4.8
-08325045,"Oberndorf am Neckar, Stadt",Zweitstimmen,SPD,221,3.9
+08325045,"Oberndorf am Neckar, Stadt",Erststimmen,SPD,340,5.3
+08325045,"Oberndorf am Neckar, Stadt",Zweitstimmen,SPD,277,4.3
 08325049,"Rottweil, Stadt",Erststimmen,SPD,653,5.4
 08325049,"Rottweil, Stadt",Zweitstimmen,SPD,471,3.9
 08325050,Schenkenzell,Erststimmen,SPD,66,6.4
@@ -14135,8 +14135,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08326065,Unterkirnach,Zweitstimmen,SPD,41,3.3
 08326068,"Vöhrenbach, Stadt",Erststimmen,SPD,109,6.5
 08326068,"Vöhrenbach, Stadt",Zweitstimmen,SPD,87,5.2
-08326074,"Villingen-Schwenningen, Stadt",Erststimmen,SPD,3986,11.6
-08326074,"Villingen-Schwenningen, Stadt",Zweitstimmen,SPD,1981,5.7
+08326074,"Villingen-Schwenningen, Stadt",Erststimmen,SPD,4029,11.5
+08326074,"Villingen-Schwenningen, Stadt",Zweitstimmen,SPD,2004,5.7
 08326075,Brigachtal,Erststimmen,SPD,211,7.3
 08326075,Brigachtal,Zweitstimmen,SPD,112,3.8
 08327002,Aldingen,Erststimmen,SPD,133,4.1
@@ -14419,8 +14419,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08425055,Hausen am Bussen,Zweitstimmen,SPD,0,0.0
 08425062,Holzkirch,Erststimmen,SPD,6,4.5
 08425062,Holzkirch,Zweitstimmen,SPD,3,2.3
-08425071,"Laichingen, Stadt",Erststimmen,SPD,272,4.9
-08425071,"Laichingen, Stadt",Zweitstimmen,SPD,188,3.4
+08425071,"Laichingen, Stadt",Erststimmen,SPD,295,5.0
+08425071,"Laichingen, Stadt",Zweitstimmen,SPD,202,3.4
 08425072,"Langenau, Stadt",Erststimmen,SPD,657,8.1
 08425072,"Langenau, Stadt",Zweitstimmen,SPD,425,5.3
 08425073,Lauterach,Erststimmen,SPD,1,0.4
@@ -14463,8 +14463,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08425124,Unterstadion,Zweitstimmen,SPD,3,0.7
 08425125,Unterwachingen,Erststimmen,SPD,0,0.0
 08425125,Unterwachingen,Zweitstimmen,SPD,2,1.6
-08425130,Weidenstetten,Erststimmen,SPD,26,10.8
-08425130,Weidenstetten,Zweitstimmen,SPD,18,7.5
+08425130,Weidenstetten,Erststimmen,SPD,73,8.6
+08425130,Weidenstetten,Zweitstimmen,SPD,42,5.0
 08425134,Westerheim,Erststimmen,SPD,76,4.1
 08425134,Westerheim,Zweitstimmen,SPD,63,3.4
 08425135,Westerstetten,Erststimmen,SPD,103,7.8
@@ -15034,7 +15034,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08325036,Lauterbach,Erststimmen,Tierschutzpartei,,
 08325036,Lauterbach,Zweitstimmen,Tierschutzpartei,15,1.0
 08325045,"Oberndorf am Neckar, Stadt",Erststimmen,Tierschutzpartei,,
-08325045,"Oberndorf am Neckar, Stadt",Zweitstimmen,Tierschutzpartei,62,1.1
+08325045,"Oberndorf am Neckar, Stadt",Zweitstimmen,Tierschutzpartei,64,1.0
 08325049,"Rottweil, Stadt",Erststimmen,Tierschutzpartei,,
 08325049,"Rottweil, Stadt",Zweitstimmen,Tierschutzpartei,98,0.8
 08325050,Schenkenzell,Erststimmen,Tierschutzpartei,,
@@ -15096,7 +15096,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08326068,"Vöhrenbach, Stadt",Erststimmen,Tierschutzpartei,,
 08326068,"Vöhrenbach, Stadt",Zweitstimmen,Tierschutzpartei,18,1.1
 08326074,"Villingen-Schwenningen, Stadt",Erststimmen,Tierschutzpartei,,
-08326074,"Villingen-Schwenningen, Stadt",Zweitstimmen,Tierschutzpartei,319,0.9
+08326074,"Villingen-Schwenningen, Stadt",Zweitstimmen,Tierschutzpartei,326,0.9
 08326075,Brigachtal,Erststimmen,Tierschutzpartei,,
 08326075,Brigachtal,Zweitstimmen,Tierschutzpartei,40,1.4
 08327002,Aldingen,Erststimmen,Tierschutzpartei,,
@@ -15380,7 +15380,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08425062,Holzkirch,Erststimmen,Tierschutzpartei,,
 08425062,Holzkirch,Zweitstimmen,Tierschutzpartei,0,0.0
 08425071,"Laichingen, Stadt",Erststimmen,Tierschutzpartei,,
-08425071,"Laichingen, Stadt",Zweitstimmen,Tierschutzpartei,65,1.2
+08425071,"Laichingen, Stadt",Zweitstimmen,Tierschutzpartei,68,1.2
 08425072,"Langenau, Stadt",Erststimmen,Tierschutzpartei,,
 08425072,"Langenau, Stadt",Zweitstimmen,Tierschutzpartei,86,1.1
 08425073,Lauterach,Erststimmen,Tierschutzpartei,,
@@ -15424,7 +15424,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08425125,Unterwachingen,Erststimmen,Tierschutzpartei,,
 08425125,Unterwachingen,Zweitstimmen,Tierschutzpartei,0,0.0
 08425130,Weidenstetten,Erststimmen,Tierschutzpartei,,
-08425130,Weidenstetten,Zweitstimmen,Tierschutzpartei,4,1.7
+08425130,Weidenstetten,Zweitstimmen,Tierschutzpartei,8,0.9
 08425134,Westerheim,Erststimmen,Tierschutzpartei,,
 08425134,Westerheim,Zweitstimmen,Tierschutzpartei,26,1.4
 08425135,Westerstetten,Erststimmen,Tierschutzpartei,,
@@ -15994,7 +15994,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08325036,Lauterbach,Erststimmen,Verjüngungsforschung,,
 08325036,Lauterbach,Zweitstimmen,Verjüngungsforschung,2,0.1
 08325045,"Oberndorf am Neckar, Stadt",Erststimmen,Verjüngungsforschung,,
-08325045,"Oberndorf am Neckar, Stadt",Zweitstimmen,Verjüngungsforschung,2,0.0
+08325045,"Oberndorf am Neckar, Stadt",Zweitstimmen,Verjüngungsforschung,3,0.0
 08325049,"Rottweil, Stadt",Erststimmen,Verjüngungsforschung,,
 08325049,"Rottweil, Stadt",Zweitstimmen,Verjüngungsforschung,1,0.0
 08325050,Schenkenzell,Erststimmen,Verjüngungsforschung,,
@@ -16953,8 +16953,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08325024,Hardt,Zweitstimmen,Volt,16,1.0
 08325036,Lauterbach,Erststimmen,Volt,18,1.2
 08325036,Lauterbach,Zweitstimmen,Volt,14,0.9
-08325045,"Oberndorf am Neckar, Stadt",Erststimmen,Volt,95,1.7
-08325045,"Oberndorf am Neckar, Stadt",Zweitstimmen,Volt,37,0.7
+08325045,"Oberndorf am Neckar, Stadt",Erststimmen,Volt,113,1.8
+08325045,"Oberndorf am Neckar, Stadt",Zweitstimmen,Volt,45,0.7
 08325049,"Rottweil, Stadt",Erststimmen,Volt,237,2.0
 08325049,"Rottweil, Stadt",Zweitstimmen,Volt,111,0.9
 08325050,Schenkenzell,Erststimmen,Volt,12,1.2
@@ -17016,7 +17016,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08326068,"Vöhrenbach, Stadt",Erststimmen,Volt,,
 08326068,"Vöhrenbach, Stadt",Zweitstimmen,Volt,16,0.9
 08326074,"Villingen-Schwenningen, Stadt",Erststimmen,Volt,,
-08326074,"Villingen-Schwenningen, Stadt",Zweitstimmen,Volt,257,0.7
+08326074,"Villingen-Schwenningen, Stadt",Zweitstimmen,Volt,262,0.7
 08326075,Brigachtal,Erststimmen,Volt,,
 08326075,Brigachtal,Zweitstimmen,Volt,15,0.5
 08327002,Aldingen,Erststimmen,Volt,49,1.5
@@ -17300,7 +17300,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08425062,Holzkirch,Erststimmen,Volt,,
 08425062,Holzkirch,Zweitstimmen,Volt,0,0.0
 08425071,"Laichingen, Stadt",Erststimmen,Volt,,
-08425071,"Laichingen, Stadt",Zweitstimmen,Volt,34,0.6
+08425071,"Laichingen, Stadt",Zweitstimmen,Volt,35,0.6
 08425072,"Langenau, Stadt",Erststimmen,Volt,,
 08425072,"Langenau, Stadt",Zweitstimmen,Volt,63,0.8
 08425073,Lauterach,Erststimmen,Volt,,
@@ -17344,7 +17344,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08425125,Unterwachingen,Erststimmen,Volt,,
 08425125,Unterwachingen,Zweitstimmen,Volt,0,0.0
 08425130,Weidenstetten,Erststimmen,Volt,,
-08425130,Weidenstetten,Zweitstimmen,Volt,0,0.0
+08425130,Weidenstetten,Zweitstimmen,Volt,1,0.1
 08425134,Westerheim,Erststimmen,Volt,,
 08425134,Westerheim,Zweitstimmen,Volt,12,0.6
 08425135,Westerstetten,Erststimmen,Volt,,
@@ -17913,8 +17913,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08325024,Hardt,Zweitstimmen,Werteunion,12,0.7
 08325036,Lauterbach,Erststimmen,Werteunion,7,0.5
 08325036,Lauterbach,Zweitstimmen,Werteunion,4,0.3
-08325045,"Oberndorf am Neckar, Stadt",Erststimmen,Werteunion,32,0.6
-08325045,"Oberndorf am Neckar, Stadt",Zweitstimmen,Werteunion,30,0.5
+08325045,"Oberndorf am Neckar, Stadt",Erststimmen,Werteunion,39,0.6
+08325045,"Oberndorf am Neckar, Stadt",Zweitstimmen,Werteunion,38,0.6
 08325049,"Rottweil, Stadt",Erststimmen,Werteunion,45,0.4
 08325049,"Rottweil, Stadt",Zweitstimmen,Werteunion,35,0.3
 08325050,Schenkenzell,Erststimmen,Werteunion,2,0.2
@@ -17976,7 +17976,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08326068,"Vöhrenbach, Stadt",Erststimmen,Werteunion,,
 08326068,"Vöhrenbach, Stadt",Zweitstimmen,Werteunion,2,0.1
 08326074,"Villingen-Schwenningen, Stadt",Erststimmen,Werteunion,,
-08326074,"Villingen-Schwenningen, Stadt",Zweitstimmen,Werteunion,70,0.2
+08326074,"Villingen-Schwenningen, Stadt",Zweitstimmen,Werteunion,72,0.2
 08326075,Brigachtal,Erststimmen,Werteunion,,
 08326075,Brigachtal,Zweitstimmen,Werteunion,8,0.3
 08327002,Aldingen,Erststimmen,Werteunion,,
@@ -18874,7 +18874,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08325036,Lauterbach,Erststimmen,dieBasis,,
 08325036,Lauterbach,Zweitstimmen,dieBasis,4,0.3
 08325045,"Oberndorf am Neckar, Stadt",Erststimmen,dieBasis,,
-08325045,"Oberndorf am Neckar, Stadt",Zweitstimmen,dieBasis,14,0.2
+08325045,"Oberndorf am Neckar, Stadt",Zweitstimmen,dieBasis,15,0.2
 08325049,"Rottweil, Stadt",Erststimmen,dieBasis,,
 08325049,"Rottweil, Stadt",Zweitstimmen,dieBasis,22,0.2
 08325050,Schenkenzell,Erststimmen,dieBasis,,
@@ -19220,7 +19220,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08425062,Holzkirch,Erststimmen,dieBasis,,
 08425062,Holzkirch,Zweitstimmen,dieBasis,0,0.0
 08425071,"Laichingen, Stadt",Erststimmen,dieBasis,,
-08425071,"Laichingen, Stadt",Zweitstimmen,dieBasis,14,0.3
+08425071,"Laichingen, Stadt",Zweitstimmen,dieBasis,15,0.3
 08425072,"Langenau, Stadt",Erststimmen,dieBasis,,
 08425072,"Langenau, Stadt",Zweitstimmen,dieBasis,17,0.2
 08425073,Lauterach,Erststimmen,dieBasis,,
@@ -19833,8 +19833,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08325024,Hardt,Zweitstimmen,ÖDP,6,0.4
 08325036,Lauterbach,Erststimmen,ÖDP,10,0.7
 08325036,Lauterbach,Zweitstimmen,ÖDP,7,0.5
-08325045,"Oberndorf am Neckar, Stadt",Erststimmen,ÖDP,37,0.7
-08325045,"Oberndorf am Neckar, Stadt",Zweitstimmen,ÖDP,24,0.4
+08325045,"Oberndorf am Neckar, Stadt",Erststimmen,ÖDP,40,0.6
+08325045,"Oberndorf am Neckar, Stadt",Zweitstimmen,ÖDP,26,0.4
 08325049,"Rottweil, Stadt",Erststimmen,ÖDP,71,0.6
 08325049,"Rottweil, Stadt",Zweitstimmen,ÖDP,30,0.2
 08325050,Schenkenzell,Erststimmen,ÖDP,3,0.3
@@ -19896,7 +19896,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08326068,"Vöhrenbach, Stadt",Erststimmen,ÖDP,,
 08326068,"Vöhrenbach, Stadt",Zweitstimmen,ÖDP,2,0.1
 08326074,"Villingen-Schwenningen, Stadt",Erststimmen,ÖDP,,
-08326074,"Villingen-Schwenningen, Stadt",Zweitstimmen,ÖDP,29,0.1
+08326074,"Villingen-Schwenningen, Stadt",Zweitstimmen,ÖDP,31,0.1
 08326075,Brigachtal,Erststimmen,ÖDP,,
 08326075,Brigachtal,Zweitstimmen,ÖDP,12,0.4
 08327002,Aldingen,Erststimmen,ÖDP,,
@@ -20180,7 +20180,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08425062,Holzkirch,Erststimmen,ÖDP,,
 08425062,Holzkirch,Zweitstimmen,ÖDP,2,1.5
 08425071,"Laichingen, Stadt",Erststimmen,ÖDP,,
-08425071,"Laichingen, Stadt",Zweitstimmen,ÖDP,19,0.3
+08425071,"Laichingen, Stadt",Zweitstimmen,ÖDP,21,0.4
 08425072,"Langenau, Stadt",Erststimmen,ÖDP,,
 08425072,"Langenau, Stadt",Zweitstimmen,ÖDP,10,0.1
 08425073,Lauterach,Erststimmen,ÖDP,,
@@ -20224,7 +20224,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08425125,Unterwachingen,Erststimmen,ÖDP,,
 08425125,Unterwachingen,Zweitstimmen,ÖDP,0,0.0
 08425130,Weidenstetten,Erststimmen,ÖDP,,
-08425130,Weidenstetten,Zweitstimmen,ÖDP,3,1.3
+08425130,Weidenstetten,Zweitstimmen,ÖDP,4,0.5
 08425134,Westerheim,Erststimmen,ÖDP,,
 08425134,Westerheim,Zweitstimmen,ÖDP,0,0.0
 08425135,Westerstetten,Erststimmen,ÖDP,,
