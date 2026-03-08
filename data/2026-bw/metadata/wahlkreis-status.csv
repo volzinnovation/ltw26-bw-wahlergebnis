@@ -1,71 +1,71 @@
 wahlkreisnummer,wahlkreisname,status,reported_precincts,total_precincts,municipalities_total,municipalities_complete,municipalities_pending,municipalities_no_data
-1,Stuttgart I,pending,3,146,1,0,0,1
-2,Stuttgart II,pending,10,144,1,0,0,1
-3,Stuttgart III,pending,6,131,1,0,0,1
-4,Stuttgart IV,pending,7,135,1,0,0,1
-5,Böblingen,pending,45,189,12,0,0,12
-6,Leonberg,pending,39,178,14,0,0,14
-7,Esslingen,pending,11,152,6,0,0,6
-8,Kirchheim,pending,21,164,22,0,0,22
-9,Nürtingen,pending,23,176,15,0,0,15
-10,Göppingen,pending,65,157,12,0,0,12
-11,Geislingen,pending,32,128,27,0,0,27
-12,Ludwigsburg,pending,25,170,6,0,0,6
-13,Vaihingen,pending,24,166,12,0,0,12
-14,Bietigheim-Bissingen,pending,54,174,21,0,0,21
-15,Waiblingen,pending,28,142,6,0,0,6
-16,Schorndorf,pending,19,140,8,0,0,8
-17,Backnang,pending,29,128,17,0,0,17
-18,Heilbronn,pending,30,143,5,0,5,0
-19,Eppingen,pending,20,144,19,0,0,19
-20,Neckarsulm,pending,41,156,23,0,0,23
-21,Hohenlohe,pending,72,169,22,0,20,2
-22,Schwäbisch Hall,pending,53,182,24,0,16,8
-23,Main-Tauber,pending,115,204,18,0,16,2
-24,Heidenheim,pending,84,163,11,0,11,0
-25,Schwäbisch Gmünd,pending,54,150,22,0,0,22
-26,Aalen,pending,54,175,20,0,0,20
-27,Karlsruhe I,pending,6,137,1,0,0,1
-28,Karlsruhe II,pending,5,132,1,0,0,1
-29,Bruchsal,pending,25,152,11,0,0,11
-30,Bretten,pending,36,177,14,0,0,14
-31,Ettlingen,pending,22,157,7,0,0,7
-32,Rastatt,pending,27,153,16,0,11,5
-33,Baden-Baden,pending,41,139,8,0,0,8
-34,Heidelberg,pending,14,149,1,0,0,1
-35,Mannheim I,pending,5,110,1,0,0,1
-36,Mannheim II,pending,3,133,1,0,0,1
-37,Wiesloch,pending,26,137,10,0,0,10
-38,Neckar-Odenwald,pending,87,189,27,0,0,27
-39,Weinheim,pending,69,191,10,0,0,10
-40,Schwetzingen,pending,23,128,10,0,0,10
-41,Sinsheim,pending,21,150,24,0,0,24
-42,Pforzheim,pending,60,129,5,0,5,0
-43,Calw,pending,48,186,25,0,19,6
-44,Enz,pending,27,166,24,0,20,4
-45,Freudenstadt,pending,39,143,16,0,15,1
-46,Freiburg I,pending,38,219,30,0,0,30
-47,Freiburg II,pending,13,183,5,0,0,5
-48,Breisgau,pending,44,192,31,0,0,31
-49,Emmendingen,pending,26,165,24,0,16,8
-50,Lahr,pending,56,179,22,0,0,22
-51,Offenburg,pending,21,130,15,0,0,15
-52,Kehl,pending,25,132,14,0,0,14
-53,Rottweil,pending,43,149,21,0,17,4
-54,Villingen-Schwenningen,pending,44,189,17,0,15,2
-55,Tuttlingen-Donaueschingen,pending,47,191,38,0,20,18
-56,Konstanz,pending,23,161,7,0,0,7
-57,Singen,pending,41,159,18,0,0,18
-58,Lörrach,pending,55,248,30,0,20,10
-59,Waldshut,pending,62,214,23,0,18,5
-60,Reutlingen,pending,32,171,10,0,0,10
-61,Hechingen-Münsingen,pending,50,187,25,0,0,25
-62,Tübingen,pending,14,161,8,0,8,0
-63,Balingen,pending,33,195,24,0,19,5
-64,Ulm,pending,50,218,10,0,0,10
-65,Ehingen,pending,68,197,46,0,33,13
-66,Biberach,pending,78,226,38,0,36,2
-67,Bodensee,pending,47,201,20,0,17,3
-68,Wangen,pending,48,185,22,0,0,22
-69,Ravensburg,pending,19,174,27,0,0,27
-70,Sigmaringen,pending,62,180,25,0,21,4
+1,Stuttgart I,pending,8,146,1,0,0,1
+2,Stuttgart II,pending,17,144,1,0,0,1
+3,Stuttgart III,pending,17,131,1,0,0,1
+4,Stuttgart IV,pending,18,135,1,0,0,1
+5,Böblingen,pending,66,189,12,0,0,12
+6,Leonberg,pending,59,178,14,0,0,14
+7,Esslingen,pending,23,152,6,0,0,6
+8,Kirchheim,pending,46,164,22,0,0,22
+9,Nürtingen,pending,50,176,15,0,0,15
+10,Göppingen,pending,87,157,12,0,0,12
+11,Geislingen,pending,51,128,27,0,0,27
+12,Ludwigsburg,pending,35,170,6,0,0,6
+13,Vaihingen,pending,45,166,12,0,0,12
+14,Bietigheim-Bissingen,pending,74,174,21,0,0,21
+15,Waiblingen,pending,38,142,6,0,0,6
+16,Schorndorf,pending,36,140,8,0,0,8
+17,Backnang,pending,45,128,17,0,0,17
+18,Heilbronn,pending,52,143,5,0,5,0
+19,Eppingen,pending,34,144,19,0,0,19
+20,Neckarsulm,pending,58,156,23,0,0,23
+21,Hohenlohe,pending,89,169,22,0,22,0
+22,Schwäbisch Hall,pending,75,182,24,0,20,4
+23,Main-Tauber,pending,138,204,18,0,16,2
+24,Heidenheim,pending,107,163,11,0,11,0
+25,Schwäbisch Gmünd,pending,75,150,22,0,0,22
+26,Aalen,pending,69,175,20,0,0,20
+27,Karlsruhe I,pending,14,137,1,0,0,1
+28,Karlsruhe II,pending,10,132,1,0,0,1
+29,Bruchsal,pending,33,152,11,0,0,11
+30,Bretten,pending,52,177,14,0,0,14
+31,Ettlingen,pending,33,157,7,0,0,7
+32,Rastatt,pending,39,153,16,0,16,0
+33,Baden-Baden,pending,58,139,8,0,0,8
+34,Heidelberg,pending,29,149,1,0,0,1
+35,Mannheim I,pending,9,110,1,0,0,1
+36,Mannheim II,pending,10,133,1,0,0,1
+37,Wiesloch,pending,43,137,10,0,0,10
+38,Neckar-Odenwald,pending,101,189,27,0,0,27
+39,Weinheim,pending,90,191,10,0,0,10
+40,Schwetzingen,pending,40,128,10,0,0,10
+41,Sinsheim,pending,35,150,24,0,0,24
+42,Pforzheim,pending,74,129,5,0,5,0
+43,Calw,pending,71,186,25,0,21,4
+44,Enz,pending,46,166,24,0,22,2
+45,Freudenstadt,pending,49,143,16,0,15,1
+46,Freiburg I,pending,53,219,30,0,0,30
+47,Freiburg II,pending,27,183,5,0,0,5
+48,Breisgau,pending,60,192,31,0,0,31
+49,Emmendingen,pending,40,165,24,0,20,4
+50,Lahr,pending,75,179,22,0,0,22
+51,Offenburg,pending,31,130,15,0,0,15
+52,Kehl,pending,40,132,14,0,0,14
+53,Rottweil,pending,62,149,21,0,19,2
+54,Villingen-Schwenningen,pending,58,189,17,0,17,0
+55,Tuttlingen-Donaueschingen,pending,65,191,38,0,23,15
+56,Konstanz,pending,33,161,7,0,0,7
+57,Singen,pending,55,159,18,0,0,18
+58,Lörrach,pending,84,248,30,0,21,9
+59,Waldshut,pending,93,214,23,0,19,4
+60,Reutlingen,pending,57,171,10,0,0,10
+61,Hechingen-Münsingen,pending,71,187,25,0,0,25
+62,Tübingen,pending,25,161,8,0,8,0
+63,Balingen,pending,58,195,24,0,21,3
+64,Ulm,pending,78,218,10,0,0,10
+65,Ehingen,pending,89,197,46,0,39,7
+66,Biberach,pending,106,226,38,0,37,1
+67,Bodensee,pending,70,201,20,0,19,1
+68,Wangen,pending,71,185,22,0,0,22
+69,Ravensburg,pending,43,174,27,0,0,27
+70,Sigmaringen,pending,75,180,25,0,23,2
