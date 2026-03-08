@@ -48,7 +48,7 @@ wahlkreisnummer,wahlkreisname,status,reported_precincts,total_precincts,municipa
 47,Freiburg II,complete,183,183,5,0,0,5
 48,Breisgau,complete,192,192,31,0,0,31
 49,Emmendingen,complete,165,165,24,0,24,0
-50,Lahr,pending,178,179,22,0,0,22
+50,Lahr,complete,179,179,22,0,0,22
 51,Offenburg,pending,128,130,15,0,0,15
 52,Kehl,complete,132,132,14,0,0,14
 53,Rottweil,complete,149,149,21,0,21,0

@@ -1,2 +1,1 @@
 event_time_utc,source,ags,municipality_name,event_type,details_json
-2026-03-08T21:57:52.945380+00:00,kommone,08236040,"Mühlacker, Stadt",RESULT_UPDATED,"{""current_hash"": ""f73f69e447cbba5de6e02ee92ee40d4b94a87f5342410f6374bd42ddc4bd1f9b"", ""previous_hash"": ""6f339f0ac6dfb1bcad622515ffc8eb9879791991c86d4eaab33a320159bdd0fd""}"
