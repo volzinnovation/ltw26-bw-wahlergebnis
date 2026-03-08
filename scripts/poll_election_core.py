@@ -928,7 +928,9 @@ def seed_db_from_latest_exports(conn: sqlite3.Connection, config: Config) -> Non
             ],
         )
 
-    party_rows = read_csv_rows_from_file(LATEST_DIR / "kommone_party_results.csv", delimiter=",")
+    party_rows = normalize_kommone_party_rows(
+        read_csv_rows_from_file(LATEST_DIR / "kommone_party_results.csv", delimiter=",")
+    )
     existing_kommone_party = conn.execute(
         "SELECT 1 FROM kommone_party_results WHERE poll_id = ? LIMIT 1",
         (poll_id,),
@@ -1436,6 +1438,59 @@ def fetch_one_kommone_html_page(
     return {"snapshot": snapshot, "party_rows": party_rows, "fetches": fetches}
 
 
+def normalize_kommone_party_rows(rows: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+    grouped: Dict[Tuple[str, str, str], Dict[str, Any]] = {}
+    for row in rows:
+        ags = canonical_ags(row.get("ags"))
+        party = canonical_party_name(row.get("party"), row.get("vote_type"))
+        vote_type = canonical_vote_type(str(row.get("vote_type") or ""))
+        if not ags or not party or not vote_type:
+            continue
+
+        key = (ags, vote_type, party)
+        bucket = grouped.get(key)
+        if bucket is None:
+            bucket = {
+                "ags": ags,
+                "municipality_name": canonical_municipality_name(row.get("municipality_name")),
+                "vote_type": vote_type,
+                "party": party,
+                "votes": 0,
+                "percent": None,
+            }
+            grouped[key] = bucket
+
+        votes = parse_int(row.get("votes")) or 0
+        bucket["votes"] += votes
+        municipality_name = canonical_municipality_name(row.get("municipality_name"))
+        if municipality_name:
+            bucket["municipality_name"] = municipality_name
+
+    totals_by_ags_vote_type: Dict[Tuple[str, str], int] = {}
+    for bucket in grouped.values():
+        totals_by_ags_vote_type[(bucket["ags"], bucket["vote_type"])] = (
+            totals_by_ags_vote_type.get((bucket["ags"], bucket["vote_type"]), 0) + int(bucket["votes"] or 0)
+        )
+
+    normalized: List[Dict[str, Any]] = []
+    for bucket in grouped.values():
+        total = totals_by_ags_vote_type.get((bucket["ags"], bucket["vote_type"]), 0)
+        votes = int(bucket["votes"] or 0)
+        normalized.append(
+            {
+                "ags": bucket["ags"],
+                "municipality_name": bucket["municipality_name"],
+                "vote_type": bucket["vote_type"],
+                "party": bucket["party"],
+                "votes": votes,
+                "percent": (votes / total * 100.0) if total else None,
+            }
+        )
+
+    normalized.sort(key=lambda row: (row["party"], row["ags"], row["vote_type"]))
+    return normalized
+
+
 def fetch_kommone_all(
     config: Config,
     municipalities: List[Dict[str, str]],
@@ -1486,7 +1541,7 @@ def fetch_kommone_all(
             fetches.extend(result["fetches"])
 
     snapshots.sort(key=lambda row: row["ags"])
-    party_rows.sort(key=lambda row: (row["party"], row["ags"], row["vote_type"]))
+    party_rows = normalize_kommone_party_rows(party_rows)
     return {"snapshots": snapshots, "party_rows": party_rows, "fetches": fetches}
 
 
