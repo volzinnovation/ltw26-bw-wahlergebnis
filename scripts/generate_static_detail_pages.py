@@ -1254,22 +1254,6 @@ def render_index_page(
         f"<div class='stat'><div class='stat-label'>Wahlkreise vollstaendig</div><div class='stat-value'>{wahlkreis_counts['complete']}</div></div>"
         "</div></div>"
         "<div class='grid'>"
-        "<div class='panel'><h2>Datenquellen</h2>"
-        "<ul class='inline-list'>"
-        "<li>`komm.one`-Gemeindeseiten in der aktuellen HTML-Struktur</li>"
-        f"<li>Statistik BW CSV (Modus: <strong>{html.escape(statla_mode)}</strong>): <a href='{html.escape(statla_url)}'>{html.escape(statla_url)}</a></li>"
-        "</ul></div>"
-        "<div class='panel'><h2>Betrieb</h2><ul class='inline-list'>"
-        + "".join(f"<li>{item}</li>" for item in operations)
-        + "</ul></div>"
-        "<div class='panel'><h2>Abdeckung</h2><ul class='inline-list'>"
-        f"<li>`komm.one` vollstaendig: <strong>{status_counts['complete']}</strong></li>"
-        f"<li>`komm.one` ausstehend: <strong>{status_counts['pending']}</strong></li>"
-        f"<li>`komm.one` keine Daten: <strong>{status_counts['no_data']}</strong></li>"
-        f"<li>Wahlkreise vollstaendig: <strong>{wahlkreis_counts['complete']}</strong></li>"
-        f"<li>Wahlkreise ausstehend: <strong>{wahlkreis_counts['pending']}</strong></li>"
-        f"<li>Wahlkreise ohne Daten: <strong>{wahlkreis_counts['no_data']}</strong></li>"
-        "</ul></div>"
         "<div class='panel dashboard-map'><h2>Klickbare Wahlkreiskarte</h2>"
         "<p class='small'>Jeder Wahlkreis fuehrt direkt zur Detailseite.</p>"
         f"{render_clickable_wahlkreis_map(features, wahlkreis_status_rows, wahlkreis_link_by_wk)}</div>"
@@ -1284,6 +1268,22 @@ def render_index_page(
         + render_party_dashboard(party_summary, party_details, municipality_link_by_ags)
         + render_pending_results(pending_rows, municipality_link_by_ags)
         + render_source_diff_summary(diff_rows)
+        + "<div class='panel'><h2>Datenquellen</h2>"
+        + "<ul class='inline-list'>"
+        + "<li>`komm.one`-Gemeindeseiten in der aktuellen HTML-Struktur</li>"
+        + f"<li>Statistik BW CSV (Modus: <strong>{html.escape(statla_mode)}</strong>): <a href='{html.escape(statla_url)}'>{html.escape(statla_url)}</a></li>"
+        + "</ul></div>"
+        + "<div class='panel'><h2>Betrieb</h2><ul class='inline-list'>"
+        + "".join(f"<li>{item}</li>" for item in operations)
+        + "</ul></div>"
+        + "<div class='panel'><h2>Abdeckung</h2><ul class='inline-list'>"
+        + f"<li>`komm.one` vollstaendig: <strong>{status_counts['complete']}</strong></li>"
+        + f"<li>`komm.one` ausstehend: <strong>{status_counts['pending']}</strong></li>"
+        + f"<li>`komm.one` keine Daten: <strong>{status_counts['no_data']}</strong></li>"
+        + f"<li>Wahlkreise vollstaendig: <strong>{wahlkreis_counts['complete']}</strong></li>"
+        + f"<li>Wahlkreise ausstehend: <strong>{wahlkreis_counts['pending']}</strong></li>"
+        + f"<li>Wahlkreise ohne Daten: <strong>{wahlkreis_counts['no_data']}</strong></li>"
+        + "</ul></div>"
         + "</div>"
     )
     write_page(output_root / "index.html", f"{config.election_name} ({config.election_key})", body)
