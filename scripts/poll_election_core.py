@@ -1429,6 +1429,92 @@ def parse_statla_csv_rows(csv_text: str) -> Tuple[List[Dict[str, Any]], List[Dic
     return snapshots, party_rows
 
 
+def normalize_latest_statla_snapshots(rows: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+    normalized: List[Dict[str, Any]] = []
+    for row in rows:
+        normalized.append(
+            {
+                "row_key": str(row.get("row_key") or ""),
+                "ags": canonical_ags(row.get("ags")),
+                "municipality_name": canonical_municipality_name(row.get("municipality_name")),
+                "gebietsart": str(row.get("gebietsart") or "").strip(),
+                "gebietsnummer": str(row.get("gebietsnummer") or "").strip(),
+                "reported_precincts": parse_int(row.get("reported_precincts")),
+                "total_precincts": parse_int(row.get("total_precincts")),
+                "voters_total": parse_int(row.get("voters_total")),
+                "valid_votes_erst": parse_int(row.get("valid_votes_erst")),
+                "valid_votes_zweit": parse_int(row.get("valid_votes_zweit")),
+                "payload_hash": str(row.get("payload_hash") or ""),
+                "is_municipality_summary": str(row.get("is_municipality_summary") or ""),
+            }
+        )
+    return normalized
+
+
+def normalize_latest_statla_party_rows(rows: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+    normalized: List[Dict[str, Any]] = []
+    for row in rows:
+        normalized.append(
+            {
+                "row_key": str(row.get("row_key") or ""),
+                "vote_type": str(row.get("vote_type") or ""),
+                "party_key": str(row.get("party_key") or ""),
+                "party_name": str(row.get("party_name") or ""),
+                "votes": parse_int(row.get("votes")),
+            }
+        )
+    return normalized
+
+
+def load_latest_statla_exports() -> Dict[str, Any]:
+    snapshots_path = LATEST_DIR / "statla_snapshots.csv"
+    party_path = LATEST_DIR / "statla_party_results.csv"
+    if not snapshots_path.exists() or not party_path.exists():
+        return {"snapshots": [], "party_rows": []}
+    return {
+        "snapshots": normalize_latest_statla_snapshots(read_csv_rows_from_file(snapshots_path, delimiter=",")),
+        "party_rows": normalize_latest_statla_party_rows(read_csv_rows_from_file(party_path, delimiter=",")),
+    }
+
+
+def statla_snapshot_shape_stats(rows: List[Dict[str, Any]]) -> Dict[str, int]:
+    return {
+        "row_count": len(rows),
+        "ags_count": len({canonical_ags(row.get("ags")) for row in rows if canonical_ags(row.get("ags"))}),
+        "wahlkreis_count": len(
+            {
+                normalize_wahlkreis_nummer(row.get("gebietsnummer") or row.get("row_key"))
+                for row in rows
+                if str(row.get("gebietsart") or "").strip().upper() == "WAHLKREIS"
+                and normalize_wahlkreis_nummer(row.get("gebietsnummer") or row.get("row_key"))
+            }
+        ),
+    }
+
+
+def should_reject_statla_snapshot_regression(
+    current_rows: List[Dict[str, Any]],
+    previous_rows: List[Dict[str, Any]],
+) -> Optional[str]:
+    if not current_rows or not previous_rows:
+        return None
+    current = statla_snapshot_shape_stats(current_rows)
+    previous = statla_snapshot_shape_stats(previous_rows)
+    if previous["row_count"] < 1000 or previous["ags_count"] < 100:
+        return None
+
+    reasons: List[str] = []
+    if current["wahlkreis_count"] < previous["wahlkreis_count"]:
+        reasons.append(f"Wahlkreise {current['wahlkreis_count']} < {previous['wahlkreis_count']}")
+    if current["ags_count"] < max(100, int(previous["ags_count"] * 0.9)):
+        reasons.append(f"AGS {current['ags_count']} < {previous['ags_count']}")
+    if current["row_count"] < max(1000, int(previous["row_count"] * 0.75)):
+        reasons.append(f"Zeilen {current['row_count']} < {previous['row_count']}")
+    if not reasons:
+        return None
+    return "Rejected truncated StatLA CSV: " + ", ".join(reasons)
+
+
 def fetch_statla(config: Config, timeout_seconds: int, force_dummy: bool = False) -> Dict[str, Any]:
     live_result = http_get(config.statla_live_csv_url, timeout_seconds)
     selected_result = live_result
@@ -1492,6 +1578,20 @@ def fetch_statla(config: Config, timeout_seconds: int, force_dummy: bool = False
 
     csv_text = decode_bytes(selected_result.content)
     snapshots, party_rows = parse_statla_csv_rows(csv_text)
+    previous_latest = load_latest_statla_exports()
+    regression_error = should_reject_statla_snapshot_regression(snapshots, previous_latest.get("snapshots", []))
+    if regression_error:
+        return {
+            "mode": f"{selected_mode}_FALLBACK",
+            "url": selected_url,
+            "status_code": selected_result.status_code,
+            "content_hash": sha256_bytes(selected_result.content),
+            "raw_csv": "",
+            "snapshots": previous_latest.get("snapshots", []),
+            "party_rows": previous_latest.get("party_rows", []),
+            "fetches": fetches,
+            "error_message": regression_error,
+        }
     return {
         "mode": selected_mode,
         "url": selected_url,
