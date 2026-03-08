@@ -267,11 +267,18 @@ def now_utc() -> datetime:
     return datetime.now(timezone.utc)
 
 
+def german_tz_abbrev(dt: datetime) -> str:
+    return {
+        "CET": "MEZ",
+        "CEST": "MESZ",
+    }.get(dt.strftime("%Z"), dt.strftime("%Z"))
+
+
 def time_labels(tz_name: str) -> Tuple[str, str]:
     ts_utc = now_utc()
     ts_berlin = ts_utc.astimezone(ZoneInfo(tz_name))
     label_file = ts_berlin.strftime("%Y-%m-%d-%H-%M-%S")
-    label_human = ts_berlin.strftime("%Y-%m-%d %H:%M:%S %Z")
+    label_human = ts_berlin.strftime("%Y-%m-%d %H:%M:%S") + f" {german_tz_abbrev(ts_berlin)}"
     return label_file, label_human
 
 
@@ -284,7 +291,11 @@ def tracking_start_local_dt(config: Config) -> datetime:
 
 
 def format_local_dt(dt: datetime) -> str:
-    return dt.strftime("%Y-%m-%d %H:%M %Z")
+    return dt.strftime("%Y-%m-%d %H:%M") + f" {german_tz_abbrev(dt)}"
+
+
+def tracking_start_hhmm(config: Config) -> str:
+    return tracking_start_local_dt(config).strftime("%H:%M")
 
 
 def sha256_bytes(content: bytes) -> str:
@@ -2533,7 +2544,7 @@ def generate_readme(
     lines.append("")
     lines.append(f"- Local run: `python scripts/poll_election.py --election-key {config.election_key}`")
     lines.append(
-        f"- Local minute loop: `python scripts/run_local_poll_loop.py --election-key {config.election_key} --start-at 18:00`"
+        f"- Local minute loop: `python scripts/run_local_poll_loop.py --election-key {config.election_key} --start-at {tracking_start_hhmm(config)}`"
     )
     lines.append(
         f"- Local mock run (Statistik BW dummy CSV only): `python scripts/run_local_mock_poll.py --election-key {config.election_key} --iterations 1 --limit-ags 10`"
@@ -2691,7 +2702,7 @@ def write_prestart_readme(config: Config) -> None:
     lines.append("")
     lines.append(f"- Local run after start: `python scripts/poll_election.py --election-key {config.election_key}`")
     lines.append(
-        f"- Local minute loop after start: `python scripts/run_local_poll_loop.py --election-key {config.election_key} --start-at 18:00`"
+        f"- Local minute loop after start: `python scripts/run_local_poll_loop.py --election-key {config.election_key} --start-at {tracking_start_hhmm(config)}`"
     )
     lines.append(
         f"- Local mock run after start: `python scripts/run_local_mock_poll.py --election-key {config.election_key} --iterations 1 --limit-ags 10`"

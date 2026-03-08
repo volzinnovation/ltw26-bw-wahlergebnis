@@ -807,6 +807,10 @@ def render_page(title: str, body: str, root_path: str = "../") -> str:
 """
 
 
+def tracking_start_hhmm(config: core.Config) -> str:
+    return core.tracking_start_local_dt(config).strftime("%H:%M")
+
+
 def write_page(path: Path, title: str, body: str) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(render_page(title, body), encoding="utf-8")
@@ -1234,7 +1238,7 @@ def render_index_page(
     features = core.load_wahlkreis_features()
     operations = [
         f"`python scripts/poll_election.py --election-key {config.election_key}`",
-        f"`python scripts/run_local_poll_loop.py --election-key {config.election_key} --start-at 18:00`",
+        f"`python scripts/run_local_poll_loop.py --election-key {config.election_key} --start-at {tracking_start_hhmm(config)}`",
         f"`python scripts/run_local_mock_poll.py --election-key {config.election_key} --iterations 1 --limit-ags 10`",
         f"`python scripts/validate_dummy_statla_result.py --election-key {config.election_key}`",
         f"`python scripts/generate_static_detail_pages.py --election-key {config.election_key}`",
