@@ -1,7 +1,7 @@
 {
-  "generated_at_utc": "2026-03-08T18:43:02.493842+00:00",
+  "generated_at_utc": "2026-03-08T18:57:20.485165+00:00",
   "kommone_municipalities_polled": 1104,
-  "run_label": "2026-03-08-19-35-15",
+  "run_label": "2026-03-08-19-52-20",
   "statla_error": null,
   "statla_mode": "LIVE",
   "statla_url": "https://wahlen.statistik-bw.de/ltw26/ltw26-ergebnisse.csv"
