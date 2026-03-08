@@ -9,8 +9,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08125074,Nordheim,Zweitstimmen,AfD,1071,23.6
 08125094,Talheim,Erststimmen,AfD,594,20.8
 08125094,Talheim,Zweitstimmen,AfD,578,20.2
-08126011,Bretzfeld,Erststimmen,AfD,1396,24.9
-08126011,Bretzfeld,Zweitstimmen,AfD,1377,24.5
+08126011,Bretzfeld,Erststimmen,AfD,1612,25.7
+08126011,Bretzfeld,Zweitstimmen,AfD,1590,25.3
 08126020,Dörzbach,Erststimmen,AfD,332,23.5
 08126020,Dörzbach,Zweitstimmen,AfD,326,23.1
 08126028,"Forchtenberg, Stadt",Erststimmen,AfD,768,27.6
@@ -71,8 +71,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08127059,Michelfeld,Zweitstimmen,AfD,407,18.9
 08127062,Oberrot,Erststimmen,AfD,481,26.9
 08127062,Oberrot,Zweitstimmen,AfD,470,26.2
-08127063,Obersontheim,Erststimmen,AfD,574,29.9
-08127063,Obersontheim,Zweitstimmen,AfD,620,32.3
+08127063,Obersontheim,Erststimmen,AfD,682,24.9
+08127063,Obersontheim,Zweitstimmen,AfD,736,26.8
 08127071,Rot am See,Erststimmen,AfD,574,19.4
 08127071,Rot am See,Zweitstimmen,AfD,581,19.6
 08127073,Satteldorf,Erststimmen,AfD,698,24.5
@@ -121,8 +121,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08128061,Königheim,Zweitstimmen,AfD,251,13.2
 08128064,"Külsheim, Stadt",Erststimmen,AfD,556,18.3
 08128064,"Külsheim, Stadt",Zweitstimmen,AfD,560,18.3
-08128082,"Niederstetten, Stadt",Erststimmen,AfD,547,21.4
-08128082,"Niederstetten, Stadt",Zweitstimmen,AfD,583,22.7
+08128082,"Niederstetten, Stadt",Erststimmen,AfD,663,22.1
+08128082,"Niederstetten, Stadt",Zweitstimmen,AfD,705,23.4
 08128115,"Tauberbischofsheim, Stadt",Erststimmen,AfD,1117,16.7
 08128115,"Tauberbischofsheim, Stadt",Zweitstimmen,AfD,1127,16.7
 08128126,"Weikersheim, Stadt",Erststimmen,AfD,834,18.7
@@ -153,7 +153,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08135025,Königsbronn,Zweitstimmen,AfD,849,22.3
 08135026,Nattheim,Erststimmen,AfD,869,23.5
 08135026,Nattheim,Zweitstimmen,AfD,853,22.9
-08135027,"Niederstotzingen, Stadt",Erststimmen,AfD,749,29.5
+08135027,"Niederstotzingen, Stadt",Erststimmen,AfD,749,29.6
 08135027,"Niederstotzingen, Stadt",Zweitstimmen,AfD,723,28.4
 08135031,Sontheim an der Brenz,Erststimmen,AfD,801,25.6
 08135031,Sontheim an der Brenz,Zweitstimmen,AfD,780,24.8
@@ -191,8 +191,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08216052,Steinmauern,Zweitstimmen,AfD,426,25.8
 08216059,Weisenbach,Erststimmen,AfD,215,17.0
 08216059,Weisenbach,Zweitstimmen,AfD,199,15.7
-08231000,"Pforzheim, Stadt",Erststimmen,AfD,10966,27.7
-08231000,"Pforzheim, Stadt",Zweitstimmen,AfD,10877,27.3
+08231000,"Pforzheim, Stadt",Erststimmen,AfD,11029,27.7
+08231000,"Pforzheim, Stadt",Zweitstimmen,AfD,10947,27.4
 08235006,"Altensteig, Stadt",Erststimmen,AfD,1379,28.3
 08235006,"Altensteig, Stadt",Zweitstimmen,AfD,1386,28.4
 08235007,Althengstett,Erststimmen,AfD,951,20.9
@@ -229,8 +229,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08235060,Rohrdorf,Zweitstimmen,AfD,244,27.7
 08235065,Schömberg,Erststimmen,AfD,983,26.9
 08235065,Schömberg,Zweitstimmen,AfD,985,26.7
-08235066,Simmersfeld,Erststimmen,AfD,74,31.8
-08235066,Simmersfeld,Zweitstimmen,AfD,68,29.2
+08235066,Simmersfeld,Erststimmen,AfD,197,35.8
+08235066,Simmersfeld,Zweitstimmen,AfD,190,34.6
 08235067,Simmozheim,Erststimmen,AfD,329,20.6
 08235067,Simmozheim,Zweitstimmen,AfD,319,19.8
 08235073,Unterreichenbach,Erststimmen,AfD,304,26.8
@@ -243,8 +243,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08235084,"Bad Teinach-Zavelstein, Stadt",Zweitstimmen,AfD,421,23.8
 08235085,"Calw, Stadt",Erststimmen,AfD,2452,23.3
 08235085,"Calw, Stadt",Zweitstimmen,AfD,2447,23.1
-08236004,Birkenfeld,Erststimmen,AfD,1266,25.0
-08236004,Birkenfeld,Zweitstimmen,AfD,1244,24.6
+08236004,Birkenfeld,Erststimmen,AfD,1108,24.0
+08236004,Birkenfeld,Zweitstimmen,AfD,1089,23.6
 08236011,Eisingen,Erststimmen,AfD,347,20.8
 08236011,Eisingen,Zweitstimmen,AfD,366,21.7
 08236013,Engelsbrand,Erststimmen,AfD,578,23.8
@@ -269,12 +269,12 @@ ags,municipality_name,vote_type,party,votes,percent
 08236040,"Mühlacker, Stadt",Zweitstimmen,AfD,2169,21.3
 08236043,"Neuenbürg, Stadt",Erststimmen,AfD,970,26.4
 08236043,"Neuenbürg, Stadt",Zweitstimmen,AfD,944,25.6
-08236044,Neuhausen,Erststimmen,AfD,629,25.9
-08236044,Neuhausen,Zweitstimmen,AfD,605,24.9
+08236044,Neuhausen,Erststimmen,AfD,734,24.1
+08236044,Neuhausen,Zweitstimmen,AfD,711,23.3
 08236046,Niefern-Öschelbronn,Erststimmen,AfD,1239,22.2
 08236046,Niefern-Öschelbronn,Zweitstimmen,AfD,1379,24.7
-08236050,Ötisheim,Erststimmen,AfD,445,25.3
-08236050,Ötisheim,Zweitstimmen,AfD,452,25.6
+08236050,Ötisheim,Erststimmen,AfD,661,26.1
+08236050,Ötisheim,Zweitstimmen,AfD,662,26.0
 08236061,Sternenfels,Erststimmen,AfD,358,23.1
 08236061,Sternenfels,Zweitstimmen,AfD,339,21.8
 08236062,Tiefenbronn,Erststimmen,AfD,591,18.5
@@ -309,8 +309,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08237024,Empfingen,Zweitstimmen,AfD,594,26.7
 08237027,Eutingen im Gäu,Erststimmen,AfD,783,23.3
 08237027,Eutingen im Gäu,Zweitstimmen,AfD,763,22.7
-08237028,"Freudenstadt, Stadt",Erststimmen,AfD,2451,23.6
-08237028,"Freudenstadt, Stadt",Zweitstimmen,AfD,2444,23.5
+08237028,"Freudenstadt, Stadt",Erststimmen,AfD,2581,24.0
+08237028,"Freudenstadt, Stadt",Zweitstimmen,AfD,2573,23.8
 08237030,Glatten,Erststimmen,AfD,461,32.6
 08237030,Glatten,Zweitstimmen,AfD,468,33.0
 08237032,Grömbach,Erststimmen,AfD,95,35.6
@@ -363,8 +363,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08316039,Sexau,Zweitstimmen,AfD,267,12.7
 08316042,Simonswald,Erststimmen,AfD,277,15.6
 08316042,Simonswald,Zweitstimmen,AfD,278,15.7
-08316043,Teningen,Erststimmen,AfD,873,17.1
-08316043,Teningen,Zweitstimmen,AfD,871,17.0
+08316043,Teningen,Erststimmen,AfD,1015,15.9
+08316043,Teningen,Zweitstimmen,AfD,1011,15.7
 08316045,Vörstetten,Erststimmen,AfD,219,11.6
 08316045,Vörstetten,Zweitstimmen,AfD,219,11.6
 08316049,Weisweil,Erststimmen,AfD,235,18.8
@@ -395,10 +395,10 @@ ags,municipality_name,vote_type,party,votes,percent
 08325024,Hardt,Zweitstimmen,AfD,358,21.5
 08325036,Lauterbach,Erststimmen,AfD,274,18.4
 08325036,Lauterbach,Zweitstimmen,AfD,285,19.1
-08325045,"Oberndorf am Neckar, Stadt",Erststimmen,AfD,1495,32.3
-08325045,"Oberndorf am Neckar, Stadt",Zweitstimmen,AfD,1514,32.7
-08325049,"Rottweil, Stadt",Erststimmen,AfD,2429,21.1
-08325049,"Rottweil, Stadt",Zweitstimmen,AfD,2502,21.8
+08325045,"Oberndorf am Neckar, Stadt",Erststimmen,AfD,1681,29.7
+08325045,"Oberndorf am Neckar, Stadt",Zweitstimmen,AfD,1701,30.1
+08325049,"Rottweil, Stadt",Erststimmen,AfD,2582,21.5
+08325049,"Rottweil, Stadt",Zweitstimmen,AfD,2656,22.0
 08325050,Schenkenzell,Erststimmen,AfD,138,13.4
 08325050,Schenkenzell,Zweitstimmen,AfD,136,13.1
 08325051,"Schiltach, Stadt",Erststimmen,AfD,339,16.8
@@ -415,8 +415,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08325064,Wellendingen,Zweitstimmen,AfD,504,30.4
 08325069,Zimmern ob Rottweil,Erststimmen,AfD,789,23.6
 08325069,Zimmern ob Rottweil,Zweitstimmen,AfD,816,24.4
-08325070,Fluorn-Winzeln,Erststimmen,AfD,390,32.0
-08325070,Fluorn-Winzeln,Zweitstimmen,AfD,401,32.9
+08325070,Fluorn-Winzeln,Erststimmen,AfD,502,28.1
+08325070,Fluorn-Winzeln,Zweitstimmen,AfD,518,28.9
 08325071,Eschbronn,Erststimmen,AfD,316,24.7
 08325071,Eschbronn,Zweitstimmen,AfD,321,25.1
 08325072,Deißlingen,Erststimmen,AfD,944,29.3
@@ -457,8 +457,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08326065,Unterkirnach,Zweitstimmen,AfD,287,22.9
 08326068,"Vöhrenbach, Stadt",Erststimmen,AfD,367,21.8
 08326068,"Vöhrenbach, Stadt",Zweitstimmen,AfD,360,21.4
-08326074,"Villingen-Schwenningen, Stadt",Erststimmen,AfD,8632,26.8
-08326074,"Villingen-Schwenningen, Stadt",Zweitstimmen,AfD,8226,25.4
+08326074,"Villingen-Schwenningen, Stadt",Erststimmen,AfD,8935,26.8
+08326074,"Villingen-Schwenningen, Stadt",Zweitstimmen,AfD,8516,25.4
 08326075,Brigachtal,Erststimmen,AfD,756,26.1
 08326075,Brigachtal,Zweitstimmen,AfD,702,24.0
 08327002,Aldingen,Erststimmen,AfD,1067,33.1
@@ -473,6 +473,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08327007,Bubsheim,Zweitstimmen,AfD,201,36.2
 08327008,Buchheim,Erststimmen,AfD,100,22.3
 08327008,Buchheim,Zweitstimmen,AfD,114,25.2
+08327009,Deilingen,Erststimmen,AfD,177,30.9
+08327009,Deilingen,Zweitstimmen,AfD,179,31.2
 08327010,Denkingen,Erststimmen,AfD,478,32.5
 08327010,Denkingen,Zweitstimmen,AfD,482,32.6
 08327011,Dürbheim,Erststimmen,AfD,222,23.0
@@ -547,8 +549,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08336025,Fröhnd,Zweitstimmen,AfD,69,21.8
 08336034,Hasel,Erststimmen,AfD,167,27.4
 08336034,Hasel,Zweitstimmen,AfD,162,26.6
-08336036,Hausen im Wiesental,Erststimmen,AfD,62,16.6
-08336036,Hausen im Wiesental,Zweitstimmen,AfD,56,14.9
+08336036,Hausen im Wiesental,Erststimmen,AfD,233,19.1
+08336036,Hausen im Wiesental,Zweitstimmen,AfD,238,19.4
 08336043,Inzlingen,Erststimmen,AfD,176,13.3
 08336043,Inzlingen,Zweitstimmen,AfD,183,13.7
 08336050,"Lörrach, Stadt",Erststimmen,AfD,3370,16.8
@@ -647,8 +649,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08416031,Ofterdingen,Zweitstimmen,AfD,510,18.3
 08416036,"Rottenburg am Neckar, Stadt",Erststimmen,AfD,4132,18.0
 08416036,"Rottenburg am Neckar, Stadt",Zweitstimmen,AfD,4256,18.5
-08416041,"Tübingen, Universitätsstadt",Erststimmen,AfD,2799,5.5
-08416041,"Tübingen, Universitätsstadt",Zweitstimmen,AfD,2948,5.8
+08416041,"Tübingen, Universitätsstadt",Erststimmen,AfD,2844,5.5
+08416041,"Tübingen, Universitätsstadt",Zweitstimmen,AfD,2994,5.8
 08416048,Ammerbuch,Erststimmen,AfD,1001,14.9
 08416048,Ammerbuch,Zweitstimmen,AfD,1038,15.5
 08416049,Neustetten,Erststimmen,AfD,446,21.0
@@ -667,12 +669,12 @@ ags,municipality_name,vote_type,party,votes,percent
 08417015,Dormettingen,Zweitstimmen,AfD,143,24.4
 08417016,Dotternhausen,Erststimmen,AfD,227,21.2
 08417016,Dotternhausen,Zweitstimmen,AfD,222,20.7
-08417022,"Geislingen, Stadt",Erststimmen,AfD,696,26.8
-08417022,"Geislingen, Stadt",Zweitstimmen,AfD,700,26.9
+08417022,"Geislingen, Stadt",Erststimmen,AfD,853,25.4
+08417022,"Geislingen, Stadt",Zweitstimmen,AfD,874,25.9
 08417023,Grosselfingen,Erststimmen,AfD,386,34.0
 08417023,Grosselfingen,Zweitstimmen,AfD,387,34.0
 08417025,"Haigerloch, Stadt",Erststimmen,AfD,1443,25.5
-08417025,"Haigerloch, Stadt",Zweitstimmen,AfD,1471,25.8
+08417025,"Haigerloch, Stadt",Zweitstimmen,AfD,1472,25.8
 08417029,Hausen am Tann,Erststimmen,AfD,73,28.2
 08417029,Hausen am Tann,Zweitstimmen,AfD,79,30.3
 08417044,"Meßstetten, Stadt",Erststimmen,AfD,1575,28.5
@@ -717,8 +719,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08425017,Berghülen,Zweitstimmen,AfD,234,19.0
 08425019,Bernstadt,Erststimmen,AfD,249,18.1
 08425019,Bernstadt,Zweitstimmen,AfD,271,19.6
-08425020,"Blaubeuren, Stadt",Erststimmen,AfD,944,17.2
-08425020,"Blaubeuren, Stadt",Zweitstimmen,AfD,940,17.1
+08425020,"Blaubeuren, Stadt",Erststimmen,AfD,1016,16.8
+08425020,"Blaubeuren, Stadt",Zweitstimmen,AfD,1015,16.8
 08425022,Börslingen,Erststimmen,AfD,34,32.1
 08425022,Börslingen,Zweitstimmen,AfD,31,29.5
 08425024,Breitingen,Erststimmen,AfD,42,29.6
@@ -739,8 +741,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08425055,Hausen am Bussen,Zweitstimmen,AfD,29,20.4
 08425062,Holzkirch,Erststimmen,AfD,20,15.0
 08425062,Holzkirch,Zweitstimmen,AfD,18,13.8
-08425071,"Laichingen, Stadt",Erststimmen,AfD,1037,21.0
-08425071,"Laichingen, Stadt",Zweitstimmen,AfD,1065,21.6
+08425071,"Laichingen, Stadt",Erststimmen,AfD,1157,20.8
+08425071,"Laichingen, Stadt",Zweitstimmen,AfD,1192,21.4
 08425072,"Langenau, Stadt",Erststimmen,AfD,1444,17.9
 08425072,"Langenau, Stadt",Zweitstimmen,AfD,1487,18.4
 08425073,Lauterach,Erststimmen,AfD,49,18.3
@@ -815,8 +817,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08426036,Dürnau,Zweitstimmen,AfD,41,20.6
 08426038,Eberhardzell,Erststimmen,AfD,524,19.5
 08426038,Eberhardzell,Zweitstimmen,AfD,555,20.7
-08426043,Erlenmoos,Erststimmen,AfD,64,16.0
-08426043,Erlenmoos,Zweitstimmen,AfD,66,16.5
+08426043,Erlenmoos,Erststimmen,AfD,220,20.4
+08426043,Erlenmoos,Zweitstimmen,AfD,233,21.7
 08426045,Ertingen,Erststimmen,AfD,977,32.1
 08426045,Ertingen,Zweitstimmen,AfD,960,31.6
 08426058,Hochdorf,Erststimmen,AfD,276,19.0
@@ -929,6 +931,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08437076,"Mengen, Stadt",Zweitstimmen,AfD,1259,25.6
 08437078,"Meßkirch, Stadt",Erststimmen,AfD,1133,27.4
 08437078,"Meßkirch, Stadt",Zweitstimmen,AfD,1171,28.3
+08437082,Neufra,Erststimmen,AfD,315,30.6
+08437082,Neufra,Zweitstimmen,AfD,306,29.5
 08437086,Ostrach,Erststimmen,AfD,1059,27.4
 08437086,Ostrach,Zweitstimmen,AfD,1047,27.0
 08437088,"Pfullendorf, Stadt",Erststimmen,AfD,1480,26.1
@@ -963,8 +967,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08125074,Nordheim,Zweitstimmen,BSW,76,1.7
 08125094,Talheim,Erststimmen,BSW,53,1.9
 08125094,Talheim,Zweitstimmen,BSW,27,0.9
-08126011,Bretzfeld,Erststimmen,BSW,99,1.8
-08126011,Bretzfeld,Zweitstimmen,BSW,114,2.0
+08126011,Bretzfeld,Erststimmen,BSW,104,1.7
+08126011,Bretzfeld,Zweitstimmen,BSW,119,1.9
 08126020,Dörzbach,Erststimmen,BSW,17,1.2
 08126020,Dörzbach,Zweitstimmen,BSW,29,2.1
 08126028,"Forchtenberg, Stadt",Erststimmen,BSW,17,0.6
@@ -1025,8 +1029,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08127059,Michelfeld,Zweitstimmen,BSW,25,1.2
 08127062,Oberrot,Erststimmen,BSW,30,1.7
 08127062,Oberrot,Zweitstimmen,BSW,26,1.5
-08127063,Obersontheim,Erststimmen,BSW,34,1.8
-08127063,Obersontheim,Zweitstimmen,BSW,29,1.5
+08127063,Obersontheim,Erststimmen,BSW,49,1.8
+08127063,Obersontheim,Zweitstimmen,BSW,48,1.7
 08127071,Rot am See,Erststimmen,BSW,50,1.7
 08127071,Rot am See,Zweitstimmen,BSW,47,1.6
 08127073,Satteldorf,Erststimmen,BSW,52,1.8
@@ -1076,7 +1080,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08128064,"Külsheim, Stadt",Erststimmen,BSW,,
 08128064,"Külsheim, Stadt",Zweitstimmen,BSW,29,0.9
 08128082,"Niederstetten, Stadt",Erststimmen,BSW,,
-08128082,"Niederstetten, Stadt",Zweitstimmen,BSW,23,0.9
+08128082,"Niederstetten, Stadt",Zweitstimmen,BSW,34,1.1
 08128115,"Tauberbischofsheim, Stadt",Erststimmen,BSW,,
 08128115,"Tauberbischofsheim, Stadt",Zweitstimmen,BSW,68,1.0
 08128126,"Weikersheim, Stadt",Erststimmen,BSW,,
@@ -1107,7 +1111,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08135025,Königsbronn,Zweitstimmen,BSW,77,2.0
 08135026,Nattheim,Erststimmen,BSW,42,1.1
 08135026,Nattheim,Zweitstimmen,BSW,59,1.6
-08135027,"Niederstotzingen, Stadt",Erststimmen,BSW,34,1.3
+08135027,"Niederstotzingen, Stadt",Erststimmen,BSW,32,1.3
 08135027,"Niederstotzingen, Stadt",Zweitstimmen,BSW,36,1.4
 08135031,Sontheim an der Brenz,Erststimmen,BSW,41,1.3
 08135031,Sontheim an der Brenz,Zweitstimmen,BSW,58,1.8
@@ -1146,7 +1150,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08216059,Weisenbach,Erststimmen,BSW,,
 08216059,Weisenbach,Zweitstimmen,BSW,9,0.7
 08231000,"Pforzheim, Stadt",Erststimmen,BSW,,
-08231000,"Pforzheim, Stadt",Zweitstimmen,BSW,709,1.8
+08231000,"Pforzheim, Stadt",Zweitstimmen,BSW,710,1.8
 08235006,"Altensteig, Stadt",Erststimmen,BSW,,
 08235006,"Altensteig, Stadt",Zweitstimmen,BSW,51,1.0
 08235007,Althengstett,Erststimmen,BSW,,
@@ -1184,7 +1188,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08235065,Schömberg,Erststimmen,BSW,,
 08235065,Schömberg,Zweitstimmen,BSW,62,1.7
 08235066,Simmersfeld,Erststimmen,BSW,,
-08235066,Simmersfeld,Zweitstimmen,BSW,2,0.9
+08235066,Simmersfeld,Zweitstimmen,BSW,4,0.7
 08235067,Simmozheim,Erststimmen,BSW,,
 08235067,Simmozheim,Zweitstimmen,BSW,23,1.4
 08235073,Unterreichenbach,Erststimmen,BSW,,
@@ -1198,7 +1202,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08235085,"Calw, Stadt",Erststimmen,BSW,,
 08235085,"Calw, Stadt",Zweitstimmen,BSW,180,1.7
 08236004,Birkenfeld,Erststimmen,BSW,,
-08236004,Birkenfeld,Zweitstimmen,BSW,83,1.6
+08236004,Birkenfeld,Zweitstimmen,BSW,74,1.6
 08236011,Eisingen,Erststimmen,BSW,,
 08236011,Eisingen,Zweitstimmen,BSW,18,1.1
 08236013,Engelsbrand,Erststimmen,BSW,,
@@ -1224,11 +1228,11 @@ ags,municipality_name,vote_type,party,votes,percent
 08236043,"Neuenbürg, Stadt",Erststimmen,BSW,,
 08236043,"Neuenbürg, Stadt",Zweitstimmen,BSW,47,1.3
 08236044,Neuhausen,Erststimmen,BSW,,
-08236044,Neuhausen,Zweitstimmen,BSW,21,0.9
+08236044,Neuhausen,Zweitstimmen,BSW,28,0.9
 08236046,Niefern-Öschelbronn,Erststimmen,BSW,,
 08236046,Niefern-Öschelbronn,Zweitstimmen,BSW,66,1.2
 08236050,Ötisheim,Erststimmen,BSW,,
-08236050,Ötisheim,Zweitstimmen,BSW,21,1.2
+08236050,Ötisheim,Zweitstimmen,BSW,30,1.2
 08236061,Sternenfels,Erststimmen,BSW,,
 08236061,Sternenfels,Zweitstimmen,BSW,32,2.1
 08236062,Tiefenbronn,Erststimmen,BSW,,
@@ -1263,8 +1267,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08237024,Empfingen,Zweitstimmen,BSW,34,1.5
 08237027,Eutingen im Gäu,Erststimmen,BSW,75,2.2
 08237027,Eutingen im Gäu,Zweitstimmen,BSW,53,1.6
-08237028,"Freudenstadt, Stadt",Erststimmen,BSW,210,2.0
-08237028,"Freudenstadt, Stadt",Zweitstimmen,BSW,188,1.8
+08237028,"Freudenstadt, Stadt",Erststimmen,BSW,219,2.0
+08237028,"Freudenstadt, Stadt",Zweitstimmen,BSW,197,1.8
 08237030,Glatten,Erststimmen,BSW,30,2.1
 08237030,Glatten,Zweitstimmen,BSW,24,1.7
 08237032,Grömbach,Erststimmen,BSW,3,1.1
@@ -1318,7 +1322,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08316042,Simonswald,Erststimmen,BSW,,
 08316042,Simonswald,Zweitstimmen,BSW,6,0.3
 08316043,Teningen,Erststimmen,BSW,,
-08316043,Teningen,Zweitstimmen,BSW,53,1.0
+08316043,Teningen,Zweitstimmen,BSW,72,1.1
 08316045,Vörstetten,Erststimmen,BSW,,
 08316045,Vörstetten,Zweitstimmen,BSW,20,1.1
 08316049,Weisweil,Erststimmen,BSW,,
@@ -1349,10 +1353,10 @@ ags,municipality_name,vote_type,party,votes,percent
 08325024,Hardt,Zweitstimmen,BSW,18,1.1
 08325036,Lauterbach,Erststimmen,BSW,29,2.0
 08325036,Lauterbach,Zweitstimmen,BSW,28,1.9
-08325045,"Oberndorf am Neckar, Stadt",Erststimmen,BSW,75,1.6
-08325045,"Oberndorf am Neckar, Stadt",Zweitstimmen,BSW,74,1.6
-08325049,"Rottweil, Stadt",Erststimmen,BSW,196,1.7
-08325049,"Rottweil, Stadt",Zweitstimmen,BSW,189,1.6
+08325045,"Oberndorf am Neckar, Stadt",Erststimmen,BSW,96,1.7
+08325045,"Oberndorf am Neckar, Stadt",Zweitstimmen,BSW,90,1.6
+08325049,"Rottweil, Stadt",Erststimmen,BSW,207,1.7
+08325049,"Rottweil, Stadt",Zweitstimmen,BSW,203,1.7
 08325050,Schenkenzell,Erststimmen,BSW,10,1.0
 08325050,Schenkenzell,Zweitstimmen,BSW,11,1.1
 08325051,"Schiltach, Stadt",Erststimmen,BSW,42,2.1
@@ -1369,8 +1373,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08325064,Wellendingen,Zweitstimmen,BSW,37,2.2
 08325069,Zimmern ob Rottweil,Erststimmen,BSW,75,2.2
 08325069,Zimmern ob Rottweil,Zweitstimmen,BSW,59,1.8
-08325070,Fluorn-Winzeln,Erststimmen,BSW,35,2.9
-08325070,Fluorn-Winzeln,Zweitstimmen,BSW,29,2.4
+08325070,Fluorn-Winzeln,Erststimmen,BSW,48,2.7
+08325070,Fluorn-Winzeln,Zweitstimmen,BSW,38,2.1
 08325071,Eschbronn,Erststimmen,BSW,19,1.5
 08325071,Eschbronn,Zweitstimmen,BSW,21,1.6
 08325072,Deißlingen,Erststimmen,BSW,54,1.7
@@ -1412,7 +1416,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08326068,"Vöhrenbach, Stadt",Erststimmen,BSW,,
 08326068,"Vöhrenbach, Stadt",Zweitstimmen,BSW,16,0.9
 08326074,"Villingen-Schwenningen, Stadt",Erststimmen,BSW,,
-08326074,"Villingen-Schwenningen, Stadt",Zweitstimmen,BSW,497,1.5
+08326074,"Villingen-Schwenningen, Stadt",Zweitstimmen,BSW,514,1.5
 08326075,Brigachtal,Erststimmen,BSW,,
 08326075,Brigachtal,Zweitstimmen,BSW,50,1.7
 08327002,Aldingen,Erststimmen,BSW,,
@@ -1427,6 +1431,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08327007,Bubsheim,Zweitstimmen,BSW,10,1.8
 08327008,Buchheim,Erststimmen,BSW,,
 08327008,Buchheim,Zweitstimmen,BSW,8,1.8
+08327009,Deilingen,Erststimmen,BSW,,
+08327009,Deilingen,Zweitstimmen,BSW,5,0.9
 08327010,Denkingen,Erststimmen,BSW,,
 08327010,Denkingen,Zweitstimmen,BSW,22,1.5
 08327011,Dürbheim,Erststimmen,BSW,,
@@ -1502,7 +1508,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08336034,Hasel,Erststimmen,BSW,,
 08336034,Hasel,Zweitstimmen,BSW,7,1.1
 08336036,Hausen im Wiesental,Erststimmen,BSW,,
-08336036,Hausen im Wiesental,Zweitstimmen,BSW,10,2.7
+08336036,Hausen im Wiesental,Zweitstimmen,BSW,23,1.9
 08336043,Inzlingen,Erststimmen,BSW,,
 08336043,Inzlingen,Zweitstimmen,BSW,14,1.1
 08336050,"Lörrach, Stadt",Erststimmen,BSW,,
@@ -1601,8 +1607,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08416031,Ofterdingen,Zweitstimmen,BSW,38,1.4
 08416036,"Rottenburg am Neckar, Stadt",Erststimmen,BSW,400,1.7
 08416036,"Rottenburg am Neckar, Stadt",Zweitstimmen,BSW,345,1.5
-08416041,"Tübingen, Universitätsstadt",Erststimmen,BSW,778,1.5
-08416041,"Tübingen, Universitätsstadt",Zweitstimmen,BSW,715,1.4
+08416041,"Tübingen, Universitätsstadt",Erststimmen,BSW,782,1.5
+08416041,"Tübingen, Universitätsstadt",Zweitstimmen,BSW,720,1.4
 08416048,Ammerbuch,Erststimmen,BSW,114,1.7
 08416048,Ammerbuch,Zweitstimmen,BSW,106,1.6
 08416049,Neustetten,Erststimmen,BSW,30,1.4
@@ -1622,7 +1628,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08417016,Dotternhausen,Erststimmen,BSW,,
 08417016,Dotternhausen,Zweitstimmen,BSW,16,1.5
 08417022,"Geislingen, Stadt",Erststimmen,BSW,,
-08417022,"Geislingen, Stadt",Zweitstimmen,BSW,33,1.3
+08417022,"Geislingen, Stadt",Zweitstimmen,BSW,36,1.1
 08417023,Grosselfingen,Erststimmen,BSW,,
 08417023,Grosselfingen,Zweitstimmen,BSW,19,1.7
 08417025,"Haigerloch, Stadt",Erststimmen,BSW,,
@@ -1671,8 +1677,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08425017,Berghülen,Zweitstimmen,BSW,12,1.0
 08425019,Bernstadt,Erststimmen,BSW,7,0.5
 08425019,Bernstadt,Zweitstimmen,BSW,13,0.9
-08425020,"Blaubeuren, Stadt",Erststimmen,BSW,37,0.7
-08425020,"Blaubeuren, Stadt",Zweitstimmen,BSW,59,1.1
+08425020,"Blaubeuren, Stadt",Erststimmen,BSW,43,0.7
+08425020,"Blaubeuren, Stadt",Zweitstimmen,BSW,63,1.0
 08425022,Börslingen,Erststimmen,BSW,2,1.9
 08425022,Börslingen,Zweitstimmen,BSW,3,2.9
 08425024,Breitingen,Erststimmen,BSW,1,0.7
@@ -1693,8 +1699,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08425055,Hausen am Bussen,Zweitstimmen,BSW,1,0.7
 08425062,Holzkirch,Erststimmen,BSW,0,0.0
 08425062,Holzkirch,Zweitstimmen,BSW,0,0.0
-08425071,"Laichingen, Stadt",Erststimmen,BSW,43,0.9
-08425071,"Laichingen, Stadt",Zweitstimmen,BSW,53,1.1
+08425071,"Laichingen, Stadt",Erststimmen,BSW,47,0.8
+08425071,"Laichingen, Stadt",Zweitstimmen,BSW,59,1.1
 08425072,"Langenau, Stadt",Erststimmen,BSW,118,1.5
 08425072,"Langenau, Stadt",Zweitstimmen,BSW,142,1.8
 08425073,Lauterach,Erststimmen,BSW,2,0.7
@@ -1770,7 +1776,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08426038,Eberhardzell,Erststimmen,BSW,,
 08426038,Eberhardzell,Zweitstimmen,BSW,23,0.9
 08426043,Erlenmoos,Erststimmen,BSW,,
-08426043,Erlenmoos,Zweitstimmen,BSW,5,1.2
+08426043,Erlenmoos,Zweitstimmen,BSW,9,0.8
 08426045,Ertingen,Erststimmen,BSW,,
 08426045,Ertingen,Zweitstimmen,BSW,54,1.8
 08426058,Hochdorf,Erststimmen,BSW,,
@@ -1883,6 +1889,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08437076,"Mengen, Stadt",Zweitstimmen,BSW,93,1.9
 08437078,"Meßkirch, Stadt",Erststimmen,BSW,59,1.4
 08437078,"Meßkirch, Stadt",Zweitstimmen,BSW,69,1.7
+08437082,Neufra,Erststimmen,BSW,16,1.6
+08437082,Neufra,Zweitstimmen,BSW,12,1.2
 08437086,Ostrach,Erststimmen,BSW,59,1.5
 08437086,Ostrach,Zweitstimmen,BSW,57,1.5
 08437088,"Pfullendorf, Stadt",Erststimmen,BSW,104,1.8
@@ -1945,7 +1953,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08417015,Dormettingen,Zweitstimmen,BÜNDNIS DEUTSCHLAND,,
 08417016,Dotternhausen,Erststimmen,BÜNDNIS DEUTSCHLAND,7,0.7
 08417016,Dotternhausen,Zweitstimmen,BÜNDNIS DEUTSCHLAND,,
-08417022,"Geislingen, Stadt",Erststimmen,BÜNDNIS DEUTSCHLAND,21,0.8
+08417022,"Geislingen, Stadt",Erststimmen,BÜNDNIS DEUTSCHLAND,29,0.9
 08417022,"Geislingen, Stadt",Zweitstimmen,BÜNDNIS DEUTSCHLAND,,
 08417023,Grosselfingen,Erststimmen,BÜNDNIS DEUTSCHLAND,9,0.8
 08417023,Grosselfingen,Zweitstimmen,BÜNDNIS DEUTSCHLAND,,
@@ -1995,7 +2003,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08425017,Berghülen,Zweitstimmen,BÜNDNIS DEUTSCHLAND,,
 08425019,Bernstadt,Erststimmen,BÜNDNIS DEUTSCHLAND,3,0.2
 08425019,Bernstadt,Zweitstimmen,BÜNDNIS DEUTSCHLAND,,
-08425020,"Blaubeuren, Stadt",Erststimmen,BÜNDNIS DEUTSCHLAND,9,0.2
+08425020,"Blaubeuren, Stadt",Erststimmen,BÜNDNIS DEUTSCHLAND,10,0.2
 08425020,"Blaubeuren, Stadt",Zweitstimmen,BÜNDNIS DEUTSCHLAND,,
 08425022,Börslingen,Erststimmen,BÜNDNIS DEUTSCHLAND,0,0.0
 08425022,Börslingen,Zweitstimmen,BÜNDNIS DEUTSCHLAND,,
@@ -2017,7 +2025,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08425055,Hausen am Bussen,Zweitstimmen,BÜNDNIS DEUTSCHLAND,,
 08425062,Holzkirch,Erststimmen,BÜNDNIS DEUTSCHLAND,0,0.0
 08425062,Holzkirch,Zweitstimmen,BÜNDNIS DEUTSCHLAND,,
-08425071,"Laichingen, Stadt",Erststimmen,BÜNDNIS DEUTSCHLAND,9,0.2
+08425071,"Laichingen, Stadt",Erststimmen,BÜNDNIS DEUTSCHLAND,10,0.2
 08425071,"Laichingen, Stadt",Zweitstimmen,BÜNDNIS DEUTSCHLAND,,
 08425072,"Langenau, Stadt",Erststimmen,BÜNDNIS DEUTSCHLAND,6,0.1
 08425072,"Langenau, Stadt",Zweitstimmen,BÜNDNIS DEUTSCHLAND,,
@@ -2078,7 +2086,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08125094,Talheim,Erststimmen,Bündnis C,,
 08125094,Talheim,Zweitstimmen,Bündnis C,10,0.3
 08126011,Bretzfeld,Erststimmen,Bündnis C,,
-08126011,Bretzfeld,Zweitstimmen,Bündnis C,32,0.6
+08126011,Bretzfeld,Zweitstimmen,Bündnis C,40,0.6
 08126020,Dörzbach,Erststimmen,Bündnis C,,
 08126020,Dörzbach,Zweitstimmen,Bündnis C,3,0.2
 08126028,"Forchtenberg, Stadt",Erststimmen,Bündnis C,,
@@ -2139,8 +2147,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08127059,Michelfeld,Zweitstimmen,Bündnis C,11,0.5
 08127062,Oberrot,Erststimmen,Bündnis C,5,0.3
 08127062,Oberrot,Zweitstimmen,Bündnis C,5,0.3
-08127063,Obersontheim,Erststimmen,Bündnis C,11,0.6
-08127063,Obersontheim,Zweitstimmen,Bündnis C,7,0.4
+08127063,Obersontheim,Erststimmen,Bündnis C,13,0.5
+08127063,Obersontheim,Zweitstimmen,Bündnis C,8,0.3
 08127071,Rot am See,Erststimmen,Bündnis C,22,0.7
 08127071,Rot am See,Zweitstimmen,Bündnis C,17,0.6
 08127073,Satteldorf,Erststimmen,Bündnis C,8,0.3
@@ -2297,8 +2305,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08235060,Rohrdorf,Zweitstimmen,Bündnis C,14,1.6
 08235065,Schömberg,Erststimmen,Bündnis C,62,1.7
 08235065,Schömberg,Zweitstimmen,Bündnis C,41,1.1
-08235066,Simmersfeld,Erststimmen,Bündnis C,5,2.1
-08235066,Simmersfeld,Zweitstimmen,Bündnis C,5,2.1
+08235066,Simmersfeld,Erststimmen,Bündnis C,7,1.3
+08235066,Simmersfeld,Zweitstimmen,Bündnis C,8,1.5
 08235067,Simmozheim,Erststimmen,Bündnis C,17,1.1
 08235067,Simmozheim,Zweitstimmen,Bündnis C,5,0.3
 08235073,Unterreichenbach,Erststimmen,Bündnis C,10,0.9
@@ -2312,7 +2320,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08235085,"Calw, Stadt",Erststimmen,Bündnis C,118,1.1
 08235085,"Calw, Stadt",Zweitstimmen,Bündnis C,71,0.7
 08236004,Birkenfeld,Erststimmen,Bündnis C,,
-08236004,Birkenfeld,Zweitstimmen,Bündnis C,34,0.7
+08236004,Birkenfeld,Zweitstimmen,Bündnis C,32,0.7
 08236011,Eisingen,Erststimmen,Bündnis C,,
 08236011,Eisingen,Zweitstimmen,Bündnis C,9,0.5
 08236013,Engelsbrand,Erststimmen,Bündnis C,,
@@ -2338,11 +2346,11 @@ ags,municipality_name,vote_type,party,votes,percent
 08236043,"Neuenbürg, Stadt",Erststimmen,Bündnis C,,
 08236043,"Neuenbürg, Stadt",Zweitstimmen,Bündnis C,16,0.4
 08236044,Neuhausen,Erststimmen,Bündnis C,,
-08236044,Neuhausen,Zweitstimmen,Bündnis C,5,0.2
+08236044,Neuhausen,Zweitstimmen,Bündnis C,6,0.2
 08236046,Niefern-Öschelbronn,Erststimmen,Bündnis C,,
 08236046,Niefern-Öschelbronn,Zweitstimmen,Bündnis C,22,0.4
 08236050,Ötisheim,Erststimmen,Bündnis C,,
-08236050,Ötisheim,Zweitstimmen,Bündnis C,6,0.3
+08236050,Ötisheim,Zweitstimmen,Bündnis C,9,0.4
 08236061,Sternenfels,Erststimmen,Bündnis C,,
 08236061,Sternenfels,Zweitstimmen,Bündnis C,2,0.1
 08236062,Tiefenbronn,Erststimmen,Bündnis C,,
@@ -2377,8 +2385,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08237024,Empfingen,Zweitstimmen,Bündnis C,5,0.2
 08237027,Eutingen im Gäu,Erststimmen,Bündnis C,17,0.5
 08237027,Eutingen im Gäu,Zweitstimmen,Bündnis C,13,0.4
-08237028,"Freudenstadt, Stadt",Erststimmen,Bündnis C,115,1.1
-08237028,"Freudenstadt, Stadt",Zweitstimmen,Bündnis C,85,0.8
+08237028,"Freudenstadt, Stadt",Erststimmen,Bündnis C,123,1.1
+08237028,"Freudenstadt, Stadt",Zweitstimmen,Bündnis C,92,0.9
 08237030,Glatten,Erststimmen,Bündnis C,28,2.0
 08237030,Glatten,Zweitstimmen,Bündnis C,16,1.1
 08237032,Grömbach,Erststimmen,Bündnis C,5,1.9
@@ -2432,7 +2440,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08316042,Simonswald,Erststimmen,Bündnis C,,
 08316042,Simonswald,Zweitstimmen,Bündnis C,3,0.2
 08316043,Teningen,Erststimmen,Bündnis C,,
-08316043,Teningen,Zweitstimmen,Bündnis C,12,0.2
+08316043,Teningen,Zweitstimmen,Bündnis C,13,0.2
 08316045,Vörstetten,Erststimmen,Bündnis C,,
 08316045,Vörstetten,Zweitstimmen,Bündnis C,1,0.1
 08316049,Weisweil,Erststimmen,Bündnis C,,
@@ -2463,9 +2471,9 @@ ags,municipality_name,vote_type,party,votes,percent
 08325024,Hardt,Zweitstimmen,Bündnis C,3,0.2
 08325036,Lauterbach,Erststimmen,Bündnis C,4,0.3
 08325036,Lauterbach,Zweitstimmen,Bündnis C,3,0.2
-08325045,"Oberndorf am Neckar, Stadt",Erststimmen,Bündnis C,22,0.5
-08325045,"Oberndorf am Neckar, Stadt",Zweitstimmen,Bündnis C,11,0.2
-08325049,"Rottweil, Stadt",Erststimmen,Bündnis C,30,0.3
+08325045,"Oberndorf am Neckar, Stadt",Erststimmen,Bündnis C,25,0.4
+08325045,"Oberndorf am Neckar, Stadt",Zweitstimmen,Bündnis C,13,0.2
+08325049,"Rottweil, Stadt",Erststimmen,Bündnis C,31,0.3
 08325049,"Rottweil, Stadt",Zweitstimmen,Bündnis C,10,0.1
 08325050,Schenkenzell,Erststimmen,Bündnis C,9,0.9
 08325050,Schenkenzell,Zweitstimmen,Bündnis C,9,0.9
@@ -2483,8 +2491,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08325064,Wellendingen,Zweitstimmen,Bündnis C,2,0.1
 08325069,Zimmern ob Rottweil,Erststimmen,Bündnis C,7,0.2
 08325069,Zimmern ob Rottweil,Zweitstimmen,Bündnis C,4,0.1
-08325070,Fluorn-Winzeln,Erststimmen,Bündnis C,11,0.9
-08325070,Fluorn-Winzeln,Zweitstimmen,Bündnis C,9,0.7
+08325070,Fluorn-Winzeln,Erststimmen,Bündnis C,15,0.8
+08325070,Fluorn-Winzeln,Zweitstimmen,Bündnis C,12,0.7
 08325071,Eschbronn,Erststimmen,Bündnis C,17,1.3
 08325071,Eschbronn,Zweitstimmen,Bündnis C,11,0.9
 08325072,Deißlingen,Erststimmen,Bündnis C,12,0.4
@@ -2526,7 +2534,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08326068,"Vöhrenbach, Stadt",Erststimmen,Bündnis C,,
 08326068,"Vöhrenbach, Stadt",Zweitstimmen,Bündnis C,6,0.4
 08326074,"Villingen-Schwenningen, Stadt",Erststimmen,Bündnis C,,
-08326074,"Villingen-Schwenningen, Stadt",Zweitstimmen,Bündnis C,112,0.3
+08326074,"Villingen-Schwenningen, Stadt",Zweitstimmen,Bündnis C,115,0.3
 08326075,Brigachtal,Erststimmen,Bündnis C,,
 08326075,Brigachtal,Zweitstimmen,Bündnis C,21,0.7
 08327002,Aldingen,Erststimmen,Bündnis C,,
@@ -2541,6 +2549,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08327007,Bubsheim,Zweitstimmen,Bündnis C,0,0.0
 08327008,Buchheim,Erststimmen,Bündnis C,,
 08327008,Buchheim,Zweitstimmen,Bündnis C,0,0.0
+08327009,Deilingen,Erststimmen,Bündnis C,,
+08327009,Deilingen,Zweitstimmen,Bündnis C,1,0.2
 08327010,Denkingen,Erststimmen,Bündnis C,,
 08327010,Denkingen,Zweitstimmen,Bündnis C,5,0.3
 08327011,Dürbheim,Erststimmen,Bündnis C,,
@@ -2616,7 +2626,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08336034,Hasel,Erststimmen,Bündnis C,,
 08336034,Hasel,Zweitstimmen,Bündnis C,2,0.3
 08336036,Hausen im Wiesental,Erststimmen,Bündnis C,,
-08336036,Hausen im Wiesental,Zweitstimmen,Bündnis C,2,0.5
+08336036,Hausen im Wiesental,Zweitstimmen,Bündnis C,4,0.3
 08336043,Inzlingen,Erststimmen,Bündnis C,,
 08336043,Inzlingen,Zweitstimmen,Bündnis C,0,0.0
 08336050,"Lörrach, Stadt",Erststimmen,Bündnis C,,
@@ -2716,7 +2726,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08416036,"Rottenburg am Neckar, Stadt",Erststimmen,Bündnis C,,
 08416036,"Rottenburg am Neckar, Stadt",Zweitstimmen,Bündnis C,30,0.1
 08416041,"Tübingen, Universitätsstadt",Erststimmen,Bündnis C,,
-08416041,"Tübingen, Universitätsstadt",Zweitstimmen,Bündnis C,88,0.2
+08416041,"Tübingen, Universitätsstadt",Zweitstimmen,Bündnis C,89,0.2
 08416048,Ammerbuch,Erststimmen,Bündnis C,,
 08416048,Ammerbuch,Zweitstimmen,Bündnis C,14,0.2
 08416049,Neustetten,Erststimmen,Bündnis C,,
@@ -2736,7 +2746,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08417016,Dotternhausen,Erststimmen,Bündnis C,,
 08417016,Dotternhausen,Zweitstimmen,Bündnis C,0,0.0
 08417022,"Geislingen, Stadt",Erststimmen,Bündnis C,,
-08417022,"Geislingen, Stadt",Zweitstimmen,Bündnis C,5,0.2
+08417022,"Geislingen, Stadt",Zweitstimmen,Bündnis C,6,0.2
 08417023,Grosselfingen,Erststimmen,Bündnis C,,
 08417023,Grosselfingen,Zweitstimmen,Bündnis C,0,0.0
 08417025,"Haigerloch, Stadt",Erststimmen,Bündnis C,,
@@ -2786,7 +2796,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08425019,Bernstadt,Erststimmen,Bündnis C,,
 08425019,Bernstadt,Zweitstimmen,Bündnis C,5,0.4
 08425020,"Blaubeuren, Stadt",Erststimmen,Bündnis C,,
-08425020,"Blaubeuren, Stadt",Zweitstimmen,Bündnis C,9,0.2
+08425020,"Blaubeuren, Stadt",Zweitstimmen,Bündnis C,11,0.2
 08425022,Börslingen,Erststimmen,Bündnis C,,
 08425022,Börslingen,Zweitstimmen,Bündnis C,0,0.0
 08425024,Breitingen,Erststimmen,Bündnis C,,
@@ -2808,7 +2818,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08425062,Holzkirch,Erststimmen,Bündnis C,,
 08425062,Holzkirch,Zweitstimmen,Bündnis C,0,0.0
 08425071,"Laichingen, Stadt",Erststimmen,Bündnis C,,
-08425071,"Laichingen, Stadt",Zweitstimmen,Bündnis C,18,0.4
+08425071,"Laichingen, Stadt",Zweitstimmen,Bündnis C,18,0.3
 08425072,"Langenau, Stadt",Erststimmen,Bündnis C,,
 08425072,"Langenau, Stadt",Zweitstimmen,Bündnis C,20,0.2
 08425073,Lauterach,Erststimmen,Bündnis C,,
@@ -2884,7 +2894,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08426038,Eberhardzell,Erststimmen,Bündnis C,,
 08426038,Eberhardzell,Zweitstimmen,Bündnis C,3,0.1
 08426043,Erlenmoos,Erststimmen,Bündnis C,,
-08426043,Erlenmoos,Zweitstimmen,Bündnis C,1,0.2
+08426043,Erlenmoos,Zweitstimmen,Bündnis C,1,0.1
 08426045,Ertingen,Erststimmen,Bündnis C,,
 08426045,Ertingen,Zweitstimmen,Bündnis C,2,0.1
 08426058,Hochdorf,Erststimmen,Bündnis C,,
@@ -2997,6 +3007,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08437076,"Mengen, Stadt",Zweitstimmen,Bündnis C,4,0.1
 08437078,"Meßkirch, Stadt",Erststimmen,Bündnis C,,
 08437078,"Meßkirch, Stadt",Zweitstimmen,Bündnis C,10,0.2
+08437082,Neufra,Erststimmen,Bündnis C,,
+08437082,Neufra,Zweitstimmen,Bündnis C,3,0.3
 08437086,Ostrach,Erststimmen,Bündnis C,,
 08437086,Ostrach,Zweitstimmen,Bündnis C,4,0.1
 08437088,"Pfullendorf, Stadt",Erststimmen,Bündnis C,,
@@ -3031,8 +3043,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08125074,Nordheim,Zweitstimmen,CDU,1300,28.6
 08125094,Talheim,Erststimmen,CDU,1089,38.1
 08125094,Talheim,Zweitstimmen,CDU,928,32.4
-08126011,Bretzfeld,Erststimmen,CDU,1949,34.7
-08126011,Bretzfeld,Zweitstimmen,CDU,1672,29.8
+08126011,Bretzfeld,Erststimmen,CDU,2158,34.4
+08126011,Bretzfeld,Zweitstimmen,CDU,1841,29.3
 08126020,Dörzbach,Erststimmen,CDU,617,43.8
 08126020,Dörzbach,Zweitstimmen,CDU,531,37.6
 08126028,"Forchtenberg, Stadt",Erststimmen,CDU,1009,36.3
@@ -3093,8 +3105,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08127059,Michelfeld,Zweitstimmen,CDU,716,33.2
 08127062,Oberrot,Erststimmen,CDU,633,35.5
 08127062,Oberrot,Zweitstimmen,CDU,537,30.0
-08127063,Obersontheim,Erststimmen,CDU,666,34.7
-08127063,Obersontheim,Zweitstimmen,CDU,537,28.0
+08127063,Obersontheim,Erststimmen,CDU,1018,37.1
+08127063,Obersontheim,Zweitstimmen,CDU,825,30.1
 08127071,Rot am See,Erststimmen,CDU,1236,41.7
 08127071,Rot am See,Zweitstimmen,CDU,1137,38.4
 08127073,Satteldorf,Erststimmen,CDU,1125,39.4
@@ -3143,8 +3155,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08128061,Königheim,Zweitstimmen,CDU,886,46.7
 08128064,"Külsheim, Stadt",Erststimmen,CDU,1458,48.1
 08128064,"Külsheim, Stadt",Zweitstimmen,CDU,1298,42.4
-08128082,"Niederstetten, Stadt",Erststimmen,CDU,936,36.6
-08128082,"Niederstetten, Stadt",Zweitstimmen,CDU,913,35.6
+08128082,"Niederstetten, Stadt",Erststimmen,CDU,1059,35.3
+08128082,"Niederstetten, Stadt",Zweitstimmen,CDU,1038,34.4
 08128115,"Tauberbischofsheim, Stadt",Erststimmen,CDU,3050,45.5
 08128115,"Tauberbischofsheim, Stadt",Zweitstimmen,CDU,2689,39.7
 08128126,"Weikersheim, Stadt",Erststimmen,CDU,1710,38.4
@@ -3175,7 +3187,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08135025,Königsbronn,Zweitstimmen,CDU,1046,27.5
 08135026,Nattheim,Erststimmen,CDU,1207,32.6
 08135026,Nattheim,Zweitstimmen,CDU,1219,32.8
-08135027,"Niederstotzingen, Stadt",Erststimmen,CDU,876,34.5
+08135027,"Niederstotzingen, Stadt",Erststimmen,CDU,876,34.6
 08135027,"Niederstotzingen, Stadt",Zweitstimmen,CDU,821,32.3
 08135031,Sontheim an der Brenz,Erststimmen,CDU,1026,32.8
 08135031,Sontheim an der Brenz,Zweitstimmen,CDU,1031,32.8
@@ -3213,8 +3225,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08216052,Steinmauern,Zweitstimmen,CDU,538,32.6
 08216059,Weisenbach,Erststimmen,CDU,504,39.9
 08216059,Weisenbach,Zweitstimmen,CDU,450,35.4
-08231000,"Pforzheim, Stadt",Erststimmen,CDU,12054,30.4
-08231000,"Pforzheim, Stadt",Zweitstimmen,CDU,9998,25.1
+08231000,"Pforzheim, Stadt",Erststimmen,CDU,12089,30.3
+08231000,"Pforzheim, Stadt",Zweitstimmen,CDU,10028,25.1
 08235006,"Altensteig, Stadt",Erststimmen,CDU,1860,38.2
 08235006,"Altensteig, Stadt",Zweitstimmen,CDU,1671,34.2
 08235007,Althengstett,Erststimmen,CDU,1789,39.2
@@ -3251,8 +3263,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08235060,Rohrdorf,Zweitstimmen,CDU,293,33.3
 08235065,Schömberg,Erststimmen,CDU,1307,35.7
 08235065,Schömberg,Zweitstimmen,CDU,1059,28.7
-08235066,Simmersfeld,Erststimmen,CDU,101,43.3
-08235066,Simmersfeld,Zweitstimmen,CDU,88,37.8
+08235066,Simmersfeld,Erststimmen,CDU,229,41.6
+08235066,Simmersfeld,Zweitstimmen,CDU,209,38.1
 08235067,Simmozheim,Erststimmen,CDU,589,36.8
 08235067,Simmozheim,Zweitstimmen,CDU,492,30.5
 08235073,Unterreichenbach,Erststimmen,CDU,387,34.1
@@ -3265,8 +3277,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08235084,"Bad Teinach-Zavelstein, Stadt",Zweitstimmen,CDU,616,34.9
 08235085,"Calw, Stadt",Erststimmen,CDU,3631,34.4
 08235085,"Calw, Stadt",Zweitstimmen,CDU,2998,28.3
-08236004,Birkenfeld,Erststimmen,CDU,1727,34.1
-08236004,Birkenfeld,Zweitstimmen,CDU,1501,29.6
+08236004,Birkenfeld,Erststimmen,CDU,1610,34.9
+08236004,Birkenfeld,Zweitstimmen,CDU,1392,30.1
 08236011,Eisingen,Erststimmen,CDU,541,32.4
 08236011,Eisingen,Zweitstimmen,CDU,503,29.8
 08236013,Engelsbrand,Erststimmen,CDU,851,35.0
@@ -3291,12 +3303,12 @@ ags,municipality_name,vote_type,party,votes,percent
 08236040,"Mühlacker, Stadt",Zweitstimmen,CDU,2811,27.6
 08236043,"Neuenbürg, Stadt",Erststimmen,CDU,995,27.1
 08236043,"Neuenbürg, Stadt",Zweitstimmen,CDU,989,26.8
-08236044,Neuhausen,Erststimmen,CDU,819,33.7
-08236044,Neuhausen,Zweitstimmen,CDU,747,30.8
+08236044,Neuhausen,Erststimmen,CDU,1031,33.8
+08236044,Neuhausen,Zweitstimmen,CDU,956,31.3
 08236046,Niefern-Öschelbronn,Erststimmen,CDU,1051,18.8
 08236046,Niefern-Öschelbronn,Zweitstimmen,CDU,1443,25.8
-08236050,Ötisheim,Erststimmen,CDU,527,29.9
-08236050,Ötisheim,Zweitstimmen,CDU,473,26.8
+08236050,Ötisheim,Erststimmen,CDU,754,29.7
+08236050,Ötisheim,Zweitstimmen,CDU,687,27.0
 08236061,Sternenfels,Erststimmen,CDU,363,23.5
 08236061,Sternenfels,Zweitstimmen,CDU,358,23.0
 08236062,Tiefenbronn,Erststimmen,CDU,1166,36.4
@@ -3331,8 +3343,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08237024,Empfingen,Zweitstimmen,CDU,850,38.2
 08237027,Eutingen im Gäu,Erststimmen,CDU,1412,42.0
 08237027,Eutingen im Gäu,Zweitstimmen,CDU,1210,36.0
-08237028,"Freudenstadt, Stadt",Erststimmen,CDU,3926,37.8
-08237028,"Freudenstadt, Stadt",Zweitstimmen,CDU,3221,31.0
+08237028,"Freudenstadt, Stadt",Erststimmen,CDU,4052,37.6
+08237028,"Freudenstadt, Stadt",Zweitstimmen,CDU,3324,30.8
 08237030,Glatten,Erststimmen,CDU,555,39.3
 08237030,Glatten,Zweitstimmen,CDU,464,32.7
 08237032,Grömbach,Erststimmen,CDU,111,41.6
@@ -3385,8 +3397,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08316039,Sexau,Zweitstimmen,CDU,600,28.4
 08316042,Simonswald,Erststimmen,CDU,895,50.4
 08316042,Simonswald,Zweitstimmen,CDU,761,42.9
-08316043,Teningen,Erststimmen,CDU,1545,30.3
-08316043,Teningen,Zweitstimmen,CDU,1365,26.7
+08316043,Teningen,Erststimmen,CDU,1916,29.9
+08316043,Teningen,Zweitstimmen,CDU,1727,26.9
 08316045,Vörstetten,Erststimmen,CDU,552,29.1
 08316045,Vörstetten,Zweitstimmen,CDU,478,25.2
 08316049,Weisweil,Erststimmen,CDU,356,28.5
@@ -3417,10 +3429,10 @@ ags,municipality_name,vote_type,party,votes,percent
 08325024,Hardt,Zweitstimmen,CDU,667,40.0
 08325036,Lauterbach,Erststimmen,CDU,652,43.9
 08325036,Lauterbach,Zweitstimmen,CDU,607,40.7
-08325045,"Oberndorf am Neckar, Stadt",Erststimmen,CDU,1486,32.1
-08325045,"Oberndorf am Neckar, Stadt",Zweitstimmen,CDU,1341,29.0
-08325049,"Rottweil, Stadt",Erststimmen,CDU,4030,35.1
-08325049,"Rottweil, Stadt",Zweitstimmen,CDU,3485,30.3
+08325045,"Oberndorf am Neckar, Stadt",Erststimmen,CDU,1919,33.9
+08325045,"Oberndorf am Neckar, Stadt",Zweitstimmen,CDU,1729,30.6
+08325049,"Rottweil, Stadt",Erststimmen,CDU,4209,35.0
+08325049,"Rottweil, Stadt",Zweitstimmen,CDU,3635,30.2
 08325050,Schenkenzell,Erststimmen,CDU,494,47.8
 08325050,Schenkenzell,Zweitstimmen,CDU,437,42.1
 08325051,"Schiltach, Stadt",Erststimmen,CDU,724,35.9
@@ -3437,8 +3449,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08325064,Wellendingen,Zweitstimmen,CDU,647,39.0
 08325069,Zimmern ob Rottweil,Erststimmen,CDU,1325,39.6
 08325069,Zimmern ob Rottweil,Zweitstimmen,CDU,1117,33.4
-08325070,Fluorn-Winzeln,Erststimmen,CDU,434,35.7
-08325070,Fluorn-Winzeln,Zweitstimmen,CDU,371,30.4
+08325070,Fluorn-Winzeln,Erststimmen,CDU,685,38.3
+08325070,Fluorn-Winzeln,Zweitstimmen,CDU,576,32.1
 08325071,Eschbronn,Erststimmen,CDU,461,36.0
 08325071,Eschbronn,Zweitstimmen,CDU,403,31.6
 08325072,Deißlingen,Erststimmen,CDU,1080,33.6
@@ -3479,8 +3491,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08326065,Unterkirnach,Zweitstimmen,CDU,395,31.5
 08326068,"Vöhrenbach, Stadt",Erststimmen,CDU,551,32.8
 08326068,"Vöhrenbach, Stadt",Zweitstimmen,CDU,620,36.8
-08326074,"Villingen-Schwenningen, Stadt",Erststimmen,CDU,9258,28.7
-08326074,"Villingen-Schwenningen, Stadt",Zweitstimmen,CDU,8874,27.4
+08326074,"Villingen-Schwenningen, Stadt",Erststimmen,CDU,9476,28.4
+08326074,"Villingen-Schwenningen, Stadt",Zweitstimmen,CDU,9092,27.2
 08326075,Brigachtal,Erststimmen,CDU,1091,37.6
 08326075,Brigachtal,Zweitstimmen,CDU,1021,34.8
 08327002,Aldingen,Erststimmen,CDU,1178,36.5
@@ -3495,6 +3507,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08327007,Bubsheim,Zweitstimmen,CDU,218,39.3
 08327008,Buchheim,Erststimmen,CDU,218,48.6
 08327008,Buchheim,Zweitstimmen,CDU,193,42.7
+08327009,Deilingen,Erststimmen,CDU,270,47.2
+08327009,Deilingen,Zweitstimmen,CDU,243,42.4
 08327010,Denkingen,Erststimmen,CDU,592,40.2
 08327010,Denkingen,Zweitstimmen,CDU,500,33.8
 08327011,Dürbheim,Erststimmen,CDU,488,50.5
@@ -3569,8 +3583,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08336025,Fröhnd,Zweitstimmen,CDU,142,44.9
 08336034,Hasel,Erststimmen,CDU,167,27.4
 08336034,Hasel,Zweitstimmen,CDU,155,25.4
-08336036,Hausen im Wiesental,Erststimmen,CDU,109,29.1
-08336036,Hausen im Wiesental,Zweitstimmen,CDU,101,26.9
+08336036,Hausen im Wiesental,Erststimmen,CDU,373,30.5
+08336036,Hausen im Wiesental,Zweitstimmen,CDU,329,26.8
 08336043,Inzlingen,Erststimmen,CDU,389,29.3
 08336043,Inzlingen,Zweitstimmen,CDU,387,29.1
 08336050,"Lörrach, Stadt",Erststimmen,CDU,4633,23.1
@@ -3669,8 +3683,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08416031,Ofterdingen,Zweitstimmen,CDU,894,32.1
 08416036,"Rottenburg am Neckar, Stadt",Erststimmen,CDU,8877,38.7
 08416036,"Rottenburg am Neckar, Stadt",Zweitstimmen,CDU,7192,31.3
-08416041,"Tübingen, Universitätsstadt",Erststimmen,CDU,10225,20.1
-08416041,"Tübingen, Universitätsstadt",Zweitstimmen,CDU,8127,16.0
+08416041,"Tübingen, Universitätsstadt",Erststimmen,CDU,10431,20.3
+08416041,"Tübingen, Universitätsstadt",Zweitstimmen,CDU,8286,16.1
 08416048,Ammerbuch,Erststimmen,CDU,2345,35.0
 08416048,Ammerbuch,Zweitstimmen,CDU,1933,28.8
 08416049,Neustetten,Erststimmen,CDU,947,44.6
@@ -3689,12 +3703,12 @@ ags,municipality_name,vote_type,party,votes,percent
 08417015,Dormettingen,Zweitstimmen,CDU,226,38.6
 08417016,Dotternhausen,Erststimmen,CDU,484,45.3
 08417016,Dotternhausen,Zweitstimmen,CDU,367,34.2
-08417022,"Geislingen, Stadt",Erststimmen,CDU,1167,45.0
-08417022,"Geislingen, Stadt",Zweitstimmen,CDU,957,36.8
+08417022,"Geislingen, Stadt",Erststimmen,CDU,1595,47.5
+08417022,"Geislingen, Stadt",Zweitstimmen,CDU,1309,38.8
 08417023,Grosselfingen,Erststimmen,CDU,475,41.9
 08417023,Grosselfingen,Zweitstimmen,CDU,349,30.7
 08417025,"Haigerloch, Stadt",Erststimmen,CDU,2539,44.9
-08417025,"Haigerloch, Stadt",Zweitstimmen,CDU,1990,34.9
+08417025,"Haigerloch, Stadt",Zweitstimmen,CDU,1987,34.9
 08417029,Hausen am Tann,Erststimmen,CDU,120,46.3
 08417029,Hausen am Tann,Zweitstimmen,CDU,89,34.1
 08417044,"Meßstetten, Stadt",Erststimmen,CDU,2509,45.4
@@ -3739,8 +3753,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08425017,Berghülen,Zweitstimmen,CDU,530,43.1
 08425019,Bernstadt,Erststimmen,CDU,617,44.7
 08425019,Bernstadt,Zweitstimmen,CDU,530,38.4
-08425020,"Blaubeuren, Stadt",Erststimmen,CDU,2122,38.7
-08425020,"Blaubeuren, Stadt",Zweitstimmen,CDU,1803,32.9
+08425020,"Blaubeuren, Stadt",Erststimmen,CDU,2388,39.6
+08425020,"Blaubeuren, Stadt",Zweitstimmen,CDU,2024,33.6
 08425022,Börslingen,Erststimmen,CDU,46,43.4
 08425022,Börslingen,Zweitstimmen,CDU,45,42.9
 08425024,Breitingen,Erststimmen,CDU,53,37.3
@@ -3761,8 +3775,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08425055,Hausen am Bussen,Zweitstimmen,CDU,76,53.5
 08425062,Holzkirch,Erststimmen,CDU,84,63.2
 08425062,Holzkirch,Zweitstimmen,CDU,78,60.0
-08425071,"Laichingen, Stadt",Erststimmen,CDU,2319,47.0
-08425071,"Laichingen, Stadt",Zweitstimmen,CDU,1993,40.3
+08425071,"Laichingen, Stadt",Erststimmen,CDU,2587,46.5
+08425071,"Laichingen, Stadt",Zweitstimmen,CDU,2215,39.8
 08425072,"Langenau, Stadt",Erststimmen,CDU,3058,37.9
 08425072,"Langenau, Stadt",Zweitstimmen,CDU,2619,32.4
 08425073,Lauterach,Erststimmen,CDU,152,56.7
@@ -3837,8 +3851,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08426036,Dürnau,Zweitstimmen,CDU,84,42.2
 08426038,Eberhardzell,Erststimmen,CDU,1492,55.4
 08426038,Eberhardzell,Zweitstimmen,CDU,1294,48.2
-08426043,Erlenmoos,Erststimmen,CDU,198,49.5
-08426043,Erlenmoos,Zweitstimmen,CDU,183,45.8
+08426043,Erlenmoos,Erststimmen,CDU,535,49.7
+08426043,Erlenmoos,Zweitstimmen,CDU,468,43.6
 08426045,Ertingen,Erststimmen,CDU,1366,44.9
 08426045,Ertingen,Zweitstimmen,CDU,1171,38.5
 08426058,Hochdorf,Erststimmen,CDU,749,51.6
@@ -3951,6 +3965,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08437076,"Mengen, Stadt",Zweitstimmen,CDU,1870,38.0
 08437078,"Meßkirch, Stadt",Erststimmen,CDU,2008,48.5
 08437078,"Meßkirch, Stadt",Zweitstimmen,CDU,1487,36.0
+08437082,Neufra,Erststimmen,CDU,405,39.4
+08437082,Neufra,Zweitstimmen,CDU,374,36.1
 08437086,Ostrach,Erststimmen,CDU,1677,43.4
 08437086,Ostrach,Zweitstimmen,CDU,1488,38.4
 08437088,"Pfullendorf, Stadt",Erststimmen,CDU,2408,42.4
@@ -4048,7 +4064,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08127062,Oberrot,Erststimmen,Die Gerechtigkeitspartei,,
 08127062,Oberrot,Zweitstimmen,Die Gerechtigkeitspartei,4,0.2
 08127063,Obersontheim,Erststimmen,Die Gerechtigkeitspartei,,
-08127063,Obersontheim,Zweitstimmen,Die Gerechtigkeitspartei,2,0.1
+08127063,Obersontheim,Zweitstimmen,Die Gerechtigkeitspartei,3,0.1
 08127071,Rot am See,Erststimmen,Die Gerechtigkeitspartei,,
 08127071,Rot am See,Zweitstimmen,Die Gerechtigkeitspartei,2,0.1
 08127073,Satteldorf,Erststimmen,Die Gerechtigkeitspartei,,
@@ -4098,7 +4114,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08128064,"Külsheim, Stadt",Erststimmen,Die Gerechtigkeitspartei,,
 08128064,"Külsheim, Stadt",Zweitstimmen,Die Gerechtigkeitspartei,6,0.2
 08128082,"Niederstetten, Stadt",Erststimmen,Die Gerechtigkeitspartei,,
-08128082,"Niederstetten, Stadt",Zweitstimmen,Die Gerechtigkeitspartei,1,0.0
+08128082,"Niederstetten, Stadt",Zweitstimmen,Die Gerechtigkeitspartei,3,0.1
 08128115,"Tauberbischofsheim, Stadt",Erststimmen,Die Gerechtigkeitspartei,,
 08128115,"Tauberbischofsheim, Stadt",Zweitstimmen,Die Gerechtigkeitspartei,13,0.2
 08128126,"Weikersheim, Stadt",Erststimmen,Die Gerechtigkeitspartei,,
@@ -4168,7 +4184,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08216059,Weisenbach,Erststimmen,Die Gerechtigkeitspartei,,
 08216059,Weisenbach,Zweitstimmen,Die Gerechtigkeitspartei,2,0.2
 08231000,"Pforzheim, Stadt",Erststimmen,Die Gerechtigkeitspartei,,
-08231000,"Pforzheim, Stadt",Zweitstimmen,Die Gerechtigkeitspartei,328,0.8
+08231000,"Pforzheim, Stadt",Zweitstimmen,Die Gerechtigkeitspartei,330,0.8
 08235006,"Altensteig, Stadt",Erststimmen,Die Gerechtigkeitspartei,,
 08235006,"Altensteig, Stadt",Zweitstimmen,Die Gerechtigkeitspartei,5,0.1
 08235007,Althengstett,Erststimmen,Die Gerechtigkeitspartei,,
@@ -4250,7 +4266,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08236046,Niefern-Öschelbronn,Erststimmen,Die Gerechtigkeitspartei,,
 08236046,Niefern-Öschelbronn,Zweitstimmen,Die Gerechtigkeitspartei,22,0.4
 08236050,Ötisheim,Erststimmen,Die Gerechtigkeitspartei,,
-08236050,Ötisheim,Zweitstimmen,Die Gerechtigkeitspartei,0,0.0
+08236050,Ötisheim,Zweitstimmen,Die Gerechtigkeitspartei,3,0.1
 08236061,Sternenfels,Erststimmen,Die Gerechtigkeitspartei,,
 08236061,Sternenfels,Zweitstimmen,Die Gerechtigkeitspartei,3,0.2
 08236062,Tiefenbronn,Erststimmen,Die Gerechtigkeitspartei,,
@@ -4374,7 +4390,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08325045,"Oberndorf am Neckar, Stadt",Erststimmen,Die Gerechtigkeitspartei,,
 08325045,"Oberndorf am Neckar, Stadt",Zweitstimmen,Die Gerechtigkeitspartei,4,0.1
 08325049,"Rottweil, Stadt",Erststimmen,Die Gerechtigkeitspartei,,
-08325049,"Rottweil, Stadt",Zweitstimmen,Die Gerechtigkeitspartei,9,0.1
+08325049,"Rottweil, Stadt",Zweitstimmen,Die Gerechtigkeitspartei,10,0.1
 08325050,Schenkenzell,Erststimmen,Die Gerechtigkeitspartei,,
 08325050,Schenkenzell,Zweitstimmen,Die Gerechtigkeitspartei,1,0.1
 08325051,"Schiltach, Stadt",Erststimmen,Die Gerechtigkeitspartei,,
@@ -4392,7 +4408,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08325069,Zimmern ob Rottweil,Erststimmen,Die Gerechtigkeitspartei,,
 08325069,Zimmern ob Rottweil,Zweitstimmen,Die Gerechtigkeitspartei,1,0.0
 08325070,Fluorn-Winzeln,Erststimmen,Die Gerechtigkeitspartei,,
-08325070,Fluorn-Winzeln,Zweitstimmen,Die Gerechtigkeitspartei,1,0.1
+08325070,Fluorn-Winzeln,Zweitstimmen,Die Gerechtigkeitspartei,3,0.2
 08325071,Eschbronn,Erststimmen,Die Gerechtigkeitspartei,,
 08325071,Eschbronn,Zweitstimmen,Die Gerechtigkeitspartei,3,0.2
 08325072,Deißlingen,Erststimmen,Die Gerechtigkeitspartei,,
@@ -4449,6 +4465,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08327007,Bubsheim,Zweitstimmen,Die Gerechtigkeitspartei,0,0.0
 08327008,Buchheim,Erststimmen,Die Gerechtigkeitspartei,,
 08327008,Buchheim,Zweitstimmen,Die Gerechtigkeitspartei,0,0.0
+08327009,Deilingen,Erststimmen,Die Gerechtigkeitspartei,,
+08327009,Deilingen,Zweitstimmen,Die Gerechtigkeitspartei,1,0.2
 08327010,Denkingen,Erststimmen,Die Gerechtigkeitspartei,,
 08327010,Denkingen,Zweitstimmen,Die Gerechtigkeitspartei,1,0.1
 08327011,Dürbheim,Erststimmen,Die Gerechtigkeitspartei,,
@@ -4523,8 +4541,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08336025,Fröhnd,Zweitstimmen,Die Gerechtigkeitspartei,0,0.0
 08336034,Hasel,Erststimmen,Die Gerechtigkeitspartei,1,0.2
 08336034,Hasel,Zweitstimmen,Die Gerechtigkeitspartei,0,0.0
-08336036,Hausen im Wiesental,Erststimmen,Die Gerechtigkeitspartei,0,0.0
-08336036,Hausen im Wiesental,Zweitstimmen,Die Gerechtigkeitspartei,0,0.0
+08336036,Hausen im Wiesental,Erststimmen,Die Gerechtigkeitspartei,3,0.2
+08336036,Hausen im Wiesental,Zweitstimmen,Die Gerechtigkeitspartei,2,0.2
 08336043,Inzlingen,Erststimmen,Die Gerechtigkeitspartei,6,0.5
 08336043,Inzlingen,Zweitstimmen,Die Gerechtigkeitspartei,7,0.5
 08336050,"Lörrach, Stadt",Erststimmen,Die Gerechtigkeitspartei,100,0.5
@@ -4694,7 +4712,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08425019,Bernstadt,Erststimmen,Die Gerechtigkeitspartei,,
 08425019,Bernstadt,Zweitstimmen,Die Gerechtigkeitspartei,0,0.0
 08425020,"Blaubeuren, Stadt",Erststimmen,Die Gerechtigkeitspartei,,
-08425020,"Blaubeuren, Stadt",Zweitstimmen,Die Gerechtigkeitspartei,5,0.1
+08425020,"Blaubeuren, Stadt",Zweitstimmen,Die Gerechtigkeitspartei,7,0.1
 08425022,Börslingen,Erststimmen,Die Gerechtigkeitspartei,,
 08425022,Börslingen,Zweitstimmen,Die Gerechtigkeitspartei,0,0.0
 08425024,Breitingen,Erststimmen,Die Gerechtigkeitspartei,,
@@ -4716,7 +4734,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08425062,Holzkirch,Erststimmen,Die Gerechtigkeitspartei,,
 08425062,Holzkirch,Zweitstimmen,Die Gerechtigkeitspartei,0,0.0
 08425071,"Laichingen, Stadt",Erststimmen,Die Gerechtigkeitspartei,,
-08425071,"Laichingen, Stadt",Zweitstimmen,Die Gerechtigkeitspartei,7,0.1
+08425071,"Laichingen, Stadt",Zweitstimmen,Die Gerechtigkeitspartei,8,0.1
 08425072,"Langenau, Stadt",Erststimmen,Die Gerechtigkeitspartei,,
 08425072,"Langenau, Stadt",Zweitstimmen,Die Gerechtigkeitspartei,9,0.1
 08425073,Lauterach,Erststimmen,Die Gerechtigkeitspartei,,
@@ -4792,7 +4810,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08426038,Eberhardzell,Erststimmen,Die Gerechtigkeitspartei,,
 08426038,Eberhardzell,Zweitstimmen,Die Gerechtigkeitspartei,4,0.1
 08426043,Erlenmoos,Erststimmen,Die Gerechtigkeitspartei,,
-08426043,Erlenmoos,Zweitstimmen,Die Gerechtigkeitspartei,1,0.2
+08426043,Erlenmoos,Zweitstimmen,Die Gerechtigkeitspartei,2,0.2
 08426045,Ertingen,Erststimmen,Die Gerechtigkeitspartei,,
 08426045,Ertingen,Zweitstimmen,Die Gerechtigkeitspartei,0,0.0
 08426058,Hochdorf,Erststimmen,Die Gerechtigkeitspartei,,
@@ -4905,6 +4923,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08437076,"Mengen, Stadt",Zweitstimmen,Die Gerechtigkeitspartei,1,0.0
 08437078,"Meßkirch, Stadt",Erststimmen,Die Gerechtigkeitspartei,,
 08437078,"Meßkirch, Stadt",Zweitstimmen,Die Gerechtigkeitspartei,2,0.0
+08437082,Neufra,Erststimmen,Die Gerechtigkeitspartei,,
+08437082,Neufra,Zweitstimmen,Die Gerechtigkeitspartei,0,0.0
 08437086,Ostrach,Erststimmen,Die Gerechtigkeitspartei,,
 08437086,Ostrach,Zweitstimmen,Die Gerechtigkeitspartei,4,0.1
 08437088,"Pfullendorf, Stadt",Erststimmen,Die Gerechtigkeitspartei,,
@@ -4939,8 +4959,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08125074,Nordheim,Zweitstimmen,Die Linke,126,2.8
 08125094,Talheim,Erststimmen,Die Linke,49,1.7
 08125094,Talheim,Zweitstimmen,Die Linke,54,1.9
-08126011,Bretzfeld,Erststimmen,Die Linke,176,3.1
-08126011,Bretzfeld,Zweitstimmen,Die Linke,172,3.1
+08126011,Bretzfeld,Erststimmen,Die Linke,198,3.2
+08126011,Bretzfeld,Zweitstimmen,Die Linke,192,3.1
 08126020,Dörzbach,Erststimmen,Die Linke,38,2.7
 08126020,Dörzbach,Zweitstimmen,Die Linke,37,2.6
 08126028,"Forchtenberg, Stadt",Erststimmen,Die Linke,83,3.0
@@ -5001,8 +5021,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08127059,Michelfeld,Zweitstimmen,Die Linke,65,3.0
 08127062,Oberrot,Erststimmen,Die Linke,72,4.0
 08127062,Oberrot,Zweitstimmen,Die Linke,71,4.0
-08127063,Obersontheim,Erststimmen,Die Linke,55,2.9
-08127063,Obersontheim,Zweitstimmen,Die Linke,42,2.2
+08127063,Obersontheim,Erststimmen,Die Linke,79,2.9
+08127063,Obersontheim,Zweitstimmen,Die Linke,62,2.3
 08127071,Rot am See,Erststimmen,Die Linke,101,3.4
 08127071,Rot am See,Zweitstimmen,Die Linke,101,3.4
 08127073,Satteldorf,Erststimmen,Die Linke,75,2.6
@@ -5051,8 +5071,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08128061,Königheim,Zweitstimmen,Die Linke,53,2.8
 08128064,"Külsheim, Stadt",Erststimmen,Die Linke,104,3.4
 08128064,"Külsheim, Stadt",Zweitstimmen,Die Linke,83,2.7
-08128082,"Niederstetten, Stadt",Erststimmen,Die Linke,69,2.7
-08128082,"Niederstetten, Stadt",Zweitstimmen,Die Linke,74,2.9
+08128082,"Niederstetten, Stadt",Erststimmen,Die Linke,88,2.9
+08128082,"Niederstetten, Stadt",Zweitstimmen,Die Linke,93,3.1
 08128115,"Tauberbischofsheim, Stadt",Erststimmen,Die Linke,255,3.8
 08128115,"Tauberbischofsheim, Stadt",Zweitstimmen,Die Linke,209,3.1
 08128126,"Weikersheim, Stadt",Erststimmen,Die Linke,156,3.5
@@ -5121,8 +5141,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08216052,Steinmauern,Zweitstimmen,Die Linke,34,2.1
 08216059,Weisenbach,Erststimmen,Die Linke,49,3.9
 08216059,Weisenbach,Zweitstimmen,Die Linke,46,3.6
-08231000,"Pforzheim, Stadt",Erststimmen,Die Linke,2234,5.6
-08231000,"Pforzheim, Stadt",Zweitstimmen,Die Linke,1915,4.8
+08231000,"Pforzheim, Stadt",Erststimmen,Die Linke,2245,5.6
+08231000,"Pforzheim, Stadt",Zweitstimmen,Die Linke,1930,4.8
 08235006,"Altensteig, Stadt",Erststimmen,Die Linke,163,3.3
 08235006,"Altensteig, Stadt",Zweitstimmen,Die Linke,150,3.1
 08235007,Althengstett,Erststimmen,Die Linke,150,3.3
@@ -5159,8 +5179,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08235060,Rohrdorf,Zweitstimmen,Die Linke,22,2.5
 08235065,Schömberg,Erststimmen,Die Linke,128,3.5
 08235065,Schömberg,Zweitstimmen,Die Linke,91,2.5
-08235066,Simmersfeld,Erststimmen,Die Linke,8,3.4
-08235066,Simmersfeld,Zweitstimmen,Die Linke,4,1.7
+08235066,Simmersfeld,Erststimmen,Die Linke,10,1.8
+08235066,Simmersfeld,Zweitstimmen,Die Linke,5,0.9
 08235067,Simmozheim,Erststimmen,Die Linke,49,3.1
 08235067,Simmozheim,Zweitstimmen,Die Linke,38,2.4
 08235073,Unterreichenbach,Erststimmen,Die Linke,47,4.1
@@ -5173,8 +5193,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08235084,"Bad Teinach-Zavelstein, Stadt",Zweitstimmen,Die Linke,37,2.1
 08235085,"Calw, Stadt",Erststimmen,Die Linke,523,5.0
 08235085,"Calw, Stadt",Zweitstimmen,Die Linke,395,3.7
-08236004,Birkenfeld,Erststimmen,Die Linke,176,3.5
-08236004,Birkenfeld,Zweitstimmen,Die Linke,127,2.5
+08236004,Birkenfeld,Erststimmen,Die Linke,161,3.5
+08236004,Birkenfeld,Zweitstimmen,Die Linke,114,2.5
 08236011,Eisingen,Erststimmen,Die Linke,48,2.9
 08236011,Eisingen,Zweitstimmen,Die Linke,42,2.5
 08236013,Engelsbrand,Erststimmen,Die Linke,58,2.4
@@ -5199,12 +5219,12 @@ ags,municipality_name,vote_type,party,votes,percent
 08236040,"Mühlacker, Stadt",Zweitstimmen,Die Linke,334,3.3
 08236043,"Neuenbürg, Stadt",Erststimmen,Die Linke,164,4.5
 08236043,"Neuenbürg, Stadt",Zweitstimmen,Die Linke,113,3.1
-08236044,Neuhausen,Erststimmen,Die Linke,74,3.0
-08236044,Neuhausen,Zweitstimmen,Die Linke,75,3.1
+08236044,Neuhausen,Erststimmen,Die Linke,91,3.0
+08236044,Neuhausen,Zweitstimmen,Die Linke,89,2.9
 08236046,Niefern-Öschelbronn,Erststimmen,Die Linke,170,3.0
 08236046,Niefern-Öschelbronn,Zweitstimmen,Die Linke,151,2.7
-08236050,Ötisheim,Erststimmen,Die Linke,62,3.5
-08236050,Ötisheim,Zweitstimmen,Die Linke,59,3.3
+08236050,Ötisheim,Erststimmen,Die Linke,86,3.4
+08236050,Ötisheim,Zweitstimmen,Die Linke,82,3.2
 08236061,Sternenfels,Erststimmen,Die Linke,70,4.5
 08236061,Sternenfels,Zweitstimmen,Die Linke,61,3.9
 08236062,Tiefenbronn,Erststimmen,Die Linke,97,3.0
@@ -5239,8 +5259,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08237024,Empfingen,Zweitstimmen,Die Linke,41,1.8
 08237027,Eutingen im Gäu,Erststimmen,Die Linke,108,3.2
 08237027,Eutingen im Gäu,Zweitstimmen,Die Linke,101,3.0
-08237028,"Freudenstadt, Stadt",Erststimmen,Die Linke,464,4.5
-08237028,"Freudenstadt, Stadt",Zweitstimmen,Die Linke,359,3.5
+08237028,"Freudenstadt, Stadt",Erststimmen,Die Linke,485,4.5
+08237028,"Freudenstadt, Stadt",Zweitstimmen,Die Linke,376,3.5
 08237030,Glatten,Erststimmen,Die Linke,48,3.4
 08237030,Glatten,Zweitstimmen,Die Linke,43,3.0
 08237032,Grömbach,Erststimmen,Die Linke,9,3.4
@@ -5293,8 +5313,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08316039,Sexau,Zweitstimmen,Die Linke,79,3.7
 08316042,Simonswald,Erststimmen,Die Linke,46,2.6
 08316042,Simonswald,Zweitstimmen,Die Linke,49,2.8
-08316043,Teningen,Erststimmen,Die Linke,217,4.3
-08316043,Teningen,Zweitstimmen,Die Linke,196,3.8
+08316043,Teningen,Erststimmen,Die Linke,280,4.4
+08316043,Teningen,Zweitstimmen,Die Linke,245,3.8
 08316045,Vörstetten,Erststimmen,Die Linke,90,4.8
 08316045,Vörstetten,Zweitstimmen,Die Linke,90,4.8
 08316049,Weisweil,Erststimmen,Die Linke,50,4.0
@@ -5325,10 +5345,10 @@ ags,municipality_name,vote_type,party,votes,percent
 08325024,Hardt,Zweitstimmen,Die Linke,33,2.0
 08325036,Lauterbach,Erststimmen,Die Linke,50,3.4
 08325036,Lauterbach,Zweitstimmen,Die Linke,29,1.9
-08325045,"Oberndorf am Neckar, Stadt",Erststimmen,Die Linke,155,3.3
-08325045,"Oberndorf am Neckar, Stadt",Zweitstimmen,Die Linke,136,2.9
-08325049,"Rottweil, Stadt",Erststimmen,Die Linke,414,3.6
-08325049,"Rottweil, Stadt",Zweitstimmen,Die Linke,369,3.2
+08325045,"Oberndorf am Neckar, Stadt",Erststimmen,Die Linke,183,3.2
+08325045,"Oberndorf am Neckar, Stadt",Zweitstimmen,Die Linke,158,2.8
+08325049,"Rottweil, Stadt",Erststimmen,Die Linke,431,3.6
+08325049,"Rottweil, Stadt",Zweitstimmen,Die Linke,393,3.3
 08325050,Schenkenzell,Erststimmen,Die Linke,21,2.0
 08325050,Schenkenzell,Zweitstimmen,Die Linke,15,1.4
 08325051,"Schiltach, Stadt",Erststimmen,Die Linke,83,4.1
@@ -5345,8 +5365,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08325064,Wellendingen,Zweitstimmen,Die Linke,43,2.6
 08325069,Zimmern ob Rottweil,Erststimmen,Die Linke,119,3.6
 08325069,Zimmern ob Rottweil,Zweitstimmen,Die Linke,105,3.1
-08325070,Fluorn-Winzeln,Erststimmen,Die Linke,29,2.4
-08325070,Fluorn-Winzeln,Zweitstimmen,Die Linke,28,2.3
+08325070,Fluorn-Winzeln,Erststimmen,Die Linke,40,2.2
+08325070,Fluorn-Winzeln,Zweitstimmen,Die Linke,40,2.2
 08325071,Eschbronn,Erststimmen,Die Linke,39,3.0
 08325071,Eschbronn,Zweitstimmen,Die Linke,33,2.6
 08325072,Deißlingen,Erststimmen,Die Linke,80,2.5
@@ -5387,8 +5407,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08326065,Unterkirnach,Zweitstimmen,Die Linke,41,3.3
 08326068,"Vöhrenbach, Stadt",Erststimmen,Die Linke,52,3.1
 08326068,"Vöhrenbach, Stadt",Zweitstimmen,Die Linke,55,3.3
-08326074,"Villingen-Schwenningen, Stadt",Erststimmen,Die Linke,1256,3.9
-08326074,"Villingen-Schwenningen, Stadt",Zweitstimmen,Die Linke,1212,3.7
+08326074,"Villingen-Schwenningen, Stadt",Erststimmen,Die Linke,1327,4.0
+08326074,"Villingen-Schwenningen, Stadt",Zweitstimmen,Die Linke,1281,3.8
 08326075,Brigachtal,Erststimmen,Die Linke,57,2.0
 08326075,Brigachtal,Zweitstimmen,Die Linke,34,1.2
 08327002,Aldingen,Erststimmen,Die Linke,130,4.0
@@ -5403,6 +5423,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08327007,Bubsheim,Zweitstimmen,Die Linke,10,1.8
 08327008,Buchheim,Erststimmen,Die Linke,10,2.2
 08327008,Buchheim,Zweitstimmen,Die Linke,11,2.4
+08327009,Deilingen,Erststimmen,Die Linke,12,2.1
+08327009,Deilingen,Zweitstimmen,Die Linke,11,1.9
 08327010,Denkingen,Erststimmen,Die Linke,42,2.9
 08327010,Denkingen,Zweitstimmen,Die Linke,37,2.5
 08327011,Dürbheim,Erststimmen,Die Linke,17,1.8
@@ -5477,8 +5499,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08336025,Fröhnd,Zweitstimmen,Die Linke,9,2.8
 08336034,Hasel,Erststimmen,Die Linke,22,3.6
 08336034,Hasel,Zweitstimmen,Die Linke,24,3.9
-08336036,Hausen im Wiesental,Erststimmen,Die Linke,23,6.1
-08336036,Hausen im Wiesental,Zweitstimmen,Die Linke,24,6.4
+08336036,Hausen im Wiesental,Erststimmen,Die Linke,64,5.2
+08336036,Hausen im Wiesental,Zweitstimmen,Die Linke,62,5.1
 08336043,Inzlingen,Erststimmen,Die Linke,43,3.2
 08336043,Inzlingen,Zweitstimmen,Die Linke,42,3.2
 08336050,"Lörrach, Stadt",Erststimmen,Die Linke,1041,5.2
@@ -5577,8 +5599,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08416031,Ofterdingen,Zweitstimmen,Die Linke,89,3.2
 08416036,"Rottenburg am Neckar, Stadt",Erststimmen,Die Linke,1081,4.7
 08416036,"Rottenburg am Neckar, Stadt",Zweitstimmen,Die Linke,1021,4.4
-08416041,"Tübingen, Universitätsstadt",Erststimmen,Die Linke,6640,13.1
-08416041,"Tübingen, Universitätsstadt",Zweitstimmen,Die Linke,6189,12.2
+08416041,"Tübingen, Universitätsstadt",Erststimmen,Die Linke,6674,13.0
+08416041,"Tübingen, Universitätsstadt",Zweitstimmen,Die Linke,6220,12.1
 08416048,Ammerbuch,Erststimmen,Die Linke,354,5.3
 08416048,Ammerbuch,Zweitstimmen,Die Linke,315,4.7
 08416049,Neustetten,Erststimmen,Die Linke,57,2.7
@@ -5597,8 +5619,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08417015,Dormettingen,Zweitstimmen,Die Linke,12,2.0
 08417016,Dotternhausen,Erststimmen,Die Linke,29,2.7
 08417016,Dotternhausen,Zweitstimmen,Die Linke,21,2.0
-08417022,"Geislingen, Stadt",Erststimmen,Die Linke,69,2.7
-08417022,"Geislingen, Stadt",Zweitstimmen,Die Linke,50,1.9
+08417022,"Geislingen, Stadt",Erststimmen,Die Linke,82,2.4
+08417022,"Geislingen, Stadt",Zweitstimmen,Die Linke,64,1.9
 08417023,Grosselfingen,Erststimmen,Die Linke,24,2.1
 08417023,Grosselfingen,Zweitstimmen,Die Linke,19,1.7
 08417025,"Haigerloch, Stadt",Erststimmen,Die Linke,175,3.1
@@ -5647,8 +5669,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08425017,Berghülen,Zweitstimmen,Die Linke,20,1.6
 08425019,Bernstadt,Erststimmen,Die Linke,52,3.8
 08425019,Bernstadt,Zweitstimmen,Die Linke,41,3.0
-08425020,"Blaubeuren, Stadt",Erststimmen,Die Linke,220,4.0
-08425020,"Blaubeuren, Stadt",Zweitstimmen,Die Linke,156,2.8
+08425020,"Blaubeuren, Stadt",Erststimmen,Die Linke,239,4.0
+08425020,"Blaubeuren, Stadt",Zweitstimmen,Die Linke,174,2.9
 08425022,Börslingen,Erststimmen,Die Linke,1,0.9
 08425022,Börslingen,Zweitstimmen,Die Linke,0,0.0
 08425024,Breitingen,Erststimmen,Die Linke,4,2.8
@@ -5669,8 +5691,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08425055,Hausen am Bussen,Zweitstimmen,Die Linke,3,2.1
 08425062,Holzkirch,Erststimmen,Die Linke,1,0.8
 08425062,Holzkirch,Zweitstimmen,Die Linke,0,0.0
-08425071,"Laichingen, Stadt",Erststimmen,Die Linke,151,3.1
-08425071,"Laichingen, Stadt",Zweitstimmen,Die Linke,120,2.4
+08425071,"Laichingen, Stadt",Erststimmen,Die Linke,167,3.0
+08425071,"Laichingen, Stadt",Zweitstimmen,Die Linke,133,2.4
 08425072,"Langenau, Stadt",Erststimmen,Die Linke,308,3.8
 08425072,"Langenau, Stadt",Zweitstimmen,Die Linke,243,3.0
 08425073,Lauterach,Erststimmen,Die Linke,9,3.4
@@ -5745,8 +5767,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08426036,Dürnau,Zweitstimmen,Die Linke,5,2.5
 08426038,Eberhardzell,Erststimmen,Die Linke,43,1.6
 08426038,Eberhardzell,Zweitstimmen,Die Linke,38,1.4
-08426043,Erlenmoos,Erststimmen,Die Linke,13,3.2
-08426043,Erlenmoos,Zweitstimmen,Die Linke,13,3.2
+08426043,Erlenmoos,Erststimmen,Die Linke,36,3.3
+08426043,Erlenmoos,Zweitstimmen,Die Linke,32,3.0
 08426045,Ertingen,Erststimmen,Die Linke,68,2.2
 08426045,Ertingen,Zweitstimmen,Die Linke,63,2.1
 08426058,Hochdorf,Erststimmen,Die Linke,34,2.3
@@ -5859,6 +5881,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08437076,"Mengen, Stadt",Zweitstimmen,Die Linke,122,2.5
 08437078,"Meßkirch, Stadt",Erststimmen,Die Linke,107,2.6
 08437078,"Meßkirch, Stadt",Zweitstimmen,Die Linke,105,2.5
+08437082,Neufra,Erststimmen,Die Linke,24,2.3
+08437082,Neufra,Zweitstimmen,Die Linke,25,2.4
 08437086,Ostrach,Erststimmen,Die Linke,98,2.5
 08437086,Ostrach,Zweitstimmen,Die Linke,89,2.3
 08437088,"Pfullendorf, Stadt",Erststimmen,Die Linke,170,3.0
@@ -5894,7 +5918,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08125094,Talheim,Erststimmen,Die PARTEI,,
 08125094,Talheim,Zweitstimmen,Die PARTEI,12,0.4
 08126011,Bretzfeld,Erststimmen,Die PARTEI,,
-08126011,Bretzfeld,Zweitstimmen,Die PARTEI,33,0.6
+08126011,Bretzfeld,Zweitstimmen,Die PARTEI,34,0.5
 08126020,Dörzbach,Erststimmen,Die PARTEI,,
 08126020,Dörzbach,Zweitstimmen,Die PARTEI,3,0.2
 08126028,"Forchtenberg, Stadt",Erststimmen,Die PARTEI,,
@@ -5956,7 +5980,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08127062,Oberrot,Erststimmen,Die PARTEI,,
 08127062,Oberrot,Zweitstimmen,Die PARTEI,7,0.4
 08127063,Obersontheim,Erststimmen,Die PARTEI,,
-08127063,Obersontheim,Zweitstimmen,Die PARTEI,16,0.8
+08127063,Obersontheim,Zweitstimmen,Die PARTEI,22,0.8
 08127071,Rot am See,Erststimmen,Die PARTEI,,
 08127071,Rot am See,Zweitstimmen,Die PARTEI,15,0.5
 08127073,Satteldorf,Erststimmen,Die PARTEI,,
@@ -6006,7 +6030,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08128064,"Külsheim, Stadt",Erststimmen,Die PARTEI,,
 08128064,"Külsheim, Stadt",Zweitstimmen,Die PARTEI,17,0.6
 08128082,"Niederstetten, Stadt",Erststimmen,Die PARTEI,,
-08128082,"Niederstetten, Stadt",Zweitstimmen,Die PARTEI,11,0.4
+08128082,"Niederstetten, Stadt",Zweitstimmen,Die PARTEI,12,0.4
 08128115,"Tauberbischofsheim, Stadt",Erststimmen,Die PARTEI,,
 08128115,"Tauberbischofsheim, Stadt",Zweitstimmen,Die PARTEI,38,0.6
 08128126,"Weikersheim, Stadt",Erststimmen,Die PARTEI,,
@@ -6076,7 +6100,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08216059,Weisenbach,Erststimmen,Die PARTEI,,
 08216059,Weisenbach,Zweitstimmen,Die PARTEI,8,0.6
 08231000,"Pforzheim, Stadt",Erststimmen,Die PARTEI,,
-08231000,"Pforzheim, Stadt",Zweitstimmen,Die PARTEI,180,0.5
+08231000,"Pforzheim, Stadt",Zweitstimmen,Die PARTEI,181,0.5
 08235006,"Altensteig, Stadt",Erststimmen,Die PARTEI,,
 08235006,"Altensteig, Stadt",Zweitstimmen,Die PARTEI,7,0.1
 08235007,Althengstett,Erststimmen,Die PARTEI,,
@@ -6128,7 +6152,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08235085,"Calw, Stadt",Erststimmen,Die PARTEI,,
 08235085,"Calw, Stadt",Zweitstimmen,Die PARTEI,45,0.4
 08236004,Birkenfeld,Erststimmen,Die PARTEI,,
-08236004,Birkenfeld,Zweitstimmen,Die PARTEI,17,0.3
+08236004,Birkenfeld,Zweitstimmen,Die PARTEI,16,0.3
 08236011,Eisingen,Erststimmen,Die PARTEI,,
 08236011,Eisingen,Zweitstimmen,Die PARTEI,4,0.2
 08236013,Engelsbrand,Erststimmen,Die PARTEI,,
@@ -6154,11 +6178,11 @@ ags,municipality_name,vote_type,party,votes,percent
 08236043,"Neuenbürg, Stadt",Erststimmen,Die PARTEI,,
 08236043,"Neuenbürg, Stadt",Zweitstimmen,Die PARTEI,22,0.6
 08236044,Neuhausen,Erststimmen,Die PARTEI,,
-08236044,Neuhausen,Zweitstimmen,Die PARTEI,8,0.3
+08236044,Neuhausen,Zweitstimmen,Die PARTEI,12,0.4
 08236046,Niefern-Öschelbronn,Erststimmen,Die PARTEI,,
 08236046,Niefern-Öschelbronn,Zweitstimmen,Die PARTEI,17,0.3
 08236050,Ötisheim,Erststimmen,Die PARTEI,,
-08236050,Ötisheim,Zweitstimmen,Die PARTEI,4,0.2
+08236050,Ötisheim,Zweitstimmen,Die PARTEI,6,0.2
 08236061,Sternenfels,Erststimmen,Die PARTEI,,
 08236061,Sternenfels,Zweitstimmen,Die PARTEI,11,0.7
 08236062,Tiefenbronn,Erststimmen,Die PARTEI,,
@@ -6247,8 +6271,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08316039,Sexau,Zweitstimmen,Die PARTEI,13,0.6
 08316042,Simonswald,Erststimmen,Die PARTEI,14,0.8
 08316042,Simonswald,Zweitstimmen,Die PARTEI,12,0.7
-08316043,Teningen,Erststimmen,Die PARTEI,62,1.2
-08316043,Teningen,Zweitstimmen,Die PARTEI,47,0.9
+08316043,Teningen,Erststimmen,Die PARTEI,78,1.2
+08316043,Teningen,Zweitstimmen,Die PARTEI,58,0.9
 08316045,Vörstetten,Erststimmen,Die PARTEI,14,0.7
 08316045,Vörstetten,Zweitstimmen,Die PARTEI,6,0.3
 08316049,Weisweil,Erststimmen,Die PARTEI,12,1.0
@@ -6280,9 +6304,9 @@ ags,municipality_name,vote_type,party,votes,percent
 08325036,Lauterbach,Erststimmen,Die PARTEI,,
 08325036,Lauterbach,Zweitstimmen,Die PARTEI,1,0.1
 08325045,"Oberndorf am Neckar, Stadt",Erststimmen,Die PARTEI,,
-08325045,"Oberndorf am Neckar, Stadt",Zweitstimmen,Die PARTEI,17,0.4
+08325045,"Oberndorf am Neckar, Stadt",Zweitstimmen,Die PARTEI,18,0.3
 08325049,"Rottweil, Stadt",Erststimmen,Die PARTEI,,
-08325049,"Rottweil, Stadt",Zweitstimmen,Die PARTEI,37,0.3
+08325049,"Rottweil, Stadt",Zweitstimmen,Die PARTEI,38,0.3
 08325050,Schenkenzell,Erststimmen,Die PARTEI,,
 08325050,Schenkenzell,Zweitstimmen,Die PARTEI,1,0.1
 08325051,"Schiltach, Stadt",Erststimmen,Die PARTEI,,
@@ -6300,7 +6324,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08325069,Zimmern ob Rottweil,Erststimmen,Die PARTEI,,
 08325069,Zimmern ob Rottweil,Zweitstimmen,Die PARTEI,15,0.4
 08325070,Fluorn-Winzeln,Erststimmen,Die PARTEI,,
-08325070,Fluorn-Winzeln,Zweitstimmen,Die PARTEI,1,0.1
+08325070,Fluorn-Winzeln,Zweitstimmen,Die PARTEI,3,0.2
 08325071,Eschbronn,Erststimmen,Die PARTEI,,
 08325071,Eschbronn,Zweitstimmen,Die PARTEI,4,0.3
 08325072,Deißlingen,Erststimmen,Die PARTEI,,
@@ -6342,7 +6366,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08326068,"Vöhrenbach, Stadt",Erststimmen,Die PARTEI,,
 08326068,"Vöhrenbach, Stadt",Zweitstimmen,Die PARTEI,2,0.1
 08326074,"Villingen-Schwenningen, Stadt",Erststimmen,Die PARTEI,,
-08326074,"Villingen-Schwenningen, Stadt",Zweitstimmen,Die PARTEI,122,0.4
+08326074,"Villingen-Schwenningen, Stadt",Zweitstimmen,Die PARTEI,132,0.4
 08326075,Brigachtal,Erststimmen,Die PARTEI,,
 08326075,Brigachtal,Zweitstimmen,Die PARTEI,10,0.3
 08327002,Aldingen,Erststimmen,Die PARTEI,,
@@ -6357,6 +6381,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08327007,Bubsheim,Zweitstimmen,Die PARTEI,1,0.2
 08327008,Buchheim,Erststimmen,Die PARTEI,,
 08327008,Buchheim,Zweitstimmen,Die PARTEI,1,0.2
+08327009,Deilingen,Erststimmen,Die PARTEI,,
+08327009,Deilingen,Zweitstimmen,Die PARTEI,2,0.3
 08327010,Denkingen,Erststimmen,Die PARTEI,,
 08327010,Denkingen,Zweitstimmen,Die PARTEI,8,0.5
 08327011,Dürbheim,Erststimmen,Die PARTEI,,
@@ -6432,7 +6458,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08336034,Hasel,Erststimmen,Die PARTEI,,
 08336034,Hasel,Zweitstimmen,Die PARTEI,2,0.3
 08336036,Hausen im Wiesental,Erststimmen,Die PARTEI,,
-08336036,Hausen im Wiesental,Zweitstimmen,Die PARTEI,2,0.5
+08336036,Hausen im Wiesental,Zweitstimmen,Die PARTEI,3,0.2
 08336043,Inzlingen,Erststimmen,Die PARTEI,,
 08336043,Inzlingen,Zweitstimmen,Die PARTEI,2,0.2
 08336050,"Lörrach, Stadt",Erststimmen,Die PARTEI,,
@@ -6531,7 +6557,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08416031,Ofterdingen,Zweitstimmen,Die PARTEI,5,0.2
 08416036,"Rottenburg am Neckar, Stadt",Erststimmen,Die PARTEI,195,0.8
 08416036,"Rottenburg am Neckar, Stadt",Zweitstimmen,Die PARTEI,86,0.4
-08416041,"Tübingen, Universitätsstadt",Erststimmen,Die PARTEI,475,0.9
+08416041,"Tübingen, Universitätsstadt",Erststimmen,Die PARTEI,478,0.9
 08416041,"Tübingen, Universitätsstadt",Zweitstimmen,Die PARTEI,207,0.4
 08416048,Ammerbuch,Erststimmen,Die PARTEI,64,1.0
 08416048,Ammerbuch,Zweitstimmen,Die PARTEI,29,0.4
@@ -6552,7 +6578,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08417016,Dotternhausen,Erststimmen,Die PARTEI,,
 08417016,Dotternhausen,Zweitstimmen,Die PARTEI,1,0.1
 08417022,"Geislingen, Stadt",Erststimmen,Die PARTEI,,
-08417022,"Geislingen, Stadt",Zweitstimmen,Die PARTEI,7,0.3
+08417022,"Geislingen, Stadt",Zweitstimmen,Die PARTEI,8,0.2
 08417023,Grosselfingen,Erststimmen,Die PARTEI,,
 08417023,Grosselfingen,Zweitstimmen,Die PARTEI,6,0.5
 08417025,"Haigerloch, Stadt",Erststimmen,Die PARTEI,,
@@ -6624,7 +6650,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08425062,Holzkirch,Erststimmen,Die PARTEI,,
 08425062,Holzkirch,Zweitstimmen,Die PARTEI,0,0.0
 08425071,"Laichingen, Stadt",Erststimmen,Die PARTEI,,
-08425071,"Laichingen, Stadt",Zweitstimmen,Die PARTEI,13,0.3
+08425071,"Laichingen, Stadt",Zweitstimmen,Die PARTEI,17,0.3
 08425072,"Langenau, Stadt",Erststimmen,Die PARTEI,,
 08425072,"Langenau, Stadt",Zweitstimmen,Die PARTEI,29,0.4
 08425073,Lauterach,Erststimmen,Die PARTEI,,
@@ -6700,7 +6726,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08426038,Eberhardzell,Erststimmen,Die PARTEI,,
 08426038,Eberhardzell,Zweitstimmen,Die PARTEI,14,0.5
 08426043,Erlenmoos,Erststimmen,Die PARTEI,,
-08426043,Erlenmoos,Zweitstimmen,Die PARTEI,5,1.2
+08426043,Erlenmoos,Zweitstimmen,Die PARTEI,6,0.6
 08426045,Ertingen,Erststimmen,Die PARTEI,,
 08426045,Ertingen,Zweitstimmen,Die PARTEI,9,0.3
 08426058,Hochdorf,Erststimmen,Die PARTEI,,
@@ -6813,6 +6839,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08437076,"Mengen, Stadt",Zweitstimmen,Die PARTEI,19,0.4
 08437078,"Meßkirch, Stadt",Erststimmen,Die PARTEI,,
 08437078,"Meßkirch, Stadt",Zweitstimmen,Die PARTEI,16,0.4
+08437082,Neufra,Erststimmen,Die PARTEI,,
+08437082,Neufra,Zweitstimmen,Die PARTEI,2,0.2
 08437086,Ostrach,Erststimmen,Die PARTEI,,
 08437086,Ostrach,Zweitstimmen,Die PARTEI,15,0.4
 08437088,"Pfullendorf, Stadt",Erststimmen,Die PARTEI,,
@@ -6847,8 +6875,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08125074,Nordheim,Zweitstimmen,FDP,252,5.5
 08125094,Talheim,Erststimmen,FDP,199,7.0
 08125094,Talheim,Zweitstimmen,FDP,164,5.7
-08126011,Bretzfeld,Erststimmen,FDP,191,3.4
-08126011,Bretzfeld,Zweitstimmen,FDP,191,3.4
+08126011,Bretzfeld,Erststimmen,FDP,217,3.5
+08126011,Bretzfeld,Zweitstimmen,FDP,224,3.6
 08126020,Dörzbach,Erststimmen,FDP,48,3.4
 08126020,Dörzbach,Zweitstimmen,FDP,68,4.8
 08126028,"Forchtenberg, Stadt",Erststimmen,FDP,106,3.8
@@ -6909,8 +6937,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08127059,Michelfeld,Zweitstimmen,FDP,79,3.7
 08127062,Oberrot,Erststimmen,FDP,67,3.8
 08127062,Oberrot,Zweitstimmen,FDP,74,4.1
-08127063,Obersontheim,Erststimmen,FDP,77,4.0
-08127063,Obersontheim,Zweitstimmen,FDP,77,4.0
+08127063,Obersontheim,Erststimmen,FDP,120,4.4
+08127063,Obersontheim,Zweitstimmen,FDP,127,4.6
 08127071,Rot am See,Erststimmen,FDP,76,2.6
 08127071,Rot am See,Zweitstimmen,FDP,125,4.2
 08127073,Satteldorf,Erststimmen,FDP,91,3.2
@@ -6959,8 +6987,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08128061,Königheim,Zweitstimmen,FDP,64,3.4
 08128064,"Külsheim, Stadt",Erststimmen,FDP,136,4.5
 08128064,"Külsheim, Stadt",Zweitstimmen,FDP,102,3.3
-08128082,"Niederstetten, Stadt",Erststimmen,FDP,109,4.3
-08128082,"Niederstetten, Stadt",Zweitstimmen,FDP,112,4.4
+08128082,"Niederstetten, Stadt",Erststimmen,FDP,133,4.4
+08128082,"Niederstetten, Stadt",Zweitstimmen,FDP,133,4.4
 08128115,"Tauberbischofsheim, Stadt",Erststimmen,FDP,290,4.3
 08128115,"Tauberbischofsheim, Stadt",Zweitstimmen,FDP,243,3.6
 08128126,"Weikersheim, Stadt",Erststimmen,FDP,179,4.0
@@ -7029,8 +7057,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08216052,Steinmauern,Zweitstimmen,FDP,56,3.4
 08216059,Weisenbach,Erststimmen,FDP,44,3.5
 08216059,Weisenbach,Zweitstimmen,FDP,50,3.9
-08231000,"Pforzheim, Stadt",Erststimmen,FDP,3995,10.1
-08231000,"Pforzheim, Stadt",Zweitstimmen,FDP,2812,7.1
+08231000,"Pforzheim, Stadt",Erststimmen,FDP,4006,10.1
+08231000,"Pforzheim, Stadt",Zweitstimmen,FDP,2817,7.0
 08235006,"Altensteig, Stadt",Erststimmen,FDP,210,4.3
 08235006,"Altensteig, Stadt",Zweitstimmen,FDP,195,4.0
 08235007,Althengstett,Erststimmen,FDP,260,5.7
@@ -7067,8 +7095,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08235060,Rohrdorf,Zweitstimmen,FDP,33,3.7
 08235065,Schömberg,Erststimmen,FDP,210,5.7
 08235065,Schömberg,Zweitstimmen,FDP,194,5.3
-08235066,Simmersfeld,Erststimmen,FDP,5,2.1
-08235066,Simmersfeld,Zweitstimmen,FDP,6,2.6
+08235066,Simmersfeld,Erststimmen,FDP,20,3.6
+08235066,Simmersfeld,Zweitstimmen,FDP,18,3.3
 08235067,Simmozheim,Erststimmen,FDP,107,6.7
 08235067,Simmozheim,Zweitstimmen,FDP,97,6.0
 08235073,Unterreichenbach,Erststimmen,FDP,54,4.8
@@ -7081,8 +7109,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08235084,"Bad Teinach-Zavelstein, Stadt",Zweitstimmen,FDP,87,4.9
 08235085,"Calw, Stadt",Erststimmen,FDP,538,5.1
 08235085,"Calw, Stadt",Zweitstimmen,FDP,453,4.3
-08236004,Birkenfeld,Erststimmen,FDP,500,9.9
-08236004,Birkenfeld,Zweitstimmen,FDP,366,7.2
+08236004,Birkenfeld,Erststimmen,FDP,461,10.0
+08236004,Birkenfeld,Zweitstimmen,FDP,346,7.5
 08236011,Eisingen,Erststimmen,FDP,294,17.6
 08236011,Eisingen,Zweitstimmen,FDP,164,9.7
 08236013,Engelsbrand,Erststimmen,FDP,246,10.1
@@ -7107,12 +7135,12 @@ ags,municipality_name,vote_type,party,votes,percent
 08236040,"Mühlacker, Stadt",Zweitstimmen,FDP,786,7.7
 08236043,"Neuenbürg, Stadt",Erststimmen,FDP,462,12.6
 08236043,"Neuenbürg, Stadt",Zweitstimmen,FDP,231,6.3
-08236044,Neuhausen,Erststimmen,FDP,268,11.0
-08236044,Neuhausen,Zweitstimmen,FDP,172,7.1
+08236044,Neuhausen,Erststimmen,FDP,376,12.3
+08236044,Neuhausen,Zweitstimmen,FDP,232,7.6
 08236046,Niefern-Öschelbronn,Erststimmen,FDP,1990,35.7
 08236046,Niefern-Öschelbronn,Zweitstimmen,FDP,742,13.3
-08236050,Ötisheim,Erststimmen,FDP,233,13.2
-08236050,Ötisheim,Zweitstimmen,FDP,134,7.6
+08236050,Ötisheim,Erststimmen,FDP,304,12.0
+08236050,Ötisheim,Zweitstimmen,FDP,165,6.5
 08236061,Sternenfels,Erststimmen,FDP,165,10.7
 08236061,Sternenfels,Zweitstimmen,FDP,92,5.9
 08236062,Tiefenbronn,Erststimmen,FDP,353,11.0
@@ -7147,8 +7175,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08237024,Empfingen,Zweitstimmen,FDP,104,4.7
 08237027,Eutingen im Gäu,Erststimmen,FDP,172,5.1
 08237027,Eutingen im Gäu,Zweitstimmen,FDP,165,4.9
-08237028,"Freudenstadt, Stadt",Erststimmen,FDP,431,4.2
-08237028,"Freudenstadt, Stadt",Zweitstimmen,FDP,445,4.3
+08237028,"Freudenstadt, Stadt",Erststimmen,FDP,442,4.1
+08237028,"Freudenstadt, Stadt",Zweitstimmen,FDP,454,4.2
 08237030,Glatten,Erststimmen,FDP,69,4.9
 08237030,Glatten,Zweitstimmen,FDP,80,5.6
 08237032,Grömbach,Erststimmen,FDP,11,4.1
@@ -7201,8 +7229,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08316039,Sexau,Zweitstimmen,FDP,74,3.5
 08316042,Simonswald,Erststimmen,FDP,45,2.5
 08316042,Simonswald,Zweitstimmen,FDP,60,3.4
-08316043,Teningen,Erststimmen,FDP,176,3.5
-08316043,Teningen,Zweitstimmen,FDP,147,2.9
+08316043,Teningen,Erststimmen,FDP,241,3.8
+08316043,Teningen,Zweitstimmen,FDP,198,3.1
 08316045,Vörstetten,Erststimmen,FDP,68,3.6
 08316045,Vörstetten,Zweitstimmen,FDP,75,4.0
 08316049,Weisweil,Erststimmen,FDP,129,10.3
@@ -7233,10 +7261,10 @@ ags,municipality_name,vote_type,party,votes,percent
 08325024,Hardt,Zweitstimmen,FDP,84,5.0
 08325036,Lauterbach,Erststimmen,FDP,142,9.6
 08325036,Lauterbach,Zweitstimmen,FDP,80,5.4
-08325045,"Oberndorf am Neckar, Stadt",Erststimmen,FDP,436,9.4
-08325045,"Oberndorf am Neckar, Stadt",Zweitstimmen,FDP,239,5.2
-08325049,"Rottweil, Stadt",Erststimmen,FDP,1079,9.4
-08325049,"Rottweil, Stadt",Zweitstimmen,FDP,610,5.3
+08325045,"Oberndorf am Neckar, Stadt",Erststimmen,FDP,566,10.0
+08325045,"Oberndorf am Neckar, Stadt",Zweitstimmen,FDP,318,5.6
+08325049,"Rottweil, Stadt",Erststimmen,FDP,1120,9.3
+08325049,"Rottweil, Stadt",Zweitstimmen,FDP,638,5.3
 08325050,Schenkenzell,Erststimmen,FDP,58,5.6
 08325050,Schenkenzell,Zweitstimmen,FDP,43,4.1
 08325051,"Schiltach, Stadt",Erststimmen,FDP,104,5.2
@@ -7253,8 +7281,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08325064,Wellendingen,Zweitstimmen,FDP,93,5.6
 08325069,Zimmern ob Rottweil,Erststimmen,FDP,316,9.4
 08325069,Zimmern ob Rottweil,Zweitstimmen,FDP,192,5.7
-08325070,Fluorn-Winzeln,Erststimmen,FDP,99,8.1
-08325070,Fluorn-Winzeln,Zweitstimmen,FDP,73,6.0
+08325070,Fluorn-Winzeln,Erststimmen,FDP,138,7.7
+08325070,Fluorn-Winzeln,Zweitstimmen,FDP,96,5.4
 08325071,Eschbronn,Erststimmen,FDP,100,7.8
 08325071,Eschbronn,Zweitstimmen,FDP,66,5.2
 08325072,Deißlingen,Erststimmen,FDP,295,9.2
@@ -7295,8 +7323,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08326065,Unterkirnach,Zweitstimmen,FDP,57,4.5
 08326068,"Vöhrenbach, Stadt",Erststimmen,FDP,87,5.2
 08326068,"Vöhrenbach, Stadt",Zweitstimmen,FDP,70,4.2
-08326074,"Villingen-Schwenningen, Stadt",Erststimmen,FDP,1648,5.1
-08326074,"Villingen-Schwenningen, Stadt",Zweitstimmen,FDP,1352,4.2
+08326074,"Villingen-Schwenningen, Stadt",Erststimmen,FDP,1707,5.1
+08326074,"Villingen-Schwenningen, Stadt",Zweitstimmen,FDP,1393,4.2
 08326075,Brigachtal,Erststimmen,FDP,119,4.1
 08326075,Brigachtal,Zweitstimmen,FDP,108,3.7
 08327002,Aldingen,Erststimmen,FDP,185,5.7
@@ -7311,6 +7339,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08327007,Bubsheim,Zweitstimmen,FDP,18,3.2
 08327008,Buchheim,Erststimmen,FDP,27,6.0
 08327008,Buchheim,Zweitstimmen,FDP,23,5.1
+08327009,Deilingen,Erststimmen,FDP,27,4.7
+08327009,Deilingen,Zweitstimmen,FDP,28,4.9
 08327010,Denkingen,Erststimmen,FDP,91,6.2
 08327010,Denkingen,Zweitstimmen,FDP,80,5.4
 08327011,Dürbheim,Erststimmen,FDP,55,5.7
@@ -7385,8 +7415,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08336025,Fröhnd,Zweitstimmen,FDP,12,3.8
 08336034,Hasel,Erststimmen,FDP,14,2.3
 08336034,Hasel,Zweitstimmen,FDP,14,2.3
-08336036,Hausen im Wiesental,Erststimmen,FDP,7,1.9
-08336036,Hausen im Wiesental,Zweitstimmen,FDP,6,1.6
+08336036,Hausen im Wiesental,Erststimmen,FDP,27,2.2
+08336036,Hausen im Wiesental,Zweitstimmen,FDP,32,2.6
 08336043,Inzlingen,Erststimmen,FDP,117,8.8
 08336043,Inzlingen,Zweitstimmen,FDP,57,4.3
 08336050,"Lörrach, Stadt",Erststimmen,FDP,878,4.4
@@ -7485,8 +7515,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08416031,Ofterdingen,Zweitstimmen,FDP,109,3.9
 08416036,"Rottenburg am Neckar, Stadt",Erststimmen,FDP,741,3.2
 08416036,"Rottenburg am Neckar, Stadt",Zweitstimmen,FDP,885,3.8
-08416041,"Tübingen, Universitätsstadt",Erststimmen,FDP,1340,2.6
-08416041,"Tübingen, Universitätsstadt",Zweitstimmen,FDP,1586,3.1
+08416041,"Tübingen, Universitätsstadt",Erststimmen,FDP,1356,2.6
+08416041,"Tübingen, Universitätsstadt",Zweitstimmen,FDP,1613,3.1
 08416048,Ammerbuch,Erststimmen,FDP,193,2.9
 08416048,Ammerbuch,Zweitstimmen,FDP,213,3.2
 08416049,Neustetten,Erststimmen,FDP,75,3.5
@@ -7505,8 +7535,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08417015,Dormettingen,Zweitstimmen,FDP,20,3.4
 08417016,Dotternhausen,Erststimmen,FDP,56,5.2
 08417016,Dotternhausen,Zweitstimmen,FDP,76,7.1
-08417022,"Geislingen, Stadt",Erststimmen,FDP,111,4.3
-08417022,"Geislingen, Stadt",Zweitstimmen,FDP,105,4.0
+08417022,"Geislingen, Stadt",Erststimmen,FDP,146,4.3
+08417022,"Geislingen, Stadt",Zweitstimmen,FDP,143,4.2
 08417023,Grosselfingen,Erststimmen,FDP,29,2.6
 08417023,Grosselfingen,Zweitstimmen,FDP,40,3.5
 08417025,"Haigerloch, Stadt",Erststimmen,FDP,264,4.7
@@ -7555,8 +7585,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08425017,Berghülen,Zweitstimmen,FDP,49,4.0
 08425019,Bernstadt,Erststimmen,FDP,42,3.0
 08425019,Bernstadt,Zweitstimmen,FDP,49,3.6
-08425020,"Blaubeuren, Stadt",Erststimmen,FDP,142,2.6
-08425020,"Blaubeuren, Stadt",Zweitstimmen,FDP,183,3.3
+08425020,"Blaubeuren, Stadt",Erststimmen,FDP,161,2.7
+08425020,"Blaubeuren, Stadt",Zweitstimmen,FDP,206,3.4
 08425022,Börslingen,Erststimmen,FDP,4,3.8
 08425022,Börslingen,Zweitstimmen,FDP,4,3.8
 08425024,Breitingen,Erststimmen,FDP,7,4.9
@@ -7577,8 +7607,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08425055,Hausen am Bussen,Zweitstimmen,FDP,5,3.5
 08425062,Holzkirch,Erststimmen,FDP,1,0.8
 08425062,Holzkirch,Zweitstimmen,FDP,2,1.5
-08425071,"Laichingen, Stadt",Erststimmen,FDP,176,3.6
-08425071,"Laichingen, Stadt",Zweitstimmen,FDP,246,5.0
+08425071,"Laichingen, Stadt",Erststimmen,FDP,189,3.4
+08425071,"Laichingen, Stadt",Zweitstimmen,FDP,269,4.8
 08425072,"Langenau, Stadt",Erststimmen,FDP,252,3.1
 08425072,"Langenau, Stadt",Zweitstimmen,FDP,283,3.5
 08425073,Lauterach,Erststimmen,FDP,4,1.5
@@ -7653,8 +7683,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08426036,Dürnau,Zweitstimmen,FDP,9,4.5
 08426038,Eberhardzell,Erststimmen,FDP,74,2.7
 08426038,Eberhardzell,Zweitstimmen,FDP,92,3.4
-08426043,Erlenmoos,Erststimmen,FDP,18,4.5
-08426043,Erlenmoos,Zweitstimmen,FDP,15,3.8
+08426043,Erlenmoos,Erststimmen,FDP,38,3.5
+08426043,Erlenmoos,Zweitstimmen,FDP,48,4.5
 08426045,Ertingen,Erststimmen,FDP,80,2.6
 08426045,Ertingen,Zweitstimmen,FDP,116,3.8
 08426058,Hochdorf,Erststimmen,FDP,27,1.9
@@ -7767,6 +7797,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08437076,"Mengen, Stadt",Zweitstimmen,FDP,232,4.7
 08437078,"Meßkirch, Stadt",Erststimmen,FDP,113,2.7
 08437078,"Meßkirch, Stadt",Zweitstimmen,FDP,147,3.6
+08437082,Neufra,Erststimmen,FDP,55,5.3
+08437082,Neufra,Zweitstimmen,FDP,54,5.2
 08437086,Ostrach,Erststimmen,FDP,149,3.9
 08437086,Ostrach,Zweitstimmen,FDP,139,3.6
 08437088,"Pfullendorf, Stadt",Erststimmen,FDP,228,4.0
@@ -7801,8 +7833,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08125074,Nordheim,Zweitstimmen,FREIE WÄHLER,111,2.4
 08125094,Talheim,Erststimmen,FREIE WÄHLER,,
 08125094,Talheim,Zweitstimmen,FREIE WÄHLER,41,1.4
-08126011,Bretzfeld,Erststimmen,FREIE WÄHLER,232,4.1
-08126011,Bretzfeld,Zweitstimmen,FREIE WÄHLER,153,2.7
+08126011,Bretzfeld,Erststimmen,FREIE WÄHLER,257,4.1
+08126011,Bretzfeld,Zweitstimmen,FREIE WÄHLER,166,2.6
 08126020,Dörzbach,Erststimmen,FREIE WÄHLER,55,3.9
 08126020,Dörzbach,Zweitstimmen,FREIE WÄHLER,33,2.3
 08126028,"Forchtenberg, Stadt",Erststimmen,FREIE WÄHLER,132,4.7
@@ -7863,8 +7895,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08127059,Michelfeld,Zweitstimmen,FREIE WÄHLER,30,1.4
 08127062,Oberrot,Erststimmen,FREIE WÄHLER,39,2.2
 08127062,Oberrot,Zweitstimmen,FREIE WÄHLER,26,1.5
-08127063,Obersontheim,Erststimmen,FREIE WÄHLER,65,3.4
-08127063,Obersontheim,Zweitstimmen,FREIE WÄHLER,35,1.8
+08127063,Obersontheim,Erststimmen,FREIE WÄHLER,109,4.0
+08127063,Obersontheim,Zweitstimmen,FREIE WÄHLER,63,2.3
 08127071,Rot am See,Erststimmen,FREIE WÄHLER,76,2.6
 08127071,Rot am See,Zweitstimmen,FREIE WÄHLER,56,1.9
 08127073,Satteldorf,Erststimmen,FREIE WÄHLER,79,2.8
@@ -7914,7 +7946,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08128064,"Külsheim, Stadt",Erststimmen,FREIE WÄHLER,,
 08128064,"Külsheim, Stadt",Zweitstimmen,FREIE WÄHLER,125,4.1
 08128082,"Niederstetten, Stadt",Erststimmen,FREIE WÄHLER,,
-08128082,"Niederstetten, Stadt",Zweitstimmen,FREIE WÄHLER,72,2.8
+08128082,"Niederstetten, Stadt",Zweitstimmen,FREIE WÄHLER,80,2.7
 08128115,"Tauberbischofsheim, Stadt",Erststimmen,FREIE WÄHLER,,
 08128115,"Tauberbischofsheim, Stadt",Zweitstimmen,FREIE WÄHLER,174,2.6
 08128126,"Weikersheim, Stadt",Erststimmen,FREIE WÄHLER,,
@@ -7984,7 +8016,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08216059,Weisenbach,Erststimmen,FREIE WÄHLER,,
 08216059,Weisenbach,Zweitstimmen,FREIE WÄHLER,29,2.3
 08231000,"Pforzheim, Stadt",Erststimmen,FREIE WÄHLER,,
-08231000,"Pforzheim, Stadt",Zweitstimmen,FREIE WÄHLER,426,1.1
+08231000,"Pforzheim, Stadt",Zweitstimmen,FREIE WÄHLER,429,1.1
 08235006,"Altensteig, Stadt",Erststimmen,FREIE WÄHLER,,
 08235006,"Altensteig, Stadt",Zweitstimmen,FREIE WÄHLER,57,1.2
 08235007,Althengstett,Erststimmen,FREIE WÄHLER,,
@@ -8022,7 +8054,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08235065,Schömberg,Erststimmen,FREIE WÄHLER,,
 08235065,Schömberg,Zweitstimmen,FREIE WÄHLER,57,1.5
 08235066,Simmersfeld,Erststimmen,FREIE WÄHLER,,
-08235066,Simmersfeld,Zweitstimmen,FREIE WÄHLER,2,0.9
+08235066,Simmersfeld,Zweitstimmen,FREIE WÄHLER,5,0.9
 08235067,Simmozheim,Erststimmen,FREIE WÄHLER,,
 08235067,Simmozheim,Zweitstimmen,FREIE WÄHLER,37,2.3
 08235073,Unterreichenbach,Erststimmen,FREIE WÄHLER,,
@@ -8036,7 +8068,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08235085,"Calw, Stadt",Erststimmen,FREIE WÄHLER,,
 08235085,"Calw, Stadt",Zweitstimmen,FREIE WÄHLER,207,2.0
 08236004,Birkenfeld,Erststimmen,FREIE WÄHLER,,
-08236004,Birkenfeld,Zweitstimmen,FREIE WÄHLER,71,1.4
+08236004,Birkenfeld,Zweitstimmen,FREIE WÄHLER,65,1.4
 08236011,Eisingen,Erststimmen,FREIE WÄHLER,,
 08236011,Eisingen,Zweitstimmen,FREIE WÄHLER,49,2.9
 08236013,Engelsbrand,Erststimmen,FREIE WÄHLER,,
@@ -8062,11 +8094,11 @@ ags,municipality_name,vote_type,party,votes,percent
 08236043,"Neuenbürg, Stadt",Erststimmen,FREIE WÄHLER,,
 08236043,"Neuenbürg, Stadt",Zweitstimmen,FREIE WÄHLER,66,1.8
 08236044,Neuhausen,Erststimmen,FREIE WÄHLER,,
-08236044,Neuhausen,Zweitstimmen,FREIE WÄHLER,36,1.5
+08236044,Neuhausen,Zweitstimmen,FREIE WÄHLER,47,1.5
 08236046,Niefern-Öschelbronn,Erststimmen,FREIE WÄHLER,,
 08236046,Niefern-Öschelbronn,Zweitstimmen,FREIE WÄHLER,93,1.7
 08236050,Ötisheim,Erststimmen,FREIE WÄHLER,,
-08236050,Ötisheim,Zweitstimmen,FREIE WÄHLER,34,1.9
+08236050,Ötisheim,Zweitstimmen,FREIE WÄHLER,51,2.0
 08236061,Sternenfels,Erststimmen,FREIE WÄHLER,,
 08236061,Sternenfels,Zweitstimmen,FREIE WÄHLER,39,2.5
 08236062,Tiefenbronn,Erststimmen,FREIE WÄHLER,,
@@ -8102,7 +8134,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08237027,Eutingen im Gäu,Erststimmen,FREIE WÄHLER,,
 08237027,Eutingen im Gäu,Zweitstimmen,FREIE WÄHLER,57,1.7
 08237028,"Freudenstadt, Stadt",Erststimmen,FREIE WÄHLER,,
-08237028,"Freudenstadt, Stadt",Zweitstimmen,FREIE WÄHLER,134,1.3
+08237028,"Freudenstadt, Stadt",Zweitstimmen,FREIE WÄHLER,143,1.3
 08237030,Glatten,Erststimmen,FREIE WÄHLER,,
 08237030,Glatten,Zweitstimmen,FREIE WÄHLER,38,2.7
 08237032,Grömbach,Erststimmen,FREIE WÄHLER,,
@@ -8155,8 +8187,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08316039,Sexau,Zweitstimmen,FREIE WÄHLER,69,3.3
 08316042,Simonswald,Erststimmen,FREIE WÄHLER,64,3.6
 08316042,Simonswald,Zweitstimmen,FREIE WÄHLER,49,2.8
-08316043,Teningen,Erststimmen,FREIE WÄHLER,235,4.6
-08316043,Teningen,Zweitstimmen,FREIE WÄHLER,136,2.7
+08316043,Teningen,Erststimmen,FREIE WÄHLER,327,5.1
+08316043,Teningen,Zweitstimmen,FREIE WÄHLER,186,2.9
 08316045,Vörstetten,Erststimmen,FREIE WÄHLER,85,4.5
 08316045,Vörstetten,Zweitstimmen,FREIE WÄHLER,48,2.5
 08316049,Weisweil,Erststimmen,FREIE WÄHLER,57,4.6
@@ -8188,9 +8220,9 @@ ags,municipality_name,vote_type,party,votes,percent
 08325036,Lauterbach,Erststimmen,FREIE WÄHLER,,
 08325036,Lauterbach,Zweitstimmen,FREIE WÄHLER,25,1.7
 08325045,"Oberndorf am Neckar, Stadt",Erststimmen,FREIE WÄHLER,,
-08325045,"Oberndorf am Neckar, Stadt",Zweitstimmen,FREIE WÄHLER,100,2.2
+08325045,"Oberndorf am Neckar, Stadt",Zweitstimmen,FREIE WÄHLER,122,2.2
 08325049,"Rottweil, Stadt",Erststimmen,FREIE WÄHLER,,
-08325049,"Rottweil, Stadt",Zweitstimmen,FREIE WÄHLER,137,1.2
+08325049,"Rottweil, Stadt",Zweitstimmen,FREIE WÄHLER,143,1.2
 08325050,Schenkenzell,Erststimmen,FREIE WÄHLER,,
 08325050,Schenkenzell,Zweitstimmen,FREIE WÄHLER,32,3.1
 08325051,"Schiltach, Stadt",Erststimmen,FREIE WÄHLER,,
@@ -8208,7 +8240,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08325069,Zimmern ob Rottweil,Erststimmen,FREIE WÄHLER,,
 08325069,Zimmern ob Rottweil,Zweitstimmen,FREIE WÄHLER,68,2.0
 08325070,Fluorn-Winzeln,Erststimmen,FREIE WÄHLER,,
-08325070,Fluorn-Winzeln,Zweitstimmen,FREIE WÄHLER,17,1.4
+08325070,Fluorn-Winzeln,Zweitstimmen,FREIE WÄHLER,29,1.6
 08325071,Eschbronn,Erststimmen,FREIE WÄHLER,,
 08325071,Eschbronn,Zweitstimmen,FREIE WÄHLER,39,3.1
 08325072,Deißlingen,Erststimmen,FREIE WÄHLER,,
@@ -8250,7 +8282,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08326068,"Vöhrenbach, Stadt",Erststimmen,FREIE WÄHLER,,
 08326068,"Vöhrenbach, Stadt",Zweitstimmen,FREIE WÄHLER,45,2.7
 08326074,"Villingen-Schwenningen, Stadt",Erststimmen,FREIE WÄHLER,,
-08326074,"Villingen-Schwenningen, Stadt",Zweitstimmen,FREIE WÄHLER,641,2.0
+08326074,"Villingen-Schwenningen, Stadt",Zweitstimmen,FREIE WÄHLER,661,2.0
 08326075,Brigachtal,Erststimmen,FREIE WÄHLER,,
 08326075,Brigachtal,Zweitstimmen,FREIE WÄHLER,64,2.2
 08327002,Aldingen,Erststimmen,FREIE WÄHLER,,
@@ -8265,6 +8297,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08327007,Bubsheim,Zweitstimmen,FREIE WÄHLER,9,1.6
 08327008,Buchheim,Erststimmen,FREIE WÄHLER,,
 08327008,Buchheim,Zweitstimmen,FREIE WÄHLER,2,0.4
+08327009,Deilingen,Erststimmen,FREIE WÄHLER,,
+08327009,Deilingen,Zweitstimmen,FREIE WÄHLER,3,0.5
 08327010,Denkingen,Erststimmen,FREIE WÄHLER,,
 08327010,Denkingen,Zweitstimmen,FREIE WÄHLER,12,0.8
 08327011,Dürbheim,Erststimmen,FREIE WÄHLER,,
@@ -8339,8 +8373,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08336025,Fröhnd,Zweitstimmen,FREIE WÄHLER,8,2.5
 08336034,Hasel,Erststimmen,FREIE WÄHLER,20,3.3
 08336034,Hasel,Zweitstimmen,FREIE WÄHLER,15,2.5
-08336036,Hausen im Wiesental,Erststimmen,FREIE WÄHLER,20,5.3
-08336036,Hausen im Wiesental,Zweitstimmen,FREIE WÄHLER,9,2.4
+08336036,Hausen im Wiesental,Erststimmen,FREIE WÄHLER,52,4.3
+08336036,Hausen im Wiesental,Zweitstimmen,FREIE WÄHLER,36,2.9
 08336043,Inzlingen,Erststimmen,FREIE WÄHLER,26,2.0
 08336043,Inzlingen,Zweitstimmen,FREIE WÄHLER,20,1.5
 08336050,"Lörrach, Stadt",Erststimmen,FREIE WÄHLER,618,3.1
@@ -8440,7 +8474,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08416036,"Rottenburg am Neckar, Stadt",Erststimmen,FREIE WÄHLER,,
 08416036,"Rottenburg am Neckar, Stadt",Zweitstimmen,FREIE WÄHLER,260,1.1
 08416041,"Tübingen, Universitätsstadt",Erststimmen,FREIE WÄHLER,,
-08416041,"Tübingen, Universitätsstadt",Zweitstimmen,FREIE WÄHLER,259,0.5
+08416041,"Tübingen, Universitätsstadt",Zweitstimmen,FREIE WÄHLER,263,0.5
 08416048,Ammerbuch,Erststimmen,FREIE WÄHLER,,
 08416048,Ammerbuch,Zweitstimmen,FREIE WÄHLER,74,1.1
 08416049,Neustetten,Erststimmen,FREIE WÄHLER,,
@@ -8460,7 +8494,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08417016,Dotternhausen,Erststimmen,FREIE WÄHLER,,
 08417016,Dotternhausen,Zweitstimmen,FREIE WÄHLER,15,1.4
 08417022,"Geislingen, Stadt",Erststimmen,FREIE WÄHLER,,
-08417022,"Geislingen, Stadt",Zweitstimmen,FREIE WÄHLER,61,2.3
+08417022,"Geislingen, Stadt",Zweitstimmen,FREIE WÄHLER,75,2.2
 08417023,Grosselfingen,Erststimmen,FREIE WÄHLER,,
 08417023,Grosselfingen,Zweitstimmen,FREIE WÄHLER,27,2.4
 08417025,"Haigerloch, Stadt",Erststimmen,FREIE WÄHLER,,
@@ -8509,8 +8543,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08425017,Berghülen,Zweitstimmen,FREIE WÄHLER,30,2.4
 08425019,Bernstadt,Erststimmen,FREIE WÄHLER,42,3.0
 08425019,Bernstadt,Zweitstimmen,FREIE WÄHLER,34,2.5
-08425020,"Blaubeuren, Stadt",Erststimmen,FREIE WÄHLER,158,2.9
-08425020,"Blaubeuren, Stadt",Zweitstimmen,FREIE WÄHLER,115,2.1
+08425020,"Blaubeuren, Stadt",Erststimmen,FREIE WÄHLER,180,3.0
+08425020,"Blaubeuren, Stadt",Zweitstimmen,FREIE WÄHLER,139,2.3
 08425022,Börslingen,Erststimmen,FREIE WÄHLER,1,0.9
 08425022,Börslingen,Zweitstimmen,FREIE WÄHLER,2,1.9
 08425024,Breitingen,Erststimmen,FREIE WÄHLER,7,4.9
@@ -8531,8 +8565,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08425055,Hausen am Bussen,Zweitstimmen,FREIE WÄHLER,3,2.1
 08425062,Holzkirch,Erststimmen,FREIE WÄHLER,4,3.0
 08425062,Holzkirch,Zweitstimmen,FREIE WÄHLER,1,0.8
-08425071,"Laichingen, Stadt",Erststimmen,FREIE WÄHLER,120,2.4
-08425071,"Laichingen, Stadt",Zweitstimmen,FREIE WÄHLER,78,1.6
+08425071,"Laichingen, Stadt",Erststimmen,FREIE WÄHLER,132,2.4
+08425071,"Laichingen, Stadt",Zweitstimmen,FREIE WÄHLER,84,1.5
 08425072,"Langenau, Stadt",Erststimmen,FREIE WÄHLER,313,3.9
 08425072,"Langenau, Stadt",Zweitstimmen,FREIE WÄHLER,225,2.8
 08425073,Lauterach,Erststimmen,FREIE WÄHLER,1,0.4
@@ -8607,8 +8641,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08426036,Dürnau,Zweitstimmen,FREIE WÄHLER,3,1.5
 08426038,Eberhardzell,Erststimmen,FREIE WÄHLER,89,3.3
 08426038,Eberhardzell,Zweitstimmen,FREIE WÄHLER,67,2.5
-08426043,Erlenmoos,Erststimmen,FREIE WÄHLER,19,4.8
-08426043,Erlenmoos,Zweitstimmen,FREIE WÄHLER,13,3.2
+08426043,Erlenmoos,Erststimmen,FREIE WÄHLER,40,3.7
+08426043,Erlenmoos,Zweitstimmen,FREIE WÄHLER,32,3.0
 08426045,Ertingen,Erststimmen,FREIE WÄHLER,117,3.8
 08426045,Ertingen,Zweitstimmen,FREIE WÄHLER,67,2.2
 08426058,Hochdorf,Erststimmen,FREIE WÄHLER,44,3.0
@@ -8721,6 +8755,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08437076,"Mengen, Stadt",Zweitstimmen,FREIE WÄHLER,99,2.0
 08437078,"Meßkirch, Stadt",Erststimmen,FREIE WÄHLER,,
 08437078,"Meßkirch, Stadt",Zweitstimmen,FREIE WÄHLER,75,1.8
+08437082,Neufra,Erststimmen,FREIE WÄHLER,,
+08437082,Neufra,Zweitstimmen,FREIE WÄHLER,12,1.2
 08437086,Ostrach,Erststimmen,FREIE WÄHLER,,
 08437086,Ostrach,Zweitstimmen,FREIE WÄHLER,64,1.7
 08437088,"Pfullendorf, Stadt",Erststimmen,FREIE WÄHLER,,
@@ -8755,8 +8791,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08125074,Nordheim,Zweitstimmen,GRÜNE,1174,25.8
 08125094,Talheim,Erststimmen,GRÜNE,670,23.4
 08125094,Talheim,Zweitstimmen,GRÜNE,840,29.3
-08126011,Bretzfeld,Erststimmen,GRÜNE,1177,21.0
-08126011,Bretzfeld,Zweitstimmen,GRÜNE,1338,23.8
+08126011,Bretzfeld,Erststimmen,GRÜNE,1302,20.7
+08126011,Bretzfeld,Zweitstimmen,GRÜNE,1488,23.7
 08126020,Dörzbach,Erststimmen,GRÜNE,210,14.9
 08126020,Dörzbach,Zweitstimmen,GRÜNE,270,19.1
 08126028,"Forchtenberg, Stadt",Erststimmen,GRÜNE,496,17.8
@@ -8795,7 +8831,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08127012,Bühlertann,Zweitstimmen,GRÜNE,309,18.6
 08127013,Bühlerzell,Erststimmen,GRÜNE,186,14.3
 08127013,Bühlerzell,Zweitstimmen,GRÜNE,255,19.5
-08127014,"Crailsheim, Stadt",Erststimmen,GRÜNE,2138,16.6
+08127014,"Crailsheim, Stadt",Erststimmen,GRÜNE,2139,16.6
 08127014,"Crailsheim, Stadt",Zweitstimmen,GRÜNE,2962,22.9
 08127023,Fichtenberg,Erststimmen,GRÜNE,275,17.0
 08127023,Fichtenberg,Zweitstimmen,GRÜNE,358,22.1
@@ -8817,8 +8853,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08127059,Michelfeld,Zweitstimmen,GRÜNE,656,30.4
 08127062,Oberrot,Erststimmen,GRÜNE,331,18.5
 08127062,Oberrot,Zweitstimmen,GRÜNE,427,23.8
-08127063,Obersontheim,Erststimmen,GRÜNE,330,17.2
-08127063,Obersontheim,Zweitstimmen,GRÜNE,441,23.0
+08127063,Obersontheim,Erststimmen,GRÜNE,497,18.1
+08127063,Obersontheim,Zweitstimmen,GRÜNE,672,24.5
 08127071,Rot am See,Erststimmen,GRÜNE,689,23.3
 08127071,Rot am See,Zweitstimmen,GRÜNE,667,22.5
 08127073,Satteldorf,Erststimmen,GRÜNE,571,20.0
@@ -8867,8 +8903,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08128061,Königheim,Zweitstimmen,GRÜNE,445,23.5
 08128064,"Külsheim, Stadt",Erststimmen,GRÜNE,527,17.4
 08128064,"Külsheim, Stadt",Zweitstimmen,GRÜNE,576,18.8
-08128082,"Niederstetten, Stadt",Erststimmen,GRÜNE,745,29.2
-08128082,"Niederstetten, Stadt",Zweitstimmen,GRÜNE,585,22.8
+08128082,"Niederstetten, Stadt",Erststimmen,GRÜNE,882,29.4
+08128082,"Niederstetten, Stadt",Zweitstimmen,GRÜNE,700,23.2
 08128115,"Tauberbischofsheim, Stadt",Erststimmen,GRÜNE,1449,21.6
 08128115,"Tauberbischofsheim, Stadt",Zweitstimmen,GRÜNE,1632,24.1
 08128126,"Weikersheim, Stadt",Erststimmen,GRÜNE,1205,27.1
@@ -8937,8 +8973,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08216052,Steinmauern,Zweitstimmen,GRÜNE,391,23.7
 08216059,Weisenbach,Erststimmen,GRÜNE,276,21.9
 08216059,Weisenbach,Zweitstimmen,GRÜNE,333,26.2
-08231000,"Pforzheim, Stadt",Erststimmen,GRÜNE,6552,16.5
-08231000,"Pforzheim, Stadt",Zweitstimmen,GRÜNE,9276,23.3
+08231000,"Pforzheim, Stadt",Erststimmen,GRÜNE,6582,16.5
+08231000,"Pforzheim, Stadt",Zweitstimmen,GRÜNE,9312,23.3
 08235006,"Altensteig, Stadt",Erststimmen,GRÜNE,556,11.4
 08235006,"Altensteig, Stadt",Zweitstimmen,GRÜNE,869,17.8
 08235007,Althengstett,Erststimmen,GRÜNE,898,19.7
@@ -8975,8 +9011,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08235060,Rohrdorf,Zweitstimmen,GRÜNE,186,21.1
 08235065,Schömberg,Erststimmen,GRÜNE,627,17.1
 08235065,Schömberg,Zweitstimmen,GRÜNE,869,23.5
-08235066,Simmersfeld,Erststimmen,GRÜNE,32,13.7
-08235066,Simmersfeld,Zweitstimmen,GRÜNE,50,21.5
+08235066,Simmersfeld,Erststimmen,GRÜNE,58,10.5
+08235066,Simmersfeld,Zweitstimmen,GRÜNE,89,16.2
 08235067,Simmozheim,Erststimmen,GRÜNE,363,22.7
 08235067,Simmozheim,Zweitstimmen,GRÜNE,472,29.3
 08235073,Unterreichenbach,Erststimmen,GRÜNE,253,22.3
@@ -8989,8 +9025,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08235084,"Bad Teinach-Zavelstein, Stadt",Zweitstimmen,GRÜNE,377,21.3
 08235085,"Calw, Stadt",Erststimmen,GRÜNE,2081,19.7
 08235085,"Calw, Stadt",Zweitstimmen,GRÜNE,2978,28.1
-08236004,Birkenfeld,Erststimmen,GRÜNE,866,17.1
-08236004,Birkenfeld,Zweitstimmen,GRÜNE,1139,22.5
+08236004,Birkenfeld,Erststimmen,GRÜNE,794,17.2
+08236004,Birkenfeld,Zweitstimmen,GRÜNE,1048,22.7
 08236011,Eisingen,Erststimmen,GRÜNE,298,17.8
 08236011,Eisingen,Zweitstimmen,GRÜNE,399,23.6
 08236013,Engelsbrand,Erststimmen,GRÜNE,497,20.5
@@ -9015,12 +9051,12 @@ ags,municipality_name,vote_type,party,votes,percent
 08236040,"Mühlacker, Stadt",Zweitstimmen,GRÜNE,2924,28.7
 08236043,"Neuenbürg, Stadt",Erststimmen,GRÜNE,750,20.4
 08236043,"Neuenbürg, Stadt",Zweitstimmen,GRÜNE,901,24.4
-08236044,Neuhausen,Erststimmen,GRÜNE,471,19.4
-08236044,Neuhausen,Zweitstimmen,GRÜNE,584,24.1
+08236044,Neuhausen,Erststimmen,GRÜNE,602,19.7
+08236044,Neuhausen,Zweitstimmen,GRÜNE,738,24.2
 08236046,Niefern-Öschelbronn,Erststimmen,GRÜNE,788,14.1
 08236046,Niefern-Öschelbronn,Zweitstimmen,GRÜNE,1255,22.5
-08236050,Ötisheim,Erststimmen,GRÜNE,340,19.3
-08236050,Ötisheim,Zweitstimmen,GRÜNE,446,25.2
+08236050,Ötisheim,Erststimmen,GRÜNE,508,20.0
+08236050,Ötisheim,Zweitstimmen,GRÜNE,649,25.5
 08236061,Sternenfels,Erststimmen,GRÜNE,348,22.5
 08236061,Sternenfels,Zweitstimmen,GRÜNE,429,27.6
 08236062,Tiefenbronn,Erststimmen,GRÜNE,755,23.6
@@ -9055,8 +9091,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08237024,Empfingen,Zweitstimmen,GRÜNE,437,19.7
 08237027,Eutingen im Gäu,Erststimmen,GRÜNE,618,18.4
 08237027,Eutingen im Gäu,Zweitstimmen,GRÜNE,770,22.9
-08237028,"Freudenstadt, Stadt",Erststimmen,GRÜNE,1969,19.0
-08237028,"Freudenstadt, Stadt",Zweitstimmen,GRÜNE,2681,25.8
+08237028,"Freudenstadt, Stadt",Erststimmen,GRÜNE,2024,18.8
+08237028,"Freudenstadt, Stadt",Zweitstimmen,GRÜNE,2765,25.6
 08237030,Glatten,Erststimmen,GRÜNE,172,12.2
 08237030,Glatten,Zweitstimmen,GRÜNE,211,14.9
 08237032,Grömbach,Erststimmen,GRÜNE,24,9.0
@@ -9109,8 +9145,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08316039,Sexau,Zweitstimmen,GRÜNE,770,36.5
 08316042,Simonswald,Erststimmen,GRÜNE,317,17.8
 08316042,Simonswald,Zweitstimmen,GRÜNE,427,24.1
-08316043,Teningen,Erststimmen,GRÜNE,1354,26.6
-08316043,Teningen,Zweitstimmen,GRÜNE,1670,32.6
+08316043,Teningen,Erststimmen,GRÜNE,1702,26.6
+08316043,Teningen,Zweitstimmen,GRÜNE,2105,32.8
 08316045,Vörstetten,Erststimmen,GRÜNE,657,34.7
 08316045,Vörstetten,Zweitstimmen,GRÜNE,750,39.6
 08316049,Weisweil,Erststimmen,GRÜNE,226,18.1
@@ -9141,10 +9177,10 @@ ags,municipality_name,vote_type,party,votes,percent
 08325024,Hardt,Zweitstimmen,GRÜNE,349,20.9
 08325036,Lauterbach,Erststimmen,GRÜNE,217,14.6
 08325036,Lauterbach,Zweitstimmen,GRÜNE,319,21.4
-08325045,"Oberndorf am Neckar, Stadt",Erststimmen,GRÜNE,619,13.4
-08325045,"Oberndorf am Neckar, Stadt",Zweitstimmen,GRÜNE,874,18.9
-08325049,"Rottweil, Stadt",Erststimmen,GRÜNE,2344,20.4
-08325049,"Rottweil, Stadt",Zweitstimmen,GRÜNE,3384,29.4
+08325045,"Oberndorf am Neckar, Stadt",Erststimmen,GRÜNE,752,13.3
+08325045,"Oberndorf am Neckar, Stadt",Zweitstimmen,GRÜNE,1097,19.4
+08325049,"Rottweil, Stadt",Erststimmen,GRÜNE,2447,20.3
+08325049,"Rottweil, Stadt",Zweitstimmen,GRÜNE,3522,29.2
 08325050,Schenkenzell,Erststimmen,GRÜNE,220,21.3
 08325050,Schenkenzell,Zweitstimmen,GRÜNE,266,25.6
 08325051,"Schiltach, Stadt",Erststimmen,GRÜNE,491,24.3
@@ -9161,8 +9197,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08325064,Wellendingen,Zweitstimmen,GRÜNE,218,13.1
 08325069,Zimmern ob Rottweil,Erststimmen,GRÜNE,487,14.6
 08325069,Zimmern ob Rottweil,Zweitstimmen,GRÜNE,727,21.7
-08325070,Fluorn-Winzeln,Erststimmen,GRÜNE,131,10.8
-08325070,Fluorn-Winzeln,Zweitstimmen,GRÜNE,185,15.2
+08325070,Fluorn-Winzeln,Erststimmen,GRÜNE,209,11.7
+08325070,Fluorn-Winzeln,Zweitstimmen,GRÜNE,313,17.5
 08325071,Eschbronn,Erststimmen,GRÜNE,199,15.6
 08325071,Eschbronn,Zweitstimmen,GRÜNE,254,19.9
 08325072,Deißlingen,Erststimmen,GRÜNE,503,15.6
@@ -9203,8 +9239,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08326065,Unterkirnach,Zweitstimmen,GRÜNE,343,27.3
 08326068,"Vöhrenbach, Stadt",Erststimmen,GRÜNE,514,30.6
 08326068,"Vöhrenbach, Stadt",Zweitstimmen,GRÜNE,371,22.0
-08326074,"Villingen-Schwenningen, Stadt",Erststimmen,GRÜNE,7685,23.9
-08326074,"Villingen-Schwenningen, Stadt",Zweitstimmen,GRÜNE,8543,26.4
+08326074,"Villingen-Schwenningen, Stadt",Erststimmen,GRÜNE,7980,24.0
+08326074,"Villingen-Schwenningen, Stadt",Zweitstimmen,GRÜNE,8866,26.5
 08326075,Brigachtal,Erststimmen,GRÜNE,667,23.0
 08326075,Brigachtal,Zweitstimmen,GRÜNE,708,24.2
 08327002,Aldingen,Erststimmen,GRÜNE,481,14.9
@@ -9219,6 +9255,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08327007,Bubsheim,Zweitstimmen,GRÜNE,64,11.5
 08327008,Buchheim,Erststimmen,GRÜNE,72,16.0
 08327008,Buchheim,Zweitstimmen,GRÜNE,74,16.4
+08327009,Deilingen,Erststimmen,GRÜNE,61,10.7
+08327009,Deilingen,Zweitstimmen,GRÜNE,74,12.9
 08327010,Denkingen,Erststimmen,GRÜNE,210,14.3
 08327010,Denkingen,Zweitstimmen,GRÜNE,243,16.4
 08327011,Dürbheim,Erststimmen,GRÜNE,148,15.3
@@ -9293,8 +9331,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08336025,Fröhnd,Zweitstimmen,GRÜNE,50,15.8
 08336034,Hasel,Erststimmen,GRÜNE,149,24.4
 08336034,Hasel,Zweitstimmen,GRÜNE,170,27.9
-08336036,Hausen im Wiesental,Erststimmen,GRÜNE,92,24.6
-08336036,Hausen im Wiesental,Zweitstimmen,GRÜNE,121,32.3
+08336036,Hausen im Wiesental,Erststimmen,GRÜNE,290,23.7
+08336036,Hausen im Wiesental,Zweitstimmen,GRÜNE,368,30.0
 08336043,Inzlingen,Erststimmen,GRÜNE,411,31.0
 08336043,Inzlingen,Zweitstimmen,GRÜNE,495,37.2
 08336050,"Lörrach, Stadt",Erststimmen,GRÜNE,6519,32.5
@@ -9393,8 +9431,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08416031,Ofterdingen,Zweitstimmen,GRÜNE,910,32.7
 08416036,"Rottenburg am Neckar, Stadt",Erststimmen,GRÜNE,5712,24.9
 08416036,"Rottenburg am Neckar, Stadt",Zweitstimmen,GRÜNE,7462,32.4
-08416041,"Tübingen, Universitätsstadt",Erststimmen,GRÜNE,22327,43.9
-08416041,"Tübingen, Universitätsstadt",Zweitstimmen,GRÜNE,27111,53.2
+08416041,"Tübingen, Universitätsstadt",Erststimmen,GRÜNE,22562,43.9
+08416041,"Tübingen, Universitätsstadt",Zweitstimmen,GRÜNE,27420,53.2
 08416048,Ammerbuch,Erststimmen,GRÜNE,2039,30.4
 08416048,Ammerbuch,Zweitstimmen,GRÜNE,2578,38.4
 08416049,Neustetten,Erststimmen,GRÜNE,422,19.9
@@ -9413,12 +9451,12 @@ ags,municipality_name,vote_type,party,votes,percent
 08417015,Dormettingen,Zweitstimmen,GRÜNE,119,20.3
 08417016,Dotternhausen,Erststimmen,GRÜNE,177,16.6
 08417016,Dotternhausen,Zweitstimmen,GRÜNE,275,25.7
-08417022,"Geislingen, Stadt",Erststimmen,GRÜNE,351,13.5
-08417022,"Geislingen, Stadt",Zweitstimmen,GRÜNE,516,19.8
+08417022,"Geislingen, Stadt",Erststimmen,GRÜNE,424,12.6
+08417022,"Geislingen, Stadt",Zweitstimmen,GRÜNE,645,19.1
 08417023,Grosselfingen,Erststimmen,GRÜNE,135,11.9
 08417023,Grosselfingen,Zweitstimmen,GRÜNE,192,16.9
 08417025,"Haigerloch, Stadt",Erststimmen,GRÜNE,844,14.9
-08417025,"Haigerloch, Stadt",Zweitstimmen,GRÜNE,1220,21.4
+08417025,"Haigerloch, Stadt",Zweitstimmen,GRÜNE,1222,21.5
 08417029,Hausen am Tann,Erststimmen,GRÜNE,31,12.0
 08417029,Hausen am Tann,Zweitstimmen,GRÜNE,54,20.7
 08417044,"Meßstetten, Stadt",Erststimmen,GRÜNE,601,10.9
@@ -9463,8 +9501,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08425017,Berghülen,Zweitstimmen,GRÜNE,258,21.0
 08425019,Bernstadt,Erststimmen,GRÜNE,266,19.3
 08425019,Bernstadt,Zweitstimmen,GRÜNE,339,24.6
-08425020,"Blaubeuren, Stadt",Erststimmen,GRÜNE,1439,26.2
-08425020,"Blaubeuren, Stadt",Zweitstimmen,GRÜNE,1761,32.1
+08425020,"Blaubeuren, Stadt",Erststimmen,GRÜNE,1544,25.6
+08425020,"Blaubeuren, Stadt",Zweitstimmen,GRÜNE,1897,31.5
 08425022,Börslingen,Erststimmen,GRÜNE,14,13.2
 08425022,Börslingen,Zweitstimmen,GRÜNE,15,14.3
 08425024,Breitingen,Erststimmen,GRÜNE,18,12.7
@@ -9485,8 +9523,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08425055,Hausen am Bussen,Zweitstimmen,GRÜNE,24,16.9
 08425062,Holzkirch,Erststimmen,GRÜNE,17,12.8
 08425062,Holzkirch,Zweitstimmen,GRÜNE,26,20.0
-08425071,"Laichingen, Stadt",Erststimmen,GRÜNE,846,17.1
-08425071,"Laichingen, Stadt",Zweitstimmen,GRÜNE,1042,21.1
+08425071,"Laichingen, Stadt",Erststimmen,GRÜNE,997,17.9
+08425071,"Laichingen, Stadt",Zweitstimmen,GRÜNE,1218,21.9
 08425072,"Langenau, Stadt",Erststimmen,GRÜNE,1923,23.8
 08425072,"Langenau, Stadt",Zweitstimmen,GRÜNE,2370,29.3
 08425073,Lauterach,Erststimmen,GRÜNE,48,17.9
@@ -9561,8 +9599,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08426036,Dürnau,Zweitstimmen,GRÜNE,40,20.1
 08426038,Eberhardzell,Erststimmen,GRÜNE,321,11.9
 08426038,Eberhardzell,Zweitstimmen,GRÜNE,457,17.0
-08426043,Erlenmoos,Erststimmen,GRÜNE,45,11.2
-08426043,Erlenmoos,Zweitstimmen,GRÜNE,56,14.0
+08426043,Erlenmoos,Erststimmen,GRÜNE,117,10.9
+08426043,Erlenmoos,Zweitstimmen,GRÜNE,157,14.6
 08426045,Ertingen,Erststimmen,GRÜNE,312,10.2
 08426045,Ertingen,Zweitstimmen,GRÜNE,442,14.5
 08426058,Hochdorf,Erststimmen,GRÜNE,228,15.7
@@ -9675,6 +9713,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08437076,"Mengen, Stadt",Zweitstimmen,GRÜNE,936,19.0
 08437078,"Meßkirch, Stadt",Erststimmen,GRÜNE,512,12.4
 08437078,"Meßkirch, Stadt",Zweitstimmen,GRÜNE,820,19.8
+08437082,Neufra,Erststimmen,GRÜNE,167,16.2
+08437082,Neufra,Zweitstimmen,GRÜNE,196,18.9
 08437086,Ostrach,Erststimmen,GRÜNE,622,16.1
 08437086,Ostrach,Zweitstimmen,GRÜNE,745,19.2
 08437088,"Pfullendorf, Stadt",Erststimmen,GRÜNE,931,16.4
@@ -9772,7 +9812,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08127062,Oberrot,Erststimmen,KlimalisteBW,,
 08127062,Oberrot,Zweitstimmen,KlimalisteBW,1,0.1
 08127063,Obersontheim,Erststimmen,KlimalisteBW,,
-08127063,Obersontheim,Zweitstimmen,KlimalisteBW,1,0.1
+08127063,Obersontheim,Zweitstimmen,KlimalisteBW,1,0.0
 08127071,Rot am See,Erststimmen,KlimalisteBW,,
 08127071,Rot am See,Zweitstimmen,KlimalisteBW,1,0.0
 08127073,Satteldorf,Erststimmen,KlimalisteBW,,
@@ -9892,7 +9932,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08216059,Weisenbach,Erststimmen,KlimalisteBW,,
 08216059,Weisenbach,Zweitstimmen,KlimalisteBW,0,0.0
 08231000,"Pforzheim, Stadt",Erststimmen,KlimalisteBW,,
-08231000,"Pforzheim, Stadt",Zweitstimmen,KlimalisteBW,20,0.1
+08231000,"Pforzheim, Stadt",Zweitstimmen,KlimalisteBW,21,0.1
 08235006,"Altensteig, Stadt",Erststimmen,KlimalisteBW,,
 08235006,"Altensteig, Stadt",Zweitstimmen,KlimalisteBW,1,0.0
 08235007,Althengstett,Erststimmen,KlimalisteBW,,
@@ -9974,7 +10014,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08236046,Niefern-Öschelbronn,Erststimmen,KlimalisteBW,,
 08236046,Niefern-Öschelbronn,Zweitstimmen,KlimalisteBW,2,0.0
 08236050,Ötisheim,Erststimmen,KlimalisteBW,,
-08236050,Ötisheim,Zweitstimmen,KlimalisteBW,0,0.0
+08236050,Ötisheim,Zweitstimmen,KlimalisteBW,1,0.0
 08236061,Sternenfels,Erststimmen,KlimalisteBW,,
 08236061,Sternenfels,Zweitstimmen,KlimalisteBW,1,0.1
 08236062,Tiefenbronn,Erststimmen,KlimalisteBW,,
@@ -10064,7 +10104,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08316042,Simonswald,Erststimmen,KlimalisteBW,,
 08316042,Simonswald,Zweitstimmen,KlimalisteBW,0,0.0
 08316043,Teningen,Erststimmen,KlimalisteBW,,
-08316043,Teningen,Zweitstimmen,KlimalisteBW,2,0.0
+08316043,Teningen,Zweitstimmen,KlimalisteBW,3,0.0
 08316045,Vörstetten,Erststimmen,KlimalisteBW,,
 08316045,Vörstetten,Zweitstimmen,KlimalisteBW,1,0.1
 08316049,Weisweil,Erststimmen,KlimalisteBW,,
@@ -10096,7 +10136,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08325036,Lauterbach,Erststimmen,KlimalisteBW,,
 08325036,Lauterbach,Zweitstimmen,KlimalisteBW,0,0.0
 08325045,"Oberndorf am Neckar, Stadt",Erststimmen,KlimalisteBW,,
-08325045,"Oberndorf am Neckar, Stadt",Zweitstimmen,KlimalisteBW,0,0.0
+08325045,"Oberndorf am Neckar, Stadt",Zweitstimmen,KlimalisteBW,1,0.0
 08325049,"Rottweil, Stadt",Erststimmen,KlimalisteBW,,
 08325049,"Rottweil, Stadt",Zweitstimmen,KlimalisteBW,3,0.0
 08325050,Schenkenzell,Erststimmen,KlimalisteBW,,
@@ -10173,6 +10213,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08327007,Bubsheim,Zweitstimmen,KlimalisteBW,0,0.0
 08327008,Buchheim,Erststimmen,KlimalisteBW,,
 08327008,Buchheim,Zweitstimmen,KlimalisteBW,0,0.0
+08327009,Deilingen,Erststimmen,KlimalisteBW,,
+08327009,Deilingen,Zweitstimmen,KlimalisteBW,0,0.0
 08327010,Denkingen,Erststimmen,KlimalisteBW,,
 08327010,Denkingen,Zweitstimmen,KlimalisteBW,1,0.1
 08327011,Dürbheim,Erststimmen,KlimalisteBW,,
@@ -10348,7 +10390,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08416036,"Rottenburg am Neckar, Stadt",Erststimmen,KlimalisteBW,,
 08416036,"Rottenburg am Neckar, Stadt",Zweitstimmen,KlimalisteBW,7,0.0
 08416041,"Tübingen, Universitätsstadt",Erststimmen,KlimalisteBW,,
-08416041,"Tübingen, Universitätsstadt",Zweitstimmen,KlimalisteBW,91,0.2
+08416041,"Tübingen, Universitätsstadt",Zweitstimmen,KlimalisteBW,92,0.2
 08416048,Ammerbuch,Erststimmen,KlimalisteBW,,
 08416048,Ammerbuch,Zweitstimmen,KlimalisteBW,6,0.1
 08416049,Neustetten,Erststimmen,KlimalisteBW,,
@@ -10516,7 +10558,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08426038,Eberhardzell,Erststimmen,KlimalisteBW,,
 08426038,Eberhardzell,Zweitstimmen,KlimalisteBW,1,0.0
 08426043,Erlenmoos,Erststimmen,KlimalisteBW,,
-08426043,Erlenmoos,Zweitstimmen,KlimalisteBW,0,0.0
+08426043,Erlenmoos,Zweitstimmen,KlimalisteBW,3,0.3
 08426045,Ertingen,Erststimmen,KlimalisteBW,,
 08426045,Ertingen,Zweitstimmen,KlimalisteBW,1,0.0
 08426058,Hochdorf,Erststimmen,KlimalisteBW,,
@@ -10629,6 +10671,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08437076,"Mengen, Stadt",Zweitstimmen,KlimalisteBW,1,0.0
 08437078,"Meßkirch, Stadt",Erststimmen,KlimalisteBW,,
 08437078,"Meßkirch, Stadt",Zweitstimmen,KlimalisteBW,1,0.0
+08437082,Neufra,Erststimmen,KlimalisteBW,,
+08437082,Neufra,Zweitstimmen,KlimalisteBW,0,0.0
 08437086,Ostrach,Erststimmen,KlimalisteBW,,
 08437086,Ostrach,Zweitstimmen,KlimalisteBW,0,0.0
 08437088,"Pfullendorf, Stadt",Erststimmen,KlimalisteBW,,
@@ -10664,7 +10708,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08125094,Talheim,Erststimmen,PDH,,
 08125094,Talheim,Zweitstimmen,PDH,0,0.0
 08126011,Bretzfeld,Erststimmen,PDH,,
-08126011,Bretzfeld,Zweitstimmen,PDH,2,0.0
+08126011,Bretzfeld,Zweitstimmen,PDH,3,0.0
 08126020,Dörzbach,Erststimmen,PDH,,
 08126020,Dörzbach,Zweitstimmen,PDH,0,0.0
 08126028,"Forchtenberg, Stadt",Erststimmen,PDH,,
@@ -10846,7 +10890,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08216059,Weisenbach,Erststimmen,PDH,,
 08216059,Weisenbach,Zweitstimmen,PDH,1,0.1
 08231000,"Pforzheim, Stadt",Erststimmen,PDH,,
-08231000,"Pforzheim, Stadt",Zweitstimmen,PDH,21,0.1
+08231000,"Pforzheim, Stadt",Zweitstimmen,PDH,22,0.1
 08235006,"Altensteig, Stadt",Erststimmen,PDH,,
 08235006,"Altensteig, Stadt",Zweitstimmen,PDH,1,0.0
 08235007,Althengstett,Erststimmen,PDH,,
@@ -11050,9 +11094,9 @@ ags,municipality_name,vote_type,party,votes,percent
 08325036,Lauterbach,Erststimmen,PDH,,
 08325036,Lauterbach,Zweitstimmen,PDH,1,0.1
 08325045,"Oberndorf am Neckar, Stadt",Erststimmen,PDH,,
-08325045,"Oberndorf am Neckar, Stadt",Zweitstimmen,PDH,1,0.0
+08325045,"Oberndorf am Neckar, Stadt",Zweitstimmen,PDH,3,0.1
 08325049,"Rottweil, Stadt",Erststimmen,PDH,,
-08325049,"Rottweil, Stadt",Zweitstimmen,PDH,4,0.0
+08325049,"Rottweil, Stadt",Zweitstimmen,PDH,5,0.0
 08325050,Schenkenzell,Erststimmen,PDH,,
 08325050,Schenkenzell,Zweitstimmen,PDH,0,0.0
 08325051,"Schiltach, Stadt",Erststimmen,PDH,,
@@ -11127,6 +11171,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08327007,Bubsheim,Zweitstimmen,PDH,0,0.0
 08327008,Buchheim,Erststimmen,PDH,,
 08327008,Buchheim,Zweitstimmen,PDH,0,0.0
+08327009,Deilingen,Erststimmen,PDH,,
+08327009,Deilingen,Zweitstimmen,PDH,0,0.0
 08327010,Denkingen,Erststimmen,PDH,,
 08327010,Denkingen,Zweitstimmen,PDH,0,0.0
 08327011,Dürbheim,Erststimmen,PDH,,
@@ -11372,7 +11418,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08425019,Bernstadt,Erststimmen,PDH,,
 08425019,Bernstadt,Zweitstimmen,PDH,1,0.1
 08425020,"Blaubeuren, Stadt",Erststimmen,PDH,,
-08425020,"Blaubeuren, Stadt",Zweitstimmen,PDH,2,0.0
+08425020,"Blaubeuren, Stadt",Zweitstimmen,PDH,3,0.0
 08425022,Börslingen,Erststimmen,PDH,,
 08425022,Börslingen,Zweitstimmen,PDH,0,0.0
 08425024,Breitingen,Erststimmen,PDH,,
@@ -11394,7 +11440,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08425062,Holzkirch,Erststimmen,PDH,,
 08425062,Holzkirch,Zweitstimmen,PDH,0,0.0
 08425071,"Laichingen, Stadt",Erststimmen,PDH,,
-08425071,"Laichingen, Stadt",Zweitstimmen,PDH,2,0.0
+08425071,"Laichingen, Stadt",Zweitstimmen,PDH,3,0.1
 08425072,"Langenau, Stadt",Erststimmen,PDH,,
 08425072,"Langenau, Stadt",Zweitstimmen,PDH,7,0.1
 08425073,Lauterach,Erststimmen,PDH,,
@@ -11583,6 +11629,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08437076,"Mengen, Stadt",Zweitstimmen,PDH,7,0.1
 08437078,"Meßkirch, Stadt",Erststimmen,PDH,,
 08437078,"Meßkirch, Stadt",Zweitstimmen,PDH,2,0.0
+08437082,Neufra,Erststimmen,PDH,,
+08437082,Neufra,Zweitstimmen,PDH,0,0.0
 08437086,Ostrach,Erststimmen,PDH,,
 08437086,Ostrach,Zweitstimmen,PDH,0,0.0
 08437088,"Pfullendorf, Stadt",Erststimmen,PDH,,
@@ -11618,7 +11666,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08125094,Talheim,Erststimmen,PDR,,
 08125094,Talheim,Zweitstimmen,PDR,3,0.1
 08126011,Bretzfeld,Erststimmen,PDR,,
-08126011,Bretzfeld,Zweitstimmen,PDR,11,0.2
+08126011,Bretzfeld,Zweitstimmen,PDR,12,0.2
 08126020,Dörzbach,Erststimmen,PDR,,
 08126020,Dörzbach,Zweitstimmen,PDR,1,0.1
 08126028,"Forchtenberg, Stadt",Erststimmen,PDR,,
@@ -11680,7 +11728,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08127062,Oberrot,Erststimmen,PDR,,
 08127062,Oberrot,Zweitstimmen,PDR,6,0.3
 08127063,Obersontheim,Erststimmen,PDR,,
-08127063,Obersontheim,Zweitstimmen,PDR,2,0.1
+08127063,Obersontheim,Zweitstimmen,PDR,5,0.2
 08127071,Rot am See,Erststimmen,PDR,,
 08127071,Rot am See,Zweitstimmen,PDR,3,0.1
 08127073,Satteldorf,Erststimmen,PDR,,
@@ -11730,7 +11778,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08128064,"Külsheim, Stadt",Erststimmen,PDR,,
 08128064,"Külsheim, Stadt",Zweitstimmen,PDR,4,0.1
 08128082,"Niederstetten, Stadt",Erststimmen,PDR,,
-08128082,"Niederstetten, Stadt",Zweitstimmen,PDR,5,0.2
+08128082,"Niederstetten, Stadt",Zweitstimmen,PDR,6,0.2
 08128115,"Tauberbischofsheim, Stadt",Erststimmen,PDR,,
 08128115,"Tauberbischofsheim, Stadt",Zweitstimmen,PDR,20,0.3
 08128126,"Weikersheim, Stadt",Erststimmen,PDR,,
@@ -11800,7 +11848,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08216059,Weisenbach,Erststimmen,PDR,,
 08216059,Weisenbach,Zweitstimmen,PDR,2,0.2
 08231000,"Pforzheim, Stadt",Erststimmen,PDR,,
-08231000,"Pforzheim, Stadt",Zweitstimmen,PDR,79,0.2
+08231000,"Pforzheim, Stadt",Zweitstimmen,PDR,80,0.2
 08235006,"Altensteig, Stadt",Erststimmen,PDR,,
 08235006,"Altensteig, Stadt",Zweitstimmen,PDR,8,0.2
 08235007,Althengstett,Erststimmen,PDR,,
@@ -11838,7 +11886,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08235065,Schömberg,Erststimmen,PDR,,
 08235065,Schömberg,Zweitstimmen,PDR,7,0.2
 08235066,Simmersfeld,Erststimmen,PDR,,
-08235066,Simmersfeld,Zweitstimmen,PDR,0,0.0
+08235066,Simmersfeld,Zweitstimmen,PDR,1,0.2
 08235067,Simmozheim,Erststimmen,PDR,,
 08235067,Simmozheim,Zweitstimmen,PDR,3,0.2
 08235073,Unterreichenbach,Erststimmen,PDR,,
@@ -11852,7 +11900,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08235085,"Calw, Stadt",Erststimmen,PDR,,
 08235085,"Calw, Stadt",Zweitstimmen,PDR,19,0.2
 08236004,Birkenfeld,Erststimmen,PDR,,
-08236004,Birkenfeld,Zweitstimmen,PDR,10,0.2
+08236004,Birkenfeld,Zweitstimmen,PDR,7,0.2
 08236011,Eisingen,Erststimmen,PDR,,
 08236011,Eisingen,Zweitstimmen,PDR,4,0.2
 08236013,Engelsbrand,Erststimmen,PDR,,
@@ -11878,11 +11926,11 @@ ags,municipality_name,vote_type,party,votes,percent
 08236043,"Neuenbürg, Stadt",Erststimmen,PDR,,
 08236043,"Neuenbürg, Stadt",Zweitstimmen,PDR,9,0.2
 08236044,Neuhausen,Erststimmen,PDR,,
-08236044,Neuhausen,Zweitstimmen,PDR,2,0.1
+08236044,Neuhausen,Zweitstimmen,PDR,5,0.2
 08236046,Niefern-Öschelbronn,Erststimmen,PDR,,
 08236046,Niefern-Öschelbronn,Zweitstimmen,PDR,5,0.1
 08236050,Ötisheim,Erststimmen,PDR,,
-08236050,Ötisheim,Zweitstimmen,PDR,3,0.2
+08236050,Ötisheim,Zweitstimmen,PDR,3,0.1
 08236061,Sternenfels,Erststimmen,PDR,,
 08236061,Sternenfels,Zweitstimmen,PDR,7,0.4
 08236062,Tiefenbronn,Erststimmen,PDR,,
@@ -11972,7 +12020,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08316042,Simonswald,Erststimmen,PDR,,
 08316042,Simonswald,Zweitstimmen,PDR,3,0.2
 08316043,Teningen,Erststimmen,PDR,,
-08316043,Teningen,Zweitstimmen,PDR,9,0.2
+08316043,Teningen,Zweitstimmen,PDR,15,0.2
 08316045,Vörstetten,Erststimmen,PDR,,
 08316045,Vörstetten,Zweitstimmen,PDR,2,0.1
 08316049,Weisweil,Erststimmen,PDR,,
@@ -12004,7 +12052,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08325036,Lauterbach,Erststimmen,PDR,,
 08325036,Lauterbach,Zweitstimmen,PDR,2,0.1
 08325045,"Oberndorf am Neckar, Stadt",Erststimmen,PDR,,
-08325045,"Oberndorf am Neckar, Stadt",Zweitstimmen,PDR,6,0.1
+08325045,"Oberndorf am Neckar, Stadt",Zweitstimmen,PDR,7,0.1
 08325049,"Rottweil, Stadt",Erststimmen,PDR,,
 08325049,"Rottweil, Stadt",Zweitstimmen,PDR,12,0.1
 08325050,Schenkenzell,Erststimmen,PDR,,
@@ -12024,7 +12072,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08325069,Zimmern ob Rottweil,Erststimmen,PDR,,
 08325069,Zimmern ob Rottweil,Zweitstimmen,PDR,5,0.1
 08325070,Fluorn-Winzeln,Erststimmen,PDR,,
-08325070,Fluorn-Winzeln,Zweitstimmen,PDR,1,0.1
+08325070,Fluorn-Winzeln,Zweitstimmen,PDR,6,0.3
 08325071,Eschbronn,Erststimmen,PDR,,
 08325071,Eschbronn,Zweitstimmen,PDR,3,0.2
 08325072,Deißlingen,Erststimmen,PDR,,
@@ -12066,7 +12114,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08326068,"Vöhrenbach, Stadt",Erststimmen,PDR,,
 08326068,"Vöhrenbach, Stadt",Zweitstimmen,PDR,6,0.4
 08326074,"Villingen-Schwenningen, Stadt",Erststimmen,PDR,,
-08326074,"Villingen-Schwenningen, Stadt",Zweitstimmen,PDR,79,0.2
+08326074,"Villingen-Schwenningen, Stadt",Zweitstimmen,PDR,81,0.2
 08326075,Brigachtal,Erststimmen,PDR,,
 08326075,Brigachtal,Zweitstimmen,PDR,4,0.1
 08327002,Aldingen,Erststimmen,PDR,,
@@ -12081,6 +12129,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08327007,Bubsheim,Zweitstimmen,PDR,1,0.2
 08327008,Buchheim,Erststimmen,PDR,,
 08327008,Buchheim,Zweitstimmen,PDR,1,0.2
+08327009,Deilingen,Erststimmen,PDR,,
+08327009,Deilingen,Zweitstimmen,PDR,1,0.2
 08327010,Denkingen,Erststimmen,PDR,,
 08327010,Denkingen,Zweitstimmen,PDR,2,0.1
 08327011,Dürbheim,Erststimmen,PDR,,
@@ -12156,7 +12206,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08336034,Hasel,Erststimmen,PDR,,
 08336034,Hasel,Zweitstimmen,PDR,0,0.0
 08336036,Hausen im Wiesental,Erststimmen,PDR,,
-08336036,Hausen im Wiesental,Zweitstimmen,PDR,2,0.5
+08336036,Hausen im Wiesental,Zweitstimmen,PDR,2,0.2
 08336043,Inzlingen,Erststimmen,PDR,,
 08336043,Inzlingen,Zweitstimmen,PDR,1,0.1
 08336050,"Lörrach, Stadt",Erststimmen,PDR,,
@@ -12256,7 +12306,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08416036,"Rottenburg am Neckar, Stadt",Erststimmen,PDR,,
 08416036,"Rottenburg am Neckar, Stadt",Zweitstimmen,PDR,31,0.1
 08416041,"Tübingen, Universitätsstadt",Erststimmen,PDR,,
-08416041,"Tübingen, Universitätsstadt",Zweitstimmen,PDR,47,0.1
+08416041,"Tübingen, Universitätsstadt",Zweitstimmen,PDR,50,0.1
 08416048,Ammerbuch,Erststimmen,PDR,,
 08416048,Ammerbuch,Zweitstimmen,PDR,10,0.1
 08416049,Neustetten,Erststimmen,PDR,,
@@ -12276,7 +12326,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08417016,Dotternhausen,Erststimmen,PDR,,
 08417016,Dotternhausen,Zweitstimmen,PDR,1,0.1
 08417022,"Geislingen, Stadt",Erststimmen,PDR,,
-08417022,"Geislingen, Stadt",Zweitstimmen,PDR,5,0.2
+08417022,"Geislingen, Stadt",Zweitstimmen,PDR,7,0.2
 08417023,Grosselfingen,Erststimmen,PDR,,
 08417023,Grosselfingen,Zweitstimmen,PDR,6,0.5
 08417025,"Haigerloch, Stadt",Erststimmen,PDR,,
@@ -12326,7 +12376,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08425019,Bernstadt,Erststimmen,PDR,,
 08425019,Bernstadt,Zweitstimmen,PDR,1,0.1
 08425020,"Blaubeuren, Stadt",Erststimmen,PDR,,
-08425020,"Blaubeuren, Stadt",Zweitstimmen,PDR,15,0.3
+08425020,"Blaubeuren, Stadt",Zweitstimmen,PDR,16,0.3
 08425022,Börslingen,Erststimmen,PDR,,
 08425022,Börslingen,Zweitstimmen,PDR,1,1.0
 08425024,Breitingen,Erststimmen,PDR,,
@@ -12424,7 +12474,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08426038,Eberhardzell,Erststimmen,PDR,,
 08426038,Eberhardzell,Zweitstimmen,PDR,8,0.3
 08426043,Erlenmoos,Erststimmen,PDR,,
-08426043,Erlenmoos,Zweitstimmen,PDR,2,0.5
+08426043,Erlenmoos,Zweitstimmen,PDR,2,0.2
 08426045,Ertingen,Erststimmen,PDR,,
 08426045,Ertingen,Zweitstimmen,PDR,3,0.1
 08426058,Hochdorf,Erststimmen,PDR,,
@@ -12537,6 +12587,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08437076,"Mengen, Stadt",Zweitstimmen,PDR,8,0.2
 08437078,"Meßkirch, Stadt",Erststimmen,PDR,,
 08437078,"Meßkirch, Stadt",Zweitstimmen,PDR,7,0.2
+08437082,Neufra,Erststimmen,PDR,,
+08437082,Neufra,Zweitstimmen,PDR,1,0.1
 08437086,Ostrach,Erststimmen,PDR,,
 08437086,Ostrach,Zweitstimmen,PDR,5,0.1
 08437088,"Pfullendorf, Stadt",Erststimmen,PDR,,
@@ -12587,7 +12639,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08426036,Dürnau,Zweitstimmen,PIRATEN,,
 08426038,Eberhardzell,Erststimmen,PIRATEN,10,0.4
 08426038,Eberhardzell,Zweitstimmen,PIRATEN,,
-08426043,Erlenmoos,Erststimmen,PIRATEN,2,0.5
+08426043,Erlenmoos,Erststimmen,PIRATEN,3,0.3
 08426043,Erlenmoos,Zweitstimmen,PIRATEN,,
 08426045,Ertingen,Erststimmen,PIRATEN,10,0.3
 08426045,Ertingen,Zweitstimmen,PIRATEN,,
@@ -12648,7 +12700,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08125094,Talheim,Erststimmen,PdF,,
 08125094,Talheim,Zweitstimmen,PdF,4,0.1
 08126011,Bretzfeld,Erststimmen,PdF,,
-08126011,Bretzfeld,Zweitstimmen,PdF,3,0.1
+08126011,Bretzfeld,Zweitstimmen,PdF,4,0.1
 08126020,Dörzbach,Erststimmen,PdF,,
 08126020,Dörzbach,Zweitstimmen,PdF,2,0.1
 08126028,"Forchtenberg, Stadt",Erststimmen,PdF,,
@@ -12760,7 +12812,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08128064,"Külsheim, Stadt",Erststimmen,PdF,,
 08128064,"Külsheim, Stadt",Zweitstimmen,PdF,3,0.1
 08128082,"Niederstetten, Stadt",Erststimmen,PdF,,
-08128082,"Niederstetten, Stadt",Zweitstimmen,PdF,5,0.2
+08128082,"Niederstetten, Stadt",Zweitstimmen,PdF,6,0.2
 08128115,"Tauberbischofsheim, Stadt",Erststimmen,PdF,,
 08128115,"Tauberbischofsheim, Stadt",Zweitstimmen,PdF,7,0.1
 08128126,"Weikersheim, Stadt",Erststimmen,PdF,,
@@ -12908,11 +12960,11 @@ ags,municipality_name,vote_type,party,votes,percent
 08236043,"Neuenbürg, Stadt",Erststimmen,PdF,,
 08236043,"Neuenbürg, Stadt",Zweitstimmen,PdF,5,0.1
 08236044,Neuhausen,Erststimmen,PdF,,
-08236044,Neuhausen,Zweitstimmen,PdF,4,0.2
+08236044,Neuhausen,Zweitstimmen,PdF,4,0.1
 08236046,Niefern-Öschelbronn,Erststimmen,PdF,,
 08236046,Niefern-Öschelbronn,Zweitstimmen,PdF,6,0.1
 08236050,Ötisheim,Erststimmen,PdF,,
-08236050,Ötisheim,Zweitstimmen,PdF,1,0.1
+08236050,Ötisheim,Zweitstimmen,PdF,2,0.1
 08236061,Sternenfels,Erststimmen,PdF,,
 08236061,Sternenfels,Zweitstimmen,PdF,0,0.0
 08236062,Tiefenbronn,Erststimmen,PdF,,
@@ -13002,7 +13054,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08316042,Simonswald,Erststimmen,PdF,,
 08316042,Simonswald,Zweitstimmen,PdF,1,0.1
 08316043,Teningen,Erststimmen,PdF,,
-08316043,Teningen,Zweitstimmen,PdF,3,0.1
+08316043,Teningen,Zweitstimmen,PdF,4,0.1
 08316045,Vörstetten,Erststimmen,PdF,,
 08316045,Vörstetten,Zweitstimmen,PdF,0,0.0
 08316049,Weisweil,Erststimmen,PdF,,
@@ -13034,7 +13086,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08325036,Lauterbach,Erststimmen,PdF,,
 08325036,Lauterbach,Zweitstimmen,PdF,1,0.1
 08325045,"Oberndorf am Neckar, Stadt",Erststimmen,PdF,,
-08325045,"Oberndorf am Neckar, Stadt",Zweitstimmen,PdF,2,0.0
+08325045,"Oberndorf am Neckar, Stadt",Zweitstimmen,PdF,5,0.1
 08325049,"Rottweil, Stadt",Erststimmen,PdF,,
 08325049,"Rottweil, Stadt",Zweitstimmen,PdF,11,0.1
 08325050,Schenkenzell,Erststimmen,PdF,,
@@ -13096,7 +13148,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08326068,"Vöhrenbach, Stadt",Erststimmen,PdF,,
 08326068,"Vöhrenbach, Stadt",Zweitstimmen,PdF,0,0.0
 08326074,"Villingen-Schwenningen, Stadt",Erststimmen,PdF,,
-08326074,"Villingen-Schwenningen, Stadt",Zweitstimmen,PdF,20,0.1
+08326074,"Villingen-Schwenningen, Stadt",Zweitstimmen,PdF,23,0.1
 08326075,Brigachtal,Erststimmen,PdF,,
 08326075,Brigachtal,Zweitstimmen,PdF,2,0.1
 08327002,Aldingen,Erststimmen,PdF,,
@@ -13111,6 +13163,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08327007,Bubsheim,Zweitstimmen,PdF,2,0.4
 08327008,Buchheim,Erststimmen,PdF,,
 08327008,Buchheim,Zweitstimmen,PdF,2,0.4
+08327009,Deilingen,Erststimmen,PdF,,
+08327009,Deilingen,Zweitstimmen,PdF,1,0.2
 08327010,Denkingen,Erststimmen,PdF,,
 08327010,Denkingen,Zweitstimmen,PdF,2,0.1
 08327011,Dürbheim,Erststimmen,PdF,,
@@ -13454,7 +13508,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08426038,Eberhardzell,Erststimmen,PdF,,
 08426038,Eberhardzell,Zweitstimmen,PdF,2,0.1
 08426043,Erlenmoos,Erststimmen,PdF,,
-08426043,Erlenmoos,Zweitstimmen,PdF,1,0.2
+08426043,Erlenmoos,Zweitstimmen,PdF,2,0.2
 08426045,Ertingen,Erststimmen,PdF,,
 08426045,Ertingen,Zweitstimmen,PdF,2,0.1
 08426058,Hochdorf,Erststimmen,PdF,,
@@ -13567,6 +13621,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08437076,"Mengen, Stadt",Zweitstimmen,PdF,9,0.2
 08437078,"Meßkirch, Stadt",Erststimmen,PdF,,
 08437078,"Meßkirch, Stadt",Zweitstimmen,PdF,4,0.1
+08437082,Neufra,Erststimmen,PdF,,
+08437082,Neufra,Zweitstimmen,PdF,0,0.0
 08437086,Ostrach,Erststimmen,PdF,,
 08437086,Ostrach,Zweitstimmen,PdF,4,0.1
 08437088,"Pfullendorf, Stadt",Erststimmen,PdF,,
@@ -13601,8 +13657,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08125074,Nordheim,Zweitstimmen,SPD,254,5.6
 08125094,Talheim,Erststimmen,SPD,154,5.4
 08125094,Talheim,Zweitstimmen,SPD,121,4.2
-08126011,Bretzfeld,Erststimmen,SPD,390,7.0
-08126011,Bretzfeld,Zweitstimmen,SPD,332,5.9
+08126011,Bretzfeld,Erststimmen,SPD,430,6.8
+08126011,Bretzfeld,Zweitstimmen,SPD,355,5.6
 08126020,Dörzbach,Erststimmen,SPD,93,6.6
 08126020,Dörzbach,Zweitstimmen,SPD,74,5.2
 08126028,"Forchtenberg, Stadt",Erststimmen,SPD,171,6.1
@@ -13641,7 +13697,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08127012,Bühlertann,Zweitstimmen,SPD,57,3.4
 08127013,Bühlerzell,Erststimmen,SPD,44,3.4
 08127013,Bühlerzell,Zweitstimmen,SPD,50,3.8
-08127014,"Crailsheim, Stadt",Erststimmen,SPD,764,5.9
+08127014,"Crailsheim, Stadt",Erststimmen,SPD,761,5.9
 08127014,"Crailsheim, Stadt",Zweitstimmen,SPD,635,4.9
 08127023,Fichtenberg,Erststimmen,SPD,107,6.6
 08127023,Fichtenberg,Zweitstimmen,SPD,90,5.5
@@ -13663,8 +13719,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08127059,Michelfeld,Zweitstimmen,SPD,101,4.7
 08127062,Oberrot,Erststimmen,SPD,106,5.9
 08127062,Oberrot,Zweitstimmen,SPD,86,4.8
-08127063,Obersontheim,Erststimmen,SPD,90,4.7
-08127063,Obersontheim,Zweitstimmen,SPD,80,4.2
+08127063,Obersontheim,Erststimmen,SPD,148,5.4
+08127063,Obersontheim,Zweitstimmen,SPD,120,4.4
 08127071,Rot am See,Erststimmen,SPD,111,3.7
 08127071,Rot am See,Zweitstimmen,SPD,130,4.4
 08127073,Satteldorf,Erststimmen,SPD,120,4.2
@@ -13713,8 +13769,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08128061,Königheim,Zweitstimmen,SPD,83,4.4
 08128064,"Külsheim, Stadt",Erststimmen,SPD,214,7.1
 08128064,"Külsheim, Stadt",Zweitstimmen,SPD,172,5.6
-08128082,"Niederstetten, Stadt",Erststimmen,SPD,106,4.2
-08128082,"Niederstetten, Stadt",Zweitstimmen,SPD,106,4.1
+08128082,"Niederstetten, Stadt",Erststimmen,SPD,122,4.1
+08128082,"Niederstetten, Stadt",Zweitstimmen,SPD,118,3.9
 08128115,"Tauberbischofsheim, Stadt",Erststimmen,SPD,441,6.6
 08128115,"Tauberbischofsheim, Stadt",Zweitstimmen,SPD,351,5.2
 08128126,"Weikersheim, Stadt",Erststimmen,SPD,298,6.7
@@ -13783,8 +13839,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08216052,Steinmauern,Zweitstimmen,SPD,85,5.1
 08216059,Weisenbach,Erststimmen,SPD,154,12.2
 08216059,Weisenbach,Zweitstimmen,SPD,100,7.9
-08231000,"Pforzheim, Stadt",Erststimmen,SPD,3211,8.1
-08231000,"Pforzheim, Stadt",Zweitstimmen,SPD,1902,4.8
+08231000,"Pforzheim, Stadt",Erststimmen,SPD,3229,8.1
+08231000,"Pforzheim, Stadt",Zweitstimmen,SPD,1910,4.8
 08235006,"Altensteig, Stadt",Erststimmen,SPD,461,9.5
 08235006,"Altensteig, Stadt",Zweitstimmen,SPD,215,4.4
 08235007,Althengstett,Erststimmen,SPD,443,9.7
@@ -13821,8 +13877,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08235060,Rohrdorf,Zweitstimmen,SPD,34,3.9
 08235065,Schömberg,Erststimmen,SPD,315,8.6
 08235065,Schömberg,Zweitstimmen,SPD,185,5.0
-08235066,Simmersfeld,Erststimmen,SPD,7,3.0
-08235066,Simmersfeld,Zweitstimmen,SPD,3,1.3
+08235066,Simmersfeld,Erststimmen,SPD,28,5.1
+08235066,Simmersfeld,Zweitstimmen,SPD,10,1.8
 08235067,Simmozheim,Erststimmen,SPD,137,8.6
 08235067,Simmozheim,Zweitstimmen,SPD,78,4.8
 08235073,Unterreichenbach,Erststimmen,SPD,77,6.8
@@ -13835,8 +13891,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08235084,"Bad Teinach-Zavelstein, Stadt",Zweitstimmen,SPD,96,5.4
 08235085,"Calw, Stadt",Erststimmen,SPD,1150,10.9
 08235085,"Calw, Stadt",Zweitstimmen,SPD,567,5.3
-08236004,Birkenfeld,Erststimmen,SPD,438,8.7
-08236004,Birkenfeld,Zweitstimmen,SPD,289,5.7
+08236004,Birkenfeld,Erststimmen,SPD,402,8.7
+08236004,Birkenfeld,Zweitstimmen,SPD,263,5.7
 08236011,Eisingen,Erststimmen,SPD,108,6.5
 08236011,Eisingen,Zweitstimmen,SPD,66,3.9
 08236013,Engelsbrand,Erststimmen,SPD,173,7.1
@@ -13861,12 +13917,12 @@ ags,municipality_name,vote_type,party,votes,percent
 08236040,"Mühlacker, Stadt",Zweitstimmen,SPD,534,5.2
 08236043,"Neuenbürg, Stadt",Erststimmen,SPD,234,6.4
 08236043,"Neuenbürg, Stadt",Zweitstimmen,SPD,187,5.1
-08236044,Neuhausen,Erststimmen,SPD,120,4.9
-08236044,Neuhausen,Zweitstimmen,SPD,91,3.7
+08236044,Neuhausen,Erststimmen,SPD,158,5.2
+08236044,Neuhausen,Zweitstimmen,SPD,127,4.2
 08236046,Niefern-Öschelbronn,Erststimmen,SPD,263,4.7
 08236046,Niefern-Öschelbronn,Zweitstimmen,SPD,245,4.4
-08236050,Ötisheim,Erststimmen,SPD,121,6.9
-08236050,Ötisheim,Zweitstimmen,SPD,89,5.0
+08236050,Ötisheim,Erststimmen,SPD,177,7.0
+08236050,Ötisheim,Zweitstimmen,SPD,126,5.0
 08236061,Sternenfels,Erststimmen,SPD,205,13.3
 08236061,Sternenfels,Zweitstimmen,SPD,132,8.5
 08236062,Tiefenbronn,Erststimmen,SPD,189,5.9
@@ -13901,8 +13957,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08237024,Empfingen,Zweitstimmen,SPD,64,2.9
 08237027,Eutingen im Gäu,Erststimmen,SPD,177,5.3
 08237027,Eutingen im Gäu,Zweitstimmen,SPD,146,4.3
-08237028,"Freudenstadt, Stadt",Erststimmen,SPD,811,7.8
-08237028,"Freudenstadt, Stadt",Zweitstimmen,SPD,541,5.2
+08237028,"Freudenstadt, Stadt",Erststimmen,SPD,845,7.8
+08237028,"Freudenstadt, Stadt",Zweitstimmen,SPD,563,5.2
 08237030,Glatten,Erststimmen,SPD,51,3.6
 08237030,Glatten,Zweitstimmen,SPD,36,2.5
 08237032,Grömbach,Erststimmen,SPD,9,3.4
@@ -13955,8 +14011,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08316039,Sexau,Zweitstimmen,SPD,169,8.0
 08316042,Simonswald,Erststimmen,SPD,90,5.1
 08316042,Simonswald,Zweitstimmen,SPD,73,4.1
-08316043,Teningen,Erststimmen,SPD,572,11.2
-08316043,Teningen,Zweitstimmen,SPD,437,8.5
+08316043,Teningen,Erststimmen,SPD,758,11.8
+08316043,Teningen,Zweitstimmen,SPD,574,8.9
 08316045,Vörstetten,Erststimmen,SPD,181,9.6
 08316045,Vörstetten,Zweitstimmen,SPD,145,7.7
 08316049,Weisweil,Erststimmen,SPD,173,13.9
@@ -13987,10 +14043,10 @@ ags,municipality_name,vote_type,party,votes,percent
 08325024,Hardt,Zweitstimmen,SPD,61,3.7
 08325036,Lauterbach,Erststimmen,SPD,83,5.6
 08325036,Lauterbach,Zweitstimmen,SPD,62,4.2
-08325045,"Oberndorf am Neckar, Stadt",Erststimmen,SPD,219,4.7
-08325045,"Oberndorf am Neckar, Stadt",Zweitstimmen,SPD,173,3.7
-08325049,"Rottweil, Stadt",Erststimmen,SPD,624,5.4
-08325049,"Rottweil, Stadt",Zweitstimmen,SPD,449,3.9
+08325045,"Oberndorf am Neckar, Stadt",Erststimmen,SPD,271,4.8
+08325045,"Oberndorf am Neckar, Stadt",Zweitstimmen,SPD,221,3.9
+08325049,"Rottweil, Stadt",Erststimmen,SPD,653,5.4
+08325049,"Rottweil, Stadt",Zweitstimmen,SPD,471,3.9
 08325050,Schenkenzell,Erststimmen,SPD,66,6.4
 08325050,Schenkenzell,Zweitstimmen,SPD,60,5.8
 08325051,"Schiltach, Stadt",Erststimmen,SPD,179,8.9
@@ -14007,8 +14063,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08325064,Wellendingen,Zweitstimmen,SPD,48,2.9
 08325069,Zimmern ob Rottweil,Erststimmen,SPD,142,4.2
 08325069,Zimmern ob Rottweil,Zweitstimmen,SPD,113,3.4
-08325070,Fluorn-Winzeln,Erststimmen,SPD,45,3.7
-08325070,Fluorn-Winzeln,Zweitstimmen,SPD,51,4.2
+08325070,Fluorn-Winzeln,Erststimmen,SPD,71,4.0
+08325070,Fluorn-Winzeln,Zweitstimmen,SPD,78,4.4
 08325071,Eschbronn,Erststimmen,SPD,78,6.1
 08325071,Eschbronn,Zweitstimmen,SPD,66,5.2
 08325072,Deißlingen,Erststimmen,SPD,185,5.7
@@ -14049,8 +14105,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08326065,Unterkirnach,Zweitstimmen,SPD,41,3.3
 08326068,"Vöhrenbach, Stadt",Erststimmen,SPD,109,6.5
 08326068,"Vöhrenbach, Stadt",Zweitstimmen,SPD,87,5.2
-08326074,"Villingen-Schwenningen, Stadt",Erststimmen,SPD,3739,11.6
-08326074,"Villingen-Schwenningen, Stadt",Zweitstimmen,SPD,1855,5.7
+08326074,"Villingen-Schwenningen, Stadt",Erststimmen,SPD,3891,11.7
+08326074,"Villingen-Schwenningen, Stadt",Zweitstimmen,SPD,1935,5.8
 08326075,Brigachtal,Erststimmen,SPD,211,7.3
 08326075,Brigachtal,Zweitstimmen,SPD,112,3.8
 08327002,Aldingen,Erststimmen,SPD,133,4.1
@@ -14065,6 +14121,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08327007,Bubsheim,Zweitstimmen,SPD,7,1.3
 08327008,Buchheim,Erststimmen,SPD,14,3.1
 08327008,Buchheim,Zweitstimmen,SPD,11,2.4
+08327009,Deilingen,Erststimmen,SPD,22,3.8
+08327009,Deilingen,Zweitstimmen,SPD,15,2.6
 08327010,Denkingen,Erststimmen,SPD,33,2.2
 08327010,Denkingen,Zweitstimmen,SPD,30,2.0
 08327011,Dürbheim,Erststimmen,SPD,32,3.3
@@ -14139,8 +14197,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08336025,Fröhnd,Zweitstimmen,SPD,16,5.1
 08336034,Hasel,Erststimmen,SPD,63,10.3
 08336034,Hasel,Zweitstimmen,SPD,36,5.9
-08336036,Hausen im Wiesental,Erststimmen,SPD,50,13.4
-08336036,Hausen im Wiesental,Zweitstimmen,SPD,29,7.7
+08336036,Hausen im Wiesental,Erststimmen,SPD,157,12.8
+08336036,Hausen im Wiesental,Zweitstimmen,SPD,96,7.8
 08336043,Inzlingen,Erststimmen,SPD,142,10.7
 08336043,Inzlingen,Zweitstimmen,SPD,79,5.9
 08336050,"Lörrach, Stadt",Erststimmen,SPD,2651,13.2
@@ -14239,8 +14297,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08416031,Ofterdingen,Zweitstimmen,SPD,119,4.3
 08416036,"Rottenburg am Neckar, Stadt",Erststimmen,SPD,1578,6.9
 08416036,"Rottenburg am Neckar, Stadt",Zweitstimmen,SPD,965,4.2
-08416041,"Tübingen, Universitätsstadt",Erststimmen,SPD,5281,10.4
-08416041,"Tübingen, Universitätsstadt",Zweitstimmen,SPD,2363,4.6
+08416041,"Tübingen, Universitätsstadt",Erststimmen,SPD,5367,10.4
+08416041,"Tübingen, Universitätsstadt",Zweitstimmen,SPD,2402,4.7
 08416048,Ammerbuch,Erststimmen,SPD,513,7.7
 08416048,Ammerbuch,Zweitstimmen,SPD,244,3.6
 08416049,Neustetten,Erststimmen,SPD,109,5.1
@@ -14259,8 +14317,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08417015,Dormettingen,Zweitstimmen,SPD,19,3.2
 08417016,Dotternhausen,Erststimmen,SPD,77,7.2
 08417016,Dotternhausen,Zweitstimmen,SPD,56,5.2
-08417022,"Geislingen, Stadt",Erststimmen,SPD,132,5.1
-08417022,"Geislingen, Stadt",Zweitstimmen,SPD,96,3.7
+08417022,"Geislingen, Stadt",Erststimmen,SPD,174,5.2
+08417022,"Geislingen, Stadt",Zweitstimmen,SPD,124,3.7
 08417023,Grosselfingen,Erststimmen,SPD,57,5.0
 08417023,Grosselfingen,Zweitstimmen,SPD,53,4.7
 08417025,"Haigerloch, Stadt",Erststimmen,SPD,293,5.2
@@ -14309,8 +14367,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08425017,Berghülen,Zweitstimmen,SPD,33,2.7
 08425019,Bernstadt,Erststimmen,SPD,101,7.3
 08425019,Bernstadt,Zweitstimmen,SPD,57,4.1
-08425020,"Blaubeuren, Stadt",Erststimmen,SPD,418,7.6
-08425020,"Blaubeuren, Stadt",Zweitstimmen,SPD,290,5.3
+08425020,"Blaubeuren, Stadt",Erststimmen,SPD,449,7.4
+08425020,"Blaubeuren, Stadt",Zweitstimmen,SPD,315,5.2
 08425022,Börslingen,Erststimmen,SPD,4,3.8
 08425022,Börslingen,Zweitstimmen,SPD,3,2.9
 08425024,Breitingen,Erststimmen,SPD,10,7.0
@@ -14331,8 +14389,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08425055,Hausen am Bussen,Zweitstimmen,SPD,0,0.0
 08425062,Holzkirch,Erststimmen,SPD,6,4.5
 08425062,Holzkirch,Zweitstimmen,SPD,3,2.3
-08425071,"Laichingen, Stadt",Erststimmen,SPD,235,4.8
-08425071,"Laichingen, Stadt",Zweitstimmen,SPD,165,3.3
+08425071,"Laichingen, Stadt",Erststimmen,SPD,272,4.9
+08425071,"Laichingen, Stadt",Zweitstimmen,SPD,188,3.4
 08425072,"Langenau, Stadt",Erststimmen,SPD,657,8.1
 08425072,"Langenau, Stadt",Zweitstimmen,SPD,425,5.3
 08425073,Lauterach,Erststimmen,SPD,1,0.4
@@ -14407,8 +14465,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08426036,Dürnau,Zweitstimmen,SPD,8,4.0
 08426038,Eberhardzell,Erststimmen,SPD,123,4.6
 08426038,Eberhardzell,Zweitstimmen,SPD,69,2.6
-08426043,Erlenmoos,Erststimmen,SPD,37,9.2
-08426043,Erlenmoos,Zweitstimmen,SPD,25,6.2
+08426043,Erlenmoos,Erststimmen,SPD,80,7.4
+08426043,Erlenmoos,Zweitstimmen,SPD,56,5.2
 08426045,Ertingen,Erststimmen,SPD,93,3.1
 08426045,Ertingen,Zweitstimmen,SPD,73,2.4
 08426058,Hochdorf,Erststimmen,SPD,80,5.5
@@ -14521,6 +14579,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08437076,"Mengen, Stadt",Zweitstimmen,SPD,138,2.8
 08437078,"Meßkirch, Stadt",Erststimmen,SPD,164,4.0
 08437078,"Meßkirch, Stadt",Zweitstimmen,SPD,146,3.5
+08437082,Neufra,Erststimmen,SPD,40,3.9
+08437082,Neufra,Zweitstimmen,SPD,31,3.0
 08437086,Ostrach,Erststimmen,SPD,153,4.0
 08437086,Ostrach,Zweitstimmen,SPD,128,3.3
 08437088,"Pfullendorf, Stadt",Erststimmen,SPD,251,4.4
@@ -14556,7 +14616,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08125094,Talheim,Erststimmen,Tierschutzpartei,,
 08125094,Talheim,Zweitstimmen,Tierschutzpartei,27,0.9
 08126011,Bretzfeld,Erststimmen,Tierschutzpartei,,
-08126011,Bretzfeld,Zweitstimmen,Tierschutzpartei,60,1.1
+08126011,Bretzfeld,Zweitstimmen,Tierschutzpartei,64,1.0
 08126020,Dörzbach,Erststimmen,Tierschutzpartei,,
 08126020,Dörzbach,Zweitstimmen,Tierschutzpartei,11,0.8
 08126028,"Forchtenberg, Stadt",Erststimmen,Tierschutzpartei,,
@@ -14618,7 +14678,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08127062,Oberrot,Erststimmen,Tierschutzpartei,,
 08127062,Oberrot,Zweitstimmen,Tierschutzpartei,16,0.9
 08127063,Obersontheim,Erststimmen,Tierschutzpartei,,
-08127063,Obersontheim,Zweitstimmen,Tierschutzpartei,11,0.6
+08127063,Obersontheim,Zweitstimmen,Tierschutzpartei,16,0.6
 08127071,Rot am See,Erststimmen,Tierschutzpartei,,
 08127071,Rot am See,Zweitstimmen,Tierschutzpartei,21,0.7
 08127073,Satteldorf,Erststimmen,Tierschutzpartei,,
@@ -14668,7 +14728,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08128064,"Külsheim, Stadt",Erststimmen,Tierschutzpartei,,
 08128064,"Külsheim, Stadt",Zweitstimmen,Tierschutzpartei,34,1.1
 08128082,"Niederstetten, Stadt",Erststimmen,Tierschutzpartei,,
-08128082,"Niederstetten, Stadt",Zweitstimmen,Tierschutzpartei,34,1.3
+08128082,"Niederstetten, Stadt",Zweitstimmen,Tierschutzpartei,39,1.3
 08128115,"Tauberbischofsheim, Stadt",Erststimmen,Tierschutzpartei,,
 08128115,"Tauberbischofsheim, Stadt",Zweitstimmen,Tierschutzpartei,65,1.0
 08128126,"Weikersheim, Stadt",Erststimmen,Tierschutzpartei,,
@@ -14738,7 +14798,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08216059,Weisenbach,Erststimmen,Tierschutzpartei,,
 08216059,Weisenbach,Zweitstimmen,Tierschutzpartei,23,1.8
 08231000,"Pforzheim, Stadt",Erststimmen,Tierschutzpartei,,
-08231000,"Pforzheim, Stadt",Zweitstimmen,Tierschutzpartei,557,1.4
+08231000,"Pforzheim, Stadt",Zweitstimmen,Tierschutzpartei,558,1.4
 08235006,"Altensteig, Stadt",Erststimmen,Tierschutzpartei,,
 08235006,"Altensteig, Stadt",Zweitstimmen,Tierschutzpartei,48,1.0
 08235007,Althengstett,Erststimmen,Tierschutzpartei,,
@@ -14776,7 +14836,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08235065,Schömberg,Erststimmen,Tierschutzpartei,,
 08235065,Schömberg,Zweitstimmen,Tierschutzpartei,45,1.2
 08235066,Simmersfeld,Erststimmen,Tierschutzpartei,,
-08235066,Simmersfeld,Zweitstimmen,Tierschutzpartei,3,1.3
+08235066,Simmersfeld,Zweitstimmen,Tierschutzpartei,7,1.3
 08235067,Simmozheim,Erststimmen,Tierschutzpartei,,
 08235067,Simmozheim,Zweitstimmen,Tierschutzpartei,19,1.2
 08235073,Unterreichenbach,Erststimmen,Tierschutzpartei,,
@@ -14790,7 +14850,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08235085,"Calw, Stadt",Erststimmen,Tierschutzpartei,,
 08235085,"Calw, Stadt",Zweitstimmen,Tierschutzpartei,104,1.0
 08236004,Birkenfeld,Erststimmen,Tierschutzpartei,,
-08236004,Birkenfeld,Zweitstimmen,Tierschutzpartei,71,1.4
+08236004,Birkenfeld,Zweitstimmen,Tierschutzpartei,65,1.4
 08236011,Eisingen,Erststimmen,Tierschutzpartei,,
 08236011,Eisingen,Zweitstimmen,Tierschutzpartei,37,2.2
 08236013,Engelsbrand,Erststimmen,Tierschutzpartei,,
@@ -14816,11 +14876,11 @@ ags,municipality_name,vote_type,party,votes,percent
 08236043,"Neuenbürg, Stadt",Erststimmen,Tierschutzpartei,,
 08236043,"Neuenbürg, Stadt",Zweitstimmen,Tierschutzpartei,73,2.0
 08236044,Neuhausen,Erststimmen,Tierschutzpartei,,
-08236044,Neuhausen,Zweitstimmen,Tierschutzpartei,25,1.0
+08236044,Neuhausen,Zweitstimmen,Tierschutzpartei,35,1.1
 08236046,Niefern-Öschelbronn,Erststimmen,Tierschutzpartei,,
 08236046,Niefern-Öschelbronn,Zweitstimmen,Tierschutzpartei,50,0.9
 08236050,Ötisheim,Erststimmen,Tierschutzpartei,,
-08236050,Ötisheim,Zweitstimmen,Tierschutzpartei,23,1.3
+08236050,Ötisheim,Zweitstimmen,Tierschutzpartei,32,1.3
 08236061,Sternenfels,Erststimmen,Tierschutzpartei,,
 08236061,Sternenfels,Zweitstimmen,Tierschutzpartei,17,1.1
 08236062,Tiefenbronn,Erststimmen,Tierschutzpartei,,
@@ -14856,7 +14916,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08237027,Eutingen im Gäu,Erststimmen,Tierschutzpartei,,
 08237027,Eutingen im Gäu,Zweitstimmen,Tierschutzpartei,30,0.9
 08237028,"Freudenstadt, Stadt",Erststimmen,Tierschutzpartei,,
-08237028,"Freudenstadt, Stadt",Zweitstimmen,Tierschutzpartei,87,0.8
+08237028,"Freudenstadt, Stadt",Zweitstimmen,Tierschutzpartei,92,0.9
 08237030,Glatten,Erststimmen,Tierschutzpartei,,
 08237030,Glatten,Zweitstimmen,Tierschutzpartei,16,1.1
 08237032,Grömbach,Erststimmen,Tierschutzpartei,,
@@ -14910,7 +14970,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08316042,Simonswald,Erststimmen,Tierschutzpartei,,
 08316042,Simonswald,Zweitstimmen,Tierschutzpartei,12,0.7
 08316043,Teningen,Erststimmen,Tierschutzpartei,,
-08316043,Teningen,Zweitstimmen,Tierschutzpartei,74,1.4
+08316043,Teningen,Zweitstimmen,Tierschutzpartei,89,1.4
 08316045,Vörstetten,Erststimmen,Tierschutzpartei,,
 08316045,Vörstetten,Zweitstimmen,Tierschutzpartei,21,1.1
 08316049,Weisweil,Erststimmen,Tierschutzpartei,,
@@ -14942,9 +15002,9 @@ ags,municipality_name,vote_type,party,votes,percent
 08325036,Lauterbach,Erststimmen,Tierschutzpartei,,
 08325036,Lauterbach,Zweitstimmen,Tierschutzpartei,15,1.0
 08325045,"Oberndorf am Neckar, Stadt",Erststimmen,Tierschutzpartei,,
-08325045,"Oberndorf am Neckar, Stadt",Zweitstimmen,Tierschutzpartei,52,1.1
+08325045,"Oberndorf am Neckar, Stadt",Zweitstimmen,Tierschutzpartei,62,1.1
 08325049,"Rottweil, Stadt",Erststimmen,Tierschutzpartei,,
-08325049,"Rottweil, Stadt",Zweitstimmen,Tierschutzpartei,93,0.8
+08325049,"Rottweil, Stadt",Zweitstimmen,Tierschutzpartei,98,0.8
 08325050,Schenkenzell,Erststimmen,Tierschutzpartei,,
 08325050,Schenkenzell,Zweitstimmen,Tierschutzpartei,10,1.0
 08325051,"Schiltach, Stadt",Erststimmen,Tierschutzpartei,,
@@ -14962,7 +15022,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08325069,Zimmern ob Rottweil,Erststimmen,Tierschutzpartei,,
 08325069,Zimmern ob Rottweil,Zweitstimmen,Tierschutzpartei,37,1.1
 08325070,Fluorn-Winzeln,Erststimmen,Tierschutzpartei,,
-08325070,Fluorn-Winzeln,Zweitstimmen,Tierschutzpartei,11,0.9
+08325070,Fluorn-Winzeln,Zweitstimmen,Tierschutzpartei,12,0.7
 08325071,Eschbronn,Erststimmen,Tierschutzpartei,,
 08325071,Eschbronn,Zweitstimmen,Tierschutzpartei,9,0.7
 08325072,Deißlingen,Erststimmen,Tierschutzpartei,,
@@ -15004,7 +15064,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08326068,"Vöhrenbach, Stadt",Erststimmen,Tierschutzpartei,,
 08326068,"Vöhrenbach, Stadt",Zweitstimmen,Tierschutzpartei,18,1.1
 08326074,"Villingen-Schwenningen, Stadt",Erststimmen,Tierschutzpartei,,
-08326074,"Villingen-Schwenningen, Stadt",Zweitstimmen,Tierschutzpartei,299,0.9
+08326074,"Villingen-Schwenningen, Stadt",Zweitstimmen,Tierschutzpartei,314,0.9
 08326075,Brigachtal,Erststimmen,Tierschutzpartei,,
 08326075,Brigachtal,Zweitstimmen,Tierschutzpartei,40,1.4
 08327002,Aldingen,Erststimmen,Tierschutzpartei,,
@@ -15019,6 +15079,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08327007,Bubsheim,Zweitstimmen,Tierschutzpartei,3,0.5
 08327008,Buchheim,Erststimmen,Tierschutzpartei,,
 08327008,Buchheim,Zweitstimmen,Tierschutzpartei,5,1.1
+08327009,Deilingen,Erststimmen,Tierschutzpartei,,
+08327009,Deilingen,Zweitstimmen,Tierschutzpartei,6,1.0
 08327010,Denkingen,Erststimmen,Tierschutzpartei,,
 08327010,Denkingen,Zweitstimmen,Tierschutzpartei,16,1.1
 08327011,Dürbheim,Erststimmen,Tierschutzpartei,,
@@ -15094,7 +15156,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08336034,Hasel,Erststimmen,Tierschutzpartei,,
 08336034,Hasel,Zweitstimmen,Tierschutzpartei,9,1.5
 08336036,Hausen im Wiesental,Erststimmen,Tierschutzpartei,,
-08336036,Hausen im Wiesental,Zweitstimmen,Tierschutzpartei,5,1.3
+08336036,Hausen im Wiesental,Zweitstimmen,Tierschutzpartei,12,1.0
 08336043,Inzlingen,Erststimmen,Tierschutzpartei,,
 08336043,Inzlingen,Zweitstimmen,Tierschutzpartei,20,1.5
 08336050,"Lörrach, Stadt",Erststimmen,Tierschutzpartei,,
@@ -15194,7 +15256,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08416036,"Rottenburg am Neckar, Stadt",Erststimmen,Tierschutzpartei,,
 08416036,"Rottenburg am Neckar, Stadt",Zweitstimmen,Tierschutzpartei,160,0.7
 08416041,"Tübingen, Universitätsstadt",Erststimmen,Tierschutzpartei,,
-08416041,"Tübingen, Universitätsstadt",Zweitstimmen,Tierschutzpartei,286,0.6
+08416041,"Tübingen, Universitätsstadt",Zweitstimmen,Tierschutzpartei,290,0.6
 08416048,Ammerbuch,Erststimmen,Tierschutzpartei,,
 08416048,Ammerbuch,Zweitstimmen,Tierschutzpartei,49,0.7
 08416049,Neustetten,Erststimmen,Tierschutzpartei,,
@@ -15214,7 +15276,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08417016,Dotternhausen,Erststimmen,Tierschutzpartei,,
 08417016,Dotternhausen,Zweitstimmen,Tierschutzpartei,3,0.3
 08417022,"Geislingen, Stadt",Erststimmen,Tierschutzpartei,,
-08417022,"Geislingen, Stadt",Zweitstimmen,Tierschutzpartei,23,0.9
+08417022,"Geislingen, Stadt",Zweitstimmen,Tierschutzpartei,27,0.8
 08417023,Grosselfingen,Erststimmen,Tierschutzpartei,,
 08417023,Grosselfingen,Zweitstimmen,Tierschutzpartei,20,1.8
 08417025,"Haigerloch, Stadt",Erststimmen,Tierschutzpartei,,
@@ -15264,7 +15326,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08425019,Bernstadt,Erststimmen,Tierschutzpartei,,
 08425019,Bernstadt,Zweitstimmen,Tierschutzpartei,16,1.2
 08425020,"Blaubeuren, Stadt",Erststimmen,Tierschutzpartei,,
-08425020,"Blaubeuren, Stadt",Zweitstimmen,Tierschutzpartei,54,1.0
+08425020,"Blaubeuren, Stadt",Zweitstimmen,Tierschutzpartei,59,1.0
 08425022,Börslingen,Erststimmen,Tierschutzpartei,,
 08425022,Börslingen,Zweitstimmen,Tierschutzpartei,0,0.0
 08425024,Breitingen,Erststimmen,Tierschutzpartei,,
@@ -15286,7 +15348,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08425062,Holzkirch,Erststimmen,Tierschutzpartei,,
 08425062,Holzkirch,Zweitstimmen,Tierschutzpartei,0,0.0
 08425071,"Laichingen, Stadt",Erststimmen,Tierschutzpartei,,
-08425071,"Laichingen, Stadt",Zweitstimmen,Tierschutzpartei,57,1.2
+08425071,"Laichingen, Stadt",Zweitstimmen,Tierschutzpartei,65,1.2
 08425072,"Langenau, Stadt",Erststimmen,Tierschutzpartei,,
 08425072,"Langenau, Stadt",Zweitstimmen,Tierschutzpartei,86,1.1
 08425073,Lauterach,Erststimmen,Tierschutzpartei,,
@@ -15362,7 +15424,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08426038,Eberhardzell,Erststimmen,Tierschutzpartei,,
 08426038,Eberhardzell,Zweitstimmen,Tierschutzpartei,26,1.0
 08426043,Erlenmoos,Erststimmen,Tierschutzpartei,,
-08426043,Erlenmoos,Zweitstimmen,Tierschutzpartei,6,1.5
+08426043,Erlenmoos,Zweitstimmen,Tierschutzpartei,9,0.8
 08426045,Ertingen,Erststimmen,Tierschutzpartei,,
 08426045,Ertingen,Zweitstimmen,Tierschutzpartei,40,1.3
 08426058,Hochdorf,Erststimmen,Tierschutzpartei,,
@@ -15475,6 +15537,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08437076,"Mengen, Stadt",Zweitstimmen,Tierschutzpartei,51,1.0
 08437078,"Meßkirch, Stadt",Erststimmen,Tierschutzpartei,,
 08437078,"Meßkirch, Stadt",Zweitstimmen,Tierschutzpartei,31,0.8
+08437082,Neufra,Erststimmen,Tierschutzpartei,,
+08437082,Neufra,Zweitstimmen,Tierschutzpartei,12,1.2
 08437086,Ostrach,Erststimmen,Tierschutzpartei,,
 08437086,Ostrach,Zweitstimmen,Tierschutzpartei,41,1.1
 08437088,"Pfullendorf, Stadt",Erststimmen,Tierschutzpartei,,
@@ -15510,7 +15574,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08125094,Talheim,Erststimmen,Verjüngungsforschung,,
 08125094,Talheim,Zweitstimmen,Verjüngungsforschung,5,0.2
 08126011,Bretzfeld,Erststimmen,Verjüngungsforschung,,
-08126011,Bretzfeld,Zweitstimmen,Verjüngungsforschung,8,0.1
+08126011,Bretzfeld,Zweitstimmen,Verjüngungsforschung,9,0.1
 08126020,Dörzbach,Erststimmen,Verjüngungsforschung,,
 08126020,Dörzbach,Zweitstimmen,Verjüngungsforschung,2,0.1
 08126028,"Forchtenberg, Stadt",Erststimmen,Verjüngungsforschung,,
@@ -15572,7 +15636,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08127062,Oberrot,Erststimmen,Verjüngungsforschung,,
 08127062,Oberrot,Zweitstimmen,Verjüngungsforschung,1,0.1
 08127063,Obersontheim,Erststimmen,Verjüngungsforschung,,
-08127063,Obersontheim,Zweitstimmen,Verjüngungsforschung,1,0.1
+08127063,Obersontheim,Zweitstimmen,Verjüngungsforschung,3,0.1
 08127071,Rot am See,Erststimmen,Verjüngungsforschung,,
 08127071,Rot am See,Zweitstimmen,Verjüngungsforschung,3,0.1
 08127073,Satteldorf,Erststimmen,Verjüngungsforschung,,
@@ -15770,11 +15834,11 @@ ags,municipality_name,vote_type,party,votes,percent
 08236043,"Neuenbürg, Stadt",Erststimmen,Verjüngungsforschung,,
 08236043,"Neuenbürg, Stadt",Zweitstimmen,Verjüngungsforschung,6,0.2
 08236044,Neuhausen,Erststimmen,Verjüngungsforschung,,
-08236044,Neuhausen,Zweitstimmen,Verjüngungsforschung,3,0.1
+08236044,Neuhausen,Zweitstimmen,Verjüngungsforschung,6,0.2
 08236046,Niefern-Öschelbronn,Erststimmen,Verjüngungsforschung,,
 08236046,Niefern-Öschelbronn,Zweitstimmen,Verjüngungsforschung,4,0.1
 08236050,Ötisheim,Erststimmen,Verjüngungsforschung,,
-08236050,Ötisheim,Zweitstimmen,Verjüngungsforschung,2,0.1
+08236050,Ötisheim,Zweitstimmen,Verjüngungsforschung,3,0.1
 08236061,Sternenfels,Erststimmen,Verjüngungsforschung,,
 08236061,Sternenfels,Zweitstimmen,Verjüngungsforschung,1,0.1
 08236062,Tiefenbronn,Erststimmen,Verjüngungsforschung,,
@@ -15864,7 +15928,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08316042,Simonswald,Erststimmen,Verjüngungsforschung,,
 08316042,Simonswald,Zweitstimmen,Verjüngungsforschung,1,0.1
 08316043,Teningen,Erststimmen,Verjüngungsforschung,,
-08316043,Teningen,Zweitstimmen,Verjüngungsforschung,4,0.1
+08316043,Teningen,Zweitstimmen,Verjüngungsforschung,7,0.1
 08316045,Vörstetten,Erststimmen,Verjüngungsforschung,,
 08316045,Vörstetten,Zweitstimmen,Verjüngungsforschung,3,0.2
 08316049,Weisweil,Erststimmen,Verjüngungsforschung,,
@@ -15896,7 +15960,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08325036,Lauterbach,Erststimmen,Verjüngungsforschung,,
 08325036,Lauterbach,Zweitstimmen,Verjüngungsforschung,2,0.1
 08325045,"Oberndorf am Neckar, Stadt",Erststimmen,Verjüngungsforschung,,
-08325045,"Oberndorf am Neckar, Stadt",Zweitstimmen,Verjüngungsforschung,1,0.0
+08325045,"Oberndorf am Neckar, Stadt",Zweitstimmen,Verjüngungsforschung,2,0.0
 08325049,"Rottweil, Stadt",Erststimmen,Verjüngungsforschung,,
 08325049,"Rottweil, Stadt",Zweitstimmen,Verjüngungsforschung,1,0.0
 08325050,Schenkenzell,Erststimmen,Verjüngungsforschung,,
@@ -15973,6 +16037,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08327007,Bubsheim,Zweitstimmen,Verjüngungsforschung,2,0.4
 08327008,Buchheim,Erststimmen,Verjüngungsforschung,,
 08327008,Buchheim,Zweitstimmen,Verjüngungsforschung,0,0.0
+08327009,Deilingen,Erststimmen,Verjüngungsforschung,,
+08327009,Deilingen,Zweitstimmen,Verjüngungsforschung,1,0.2
 08327010,Denkingen,Erststimmen,Verjüngungsforschung,,
 08327010,Denkingen,Zweitstimmen,Verjüngungsforschung,4,0.3
 08327011,Dürbheim,Erststimmen,Verjüngungsforschung,,
@@ -16048,7 +16114,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08336034,Hasel,Erststimmen,Verjüngungsforschung,,
 08336034,Hasel,Zweitstimmen,Verjüngungsforschung,1,0.2
 08336036,Hausen im Wiesental,Erststimmen,Verjüngungsforschung,,
-08336036,Hausen im Wiesental,Zweitstimmen,Verjüngungsforschung,1,0.3
+08336036,Hausen im Wiesental,Zweitstimmen,Verjüngungsforschung,3,0.2
 08336043,Inzlingen,Erststimmen,Verjüngungsforschung,,
 08336043,Inzlingen,Zweitstimmen,Verjüngungsforschung,2,0.2
 08336050,"Lörrach, Stadt",Erststimmen,Verjüngungsforschung,,
@@ -16168,11 +16234,11 @@ ags,municipality_name,vote_type,party,votes,percent
 08417016,Dotternhausen,Erststimmen,Verjüngungsforschung,,
 08417016,Dotternhausen,Zweitstimmen,Verjüngungsforschung,5,0.5
 08417022,"Geislingen, Stadt",Erststimmen,Verjüngungsforschung,,
-08417022,"Geislingen, Stadt",Zweitstimmen,Verjüngungsforschung,2,0.1
+08417022,"Geislingen, Stadt",Zweitstimmen,Verjüngungsforschung,3,0.1
 08417023,Grosselfingen,Erststimmen,Verjüngungsforschung,,
 08417023,Grosselfingen,Zweitstimmen,Verjüngungsforschung,0,0.0
 08417025,"Haigerloch, Stadt",Erststimmen,Verjüngungsforschung,,
-08417025,"Haigerloch, Stadt",Zweitstimmen,Verjüngungsforschung,4,0.1
+08417025,"Haigerloch, Stadt",Zweitstimmen,Verjüngungsforschung,5,0.1
 08417029,Hausen am Tann,Erststimmen,Verjüngungsforschung,,
 08417029,Hausen am Tann,Zweitstimmen,Verjüngungsforschung,0,0.0
 08417044,"Meßstetten, Stadt",Erststimmen,Verjüngungsforschung,,
@@ -16429,6 +16495,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08437076,"Mengen, Stadt",Zweitstimmen,Verjüngungsforschung,5,0.1
 08437078,"Meßkirch, Stadt",Erststimmen,Verjüngungsforschung,,
 08437078,"Meßkirch, Stadt",Zweitstimmen,Verjüngungsforschung,2,0.0
+08437082,Neufra,Erststimmen,Verjüngungsforschung,,
+08437082,Neufra,Zweitstimmen,Verjüngungsforschung,2,0.2
 08437086,Ostrach,Erststimmen,Verjüngungsforschung,,
 08437086,Ostrach,Zweitstimmen,Verjüngungsforschung,4,0.1
 08437088,"Pfullendorf, Stadt",Erststimmen,Verjüngungsforschung,,
@@ -16464,7 +16532,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08125094,Talheim,Erststimmen,Volt,33,1.2
 08125094,Talheim,Zweitstimmen,Volt,18,0.6
 08126011,Bretzfeld,Erststimmen,Volt,,
-08126011,Bretzfeld,Zweitstimmen,Volt,49,0.9
+08126011,Bretzfeld,Zweitstimmen,Volt,59,0.9
 08126020,Dörzbach,Erststimmen,Volt,,
 08126020,Dörzbach,Zweitstimmen,Volt,6,0.4
 08126028,"Forchtenberg, Stadt",Erststimmen,Volt,,
@@ -16525,8 +16593,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08127059,Michelfeld,Zweitstimmen,Volt,15,0.7
 08127062,Oberrot,Erststimmen,Volt,12,0.7
 08127062,Oberrot,Zweitstimmen,Volt,6,0.3
-08127063,Obersontheim,Erststimmen,Volt,9,0.5
-08127063,Obersontheim,Zweitstimmen,Volt,6,0.3
+08127063,Obersontheim,Erststimmen,Volt,13,0.5
+08127063,Obersontheim,Zweitstimmen,Volt,9,0.3
 08127071,Rot am See,Erststimmen,Volt,19,0.6
 08127071,Rot am See,Zweitstimmen,Volt,17,0.6
 08127073,Satteldorf,Erststimmen,Volt,21,0.7
@@ -16576,7 +16644,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08128064,"Külsheim, Stadt",Erststimmen,Volt,,
 08128064,"Külsheim, Stadt",Zweitstimmen,Volt,15,0.5
 08128082,"Niederstetten, Stadt",Erststimmen,Volt,,
-08128082,"Niederstetten, Stadt",Zweitstimmen,Volt,7,0.3
+08128082,"Niederstetten, Stadt",Zweitstimmen,Volt,11,0.4
 08128115,"Tauberbischofsheim, Stadt",Erststimmen,Volt,,
 08128115,"Tauberbischofsheim, Stadt",Zweitstimmen,Volt,39,0.6
 08128126,"Weikersheim, Stadt",Erststimmen,Volt,,
@@ -16645,8 +16713,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08216052,Steinmauern,Zweitstimmen,Volt,22,1.3
 08216059,Weisenbach,Erststimmen,Volt,20,1.6
 08216059,Weisenbach,Zweitstimmen,Volt,11,0.9
-08231000,"Pforzheim, Stadt",Erststimmen,Volt,646,1.6
-08231000,"Pforzheim, Stadt",Zweitstimmen,Volt,384,1.0
+08231000,"Pforzheim, Stadt",Erststimmen,Volt,654,1.6
+08231000,"Pforzheim, Stadt",Zweitstimmen,Volt,386,1.0
 08235006,"Altensteig, Stadt",Erststimmen,Volt,,
 08235006,"Altensteig, Stadt",Zweitstimmen,Volt,10,0.2
 08235007,Althengstett,Erststimmen,Volt,,
@@ -16697,8 +16765,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08235084,"Bad Teinach-Zavelstein, Stadt",Zweitstimmen,Volt,19,1.1
 08235085,"Calw, Stadt",Erststimmen,Volt,,
 08235085,"Calw, Stadt",Zweitstimmen,Volt,42,0.4
-08236004,Birkenfeld,Erststimmen,Volt,85,1.7
-08236004,Birkenfeld,Zweitstimmen,Volt,35,0.7
+08236004,Birkenfeld,Erststimmen,Volt,76,1.6
+08236004,Birkenfeld,Zweitstimmen,Volt,33,0.7
 08236011,Eisingen,Erststimmen,Volt,35,2.1
 08236011,Eisingen,Zweitstimmen,Volt,8,0.5
 08236013,Engelsbrand,Erststimmen,Volt,25,1.0
@@ -16723,12 +16791,12 @@ ags,municipality_name,vote_type,party,votes,percent
 08236040,"Mühlacker, Stadt",Zweitstimmen,Volt,82,0.8
 08236043,"Neuenbürg, Stadt",Erststimmen,Volt,102,2.8
 08236043,"Neuenbürg, Stadt",Zweitstimmen,Volt,51,1.4
-08236044,Neuhausen,Erststimmen,Volt,51,2.1
-08236044,Neuhausen,Zweitstimmen,Volt,25,1.0
+08236044,Neuhausen,Erststimmen,Volt,59,1.9
+08236044,Neuhausen,Zweitstimmen,Volt,26,0.9
 08236046,Niefern-Öschelbronn,Erststimmen,Volt,78,1.4
 08236046,Niefern-Öschelbronn,Zweitstimmen,Volt,51,0.9
-08236050,Ötisheim,Erststimmen,Volt,33,1.9
-08236050,Ötisheim,Zweitstimmen,Volt,12,0.7
+08236050,Ötisheim,Erststimmen,Volt,46,1.8
+08236050,Ötisheim,Zweitstimmen,Volt,16,0.6
 08236061,Sternenfels,Erststimmen,Volt,38,2.5
 08236061,Sternenfels,Zweitstimmen,Volt,13,0.8
 08236062,Tiefenbronn,Erststimmen,Volt,52,1.6
@@ -16817,8 +16885,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08316039,Sexau,Zweitstimmen,Volt,14,0.7
 08316042,Simonswald,Erststimmen,Volt,29,1.6
 08316042,Simonswald,Zweitstimmen,Volt,19,1.1
-08316043,Teningen,Erststimmen,Volt,64,1.3
-08316043,Teningen,Zweitstimmen,Volt,35,0.7
+08316043,Teningen,Erststimmen,Volt,83,1.3
+08316043,Teningen,Zweitstimmen,Volt,51,0.8
 08316045,Vörstetten,Erststimmen,Volt,28,1.5
 08316045,Vörstetten,Zweitstimmen,Volt,17,0.9
 08316049,Weisweil,Erststimmen,Volt,11,0.9
@@ -16849,10 +16917,10 @@ ags,municipality_name,vote_type,party,votes,percent
 08325024,Hardt,Zweitstimmen,Volt,16,1.0
 08325036,Lauterbach,Erststimmen,Volt,18,1.2
 08325036,Lauterbach,Zweitstimmen,Volt,14,0.9
-08325045,"Oberndorf am Neckar, Stadt",Erststimmen,Volt,76,1.6
-08325045,"Oberndorf am Neckar, Stadt",Zweitstimmen,Volt,34,0.7
-08325049,"Rottweil, Stadt",Erststimmen,Volt,230,2.0
-08325049,"Rottweil, Stadt",Zweitstimmen,Volt,109,0.9
+08325045,"Oberndorf am Neckar, Stadt",Erststimmen,Volt,95,1.7
+08325045,"Oberndorf am Neckar, Stadt",Zweitstimmen,Volt,37,0.7
+08325049,"Rottweil, Stadt",Erststimmen,Volt,237,2.0
+08325049,"Rottweil, Stadt",Zweitstimmen,Volt,111,0.9
 08325050,Schenkenzell,Erststimmen,Volt,12,1.2
 08325050,Schenkenzell,Zweitstimmen,Volt,11,1.1
 08325051,"Schiltach, Stadt",Erststimmen,Volt,30,1.5
@@ -16869,8 +16937,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08325064,Wellendingen,Zweitstimmen,Volt,10,0.6
 08325069,Zimmern ob Rottweil,Erststimmen,Volt,48,1.4
 08325069,Zimmern ob Rottweil,Zweitstimmen,Volt,39,1.2
-08325070,Fluorn-Winzeln,Erststimmen,Volt,12,1.0
-08325070,Fluorn-Winzeln,Zweitstimmen,Volt,6,0.5
+08325070,Fluorn-Winzeln,Erststimmen,Volt,23,1.3
+08325070,Fluorn-Winzeln,Zweitstimmen,Volt,12,0.7
 08325071,Eschbronn,Erststimmen,Volt,32,2.5
 08325071,Eschbronn,Zweitstimmen,Volt,22,1.7
 08325072,Deißlingen,Erststimmen,Volt,33,1.0
@@ -16912,7 +16980,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08326068,"Vöhrenbach, Stadt",Erststimmen,Volt,,
 08326068,"Vöhrenbach, Stadt",Zweitstimmen,Volt,16,0.9
 08326074,"Villingen-Schwenningen, Stadt",Erststimmen,Volt,,
-08326074,"Villingen-Schwenningen, Stadt",Zweitstimmen,Volt,247,0.8
+08326074,"Villingen-Schwenningen, Stadt",Zweitstimmen,Volt,252,0.8
 08326075,Brigachtal,Erststimmen,Volt,,
 08326075,Brigachtal,Zweitstimmen,Volt,15,0.5
 08327002,Aldingen,Erststimmen,Volt,49,1.5
@@ -16927,6 +16995,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08327007,Bubsheim,Zweitstimmen,Volt,5,0.9
 08327008,Buchheim,Erststimmen,Volt,8,1.8
 08327008,Buchheim,Zweitstimmen,Volt,2,0.4
+08327009,Deilingen,Erststimmen,Volt,3,0.5
+08327009,Deilingen,Zweitstimmen,Volt,1,0.2
 08327010,Denkingen,Erststimmen,Volt,26,1.8
 08327010,Denkingen,Zweitstimmen,Volt,14,0.9
 08327011,Dürbheim,Erststimmen,Volt,5,0.5
@@ -17001,8 +17071,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08336025,Fröhnd,Zweitstimmen,Volt,3,0.9
 08336034,Hasel,Erststimmen,Volt,7,1.1
 08336034,Hasel,Zweitstimmen,Volt,6,1.0
-08336036,Hausen im Wiesental,Erststimmen,Volt,11,2.9
-08336036,Hausen im Wiesental,Zweitstimmen,Volt,5,1.3
+08336036,Hausen im Wiesental,Erststimmen,Volt,23,1.9
+08336036,Hausen im Wiesental,Zweitstimmen,Volt,11,0.9
 08336043,Inzlingen,Erststimmen,Volt,17,1.3
 08336043,Inzlingen,Zweitstimmen,Volt,13,1.0
 08336050,"Lörrach, Stadt",Erststimmen,Volt,271,1.3
@@ -17101,8 +17171,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08416031,Ofterdingen,Zweitstimmen,Volt,17,0.6
 08416036,"Rottenburg am Neckar, Stadt",Erststimmen,Volt,233,1.0
 08416036,"Rottenburg am Neckar, Stadt",Zweitstimmen,Volt,127,0.6
-08416041,"Tübingen, Universitätsstadt",Erststimmen,Volt,942,1.9
-08416041,"Tübingen, Universitätsstadt",Zweitstimmen,Volt,518,1.0
+08416041,"Tübingen, Universitätsstadt",Erststimmen,Volt,947,1.8
+08416041,"Tübingen, Universitätsstadt",Zweitstimmen,Volt,520,1.0
 08416048,Ammerbuch,Erststimmen,Volt,75,1.1
 08416048,Ammerbuch,Zweitstimmen,Volt,42,0.6
 08416049,Neustetten,Erststimmen,Volt,19,0.9
@@ -17121,12 +17191,12 @@ ags,municipality_name,vote_type,party,votes,percent
 08417015,Dormettingen,Zweitstimmen,Volt,0,0.0
 08417016,Dotternhausen,Erststimmen,Volt,12,1.1
 08417016,Dotternhausen,Zweitstimmen,Volt,7,0.7
-08417022,"Geislingen, Stadt",Erststimmen,Volt,47,1.8
-08417022,"Geislingen, Stadt",Zweitstimmen,Volt,13,0.5
+08417022,"Geislingen, Stadt",Erststimmen,Volt,58,1.7
+08417022,"Geislingen, Stadt",Zweitstimmen,Volt,20,0.6
 08417023,Grosselfingen,Erststimmen,Volt,19,1.7
 08417023,Grosselfingen,Zweitstimmen,Volt,9,0.8
 08417025,"Haigerloch, Stadt",Erststimmen,Volt,68,1.2
-08417025,"Haigerloch, Stadt",Zweitstimmen,Volt,50,0.9
+08417025,"Haigerloch, Stadt",Zweitstimmen,Volt,49,0.9
 08417029,Hausen am Tann,Erststimmen,Volt,2,0.8
 08417029,Hausen am Tann,Zweitstimmen,Volt,1,0.4
 08417044,"Meßstetten, Stadt",Erststimmen,Volt,56,1.0
@@ -17172,7 +17242,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08425019,Bernstadt,Erststimmen,Volt,,
 08425019,Bernstadt,Zweitstimmen,Volt,3,0.2
 08425020,"Blaubeuren, Stadt",Erststimmen,Volt,,
-08425020,"Blaubeuren, Stadt",Zweitstimmen,Volt,37,0.7
+08425020,"Blaubeuren, Stadt",Zweitstimmen,Volt,39,0.6
 08425022,Börslingen,Erststimmen,Volt,,
 08425022,Börslingen,Zweitstimmen,Volt,0,0.0
 08425024,Breitingen,Erststimmen,Volt,,
@@ -17194,7 +17264,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08425062,Holzkirch,Erststimmen,Volt,,
 08425062,Holzkirch,Zweitstimmen,Volt,0,0.0
 08425071,"Laichingen, Stadt",Erststimmen,Volt,,
-08425071,"Laichingen, Stadt",Zweitstimmen,Volt,29,0.6
+08425071,"Laichingen, Stadt",Zweitstimmen,Volt,34,0.6
 08425072,"Langenau, Stadt",Erststimmen,Volt,,
 08425072,"Langenau, Stadt",Zweitstimmen,Volt,63,0.8
 08425073,Lauterach,Erststimmen,Volt,,
@@ -17269,8 +17339,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08426036,Dürnau,Zweitstimmen,Volt,0,0.0
 08426038,Eberhardzell,Erststimmen,Volt,15,0.6
 08426038,Eberhardzell,Zweitstimmen,Volt,9,0.3
-08426043,Erlenmoos,Erststimmen,Volt,4,1.0
-08426043,Erlenmoos,Zweitstimmen,Volt,4,1.0
+08426043,Erlenmoos,Erststimmen,Volt,7,0.7
+08426043,Erlenmoos,Zweitstimmen,Volt,9,0.8
 08426045,Ertingen,Erststimmen,Volt,22,0.7
 08426045,Ertingen,Zweitstimmen,Volt,12,0.4
 08426058,Hochdorf,Erststimmen,Volt,8,0.6
@@ -17383,6 +17453,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08437076,"Mengen, Stadt",Zweitstimmen,Volt,25,0.5
 08437078,"Meßkirch, Stadt",Erststimmen,Volt,41,1.0
 08437078,"Meßkirch, Stadt",Zweitstimmen,Volt,21,0.5
+08437082,Neufra,Erststimmen,Volt,7,0.7
+08437082,Neufra,Zweitstimmen,Volt,4,0.4
 08437086,Ostrach,Erststimmen,Volt,49,1.3
 08437086,Ostrach,Zweitstimmen,Volt,25,0.6
 08437088,"Pfullendorf, Stadt",Erststimmen,Volt,109,1.9
@@ -17418,7 +17490,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08125094,Talheim,Erststimmen,Werteunion,,
 08125094,Talheim,Zweitstimmen,Werteunion,5,0.2
 08126011,Bretzfeld,Erststimmen,Werteunion,,
-08126011,Bretzfeld,Zweitstimmen,Werteunion,40,0.7
+08126011,Bretzfeld,Zweitstimmen,Werteunion,54,0.9
 08126020,Dörzbach,Erststimmen,Werteunion,,
 08126020,Dörzbach,Zweitstimmen,Werteunion,5,0.4
 08126028,"Forchtenberg, Stadt",Erststimmen,Werteunion,,
@@ -17480,7 +17552,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08127062,Oberrot,Erststimmen,Werteunion,,
 08127062,Oberrot,Zweitstimmen,Werteunion,11,0.6
 08127063,Obersontheim,Erststimmen,Werteunion,,
-08127063,Obersontheim,Zweitstimmen,Werteunion,2,0.1
+08127063,Obersontheim,Zweitstimmen,Werteunion,7,0.3
 08127071,Rot am See,Erststimmen,Werteunion,,
 08127071,Rot am See,Zweitstimmen,Werteunion,2,0.1
 08127073,Satteldorf,Erststimmen,Werteunion,,
@@ -17637,8 +17709,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08235060,Rohrdorf,Zweitstimmen,Werteunion,3,0.3
 08235065,Schömberg,Erststimmen,Werteunion,24,0.7
 08235065,Schömberg,Zweitstimmen,Werteunion,17,0.5
-08235066,Simmersfeld,Erststimmen,Werteunion,1,0.4
-08235066,Simmersfeld,Zweitstimmen,Werteunion,0,0.0
+08235066,Simmersfeld,Erststimmen,Werteunion,1,0.2
+08235066,Simmersfeld,Zweitstimmen,Werteunion,1,0.2
 08235067,Simmozheim,Erststimmen,Werteunion,9,0.6
 08235067,Simmozheim,Zweitstimmen,Werteunion,7,0.4
 08235073,Unterreichenbach,Erststimmen,Werteunion,3,0.3
@@ -17652,7 +17724,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08235085,"Calw, Stadt",Erststimmen,Werteunion,48,0.5
 08235085,"Calw, Stadt",Zweitstimmen,Werteunion,17,0.2
 08236004,Birkenfeld,Erststimmen,Werteunion,,
-08236004,Birkenfeld,Zweitstimmen,Werteunion,24,0.5
+08236004,Birkenfeld,Zweitstimmen,Werteunion,21,0.5
 08236011,Eisingen,Erststimmen,Werteunion,,
 08236011,Eisingen,Zweitstimmen,Werteunion,5,0.3
 08236013,Engelsbrand,Erststimmen,Werteunion,,
@@ -17678,11 +17750,11 @@ ags,municipality_name,vote_type,party,votes,percent
 08236043,"Neuenbürg, Stadt",Erststimmen,Werteunion,,
 08236043,"Neuenbürg, Stadt",Zweitstimmen,Werteunion,7,0.2
 08236044,Neuhausen,Erststimmen,Werteunion,,
-08236044,Neuhausen,Zweitstimmen,Werteunion,8,0.3
+08236044,Neuhausen,Zweitstimmen,Werteunion,10,0.3
 08236046,Niefern-Öschelbronn,Erststimmen,Werteunion,,
 08236046,Niefern-Öschelbronn,Zweitstimmen,Werteunion,19,0.3
 08236050,Ötisheim,Erststimmen,Werteunion,,
-08236050,Ötisheim,Zweitstimmen,Werteunion,5,0.3
+08236050,Ötisheim,Zweitstimmen,Werteunion,12,0.5
 08236061,Sternenfels,Erststimmen,Werteunion,,
 08236061,Sternenfels,Zweitstimmen,Werteunion,6,0.4
 08236062,Tiefenbronn,Erststimmen,Werteunion,,
@@ -17718,7 +17790,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08237027,Eutingen im Gäu,Erststimmen,Werteunion,,
 08237027,Eutingen im Gäu,Zweitstimmen,Werteunion,11,0.3
 08237028,"Freudenstadt, Stadt",Erststimmen,Werteunion,,
-08237028,"Freudenstadt, Stadt",Zweitstimmen,Werteunion,23,0.2
+08237028,"Freudenstadt, Stadt",Zweitstimmen,Werteunion,24,0.2
 08237030,Glatten,Erststimmen,Werteunion,,
 08237030,Glatten,Zweitstimmen,Werteunion,3,0.2
 08237032,Grömbach,Erststimmen,Werteunion,,
@@ -17772,7 +17844,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08316042,Simonswald,Erststimmen,Werteunion,,
 08316042,Simonswald,Zweitstimmen,Werteunion,1,0.1
 08316043,Teningen,Erststimmen,Werteunion,,
-08316043,Teningen,Zweitstimmen,Werteunion,15,0.3
+08316043,Teningen,Zweitstimmen,Werteunion,17,0.3
 08316045,Vörstetten,Erststimmen,Werteunion,,
 08316045,Vörstetten,Zweitstimmen,Werteunion,1,0.1
 08316049,Weisweil,Erststimmen,Werteunion,,
@@ -17803,10 +17875,10 @@ ags,municipality_name,vote_type,party,votes,percent
 08325024,Hardt,Zweitstimmen,Werteunion,12,0.7
 08325036,Lauterbach,Erststimmen,Werteunion,7,0.5
 08325036,Lauterbach,Zweitstimmen,Werteunion,4,0.3
-08325045,"Oberndorf am Neckar, Stadt",Erststimmen,Werteunion,23,0.5
-08325045,"Oberndorf am Neckar, Stadt",Zweitstimmen,Werteunion,21,0.5
-08325049,"Rottweil, Stadt",Erststimmen,Werteunion,42,0.4
-08325049,"Rottweil, Stadt",Zweitstimmen,Werteunion,33,0.3
+08325045,"Oberndorf am Neckar, Stadt",Erststimmen,Werteunion,32,0.6
+08325045,"Oberndorf am Neckar, Stadt",Zweitstimmen,Werteunion,30,0.5
+08325049,"Rottweil, Stadt",Erststimmen,Werteunion,45,0.4
+08325049,"Rottweil, Stadt",Zweitstimmen,Werteunion,35,0.3
 08325050,Schenkenzell,Erststimmen,Werteunion,2,0.2
 08325050,Schenkenzell,Zweitstimmen,Werteunion,3,0.3
 08325051,"Schiltach, Stadt",Erststimmen,Werteunion,6,0.3
@@ -17823,8 +17895,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08325064,Wellendingen,Zweitstimmen,Werteunion,4,0.2
 08325069,Zimmern ob Rottweil,Erststimmen,Werteunion,18,0.5
 08325069,Zimmern ob Rottweil,Zweitstimmen,Werteunion,14,0.4
-08325070,Fluorn-Winzeln,Erststimmen,Werteunion,4,0.3
-08325070,Fluorn-Winzeln,Zweitstimmen,Werteunion,4,0.3
+08325070,Fluorn-Winzeln,Erststimmen,Werteunion,6,0.3
+08325070,Fluorn-Winzeln,Zweitstimmen,Werteunion,6,0.3
 08325071,Eschbronn,Erststimmen,Werteunion,7,0.5
 08325071,Eschbronn,Zweitstimmen,Werteunion,7,0.5
 08325072,Deißlingen,Erststimmen,Werteunion,16,0.5
@@ -17866,7 +17938,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08326068,"Vöhrenbach, Stadt",Erststimmen,Werteunion,,
 08326068,"Vöhrenbach, Stadt",Zweitstimmen,Werteunion,2,0.1
 08326074,"Villingen-Schwenningen, Stadt",Erststimmen,Werteunion,,
-08326074,"Villingen-Schwenningen, Stadt",Zweitstimmen,Werteunion,67,0.2
+08326074,"Villingen-Schwenningen, Stadt",Zweitstimmen,Werteunion,70,0.2
 08326075,Brigachtal,Erststimmen,Werteunion,,
 08326075,Brigachtal,Zweitstimmen,Werteunion,8,0.3
 08327002,Aldingen,Erststimmen,Werteunion,,
@@ -17881,6 +17953,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08327007,Bubsheim,Zweitstimmen,Werteunion,1,0.2
 08327008,Buchheim,Erststimmen,Werteunion,,
 08327008,Buchheim,Zweitstimmen,Werteunion,0,0.0
+08327009,Deilingen,Erststimmen,Werteunion,,
+08327009,Deilingen,Zweitstimmen,Werteunion,0,0.0
 08327010,Denkingen,Erststimmen,Werteunion,,
 08327010,Denkingen,Zweitstimmen,Werteunion,9,0.6
 08327011,Dürbheim,Erststimmen,Werteunion,,
@@ -17956,7 +18030,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08336034,Hasel,Erststimmen,Werteunion,,
 08336034,Hasel,Zweitstimmen,Werteunion,1,0.2
 08336036,Hausen im Wiesental,Erststimmen,Werteunion,,
-08336036,Hausen im Wiesental,Zweitstimmen,Werteunion,1,0.3
+08336036,Hausen im Wiesental,Zweitstimmen,Werteunion,1,0.1
 08336043,Inzlingen,Erststimmen,Werteunion,,
 08336043,Inzlingen,Zweitstimmen,Werteunion,4,0.3
 08336050,"Lörrach, Stadt",Erststimmen,Werteunion,,
@@ -18076,7 +18150,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08417016,Dotternhausen,Erststimmen,Werteunion,,
 08417016,Dotternhausen,Zweitstimmen,Werteunion,3,0.3
 08417022,"Geislingen, Stadt",Erststimmen,Werteunion,,
-08417022,"Geislingen, Stadt",Zweitstimmen,Werteunion,10,0.4
+08417022,"Geislingen, Stadt",Zweitstimmen,Werteunion,12,0.4
 08417023,Grosselfingen,Erststimmen,Werteunion,,
 08417023,Grosselfingen,Zweitstimmen,Werteunion,2,0.2
 08417025,"Haigerloch, Stadt",Erststimmen,Werteunion,,
@@ -18126,7 +18200,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08425019,Bernstadt,Erststimmen,Werteunion,,
 08425019,Bernstadt,Zweitstimmen,Werteunion,5,0.4
 08425020,"Blaubeuren, Stadt",Erststimmen,Werteunion,,
-08425020,"Blaubeuren, Stadt",Zweitstimmen,Werteunion,7,0.1
+08425020,"Blaubeuren, Stadt",Zweitstimmen,Werteunion,10,0.2
 08425022,Börslingen,Erststimmen,Werteunion,,
 08425022,Börslingen,Zweitstimmen,Werteunion,1,1.0
 08425024,Breitingen,Erststimmen,Werteunion,,
@@ -18148,7 +18222,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08425062,Holzkirch,Erststimmen,Werteunion,,
 08425062,Holzkirch,Zweitstimmen,Werteunion,0,0.0
 08425071,"Laichingen, Stadt",Erststimmen,Werteunion,,
-08425071,"Laichingen, Stadt",Zweitstimmen,Werteunion,10,0.2
+08425071,"Laichingen, Stadt",Zweitstimmen,Werteunion,11,0.2
 08425072,"Langenau, Stadt",Erststimmen,Werteunion,,
 08425072,"Langenau, Stadt",Zweitstimmen,Werteunion,14,0.2
 08425073,Lauterach,Erststimmen,Werteunion,,
@@ -18224,7 +18298,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08426038,Eberhardzell,Erststimmen,Werteunion,,
 08426038,Eberhardzell,Zweitstimmen,Werteunion,1,0.0
 08426043,Erlenmoos,Erststimmen,Werteunion,,
-08426043,Erlenmoos,Zweitstimmen,Werteunion,1,0.2
+08426043,Erlenmoos,Zweitstimmen,Werteunion,1,0.1
 08426045,Ertingen,Erststimmen,Werteunion,,
 08426045,Ertingen,Zweitstimmen,Werteunion,7,0.2
 08426058,Hochdorf,Erststimmen,Werteunion,,
@@ -18337,6 +18411,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08437076,"Mengen, Stadt",Zweitstimmen,Werteunion,20,0.4
 08437078,"Meßkirch, Stadt",Erststimmen,Werteunion,,
 08437078,"Meßkirch, Stadt",Zweitstimmen,Werteunion,7,0.2
+08437082,Neufra,Erststimmen,Werteunion,,
+08437082,Neufra,Zweitstimmen,Werteunion,1,0.1
 08437086,Ostrach,Erststimmen,Werteunion,,
 08437086,Ostrach,Zweitstimmen,Werteunion,4,0.1
 08437088,"Pfullendorf, Stadt",Erststimmen,Werteunion,,
@@ -18372,7 +18448,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08125094,Talheim,Erststimmen,dieBasis,,
 08125094,Talheim,Zweitstimmen,dieBasis,21,0.7
 08126011,Bretzfeld,Erststimmen,dieBasis,,
-08126011,Bretzfeld,Zweitstimmen,dieBasis,13,0.2
+08126011,Bretzfeld,Zweitstimmen,dieBasis,14,0.2
 08126020,Dörzbach,Erststimmen,dieBasis,,
 08126020,Dörzbach,Zweitstimmen,dieBasis,9,0.6
 08126028,"Forchtenberg, Stadt",Erststimmen,dieBasis,,
@@ -18434,7 +18510,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08127062,Oberrot,Erststimmen,dieBasis,,
 08127062,Oberrot,Zweitstimmen,dieBasis,7,0.4
 08127063,Obersontheim,Erststimmen,dieBasis,,
-08127063,Obersontheim,Zweitstimmen,dieBasis,7,0.4
+08127063,Obersontheim,Zweitstimmen,dieBasis,11,0.4
 08127071,Rot am See,Erststimmen,dieBasis,,
 08127071,Rot am See,Zweitstimmen,dieBasis,17,0.6
 08127073,Satteldorf,Erststimmen,dieBasis,,
@@ -18483,8 +18559,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08128061,Königheim,Zweitstimmen,dieBasis,6,0.3
 08128064,"Külsheim, Stadt",Erststimmen,dieBasis,38,1.3
 08128064,"Külsheim, Stadt",Zweitstimmen,dieBasis,14,0.5
-08128082,"Niederstetten, Stadt",Erststimmen,dieBasis,42,1.6
-08128082,"Niederstetten, Stadt",Zweitstimmen,dieBasis,21,0.8
+08128082,"Niederstetten, Stadt",Erststimmen,dieBasis,51,1.7
+08128082,"Niederstetten, Stadt",Zweitstimmen,dieBasis,26,0.9
 08128115,"Tauberbischofsheim, Stadt",Erststimmen,dieBasis,106,1.6
 08128115,"Tauberbischofsheim, Stadt",Zweitstimmen,dieBasis,43,0.6
 08128126,"Weikersheim, Stadt",Erststimmen,dieBasis,67,1.5
@@ -18606,7 +18682,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08235085,"Calw, Stadt",Erststimmen,dieBasis,,
 08235085,"Calw, Stadt",Zweitstimmen,dieBasis,21,0.2
 08236004,Birkenfeld,Erststimmen,dieBasis,,
-08236004,Birkenfeld,Zweitstimmen,dieBasis,11,0.2
+08236004,Birkenfeld,Zweitstimmen,dieBasis,10,0.2
 08236011,Eisingen,Erststimmen,dieBasis,,
 08236011,Eisingen,Zweitstimmen,dieBasis,4,0.2
 08236013,Engelsbrand,Erststimmen,dieBasis,,
@@ -18632,11 +18708,11 @@ ags,municipality_name,vote_type,party,votes,percent
 08236043,"Neuenbürg, Stadt",Erststimmen,dieBasis,,
 08236043,"Neuenbürg, Stadt",Zweitstimmen,dieBasis,7,0.2
 08236044,Neuhausen,Erststimmen,dieBasis,,
-08236044,Neuhausen,Zweitstimmen,dieBasis,13,0.5
+08236044,Neuhausen,Zweitstimmen,dieBasis,14,0.5
 08236046,Niefern-Öschelbronn,Erststimmen,dieBasis,,
 08236046,Niefern-Öschelbronn,Zweitstimmen,dieBasis,12,0.2
 08236050,Ötisheim,Erststimmen,dieBasis,,
-08236050,Ötisheim,Zweitstimmen,dieBasis,1,0.1
+08236050,Ötisheim,Zweitstimmen,dieBasis,2,0.1
 08236061,Sternenfels,Erststimmen,dieBasis,,
 08236061,Sternenfels,Zweitstimmen,dieBasis,10,0.6
 08236062,Tiefenbronn,Erststimmen,dieBasis,,
@@ -18672,7 +18748,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08237027,Eutingen im Gäu,Erststimmen,dieBasis,,
 08237027,Eutingen im Gäu,Zweitstimmen,dieBasis,4,0.1
 08237028,"Freudenstadt, Stadt",Erststimmen,dieBasis,,
-08237028,"Freudenstadt, Stadt",Zweitstimmen,dieBasis,22,0.2
+08237028,"Freudenstadt, Stadt",Zweitstimmen,dieBasis,23,0.2
 08237030,Glatten,Erststimmen,dieBasis,,
 08237030,Glatten,Zweitstimmen,dieBasis,1,0.1
 08237032,Grömbach,Erststimmen,dieBasis,,
@@ -18726,7 +18802,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08316042,Simonswald,Erststimmen,dieBasis,,
 08316042,Simonswald,Zweitstimmen,dieBasis,6,0.3
 08316043,Teningen,Erststimmen,dieBasis,,
-08316043,Teningen,Zweitstimmen,dieBasis,18,0.4
+08316043,Teningen,Zweitstimmen,dieBasis,22,0.3
 08316045,Vörstetten,Erststimmen,dieBasis,,
 08316045,Vörstetten,Zweitstimmen,dieBasis,10,0.5
 08316049,Weisweil,Erststimmen,dieBasis,,
@@ -18758,7 +18834,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08325036,Lauterbach,Erststimmen,dieBasis,,
 08325036,Lauterbach,Zweitstimmen,dieBasis,4,0.3
 08325045,"Oberndorf am Neckar, Stadt",Erststimmen,dieBasis,,
-08325045,"Oberndorf am Neckar, Stadt",Zweitstimmen,dieBasis,12,0.3
+08325045,"Oberndorf am Neckar, Stadt",Zweitstimmen,dieBasis,14,0.2
 08325049,"Rottweil, Stadt",Erststimmen,dieBasis,,
 08325049,"Rottweil, Stadt",Zweitstimmen,dieBasis,22,0.2
 08325050,Schenkenzell,Erststimmen,dieBasis,,
@@ -18778,7 +18854,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08325069,Zimmern ob Rottweil,Erststimmen,dieBasis,,
 08325069,Zimmern ob Rottweil,Zweitstimmen,dieBasis,20,0.6
 08325070,Fluorn-Winzeln,Erststimmen,dieBasis,,
-08325070,Fluorn-Winzeln,Zweitstimmen,dieBasis,8,0.7
+08325070,Fluorn-Winzeln,Zweitstimmen,dieBasis,9,0.5
 08325071,Eschbronn,Erststimmen,dieBasis,,
 08325071,Eschbronn,Zweitstimmen,dieBasis,6,0.5
 08325072,Deißlingen,Erststimmen,dieBasis,,
@@ -18820,7 +18896,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08326068,"Vöhrenbach, Stadt",Erststimmen,dieBasis,,
 08326068,"Vöhrenbach, Stadt",Zweitstimmen,dieBasis,5,0.3
 08326074,"Villingen-Schwenningen, Stadt",Erststimmen,dieBasis,,
-08326074,"Villingen-Schwenningen, Stadt",Zweitstimmen,dieBasis,91,0.3
+08326074,"Villingen-Schwenningen, Stadt",Zweitstimmen,dieBasis,93,0.3
 08326075,Brigachtal,Erststimmen,dieBasis,,
 08326075,Brigachtal,Zweitstimmen,dieBasis,14,0.5
 08327002,Aldingen,Erststimmen,dieBasis,,
@@ -18835,6 +18911,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08327007,Bubsheim,Zweitstimmen,dieBasis,0,0.0
 08327008,Buchheim,Erststimmen,dieBasis,,
 08327008,Buchheim,Zweitstimmen,dieBasis,2,0.4
+08327009,Deilingen,Erststimmen,dieBasis,,
+08327009,Deilingen,Zweitstimmen,dieBasis,1,0.2
 08327010,Denkingen,Erststimmen,dieBasis,,
 08327010,Denkingen,Zweitstimmen,dieBasis,9,0.6
 08327011,Dürbheim,Erststimmen,dieBasis,,
@@ -18910,7 +18988,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08336034,Hasel,Erststimmen,dieBasis,,
 08336034,Hasel,Zweitstimmen,dieBasis,3,0.5
 08336036,Hausen im Wiesental,Erststimmen,dieBasis,,
-08336036,Hausen im Wiesental,Zweitstimmen,dieBasis,1,0.3
+08336036,Hausen im Wiesental,Zweitstimmen,dieBasis,3,0.2
 08336043,Inzlingen,Erststimmen,dieBasis,,
 08336043,Inzlingen,Zweitstimmen,dieBasis,2,0.2
 08336050,"Lörrach, Stadt",Erststimmen,dieBasis,,
@@ -19010,7 +19088,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08416036,"Rottenburg am Neckar, Stadt",Erststimmen,dieBasis,,
 08416036,"Rottenburg am Neckar, Stadt",Zweitstimmen,dieBasis,54,0.2
 08416041,"Tübingen, Universitätsstadt",Erststimmen,dieBasis,,
-08416041,"Tübingen, Universitätsstadt",Zweitstimmen,dieBasis,97,0.2
+08416041,"Tübingen, Universitätsstadt",Zweitstimmen,dieBasis,99,0.2
 08416048,Ammerbuch,Erststimmen,dieBasis,,
 08416048,Ammerbuch,Zweitstimmen,dieBasis,15,0.2
 08416049,Neustetten,Erststimmen,dieBasis,,
@@ -19030,7 +19108,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08417016,Dotternhausen,Erststimmen,dieBasis,,
 08417016,Dotternhausen,Zweitstimmen,dieBasis,2,0.2
 08417022,"Geislingen, Stadt",Erststimmen,dieBasis,,
-08417022,"Geislingen, Stadt",Zweitstimmen,dieBasis,8,0.3
+08417022,"Geislingen, Stadt",Zweitstimmen,dieBasis,11,0.3
 08417023,Grosselfingen,Erststimmen,dieBasis,,
 08417023,Grosselfingen,Zweitstimmen,dieBasis,5,0.4
 08417025,"Haigerloch, Stadt",Erststimmen,dieBasis,,
@@ -19102,7 +19180,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08425062,Holzkirch,Erststimmen,dieBasis,,
 08425062,Holzkirch,Zweitstimmen,dieBasis,0,0.0
 08425071,"Laichingen, Stadt",Erststimmen,dieBasis,,
-08425071,"Laichingen, Stadt",Zweitstimmen,dieBasis,12,0.2
+08425071,"Laichingen, Stadt",Zweitstimmen,dieBasis,14,0.3
 08425072,"Langenau, Stadt",Erststimmen,dieBasis,,
 08425072,"Langenau, Stadt",Zweitstimmen,dieBasis,17,0.2
 08425073,Lauterach,Erststimmen,dieBasis,,
@@ -19178,7 +19256,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08426038,Eberhardzell,Erststimmen,dieBasis,,
 08426038,Eberhardzell,Zweitstimmen,dieBasis,12,0.4
 08426043,Erlenmoos,Erststimmen,dieBasis,,
-08426043,Erlenmoos,Zweitstimmen,dieBasis,2,0.5
+08426043,Erlenmoos,Zweitstimmen,dieBasis,3,0.3
 08426045,Ertingen,Erststimmen,dieBasis,,
 08426045,Ertingen,Zweitstimmen,dieBasis,4,0.1
 08426058,Hochdorf,Erststimmen,dieBasis,,
@@ -19291,6 +19369,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08437076,"Mengen, Stadt",Zweitstimmen,dieBasis,6,0.1
 08437078,"Meßkirch, Stadt",Erststimmen,dieBasis,,
 08437078,"Meßkirch, Stadt",Zweitstimmen,dieBasis,7,0.2
+08437082,Neufra,Erststimmen,dieBasis,,
+08437082,Neufra,Zweitstimmen,dieBasis,1,0.1
 08437086,Ostrach,Erststimmen,dieBasis,,
 08437086,Ostrach,Zweitstimmen,dieBasis,7,0.2
 08437088,"Pfullendorf, Stadt",Erststimmen,dieBasis,,
@@ -19326,7 +19406,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08125094,Talheim,Erststimmen,ÖDP,7,0.2
 08125094,Talheim,Zweitstimmen,ÖDP,3,0.1
 08126011,Bretzfeld,Erststimmen,ÖDP,,
-08126011,Bretzfeld,Zweitstimmen,ÖDP,10,0.2
+08126011,Bretzfeld,Zweitstimmen,ÖDP,11,0.2
 08126020,Dörzbach,Erststimmen,ÖDP,,
 08126020,Dörzbach,Zweitstimmen,ÖDP,1,0.1
 08126028,"Forchtenberg, Stadt",Erststimmen,ÖDP,,
@@ -19387,8 +19467,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08127059,Michelfeld,Zweitstimmen,ÖDP,3,0.1
 08127062,Oberrot,Erststimmen,ÖDP,9,0.5
 08127062,Oberrot,Zweitstimmen,ÖDP,8,0.4
-08127063,Obersontheim,Erststimmen,ÖDP,8,0.4
-08127063,Obersontheim,Zweitstimmen,ÖDP,5,0.3
+08127063,Obersontheim,Erststimmen,ÖDP,13,0.5
+08127063,Obersontheim,Zweitstimmen,ÖDP,7,0.3
 08127071,Rot am See,Erststimmen,ÖDP,8,0.3
 08127071,Rot am See,Zweitstimmen,ÖDP,12,0.4
 08127073,Satteldorf,Erststimmen,ÖDP,12,0.4
@@ -19438,7 +19518,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08128064,"Külsheim, Stadt",Erststimmen,ÖDP,,
 08128064,"Külsheim, Stadt",Zweitstimmen,ÖDP,7,0.2
 08128082,"Niederstetten, Stadt",Erststimmen,ÖDP,,
-08128082,"Niederstetten, Stadt",Zweitstimmen,ÖDP,4,0.2
+08128082,"Niederstetten, Stadt",Zweitstimmen,ÖDP,4,0.1
 08128115,"Tauberbischofsheim, Stadt",Erststimmen,ÖDP,,
 08128115,"Tauberbischofsheim, Stadt",Zweitstimmen,ÖDP,20,0.3
 08128126,"Weikersheim, Stadt",Erststimmen,ÖDP,,
@@ -19546,7 +19626,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08235065,Schömberg,Erststimmen,ÖDP,,
 08235065,Schömberg,Zweitstimmen,ÖDP,8,0.2
 08235066,Simmersfeld,Erststimmen,ÖDP,,
-08235066,Simmersfeld,Zweitstimmen,ÖDP,2,0.9
+08235066,Simmersfeld,Zweitstimmen,ÖDP,2,0.4
 08235067,Simmozheim,Erststimmen,ÖDP,,
 08235067,Simmozheim,Zweitstimmen,ÖDP,1,0.1
 08235073,Unterreichenbach,Erststimmen,ÖDP,,
@@ -19680,7 +19760,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08316042,Simonswald,Erststimmen,ÖDP,,
 08316042,Simonswald,Zweitstimmen,ÖDP,7,0.4
 08316043,Teningen,Erststimmen,ÖDP,,
-08316043,Teningen,Zweitstimmen,ÖDP,17,0.3
+08316043,Teningen,Zweitstimmen,ÖDP,21,0.3
 08316045,Vörstetten,Erststimmen,ÖDP,,
 08316045,Vörstetten,Zweitstimmen,ÖDP,3,0.2
 08316049,Weisweil,Erststimmen,ÖDP,,
@@ -19711,10 +19791,10 @@ ags,municipality_name,vote_type,party,votes,percent
 08325024,Hardt,Zweitstimmen,ÖDP,6,0.4
 08325036,Lauterbach,Erststimmen,ÖDP,10,0.7
 08325036,Lauterbach,Zweitstimmen,ÖDP,7,0.5
-08325045,"Oberndorf am Neckar, Stadt",Erststimmen,ÖDP,29,0.6
-08325045,"Oberndorf am Neckar, Stadt",Zweitstimmen,ÖDP,20,0.4
-08325049,"Rottweil, Stadt",Erststimmen,ÖDP,69,0.6
-08325049,"Rottweil, Stadt",Zweitstimmen,ÖDP,30,0.3
+08325045,"Oberndorf am Neckar, Stadt",Erststimmen,ÖDP,37,0.7
+08325045,"Oberndorf am Neckar, Stadt",Zweitstimmen,ÖDP,24,0.4
+08325049,"Rottweil, Stadt",Erststimmen,ÖDP,71,0.6
+08325049,"Rottweil, Stadt",Zweitstimmen,ÖDP,30,0.2
 08325050,Schenkenzell,Erststimmen,ÖDP,3,0.3
 08325050,Schenkenzell,Zweitstimmen,ÖDP,0,0.0
 08325051,"Schiltach, Stadt",Erststimmen,ÖDP,12,0.6
@@ -19731,8 +19811,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08325064,Wellendingen,Zweitstimmen,ÖDP,4,0.2
 08325069,Zimmern ob Rottweil,Erststimmen,ÖDP,20,0.6
 08325069,Zimmern ob Rottweil,Zweitstimmen,ÖDP,7,0.2
-08325070,Fluorn-Winzeln,Erststimmen,ÖDP,27,2.2
-08325070,Fluorn-Winzeln,Zweitstimmen,ÖDP,23,1.9
+08325070,Fluorn-Winzeln,Erststimmen,ÖDP,50,2.8
+08325070,Fluorn-Winzeln,Zweitstimmen,ÖDP,40,2.2
 08325071,Eschbronn,Erststimmen,ÖDP,11,0.9
 08325071,Eschbronn,Zweitstimmen,ÖDP,5,0.4
 08325072,Deißlingen,Erststimmen,ÖDP,16,0.5
@@ -19789,6 +19869,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08327007,Bubsheim,Zweitstimmen,ÖDP,3,0.5
 08327008,Buchheim,Erststimmen,ÖDP,,
 08327008,Buchheim,Zweitstimmen,ÖDP,3,0.7
+08327009,Deilingen,Erststimmen,ÖDP,,
+08327009,Deilingen,Zweitstimmen,ÖDP,0,0.0
 08327010,Denkingen,Erststimmen,ÖDP,,
 08327010,Denkingen,Zweitstimmen,ÖDP,3,0.2
 08327011,Dürbheim,Erststimmen,ÖDP,,
@@ -19864,7 +19946,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08336034,Hasel,Erststimmen,ÖDP,,
 08336034,Hasel,Zweitstimmen,ÖDP,3,0.5
 08336036,Hausen im Wiesental,Erststimmen,ÖDP,,
-08336036,Hausen im Wiesental,Zweitstimmen,ÖDP,0,0.0
+08336036,Hausen im Wiesental,Zweitstimmen,ÖDP,1,0.1
 08336043,Inzlingen,Erststimmen,ÖDP,,
 08336043,Inzlingen,Zweitstimmen,ÖDP,1,0.1
 08336050,"Lörrach, Stadt",Erststimmen,ÖDP,,
@@ -19964,7 +20046,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08416036,"Rottenburg am Neckar, Stadt",Erststimmen,ÖDP,,
 08416036,"Rottenburg am Neckar, Stadt",Zweitstimmen,ÖDP,31,0.1
 08416041,"Tübingen, Universitätsstadt",Erststimmen,ÖDP,,
-08416041,"Tübingen, Universitätsstadt",Zweitstimmen,ÖDP,97,0.2
+08416041,"Tübingen, Universitätsstadt",Zweitstimmen,ÖDP,98,0.2
 08416048,Ammerbuch,Erststimmen,ÖDP,,
 08416048,Ammerbuch,Zweitstimmen,ÖDP,14,0.2
 08416049,Neustetten,Erststimmen,ÖDP,,
@@ -19984,7 +20066,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08417016,Dotternhausen,Erststimmen,ÖDP,,
 08417016,Dotternhausen,Zweitstimmen,ÖDP,0,0.0
 08417022,"Geislingen, Stadt",Erststimmen,ÖDP,,
-08417022,"Geislingen, Stadt",Zweitstimmen,ÖDP,8,0.3
+08417022,"Geislingen, Stadt",Zweitstimmen,ÖDP,9,0.3
 08417023,Grosselfingen,Erststimmen,ÖDP,,
 08417023,Grosselfingen,Zweitstimmen,ÖDP,1,0.1
 08417025,"Haigerloch, Stadt",Erststimmen,ÖDP,,
@@ -20034,7 +20116,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08425019,Bernstadt,Erststimmen,ÖDP,,
 08425019,Bernstadt,Zweitstimmen,ÖDP,6,0.4
 08425020,"Blaubeuren, Stadt",Erststimmen,ÖDP,,
-08425020,"Blaubeuren, Stadt",Zweitstimmen,ÖDP,7,0.1
+08425020,"Blaubeuren, Stadt",Zweitstimmen,ÖDP,8,0.1
 08425022,Börslingen,Erststimmen,ÖDP,,
 08425022,Börslingen,Zweitstimmen,ÖDP,0,0.0
 08425024,Breitingen,Erststimmen,ÖDP,,
@@ -20056,7 +20138,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08425062,Holzkirch,Erststimmen,ÖDP,,
 08425062,Holzkirch,Zweitstimmen,ÖDP,2,1.5
 08425071,"Laichingen, Stadt",Erststimmen,ÖDP,,
-08425071,"Laichingen, Stadt",Zweitstimmen,ÖDP,17,0.3
+08425071,"Laichingen, Stadt",Zweitstimmen,ÖDP,19,0.3
 08425072,"Langenau, Stadt",Erststimmen,ÖDP,,
 08425072,"Langenau, Stadt",Zweitstimmen,ÖDP,10,0.1
 08425073,Lauterach,Erststimmen,ÖDP,,
@@ -20132,7 +20214,7 @@ ags,municipality_name,vote_type,party,votes,percent
 08426038,Eberhardzell,Erststimmen,ÖDP,,
 08426038,Eberhardzell,Zweitstimmen,ÖDP,4,0.1
 08426043,Erlenmoos,Erststimmen,ÖDP,,
-08426043,Erlenmoos,Zweitstimmen,ÖDP,1,0.2
+08426043,Erlenmoos,Zweitstimmen,ÖDP,1,0.1
 08426045,Ertingen,Erststimmen,ÖDP,,
 08426045,Ertingen,Zweitstimmen,ÖDP,8,0.3
 08426058,Hochdorf,Erststimmen,ÖDP,,
@@ -20245,6 +20327,8 @@ ags,municipality_name,vote_type,party,votes,percent
 08437076,"Mengen, Stadt",Zweitstimmen,ÖDP,15,0.3
 08437078,"Meßkirch, Stadt",Erststimmen,ÖDP,,
 08437078,"Meßkirch, Stadt",Zweitstimmen,ÖDP,2,0.0
+08437082,Neufra,Erststimmen,ÖDP,,
+08437082,Neufra,Zweitstimmen,ÖDP,0,0.0
 08437086,Ostrach,Erststimmen,ÖDP,,
 08437086,Ostrach,Zweitstimmen,ÖDP,3,0.1
 08437088,"Pfullendorf, Stadt",Erststimmen,ÖDP,,
