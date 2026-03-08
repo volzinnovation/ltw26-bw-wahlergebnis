@@ -2863,7 +2863,6 @@ def main() -> None:
     now_local = now_utc().astimezone(ZoneInfo(config.timezone))
     if now_local < tracking_start_local_dt(config) and not args.force_run:
         generate_wahlkreis_map(kommone_snapshots=[], statla_snapshots=[], prestart=True)
-        write_prestart_readme(config)
         return
 
     label_file, label_human = time_labels(config.timezone)
@@ -2931,18 +2930,6 @@ def main() -> None:
             statla=statla,
             diff_rows=diffs,
             events_rows=events,
-        )
-        generate_readme(
-            config=config,
-            polled_at_local=label_human,
-            municipalities=municipalities if args.limit_ags is None else municipalities[: args.limit_ags],
-            kommone_snapshots=kommone["snapshots"],
-            party_rows=kommone["party_rows"],
-            statla_party_rows=statla["party_rows"],
-            statla_mode=statla.get("mode", "UNAVAILABLE"),
-            statla_url=statla.get("url", ""),
-            diff_rows=diffs,
-            wahlkreis_status_rows=wahlkreis_status_rows,
         )
     finally:
         conn.close()

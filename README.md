@@ -1,128 +1,100 @@
-# Landtagswahl Baden-Württemberg 2026 (2026-bw) - Tracking Template
+# wahl-monitor.de
 
-Last poll: **2026-03-08 16:13:29 CET**
+Static election tracking and publishing pipeline for German elections.
 
-## Tracking Window
+The repository is organized by election key in the form `<year>-<state>`, for example `2026-bw`. Each election gets its own config, metadata, latest exports, and static site output.
 
-- Tracking starts at **2026-03-08 18:00 CET**. Before this point, official result collection is intentionally disabled.
+## Current Scope
+
+- Live election currently configured: `2026-bw`
+- Public site target: `https://wahl-monitor.de/2026-bw/`
+- GitHub Pages deploy workflow: `.github/workflows/pages.yml`
+
+## Repository Layout
+
+- `config/<election-key>.json`: election-specific configuration
+- `data/<election-key>/metadata`: static inputs such as municipality mappings, dummy CSV, geometry, and cached structure data
+- `data/<election-key>/latest`: latest normalized exports committed to git
+- `data/<election-key>/reports`: comparison outputs and event summaries
+- `data/<election-key>/raw`: raw fetch payloads for local inspection
+- `data/<election-key>/history.sqlite`: local history cache, intentionally not committed
+- `site/<election-key>`: generated static pages for GitHub Pages
+- `scripts/poll_election.py`: generic poller entrypoint
+- `scripts/generate_static_detail_pages.py`: static site generator
+
+## Local Procedure
+
+Run one mock cycle from the Statistik BW dummy CSV:
+
+```bash
+python3 scripts/run_local_mock_poll.py --election-key 2026-bw --iterations 1 --limit-ags 10
+```
+
+Run a single live poll after the election opens:
+
+```bash
+python3 scripts/poll_election.py --election-key 2026-bw
+```
+
+Run the local minute loop from 18:00:
+
+```bash
+python3 scripts/run_local_poll_loop.py --election-key 2026-bw --start-at 18:00
+```
+
+Validate the dummy dataset integration:
+
+```bash
+python3 scripts/validate_dummy_statla_result.py --election-key 2026-bw
+```
+
+Generate the static drill-down site:
+
+```bash
+python3 scripts/generate_static_detail_pages.py --election-key 2026-bw
+```
+
+Serve the generated site locally:
+
+```bash
+python3 -m http.server 8000
+```
+
+Then open:
+
+- `http://localhost:8000/site/index.html`
+- `http://localhost:8000/site/2026-bw/index.html`
+
+## GitHub Pages Procedure
+
+The Pages workflow rebuilds `site/` on GitHub and publishes it via GitHub Pages.
+
+1. Ensure the repo Pages source is set to `GitHub Actions`.
+2. Run `.github/workflows/pages.yml` manually or via `gh workflow run pages.yml`.
+3. GitHub Pages publishes the contents of `site/`.
+4. `site/index.html` is the root landing page.
+5. `site/<election-key>/index.html` is the election dashboard entrypoint.
+
+The workflow currently builds `2026-bw`. If additional elections are added, extend the workflow build step accordingly.
+
+## Adding Another Election
+
+1. Create `config/<year>-<state>.json`.
+2. Add required metadata files under `data/<year>-<state>/metadata`.
+3. Run the poller once with `--election-key <year>-<state>`.
+4. Generate the static site with `scripts/generate_static_detail_pages.py`.
+5. Update the Pages workflow if the new election should be built on deploy.
 
 ## Data Sources
 
-- `komm.one` municipality result pages (current 2026 HTML structure, discovered recursively per county/wahlkreis)
-- Statistik BW single CSV (current mode: **DUMMY**) at `/Users/raphaelvolz/Github/ltw26-bw-wahlergebnis/data/2026-bw/metadata/2026021_LTW26-Dummy-Datei.csv`
-
-## Operations
-
-- Local run: `python scripts/poll_election.py --election-key 2026-bw`
-- Local minute loop: `python scripts/run_local_poll_loop.py --election-key 2026-bw --start-at 18:00`
-- Local mock run (Statistik BW dummy CSV only): `python scripts/run_local_mock_poll.py --election-key 2026-bw --iterations 1 --limit-ags 10`
-- Validate dummy StatLA result: `python scripts/validate_dummy_statla_result.py --election-key 2026-bw`
-- Generate static drill-down pages: `python scripts/generate_static_detail_pages.py --election-key 2026-bw`
-- Site index for this election: `site/2026-bw/index.html`
-- SQLite history DB (local cache, not committed): `data/2026-bw/history.sqlite`
-- Rebuild SQLite from git deltas: `python scripts/rebuild_history_sqlite_from_git_deltas.py --election-key 2026-bw`
-- GitHub Pages deploy workflow (manual): `.github/workflows/pages.yml`
-
-## Coverage
-
-- Municipalities tracked: **1**
-- `komm.one` complete: **0**
-- `komm.one` pending: **0**
-- `komm.one` no data: **1**
-
-## Wahlkreis Map
-
-![Wahlkreis status map](data/2026-bw/metadata/wahlkreis-status.svg)
-
-- Wahlkreise complete: **0**
-- Wahlkreise pending: **70**
-- Wahlkreise no data: **0**
-- Status table: `data/2026-bw/metadata/wahlkreis-status.csv`
-- Geometry source ZIP: `https://www.statistik-bw.de/fileadmin/user_upload/medien/bilder/Karten_und_Geometrien_der_Wahlkreise/LTWahlkreise2026-BW_GEOJSON.zip`
-- SHP source ZIP: `https://www.statistik-bw.de/fileadmin/user_upload/medien/bilder/Karten_und_Geometrien_der_Wahlkreise/LTWahlkreise2026-BW_SHP.zip`
-
-## Party Totals (First and Second Votes)
-
-### Erststimmen
-
-| Party | `komm.one` Count | `komm.one` Share | `statla` Count | `statla` Share | Delta Count (`komm.one`-`statla`) | Delta Share (`komm.one`-`statla`) |
-|---|---:|---:|---:|---:|---:|---:|
-| GRÜNE | 0 | 0.00% | 0 | 0.00% | +0 | +0.00% |
-| CDU | 0 | 0.00% | 0 | 0.00% | +0 | +0.00% |
-| SPD | 0 | 0.00% | 0 | 0.00% | +0 | +0.00% |
-| FDP | 0 | 0.00% | 0 | 0.00% | +0 | +0.00% |
-| AfD | 0 | 0.00% | 0 | 0.00% | +0 | +0.00% |
-| Die Linke | 0 | 0.00% | 0 | 0.00% | +0 | +0.00% |
-| FREIE WÄHLER | 0 | 0.00% | 0 | 0.00% | +0 | +0.00% |
-| Die PARTEI | 0 | 0.00% | 0 | 0.00% | +0 | +0.00% |
-| dieBasis | 0 | 0.00% | 0 | 0.00% | +0 | +0.00% |
-| ÖDP | 0 | 0.00% | 0 | 0.00% | +0 | +0.00% |
-| Volt | 0 | 0.00% | 0 | 0.00% | +0 | +0.00% |
-| Bündnis C | 0 | 0.00% | 0 | 0.00% | +0 | +0.00% |
-| BSW | 0 | 0.00% | 0 | 0.00% | +0 | +0.00% |
-| Die Gerechtigkeitspartei | 0 | 0.00% | 0 | 0.00% | +0 | +0.00% |
-| Tierschutzpartei | 0 | 0.00% | 0 | 0.00% | +0 | +0.00% |
-| Werteunion | 0 | 0.00% | 0 | 0.00% | +0 | +0.00% |
-| Anderer Kreiswahlvorschlag | 0 | 0.00% | 0 | 0.00% | +0 | +0.00% |
-| **TOTAL** | 0 | 0.00% | 0 | 0.00% | +0 | +0.00% |
-
-### Zweitstimmen
-
-| Party | `komm.one` Count | `komm.one` Share | `statla` Count | `statla` Share | Delta Count (`komm.one`-`statla`) | Delta Share (`komm.one`-`statla`) |
-|---|---:|---:|---:|---:|---:|---:|
-| GRÜNE | 0 | 0.00% | 0 | 0.00% | +0 | +0.00% |
-| CDU | 0 | 0.00% | 0 | 0.00% | +0 | +0.00% |
-| SPD | 0 | 0.00% | 0 | 0.00% | +0 | +0.00% |
-| FDP | 0 | 0.00% | 0 | 0.00% | +0 | +0.00% |
-| AfD | 0 | 0.00% | 0 | 0.00% | +0 | +0.00% |
-| Die Linke | 0 | 0.00% | 0 | 0.00% | +0 | +0.00% |
-| FREIE WÄHLER | 0 | 0.00% | 0 | 0.00% | +0 | +0.00% |
-| Die PARTEI | 0 | 0.00% | 0 | 0.00% | +0 | +0.00% |
-| dieBasis | 0 | 0.00% | 0 | 0.00% | +0 | +0.00% |
-| KlimalisteBW | 0 | 0.00% | 0 | 0.00% | +0 | +0.00% |
-| ÖDP | 0 | 0.00% | 0 | 0.00% | +0 | +0.00% |
-| Volt | 0 | 0.00% | 0 | 0.00% | +0 | +0.00% |
-| Bündnis C | 0 | 0.00% | 0 | 0.00% | +0 | +0.00% |
-| PDH | 0 | 0.00% | 0 | 0.00% | +0 | +0.00% |
-| Verjüngungsforschung | 0 | 0.00% | 0 | 0.00% | +0 | +0.00% |
-| BSW | 0 | 0.00% | 0 | 0.00% | +0 | +0.00% |
-| Die Gerechtigkeitspartei | 0 | 0.00% | 0 | 0.00% | +0 | +0.00% |
-| PDR | 0 | 0.00% | 0 | 0.00% | +0 | +0.00% |
-| PdF | 0 | 0.00% | 0 | 0.00% | +0 | +0.00% |
-| Tierschutzpartei | 0 | 0.00% | 0 | 0.00% | +0 | +0.00% |
-| Werteunion | 0 | 0.00% | 0 | 0.00% | +0 | +0.00% |
-| **TOTAL** | 0 | 0.00% | 0 | 0.00% | +0 | +0.00% |
-
-## Party Dashboard (Municipality Drill-Down)
-
-No party data available yet.
-
-## Pending Results
-
-Showing 1 of 1 rows. Full export: `data/2026-bw/latest/kommone_snapshots.csv`.
-
-<details><summary>Open pending municipalities</summary>
-
-| AGS | Municipality | `komm.one` reported/total | Status |
-|---|---|---:|---|
-| 08111000 | Stuttgart-Landeshauptstadt |  | no_data |
-
-</details>
-
-## Source Difference Summary
-
-| Metric | Rows with Delta | Sum(|delta|) |
-|---|---:|---:|
-| reported_precincts | 0 | 0.00 |
-| total_precincts | 0 | 0.00 |
-| voters_total | 0 | 0.00 |
-| valid_votes | 0 | 0.00 |
+- `komm.one` municipality HTML result pages
+- Statistik BW CSV export from `wahlen.statistik-bw.de`
+- Statistik BW dummy CSV for pre-election and local mock runs
+- Official Wahlkreis geometry and mapping files
+- Cached `komm.one` 2021 structure data for municipality and polling-place drill-down
 
 ## Notes
 
-- Polling is designed for minute-level snapshots and immutable timing of updates/removals.
-- No official results are expected before **2026-03-08 18:00 CET**.
-- Statistik BW live data is now published from `wahlen.statistik-bw.de`; fallback still uses the provided dummy CSV when needed.
-- `komm.one` is polled from the current public HTML result pages because the legacy `/daten/api/...` path is no longer available on the 2026 site.
-- Statistik BW coded party columns (`D*`, `F*`) are resolved using the official Hinweise party codebook.
-- Election storage is keyed by `2026-bw` under `data/2026-bw/` and `site/2026-bw/`.
+- The HTML dashboard under `site/<election-key>/index.html` is now the primary operational view.
+- `README.md` is manual project documentation and is no longer rewritten by polling runs.
+- Generated local artifacts such as `history.sqlite`, `data/*/raw`, `site/*`, and `README.html` do not all need to be committed.
