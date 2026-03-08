@@ -1038,6 +1038,32 @@ def render_source_diff_summary(diff_rows: List[Dict[str, Any]]) -> str:
     )
 
 
+def statla_wahlkreis_zweit_winner_map(
+    statla_snapshots: List[Dict[str, Any]],
+    party_votes_by_row_key: Dict[str, Dict[str, Dict[str, int]]],
+) -> Dict[str, Dict[str, Any]]:
+    winners: Dict[str, Dict[str, Any]] = {}
+    for row in statla_snapshots:
+        if str(row.get("gebietsart") or "").strip().upper() != "WAHLKREIS":
+            continue
+        wk = core.normalize_wahlkreis_nummer(row.get("gebietsnummer") or row.get("row_key"))
+        if not wk:
+            continue
+        zweit_votes = party_votes_by_row_key.get(str(row.get("row_key") or ""), {}).get("Zweitstimmen", {})
+        if not zweit_votes:
+            continue
+        winner_party, winner_votes = max(
+            zweit_votes.items(),
+            key=lambda item: (int(item[1]), str(item[0])),
+        )
+        winners[wk] = {
+            "winner_party": winner_party,
+            "winner_votes": int(winner_votes or 0),
+            "winner_total_votes": sum(int(v or 0) for v in zweit_votes.values()),
+        }
+    return winners
+
+
 def render_wahlkreis_overview_table(
     status_rows: List[Dict[str, Any]],
     link_by_wk: Dict[str, str],
@@ -1055,6 +1081,7 @@ def render_wahlkreis_overview_table(
             "<tr>"
             f"<td>{linked_label}</td>"
             f"<td>{html.escape(status_label(str(row['status'])))}</td>"
+            f"<td>{html.escape(str(row.get('winner_party') or ''))}</td>"
             f"<td>{rep_total}</td>"
             f"<td>{int(row.get('municipalities_complete') or 0)}</td>"
             f"<td>{int(row.get('municipalities_pending') or 0)}</td>"
@@ -1063,7 +1090,7 @@ def render_wahlkreis_overview_table(
         )
     return (
         "<div class='panel'><h2>Wahlkreisstatus</h2>"
-        "<table class='compact'><thead><tr><th>Wahlkreis</th><th>Status</th><th>Gemeldete Bezirke</th><th>Vollständig</th><th>Ausstehend</th><th>Keine Daten</th></tr></thead>"
+        "<table class='compact'><thead><tr><th>Wahlkreis</th><th>Status</th><th>Führend (StatLA Zweitstimmen)</th><th>Gemeldete Bezirke</th><th>Vollständig</th><th>Ausstehend</th><th>Keine Daten</th></tr></thead>"
         f"<tbody>{''.join(rows_html)}</tbody></table></div>"
     )
 
@@ -1113,7 +1140,8 @@ def render_clickable_wahlkreis_map(
         row = status_by_wk.get(wk, {})
         status = str(row.get("status") or "no_data")
         name = display_text(props.get("WK Name") or row.get("wahlkreisname") or f"Wahlkreis {wk}")
-        fill = colors.get(status, colors["no_data"])
+        winner_party = str(row.get("winner_party") or "").strip()
+        fill = WAHL_PARTY_COLORS.get(winner_party, colors.get(status, colors["no_data"]))
         d_parts: List[str] = []
         for ring in core.iter_exterior_rings(feature.get("geometry") or {}):
             if len(ring) < 3:
@@ -1133,7 +1161,10 @@ def render_clickable_wahlkreis_map(
             d_parts.append("M " + " L ".join(f"{x:.2f} {y:.2f}" for x, y in projected) + " Z")
         if not d_parts:
             continue
-        title = html.escape(f"{wk.zfill(2)} {name} ({status_label(status)})")
+        title_text = f"{wk.zfill(2)} {name} ({status_label(status)})"
+        if winner_party:
+            title_text += f" - Zweitstimmen: {winner_party}"
+        title = html.escape(title_text)
         path_markup = f"<path d=\"{' '.join(d_parts)}\" fill=\"{fill}\" stroke=\"#111827\" stroke-width=\"0.8\"><title>{title}</title></path>"
         href = link_by_wk.get(wk)
         if href:
@@ -1525,6 +1556,12 @@ def main() -> int:
         statla_snapshots=snapshots,
         prestart=False,
     )
+    statla_zweit_winners = statla_wahlkreis_zweit_winner_map(snapshots, party_votes)
+    for row in wahlkreis_status_rows:
+        wk = str(row.get("wahlkreisnummer") or "").strip()
+        winner = statla_zweit_winners.get(wk)
+        if winner:
+            row.update(winner)
 
     render_index_page(
         config,
