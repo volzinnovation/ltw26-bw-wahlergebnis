@@ -2989,15 +2989,15 @@ def load_wahlkreis_mapping() -> Dict[str, Dict[str, Any]]:
         return mapping
 
     lines: List[str] = []
-    with WAHLKREIS_MAPPING_PATH.open("r", encoding="latin-1", newline="") as handle:
-        for line in handle:
-            stripped = line.strip()
-            if not stripped or line.startswith("#"):
-                continue
-            # Statistik BW includes a delimiter-only spacer row before the actual header.
-            if stripped.replace(";", "") == "":
-                continue
-            lines.append(line)
+    content = decode_bytes(WAHLKREIS_MAPPING_PATH.read_bytes())
+    for line in content.splitlines():
+        stripped = line.strip()
+        if not stripped or stripped.startswith("#"):
+            continue
+        # Statistik BW includes a delimiter-only spacer row before the actual header.
+        if stripped.replace(";", "") == "":
+            continue
+        lines.append(line)
 
     reader = csv.DictReader(lines, delimiter=";")
     for row in reader:
