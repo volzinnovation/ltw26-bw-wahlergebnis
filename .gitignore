@@ -6,3 +6,5 @@ data/*/history.sqlite
 data/*/history.sqlite-shm
 data/*/history.sqlite-wal
 data/*/raw/
+site/
+data/2026-bw/reports/statla_git_corrections_after_first_submission.csv
