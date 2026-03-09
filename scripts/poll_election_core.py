@@ -163,6 +163,8 @@ class Config:
     publish_source_comparison: bool
     request_timeout_seconds: int
     max_workers: int
+    first_vote_label: str
+    second_vote_label: str
 
 
 @dataclass
@@ -299,6 +301,8 @@ def load_config() -> Config:
         publish_source_comparison=bool(data.get("publish_source_comparison", True)),
         request_timeout_seconds=int(data.get("request_timeout_seconds", 4)),
         max_workers=int(data.get("max_workers", 48)),
+        first_vote_label=str(data.get("first_vote_label") or "Erststimmen"),
+        second_vote_label=str(data.get("second_vote_label") or "Zweitstimmen"),
     )
     apply_config_paths(config)
     return config

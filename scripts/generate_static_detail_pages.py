@@ -20,6 +20,7 @@ import poll_election_core as core
 
 
 OUTPUT_ROOT = None
+CURRENT_CONFIG: Optional[core.Config] = None
 STRUCTURE_DATE = "20210314"
 STRUCTURE_BASE_URL = "https://wahlergebnisse.komm.one/01/produktion/wahltermin-20210314"
 REMOTE_TIMEOUT_SECONDS = 20
@@ -608,6 +609,48 @@ def load_latest_source_diffs() -> List[Dict[str, Any]]:
     return normalized
 
 
+def vote_type_label(vote_type: str) -> str:
+    canonical = core.canonical_vote_type(vote_type)
+    if CURRENT_CONFIG is None:
+        return canonical
+    if canonical == "Erststimmen":
+        return CURRENT_CONFIG.first_vote_label
+    if canonical == "Zweitstimmen":
+        return CURRENT_CONFIG.second_vote_label
+    return canonical
+
+
+def derive_party_order_from_rows(party_rows: List[Dict[str, Any]]) -> Dict[str, List[str]]:
+    ordered: Dict[str, List[str]] = {"Erststimmen": [], "Zweitstimmen": []}
+    seen: Dict[str, set[str]] = {"Erststimmen": set(), "Zweitstimmen": set()}
+
+    def consume(rows: List[Dict[str, Any]]) -> None:
+        for row in rows:
+            vote_type = core.canonical_vote_type(str(row.get("vote_type") or ""))
+            if vote_type not in ordered:
+                ordered[vote_type] = []
+                seen[vote_type] = set()
+            party = core.canonical_party_name(str(row.get("party_name") or ""), vote_type)
+            if not party or party in seen[vote_type]:
+                continue
+            seen[vote_type].add(party)
+            ordered[vote_type].append(party)
+
+    consume([row for row in party_rows if str(row.get("row_key") or "").endswith(":LAND")])
+    consume(party_rows)
+
+    fallback = core.fixed_party_order_by_vote_type()
+    for vote_type, parties in fallback.items():
+        bucket = ordered.setdefault(vote_type, [])
+        bucket_seen = seen.setdefault(vote_type, set(bucket))
+        for party in parties:
+            if party in bucket_seen:
+                continue
+            bucket_seen.add(party)
+            bucket.append(party)
+    return ordered
+
+
 def build_party_votes_by_row_key(party_rows: List[Dict[str, str]]) -> Dict[str, Dict[str, Dict[str, int]]]:
     out: Dict[str, Dict[str, Dict[str, int]]] = defaultdict(lambda: defaultdict(dict))
     for row in party_rows:
@@ -780,7 +823,7 @@ def build_city_entities(
             continue
 
         for snapshot in ags_rows:
-            if str(snapshot.get("gebietsart") or "").upper() != "WAHLKREIS":
+            if str(snapshot.get("gebietsart") or "").upper() not in {"WAHLKREIS", "WAHLKREIS_TEIL"}:
                 continue
             raw_row = raw_row_for_snapshot(raw_by_row_key, snapshot)
             wk = wahlkreis_number_from_raw_row(raw_row) or str(snapshot.get("gebietsnummer") or "")
@@ -828,7 +871,7 @@ def render_page(title: str, body: str, root_path: str = "../") -> str:
         "<span class='header-icon' aria-hidden='true'>🗳️</span>"
         "<span class='header-title'>wahl-monitor.de</span>"
         "</a>"
-        "<span class='header-label'>Wahlergebnisse Baden-Württemberg</span>"
+        "<span class='header-label'>Statisches Wahldashboard</span>"
         "</div>"
         "</header>"
     )
@@ -856,7 +899,7 @@ def render_page(title: str, body: str, root_path: str = "../") -> str:
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Wahlergebnisse Baden-Württemberg – Live-Tracking und Detailseiten für alle Wahlkreise, Gemeinden und Wahlbezirke.">
+  <meta name="description" content="Statisches Wahldashboard mit Detailseiten für Wahlkreise, Gemeinden und Wahlbezirke.">
   <title>{html.escape(title)}</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -1253,7 +1296,7 @@ def render_booth_list(
             "</tr>"
         )
     return (
-        "<table><thead><tr><th>Wahlbezirk</th><th>Typ</th><th>Status</th><th>Gemeldete Bezirke</th><th>Gültige Zweitstimmen</th><th>Wahllokal 2021</th></tr></thead>"
+        f"<table><thead><tr><th>Wahlbezirk</th><th>Typ</th><th>Status</th><th>Gemeldete Bezirke</th><th>Gültige {html.escape(vote_type_label('Zweitstimmen'))}</th><th>Wahllokal 2021</th></tr></thead>"
         f"<tbody>{''.join(rows)}</tbody></table>"
     )
 
@@ -1274,7 +1317,7 @@ def render_vote_type_summary_table(vote_type: str, rows: List[Dict[str, Any]]) -
             "</tr>"
         )
     return (
-        f"<div class='panel'><h2>{html.escape(vote_type)}</h2>"
+        f"<div class='panel'><h2>{html.escape(vote_type_label(vote_type))}</h2>"
         "<table class='compact'><thead><tr>"
         "<th>Partei</th><th>`komm.one` Stimmen</th><th>`komm.one` Anteil</th>"
         "<th>`statla` Stimmen</th><th>`statla` Anteil</th><th>Differenz Stimmen</th><th>Differenz Anteil</th>"
@@ -1401,14 +1444,19 @@ def statla_wahlkreis_winner_map(
         vote_totals = party_votes_by_row_key.get(str(row.get("row_key") or ""), {}).get(vote_type, {})
         if not vote_totals:
             continue
+        total_votes = sum(int(v or 0) for v in vote_totals.values())
+        if total_votes <= 0:
+            continue
         winner_party, winner_votes = max(
             vote_totals.items(),
             key=lambda item: (int(item[1]), str(item[0])),
         )
+        if int(winner_votes or 0) <= 0:
+            continue
         winners[wk] = {
             "winner_party": winner_party,
             "winner_votes": int(winner_votes or 0),
-            "winner_total_votes": sum(int(v or 0) for v in vote_totals.values()),
+            "winner_total_votes": total_votes,
         }
     return winners
 
@@ -1437,7 +1485,7 @@ def render_wahlkreis_overview_table(
         )
     return (
         "<div class='panel'><h2>Wahlkreisstatus</h2>"
-        "<table class='compact'><thead><tr><th>Wahlkreis</th><th>Status</th><th>Führend Erststimmen</th><th>Führend Zweitstimmen</th><th>Gemeldete Bezirke</th></tr></thead>"
+        f"<table class='compact'><thead><tr><th>Wahlkreis</th><th>Status</th><th>Führend {html.escape(vote_type_label('Erststimmen'))}</th><th>Führend {html.escape(vote_type_label('Zweitstimmen'))}</th><th>Gemeldete Bezirke</th></tr></thead>"
         f"<tbody>{''.join(rows_html)}</tbody></table></div>"
     )
 
@@ -1510,7 +1558,7 @@ def render_clickable_wahlkreis_map(
             continue
         title_text = f"{wk.zfill(2)} {name} ({status_label(status)})"
         if winner_party:
-            title_text += f" - Zweitstimmen: {winner_party}"
+            title_text += f" - {vote_type_label('Zweitstimmen')}: {winner_party}"
         title = html.escape(title_text)
         path_markup = f"<path d=\"{' '.join(d_parts)}\" fill=\"{fill}\" stroke=\"#111827\" stroke-width=\"0.8\"><title>{title}</title></path>"
         href = link_by_wk.get(wk)
@@ -1630,13 +1678,13 @@ def render_index_page(
             summary_by_vote_type[str(row["vote_type"] or "Unbekannt")].append(row)
 
     features = core.load_wahlkreis_features()
-    operations = [
-        f"`python scripts/poll_election.py --election-key {config.election_key}`",
-        f"`python scripts/run_local_poll_loop.py --election-key {config.election_key} --start-at {tracking_start_hhmm(config)}`",
-        f"`python scripts/run_local_mock_poll.py --election-key {config.election_key} --iterations 1 --limit-ags 10`",
-        f"`python scripts/validate_dummy_statla_result.py --election-key {config.election_key}`",
-        f"`python scripts/generate_static_detail_pages.py --election-key {config.election_key}`",
-    ]
+    operations = [f"`python scripts/generate_static_detail_pages.py --election-key {config.election_key}`"]
+    if config.kommone_base_url_template:
+        operations.insert(0, f"`python scripts/poll_election.py --election-key {config.election_key}`")
+        operations.insert(1, f"`python scripts/run_local_poll_loop.py --election-key {config.election_key} --start-at {tracking_start_hhmm(config)}`")
+        operations.insert(2, f"`python scripts/run_local_mock_poll.py --election-key {config.election_key} --iterations 1 --limit-ags 10`")
+    if config.statla_dummy_csv_url and config.kommone_base_url_template:
+        operations.append(f"`python scripts/validate_dummy_statla_result.py --election-key {config.election_key}`")
     body = (
         "<div class='hero'><div class='topbar'><a href='../index.html'>Alle Wahlen</a></div>"
         f"<h1>{html.escape(config.election_name)} ({html.escape(config.election_key)})</h1>"
@@ -1644,7 +1692,7 @@ def render_index_page(
         f"<div class='stats'>"
         f"<div class='stat'><div class='stat-label'>Letzter Poll</div><div class='stat-value'>{html.escape(polled_at_local)}</div></div>"
         f"<div class='stat'><div class='stat-label'>Trackingstart</div><div class='stat-value'>{html.escape(tracking_start)}</div></div>"
-        f"<div class='stat'><div class='stat-label'>Gemeinden</div><div class='stat-value'>{len(latest_kommone_snapshots):,}</div></div>"
+        f"<div class='stat'><div class='stat-label'>Gemeinden</div><div class='stat-value'>{len(municipality_link_by_ags):,}</div></div>"
         f"<div class='stat'><div class='stat-label'>Wahlkreise vollständig</div><div class='stat-value'>{wahlkreis_counts['complete']}</div></div>"
         "</div></div>"
         "<div class='grid'>"
@@ -1667,8 +1715,16 @@ def render_index_page(
         + (render_source_diff_summary(diff_rows) if config.publish_source_comparison else "")
         + "<div class='panel'><h2>Datenquellen</h2>"
         + "<ul class='inline-list'>"
-        + "<li>`komm.one`-Gemeindeseiten in der aktuellen HTML-Struktur</li>"
-        + f"<li>Statistik BW CSV (Modus: <strong>{html.escape(statla_mode)}</strong>): <a href='{html.escape(statla_url)}'>{html.escape(statla_url)}</a></li>"
+        + (
+            "<li>`komm.one`-Gemeindeseiten in der aktuellen HTML-Struktur</li>"
+            if config.kommone_base_url_template
+            else ""
+        )
+        + (
+            f"<li>Offizielle Ergebnisquelle (Modus: <strong>{html.escape(statla_mode)}</strong>): <a href='{html.escape(statla_url)}'>{html.escape(statla_url)}</a></li>"
+            if statla_url
+            else ""
+        )
         + "</ul></div>"
         + "<div class='panel'><h2>Betrieb</h2><ul class='inline-list'>"
         + "".join(f"<li>{item}</li>" for item in operations)
@@ -1735,6 +1791,8 @@ def main() -> int:
     args = parse_args()
     core.set_active_election(election_key=args.election_key)
     config = core.load_config()
+    global CURRENT_CONFIG
+    CURRENT_CONFIG = config
     output_root = args.output_root or (core.ROOT / "site" / config.election_key)
     output_root.mkdir(parents=True, exist_ok=True)
     prepare_output_dirs(output_root)
@@ -1742,7 +1800,7 @@ def main() -> int:
     snapshots, raw_by_row_key = load_statla_dataset()
     statla_party_rows = load_latest_party_rows()
     party_votes = build_party_votes_by_row_key(statla_party_rows)
-    party_order = core.fixed_party_order_by_vote_type()
+    party_order = derive_party_order_from_rows(statla_party_rows)
     mapping = core.load_wahlkreis_mapping()
     site_root = output_root.parent
 
@@ -1775,12 +1833,14 @@ def main() -> int:
         if str(row.get("gebietsart") or "").upper() in {"URNENWAHLBEZIRK", "BRIEFWAHLBEZIRK"}:
             booth_rows_by_ags[row["ags"]].append(row)
 
-    structure_cache = maybe_refresh_structure_cache(
-        load_structure_cache(),
-        selected_ags,
-        args.refresh_structure,
-        args.structure_workers,
-    )
+    structure_cache: Dict[str, Any] = {}
+    if config.kommone_base_url_template:
+        structure_cache = maybe_refresh_structure_cache(
+            load_structure_cache(),
+            selected_ags,
+            args.refresh_structure,
+            args.structure_workers,
+        )
 
     municipality_pages: Dict[str, str] = {}
     municipality_index_links: Dict[str, str] = {}
@@ -1817,8 +1877,8 @@ def main() -> int:
             f"<div class='hero'><div class='topbar'><a href='../index.html'>Startseite dieser Wahl</a><span>/</span>"
             f"<a href='../../index.html'>Alle Wahlen</a></div><h1>{html.escape(wk.zfill(2))} - {html.escape(wk_name)}</h1>"
             "<p class='muted'>Gemeinden als Zeilen, Parteien als Spalten. Jede Zelle zeigt absolute Stimmen und den Zeilenanteil.</p></div>"
-            f"<div class='panel'><h2>Erststimmen</h2>{first_table}</div>"
-            f"<div class='panel'><h2>Zweitstimmen</h2>{second_table}</div>"
+            f"<div class='panel'><h2>{html.escape(vote_type_label('Erststimmen'))}</h2>{first_table}</div>"
+            f"<div class='panel'><h2>{html.escape(vote_type_label('Zweitstimmen'))}</h2>{second_table}</div>"
         )
         write_page(output_root / "wahlkreis" / filename, f"{wk_name} - {config.election_key}", body)
 
@@ -1861,12 +1921,12 @@ def main() -> int:
             "<div class='stats'>"
             f"<div class='stat'><div class='stat-label'>AGS</div><div class='stat-value'>{html.escape(ags)}</div></div>"
             f"{wk_stat}"
-            f"<div class='stat'><div class='stat-label'>Gültige Erststimmen</div><div class='stat-value'>{vote_total_for_snapshot(municipality_row, 'Erststimmen'):,}</div></div>"
-            f"<div class='stat'><div class='stat-label'>Gültige Zweitstimmen</div><div class='stat-value'>{vote_total_for_snapshot(municipality_row, 'Zweitstimmen'):,}</div></div>"
+            f"<div class='stat'><div class='stat-label'>Gültige {html.escape(vote_type_label('Erststimmen'))}</div><div class='stat-value'>{vote_total_for_snapshot(municipality_row, 'Erststimmen'):,}</div></div>"
+            f"<div class='stat'><div class='stat-label'>Gültige {html.escape(vote_type_label('Zweitstimmen'))}</div><div class='stat-value'>{vote_total_for_snapshot(municipality_row, 'Zweitstimmen'):,}</div></div>"
             "</div></div>"
             f"<div class='panel'><h2>Wahlbezirke</h2>{render_booth_list(booth_rows, booth_local_links)}</div>"
-            f"<div class='panel'><h2>Wahlbezirkstabelle: Erststimmen</h2>{first_table}</div>"
-            f"<div class='panel'><h2>Wahlbezirkstabelle: Zweitstimmen</h2>{second_table}</div>"
+            f"<div class='panel'><h2>Wahlbezirkstabelle: {html.escape(vote_type_label('Erststimmen'))}</h2>{first_table}</div>"
+            f"<div class='panel'><h2>Wahlbezirkstabelle: {html.escape(vote_type_label('Zweitstimmen'))}</h2>{second_table}</div>"
         )
         write_page(output_root / "municipality" / filename, f"{name} - {config.election_key}", body)
 
@@ -1907,8 +1967,8 @@ def main() -> int:
                 f"<h1>{html.escape(booth['display_name'])}</h1>"
                 f"<p class='muted'>{html.escape(booth['gebietsart'])} in {html.escape(name)}</p>"
                 f"{detail_link}{location_link}</div>"
-                f"<div class='panel'><h2>Erststimmen</h2>{render_detail_list(first_votes, 'Erststimmen')}</div>"
-                f"<div class='panel'><h2>Zweitstimmen</h2>{render_detail_list(second_votes, 'Zweitstimmen')}</div>"
+                f"<div class='panel'><h2>{html.escape(vote_type_label('Erststimmen'))}</h2>{render_detail_list(first_votes, 'Erststimmen')}</div>"
+                f"<div class='panel'><h2>{html.escape(vote_type_label('Zweitstimmen'))}</h2>{render_detail_list(second_votes, 'Zweitstimmen')}</div>"
             )
             write_page(output_root / "booth" / booth_filename, f"{booth['display_name']} - {config.election_key}", body)
 
